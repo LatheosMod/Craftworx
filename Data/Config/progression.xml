@@ -448,20 +448,21 @@
 	<perk name="Gun Bunny" icon="shotgun" description_key="gunbunnyDesc" title_key="gunbunny" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="Heavy Weapons" required_skill_level="1"/>
 		<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="1"/>
-		<recipe name="rocketCasing" unlock_level="3"/>
-		<recipe name="rocketTip" unlock_level="3"/>
+		<recipe name="rocketCasing" unlock_level="1"/>
+		<recipe name="rocketTip" unlock_level="1"/>
 		<requirement perk_level="2" required_skill_name="Heavy Weapons" required_skill_level="10"/>
-		<recipe name="rocket" unlock_level="3"/>
-		<recipe name="FertilizerRound" unlock_level="1"/>
+		<recipe name="rocket" unlock_level="2"/>
+		<recipe name="FertilizerRound" unlock_level="2"/>
 		<requirement perk_level="3" required_skill_name="Heavy Weapons" required_skill_level="20"/>
-		<recipe name="gunRocketLauncher" unlock_level="3"/>
+		<recipe name="partsPoopCannonBarrel" unlock_level="3"/>
+		<recipe name="partsPoopCannonReceiver" unlock_level="3"/>
+		<recipe name="partsPoopCannonParts" unlock_level="3"/>
+		<recipe name="partsPoopCannonStock" unlock_level="3"/>
+		<recipe name="gunPoopCannon" unlock_level="3"/>
 		<requirement perk_level="4" required_skill_name="Heavy Weapons" required_skill_level="30"/>
-		<recipe name="partsPoopCannonBarrel" unlock_level="4"/>
-		<recipe name="partsPoopCannonReceiver" unlock_level="4"/>
-		<recipe name="partsPoopCannonParts" unlock_level="4"/>
-		<recipe name="partsPoopCannonStock" unlock_level="4"/>
+		<recipe name="gunflamethrower" unlock_level="4"/>
 		<requirement perk_level="5" required_skill_name="Heavy Weapons" required_skill_level="40"/>
-		<recipe name="gunPoopCannon" unlock_level="5"/>
+		<recipe name="gunRocketLauncher" unlock_level="5"/>
 		<effect name="EntityDamage">
 			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="1.1125"/>
