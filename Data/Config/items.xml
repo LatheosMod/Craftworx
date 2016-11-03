@@ -9156,8 +9156,6 @@ which does not exist, yet. -->
     <property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab" />
 	<property name="HandMeshfile" value="Items/Tools/torchPrefab"/>
 	<property name="DropMeshfile" value="Items/Tools/torchPrefab"/>	
-	<property name="CustomIcon" value="torch"/>
-	<property name="CustomIconTint" value="F54500"/>  
 	<property name="Material" value="metal" />
 	<property name="HoldType" value="10" />
 	<property name="Stacknumber" value="1" />

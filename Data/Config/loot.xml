@@ -576,7 +576,7 @@
 </lootgroup>
 
 <lootgroup name="flamethrower+ammo" count="all">
-	<item name="flamethrower"/>
+	<item name="gunflamethrower"/>
 	<item name="napalm" count="1,2"/>
 </lootgroup>
 
