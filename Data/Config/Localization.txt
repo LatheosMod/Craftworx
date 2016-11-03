@@ -4466,8 +4466,6 @@ dcellBattery,items,Item,KgNone,D Cell Battery,,
 dcellBatteryDesc,items,Item,KgNone,"A D-Cell flashlight battery, perfect for that homemade flashlight you always wanted.",,
 scrapCable,items,Item,KgNone,Scrap Cable,,
 scrapCableDesc,items,Item,KgNone,Scrap cable can be used to make parts for vehicles and more.,,
-scrapPot,items,Item,KgNone,Scrap Pot,,
-scrapPotDesc,items,Item,KgNone,A shoddily-crafted pot that can be used to cook a small range of foods. Not as good as a proper cooking pot.,,
 
 TorchGlass,blocks,Block,KgNone,Torch Glass,,
 TorchGlassDesc,blocks,Block,KgNone,A lighting block with a torch suspended in glass.,,

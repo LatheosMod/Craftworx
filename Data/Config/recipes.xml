@@ -2858,45 +2858,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rottingFlesh" count="1"/>
 	<ingredient name="potassiumNitratePowder" count="2"/>
 </recipe>
-
-<recipe name="boiledMeat" count="1" craft_area="campfire" craft_tool="scrapPot">
-	<ingredient name="rawMeat" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
-</recipe>
-
-<recipe name="bottledWater" count="1" craft_area="campfire" craft_tool="scrapPot">
-	<ingredient name="snowBall" count="1"/>
-	<ingredient name="emptyJar" count="1"/>
-</recipe>
-
-<recipe name="bottledWater" count="1" craft_area="campfire" craft_tool="scrapPot">
-	<ingredient name="bottledRiverWater" count="1"/>
-</recipe>
-
-<recipe name="coffee" count="1" craft_area="campfire" craft_tool="scrapPot">
-	<ingredient name="coffeeBeans" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
-</recipe>
-
-<recipe name="cornOnTheCob" count="1" craft_area="campfire" craft_tool="scrapPot">
-	<ingredient name="corn" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
-</recipe>
-
-<recipe name="eggboiled" count="1" craft_area="campfire" craft_tool="scrapPot">
-	<ingredient name="egg" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
-</recipe>
-
-<recipe name="goldenRodTea" count="1" craft_area="campfire" craft_tool="scrapPot">
-	<ingredient name="goldenrodPlant" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
-</recipe>
-
-<recipe name="redTea" count="1" craft_area="campfire" craft_tool="scrapPot">
-	<ingredient name="chrysanthemumPlant" count="1"/>
-	<ingredient name="bottledWater" count="1"/>
-</recipe>
 <!-- End Food -->
 
 <!-- Miscellaneous Items -->
@@ -2990,10 +2951,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="smallEngine" count= "1"/>
 	<ingredient name="scrapCable" count="10"/>
 	<ingredient name="mechanicalParts" count="25"/>
-</recipe>
-
-<recipe name="scrapPot" count="1">
-	<ingredient name="scrapIron" count="50"/>
 </recipe>
 <!-- End Miscellaneous Items -->
 
