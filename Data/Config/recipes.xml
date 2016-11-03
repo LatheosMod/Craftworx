@@ -2845,18 +2845,57 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- End Lighted Helmets -->
 
 <!-- Food -->
-<recipe name="BaggedMeat" count="1" scrapable="False" craft_time="1.5">
+<recipe name="BaggedMeat" count="1" scrapable="False" craft_time="2">
     <ingredient name="rawMeat" count="1"/>
 	<ingredient name="ZiplockBag" count="1"/>
 </recipe>
 
-<recipe name="rawMeat" count="1" scrapable="False" craft_time="1.5">
+<recipe name="rawMeat" count="1" scrapable="False" craft_time="2">
     <ingredient name="BaggedMeat" count="1"/>
 </recipe>
 
-<recipe name="saltedMeat" count="1" craft_time="2">
+<recipe name="saltedMeat" count="1" craft_time="5">
 	<ingredient name="rottingFlesh" count="1"/>
 	<ingredient name="potassiumNitratePowder" count="2"/>
+</recipe>
+
+<recipe name="boiledMeat" count="1" craft_area="campfire" craft_tool="scrapPot">
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="bottledWater" count="1" craft_area="campfire" craft_tool="scrapPot">
+	<ingredient name="snowBall" count="1"/>
+	<ingredient name="emptyJar" count="1"/>
+</recipe>
+
+<recipe name="bottledWater" count="1" craft_area="campfire" craft_tool="scrapPot">
+	<ingredient name="bottledRiverWater" count="1"/>
+</recipe>
+
+<recipe name="coffee" count="1" craft_area="campfire" craft_tool="scrapPot">
+	<ingredient name="coffeeBeans" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="cornOnTheCob" count="1" craft_area="campfire" craft_tool="scrapPot">
+	<ingredient name="corn" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="eggboiled" count="1" craft_area="campfire" craft_tool="scrapPot">
+	<ingredient name="egg" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="goldenRodTea" count="1" craft_area="campfire" craft_tool="scrapPot">
+	<ingredient name="goldenrodPlant" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="redTea" count="1" craft_area="campfire" craft_tool="scrapPot">
+	<ingredient name="chrysanthemumPlant" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
 </recipe>
 <!-- End Food -->
 
@@ -2952,6 +2991,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="scrapCable" count="10"/>
 	<ingredient name="mechanicalParts" count="25"/>
 </recipe>
+
+<recipe name="scrapPot" count="1">
+	<ingredient name="scrapIron" count="50"/>
+</recipe>
+<!-- End Miscellaneous Items -->
 
 <!-- Clothier -->
 <recipe name="tshirtWhite" count="1">

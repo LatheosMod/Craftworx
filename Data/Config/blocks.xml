@@ -13925,6 +13925,25 @@ kind of free
 	<property name="Group" value="Tools/Traps" />
 </block>
 <!-- End Valmar's Expanded Traps -->
+
+<!-- Miscellaneous Blocks -->
+<block id="2009" name="scrapPot">
+	<property name="Material" value="MmetalNoGlue" />
+	<property name="MaxDamage" value="100" />
+	<property name="StabilitySupport" value="false" />
+	<property name="Shape" value="Ext3dModel" />
+	<property name="Mesh" value="models" />
+	<property name="Model" value="CampingGear/cooking_pot" param1="main_mesh" />
+	<property name="CanPickup" value="true" />
+	<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
+	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
+	<property name="Collide" value="melee,bullet,arrow,rocket" />
+	<property name="Group" value="Food/Cooking" />
+	<property name="EconomicValue" value="12" />
+</block>
+
+<!-- End Miscellaneous Blocks -->
+
 <!-- End Custom Blocks -->
 
 <!-- ore block visualisation.  Uncomment this section to make underground ores visible.
