@@ -1,0 +1,84 @@
+Craftworx includes:
+
+New Weapons and Tools
+	Scoped Hunting Rifle
+	Suppressed Scoped Hunting Rifle
+	Suppressed Pistol
+	Suppressed SMG
+	Suppressed AK47
+	Suppressed Sniper Rifle
+	Repeating Crossbow (Assembled from crossbowStock, crossbowDeck, crossbowLimb, crossbowScope)
+	Iron Crossbow
+	Iron Bow
+	Poop Cannon
+	Poop Launcher
+	Kukri
+	Flamethrower (Updated from Andy's Mods flamethrower for A12)
+	Seagrave Fireaxe
+	Homemade Flashlight (Assembled from Flashlight Lamp, Flashlight Barrel, Flashlight Battery Pack, and Flashlight Cap)
+
+New Parts
+	Scoped Hunting Rifle Parts
+	Rifle Scope (can be used as a telescope)
+	Suppressor
+	Crossbow Stock
+	Crossbow Limb
+	Crossbow Deck
+	Crossbow Scope
+	Suppressed Pistol Barrel
+	Suppressed Hunting Rifle Barrel
+	Suppressed SMG Barrel
+	Suppressed AK47 Barrel
+	Suppressed Sniper Rifle Barrel
+	Poop Cannon Parts
+	Flamethrower Parts
+	Homemade Flashlight Parts
+	
+New Items
+	Craftable Weapon Oil from Biofuel
+	Craftable Scrap Cable
+	Craftable Calipers in the forge
+	Craftable Beaker in the forge
+	Carbon Steel
+	Alternate arrow and crossbow bolt recipes
+	Flaming crossbow bolt
+	Refined coal (crafted at the chemistry workbench from 25 coal, burning for 15 minutes)
+	Salted Meat
+	D Cell Battery
+	Fuel Log (crafted in the workbench, it burns for 9 minutes)
+	Breacher Rounds (shotgun shells designed to damage doors and safes)
+
+New Armor
+	Helmet lights (uses the homemade flashlight) for cloth hat, cowboy hat, football helmet, iron helmet, military helmet, leather hood, scrap helmet. swat helmet, hazmat mask, heavy bandit gasmask
+	Craftable cotton and leather clothing with new perks
+	
+New Blocks
+    Elevator (crafted at the workbench)
+	Craftable Metal Pipes in the forge (straight, corner, joint, cap, valve, and flange)
+	Valmar's Expanded Traps (Fire, Adhesive, Nail Mine)
+	Safed Fire Trap
+	SylenThunder's Glass Light Blocks
+
+New Perks
+	Carpentry
+	Fletching
+	Advanced Tooling
+	Heavy Weapons
+	Silent But Deadly
+	Masamune, Jr. 
+	Paul Bunyan
+	William Tell
+	Gun Bunny
+	Clothier
+	Cordwainer
+	2 Extra levels to shotgun ammo crafting
+
+New Quest
+    A Shifty Way to Die - kill five zombies with the poop launcher
+	
+Includes
+	Sirillion's SMX UI
+	stallionsden's Backpack Expansion
+	Valmar's Expanded Traps
+	SylenThunder's Lighted Glass Blocks
+
