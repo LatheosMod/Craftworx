@@ -21,3 +21,11 @@ Craftworx 1.1
 Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
 Added flamethrower and napalm ammo to items, recipes, loot, localization
 Added flaming iron club and flaming fireaxe iron to items, recipes, localization (could not get models to show flames, but they do light up enemies nicely)
+
+----->03 Nov 2016<-----
+Craftworx 1.11
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Increased crafting times on salted meat and bagged meat
+Added scrapPot, a cheap cooking pot that can be crafted from scrap metal, but can only cook a limited set of food items
+Fixed incorrect text for leather tanning in localization.xml
+Fixed incorrect text for shotgun shells in localization.xml
