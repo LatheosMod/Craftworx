@@ -1522,9 +1522,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="leather" count="5"/>
 </recipe>
 
-<recipe name="leatherDuster" count="1">
+<!-- <recipe name="leatherDuster" count="1">
 	<ingredient name="leather" count="20"/>
-</recipe>
+</recipe> -->
 
 <recipe name="leatherGloves" count="1">
 	<ingredient name="leather" count="5"/>
