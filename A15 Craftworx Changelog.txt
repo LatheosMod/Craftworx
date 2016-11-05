@@ -26,6 +26,16 @@ Added flaming iron club and flaming fireaxe iron to items, recipes, localization
 Craftworx 1.11
 Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
 Increased crafting times on salted meat and bagged meat
-Added scrapPot, a cheap cooking pot that can be crafted from scrap metal, but can only cook a limited set of food items
 Fixed incorrect text for leather tanning in localization.xml
 Fixed incorrect text for shotgun shells in localization.xml
+Reorganized perk levels for Gun Bunny and added flamethrower recipe to level 4
+Commented out recipe for leatherDuster, to keep crafting it locked behind the cordwainer skill
+
+----->04 Nov 2016<-----
+Craftworx 1.2
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Fixed incorrect skill gain on crossbow, flaming arrow, exploding crossbow bolt schematics
+Removed poop cannon bits from rocket launcher schematic
+Removed PivotOnFloor property from metal garage doors to allow placing them on the floor as hatches to underground bases
+Added  <property name="ActivationDistance" value="20" /> to elevator to allow calling the elevator up from ground level
+Added traders.xml with additional content from the mod in the trader inventory lists

@@ -11576,7 +11576,7 @@ kind of free
 	<property name="Mesh-Damage-4" value="Door/Door_DMG3" />
 	<property name="Mesh-Damage-5" value="Door/Door_DMG4" />
 	<property name="MultiBlockDim" value="3,2,2" />
-	<property name="RotationAllowed" value="pivotOnFloor" />
+	<!-- <property name="RotationAllowed" value="pivotOnFloor" /> -->
 	<property name="OpenSound" value="UseActions/open_garage_door" />
 	<property name="CloseSound" value="UseActions/close_garage_door" />
 	<property class="RepairItems"> <property name="scrapIron" value="240" /> </property>
@@ -11601,7 +11601,7 @@ kind of free
 <block id="1430" name="garageDoorMetal_v2">
 	<property name="Extends" value="garageDoorMetal_v1" />
 	<property name="Model" value="Entities/Doors/garage_metal_v2Prefab" />
-	<property name="RotationAllowed" value="pivotOnFloor" />
+	<!-- <property name="RotationAllowed" value="pivotOnFloor" /> -->
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="garageDoorMetal_v3" />
 		<property name="Item" value="forgedIron" />
@@ -11633,7 +11633,7 @@ kind of free
 	<property name="CloseSound" value="UseActions/close_garage_door" />
 	<property name="Place" value="TowardsPlacer" />
 	<property name="PlaceEverywhere" value="true" />
-	<property name="RotationAllowed" value="pivotOnFloor" />
+	<!-- <property name="RotationAllowed" value="pivotOnFloor" /> -->
 	<property class="RepairItems"> <property name="forgedIron" value="60" /> </property>
 	<property name="DowngradeBlock" value="garageDoorMetal_v2" />
 	<drop event="Harvest" name="scrapIron" count="240" />
@@ -12909,6 +12909,7 @@ kind of free
 	<property name="OpenSound" value="UseActions/open_door_wood" />
 	<property name="CloseSound" value="UseActions/close_door_wood" />
 	<drop event="Destroy" count="0" />
+	<property name="ActivationDistance" value="20" />
 	<property name="Group" value="Building" />
 </block>
 
