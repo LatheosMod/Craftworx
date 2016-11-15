@@ -2044,7 +2044,7 @@ vegetableStewDesc,items,Food,KgNone,Your mom always said eat your vegetables. No
 yuccaCocktail,items,Food,KeyTrunk FrNone GrNone KgNone SpNone,Yucca Cocktail,,,,
 yuccaCocktailDesc,items,Food,KeyTrunk FrNone GrNone KgNone SpNone,stuff (not sure what exactly it will do),,,,
 blunderbuss,items,Gun,KgNone,Blunderbuss,Tromblon,Donnerbüchse,,Trabuco
-blunderbussDesc,items,Gun,EnChanged,A primitive muzzle loader can be crafted from mainly forged iron. Effective at very close ranges.,"Une arme primitive à chargement par la bouche peut être fabriquée à partir de tuyaux, de fer forgé, de bois et de ressorts. Efficace sur de très courtes distances.",Ein einfacher Vorderlader der hauptsächlich aus geschmiedetem Eisen gefertigt wird. Ist im Nahkampf sehr effektiv.,,"Se puede fabricar un arma de avancarga rudimentaria con tuberías, hierro forjado, madera y resortes. Eficaz a distancias muy cortas."
+blunderbussDesc,items,Gun,EnChanged,A primitive muzzle loader can be crafted from mainly forged iron. Effective at very close ranges. Cannot be aimed but has a high-stun chance secondary melee attack.,"Une arme primitive à chargement par la bouche peut être fabriquée à partir de tuyaux, de fer forgé, de bois et de ressorts. Efficace sur de très courtes distances.",Ein einfacher Vorderlader der hauptsächlich aus geschmiedetem Eisen gefertigt wird. Ist im Nahkampf sehr effektiv.,,"Se puede fabricar un arma de avancarga rudimentaria con tuberías, hierro forjado, madera y resortes. Eficaz a distancias muy cortas."
 crossbow,items,Gun,KgNone,Crossbow,Arbalète,Armbrust,,Ballesta
 crossbowDesc,items,Gun,KgNone,A crossbow does more damage than a wooden bow. Good for hunting and not making noise. Hold reload to use alternate ammo.,"Une arbalète inflige plus de dégâts qu'un arc en bois. Idéale pour la chasse, cette arme ne fait pas de bruit. Maintenez le bouton de rechargement enfoncé pour utiliser un autre type de munition.","Eine Armbrust verursacht mehr Schaden als ein Holzbogen. Eignet sich gut dazu, geräuschlos zu jagen. Nachladen gedrückt halten, um zwischen Munitionsarten zu wechseln.",,Una ballesta inflige más daño que un arco de madera. Es buena para cazar y no hacer ruido. Mantén presionado recargar para usar munición alternativa.
 dynamite,items,Gun,KgNone,Stick of Dynamite,Bâton de dynamite,Dynamitstange,,Cartucho de dinamita
@@ -2061,11 +2061,11 @@ gunMP5Desc,items,Gun,KgNone,This ass-kicking submachine gun uses 10mm ammo. Can 
 gunPistol,items,Gun,KgNone,Pistol,Pistolet,Pistole,,Revólver
 gunPistolDesc,items,Gun,KgNone,A basic pistol. Uses 9mm ammo. Can be re-assembled and repaired if you read the pistol book.,Un pistolet de base. Nécessite des munitions de calibre 9 mm. L'arme peut être réassemblée et réparée si vous lisez « Le livre des pistolets ».,"Eine einfache Pistole. Verwendet 9 mm Munition. Kann zusammengesetzt und repariert werden, wenn du das Buch „Pistolen“ gelesen hast.",,Un revólver básico. Utiliza munición de 9 mm. Se puede rearmar y reparar si has leído el libro de la pistola.
 gunPumpShotgun,items,Gun,KgNone,Shotgun,Fusil à pompe,Schrotflinte,,Escopeta
-gunPumpShotgunDesc,items,Gun,KgNone,A long-barreled shotgun uses shells for ammo. Can be re-assembled and repaired if you read the Shotgun Schematic.,Les munitions du fusil à pompe à long canon sont des cartouches. L'arme peut être réassemblée et réparée si vous lisez le schéma du fusil à pompe.,"Eine Schrotflinte mit langem Lauf verwendet Flintenmunition. Kann zusammengesetzt und repariert werden, wenn du den Bauplan für Schrotflinten gelesen hast.",,Una escopeta de largo alcance utiliza cartuchos como munición. Se puede rearmar y reparar si has leído el esquema de escopeta.
+gunPumpShotgunDesc,items,Gun,KgNone,A long-barreled shotgun uses shells for ammo. Can be re-assembled and repaired if you read the Shotgun Schematic. Cannot be aimed but has a high-stun chance secondary melee attack.,Les munitions du fusil à pompe à long canon sont des cartouches. L'arme peut être réassemblée et réparée si vous lisez le schéma du fusil à pompe.,"Eine Schrotflinte mit langem Lauf verwendet Flintenmunition. Kann zusammengesetzt und repariert werden, wenn du den Bauplan für Schrotflinten gelesen hast.",,Una escopeta de largo alcance utiliza cartuchos como munición. Se puede rearmar y reparar si has leído el esquema de escopeta.
 gunRocketLauncher,items,Gun,KgNone,Rocket Launcher,Lance-roquettes,Raketenwerfer,,Lanzacohetes
 gunRocketLauncherDesc,items,Gun,KgNone,A Rocket Launcher shoots rocket propelled grenades. Can be re-assembled & repaired once you've read the Rocket Launcher Schematic.,Un lance-roquettes tire des grenades propulsées par des roquettes. L'arme peut être réassemblée et réparée si vous lisez le schéma du lance-roquettes.,"Ein Raketenwerfer feuert raketengetriebene Granaten ab. Kann zusammengesetzt und repariert werden, wenn du den Bauplan für Raketenwerfer gelesen hast.",,Un lanzacohetes que lanza granadas propulsadas por cohete. Se puede rearmar y reparar una vez que has leído el esquema de lanzacohetes.
 gunSawedOffPumpShotgun,items,Gun,KgNone,Sawed-off Shotgun,Fusil à pompe à canon scié,Abgesägte Schrotflinte,,Escopeta recortada
-gunSawedOffPumpShotgunDesc,items,Gun,KgNone,A sawed-off shotgun fires shotgun shells. Can be re-assembled and repaired once you've read the schematic.,Les munitions du fusil à pompe à canon scié sont des cartouches. L'arme peut être réassemblée et réparée si vous lisez le schéma.,"Eine abgesägte Schrotflinte feuert Flintenmunition ab. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,Una escopeta recortada dispara cartuchos de escopeta. Se puede rearmar y reparar una vez que has leído el esquema.
+gunSawedOffPumpShotgunDesc,items,Gun,KgNone,A sawed-off shotgun fires shotgun shells. Can be re-assembled and repaired once you've read the schematic. Cannot be aimed but has a high-stun chance secondary melee attack.,Les munitions du fusil à pompe à canon scié sont des cartouches. L'arme peut être réassemblée et réparée si vous lisez le schéma.,"Eine abgesägte Schrotflinte feuert Flintenmunition ab. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,Una escopeta recortada dispara cartuchos de escopeta. Se puede rearmar y reparar una vez que has leído el esquema.
 gunSniperRifle,items,Gun,KgNone,Sniper Rifle,Fusil de précision,Scharfschützengewehr,,Rifle de francotirador
 gunSniperRifleDesc,items,Gun,KgNone,A sniper rifle uses 7.62mm ammo and has a scope for zooming. Can be re-assembled and repaired once you've read the schematic.,"Le fusil de précision nécessite des munitions de calibre 7,62 mm et possède une lunette pour zoomer. L'arme peut être réassemblée et réparée si vous lisez le schéma.","Ein Scharfschützengewehr verwendet 7,62 mm Munition und hat ein Zielfernrohr, mit dem gezoomt werden kann. Kann zusammengesetzt und repariert werden, wenn du den Bauplan gelesen hast.",,"El rifle de francotirador utiliza munición de 7,62 mm y tiene una mira para enfocar. Se puede rearmar y reparar una vez que has leído el esquema."
 pipeBomb,items,Gun,KgNone,Pipe Bomb,Bombe-tuyau,Rohrbombe,,Bomba casera
@@ -2517,7 +2517,7 @@ toolSmithingDesc,progression,Skill,KgNone,Craft handheld and motorized tools fas
 treasureHunter,progression,Skill,KgNone,Treasure Hunter,Chasseur de trésors,Schatzsucher,,Cazador de tesoros
 treasureHunterDesc,progression,Skill,KgNone,Arrrgh Mateys! Improve your compass treasure tracking and get better at finding treasure.,"Ohé, moussaillons ! Améliorez votre boussole de repérage de trésor et devenez un meilleur chasseur de trésor.",Ahoi Freundchen! Verbessere die Schatzsuchfunktion deines Kompasses und werde ein besserer Schatzsucher.,,"¡Arrr, grumetes! Mejora el seguimiento de tesoros de tu brújula y mejora tu habilidad para encontrar tesoros."
 weaponSmithing,progression,Skill,KgNone,Weapon Smithing,Forgeron d'armes,Waffenschmied,,Forja de armas
-weaponSmithingDesc,progression,Skill,KgNone,"Craft bows, crossbows, their ammo and handheld melee weapons faster and with higher quality. Lower repair penalties and get more from repair kits. Gain skill by crafting and repairing items from this group.","Fabriquez des arcs, des arbalètes, des flèches et des carreaux, et des armes de mêlée plus rapidement et de meilleure qualité. Réduisez les pénalités de réparation et obtenez davantage des kits de réparation. Obtenez cette compétence en fabriquant et en réparant des objets de ce groupe.","Fertige Bogen, Armbrüste, die jeweilige Munition und Nahkampfwaffen schneller und von besserer Qualität. Senke die Reparaturabzüge und hole mehr aus deinen Reparaturkits heraus. Erhalte die Fertigkeit, indem du Gegenstände aus dieser Kategorie fertigst und reparierst.",,"Fabrica arcos, ballestas, su munición y armas cuerpo a cuerpo de mano más rápido y de mejor calidad. Reduce los castigos de reparación y otorga más kits de reparación. Mejora tu habilidad al fabricar y reparar objetos de este grupo."
+weaponSmithingDesc,progression,Skill,KgNone,"Craft handheld melee weapons faster and with higher quality. Lower repair penalties and get more from repair kits. Gain skill by crafting and repairing items from this group.","Fabriquez des arcs, des arbalètes, des flèches et des carreaux, et des armes de mêlée plus rapidement et de meilleure qualité. Réduisez les pénalités de réparation et obtenez davantage des kits de réparation. Obtenez cette compétence en fabriquant et en réparant des objets de ce groupe.","Fertige Bogen, Armbrüste, die jeweilige Munition und Nahkampfwaffen schneller und von besserer Qualität. Senke die Reparaturabzüge und hole mehr aus deinen Reparaturkits heraus. Erhalte die Fertigkeit, indem du Gegenstände aus dieser Kategorie fertigst und reparierst.",,"Fabrica arcos, ballestas, su munición y armas cuerpo a cuerpo de mano más rápido y de mejor calidad. Reduce los castigos de reparación y otorga más kits de reparación. Mejora tu habilidad al fabricar y reparar objetos de este grupo."
 lootAccess,UI,Access Prompt,KgNone,<{0}> Access {1},<{0}> accède à {1},<{0}> {1} betreten,,<{0}> accede a {1}
 uiBackToMain,UI,Generic,KgNone,Return to main menu,Retour au menu principal,Zurück zum Hauptmenü,,Volver al menú principal
 blockCantPlaced,UI,HUD,KgNone,Not possible to place here.,Impossible à placer ici.,Kann hier nicht platziert werden.,,No se puede poner aquí.
@@ -4335,7 +4335,7 @@ gunscopedHuntingRifleDesc,items,Gun,KgNone,This hunting rifle has a scope and fi
 gunsuppressedHuntingRifle,items,Gun,KgNone,Suppressed Hunting Rifle,,
 gunsuppressedHuntingRifleDesc,items,Gun,KgNone,A suppressed hunting rifle that fires 7.62mm ammo. Can be re-assembled and repaired once you've gained the perk Silent But Deadly II.,,
 gunQscopedHuntingRifle,items,Gun,KgNone,Suppressed Scoped Hunting Rifle,,
-gunQscopedHuntingRifleDesc,items,Gun,KgNone,A scoped and suppressed hunting rifle that fires 7.62mm ammo. Can be re-assembled and repaired once you've gained the perk Silent But Deadly II.,,
+gunQscopedHuntingRifleDesc,items,Gun,KgNone,A hunting rifle with integrated suppressor and long-range scope that fires 7.62mm ammo. Can be re-assembled and repaired once you've gained the perk Silent But Deadly II.,,
 gunsuppressedSniperRifle,items,Gun,KgNone,Suppressed Sniper Rifle,,
 gunsuppressedSniperRifleDesc,items,Gun,KgNone,A suppressed sniper rifle that fires 7.62mm ammo and has a scope for zooming. Can be re-assembled and repaired once you've gained the perk Silent But Deadly V.,,
 gunsuppressedPistol,items,Gun,KgNone,Suppressed Pistol,,
@@ -4344,6 +4344,10 @@ gunsuppressedMP5,items,Gun,KgNone,Suppressed MP5,,
 gunsuppressedMP5Desc,items,Gun,KgNone,This ass-kicking submachine gun has been suppressed and fires 10mm ammo. Can be re-assembled and repaired once you've gained the perk Silent But Deadly III.,,
 gunsuppressedAK47,items,Gun,KgNone,Suppressed AK-47,,
 gunsuppressedAK47Desc,items,Gun,KgNone,This badass AK-47 Assault Rifle has been suppressed and fires 7.62mm ammo. Can be re-assembled and repaired once you've gained the perk Silent But Deadly IV.,,
+gunscopedAK47,items,Gun,KgNone,Scoped AK-47,,
+gunscopedAK47Desc,items,Gun,KgNone,"An AK-47 fitted out with a sniper scope, perfect for taking on ferals at a distance. Fires 7.62mm ammo. Can be re-assembled and repaired once you've read the schematic.",,
+gunscopedsuppressedAK47,items,Gun,KgNone,Suppressed and Scoped AK-47,,
+gunscopedsuppressedAK47Desc,items,Gun,KgNone,An AK-47 with integrated suppressor and long-range scope that fires 7.62mm ammo. Can be re-assembled and repaired once you've gained the perk Silent But Deadly IV.,,
 gunPoopCannon,items,Gun,KgNone,Poop Cannon,,
 gunPoopCannonDesc,items,Gun,KgNone,A short-ranged mortar-style weapon that fires explosive fertilizer rounds.,,
 kukri,items,Item,KgNone,Kukri,,
@@ -4366,17 +4370,24 @@ partscrossbowLimb,items,Item,KgNone,Crossbow Limb,,
 partscrossbowDeck,items,Item,KgNone,Crossbow Deck,,
 partscrossbowScope,items,Item,KgNone,Crossbow Scope,,
 partsscopedHuntingRifle_parts,items,Part,KgNone,Scoped Hunting Rifle Parts,,
-partsscopedHuntingRifle_partsDesc,items,Part,KgNone,Hunting Rifle parts with integrated scope. Assemble with other parts to create a complete scoped hunting rifle once you've read the schematic.,,
+partsscopedHuntingRifle_partsDesc,items,Part,KgNone,Hunting Rifle parts with integrated scope. Can be crafted once you've read the schematic and assembled with other hunting rifle parts.,,
 partsrifleScope,items,Part,KgNone,Rifle Scope,,
 partsrifleScopeDesc,items,Part,KgNone,A rifle scope that can be used on its own as a monocular to see distant objects. Assemble with hunting rifle parts to create scoped hunting rifle parts.,,
 partsSuppressor,items,Part,KgNone,Suppressor,,
 partsSuppressorDesc,items,Part,KgNone,A sound suppressor for firearms. Combine with a firearm barrel to create a suppressed version.,,
 partsSuppressionDesc,items,Part,KgNone,A suppressed version of the weapon barrel. Assemble with other parts to create a suppressed firearm.,,
 partssuppressedhuntingRifle_barrel,items,Part,KgNone,Suppressed Hunting Rifle Barrel,,
+partssuppressedhuntingRifle_barrelDesc,items,Part,KgNone,"A hunting rifle barrel with integrated sound suppressor, which degrades faster than a regular barrel as the suppressor wears out.",,
 partssuppressedsniper_barrel,items,Part,KgNone,Suppressed Sniper Rifle Barrel,,
+partssuppressedsniper_barrelDesc,items,Part,KgNone,"A sniper rifle barrel with integrated sound suppressor, which degrades faster than a regular barrel as the suppressor wears out.",,
 partssuppressedpistol_barrel,items,Part,KgNone,Suppressed Pistol Barrel,,
+partssuppressedpistol_barrelDesc,items,Part,KgNone,"A pistol barrel with integrated sound suppressor, which degrades faster than a regular barrel as the suppressor wears out.",,
 partssuppressedmp5_barrel,items,Part,KgNone,Suppressed MP5 Barrel,,
+partssuppressedmp5_barrelDesc,items,Part,KgNone,"An MP5 barrel with integrated sound suppressor, which degrades faster than a regular barrel as the suppressor wears out.",,
 partssuppressedAK47_barrel,items,Part,KgNone,Suppressed AK-47 Barrel,,
+partssuppressedAK47_barrelDesc,items,Part,KgNone,"An SK-47 barrel with integrated sound suppressor, which degrades faster than a regular barrel as the suppressor wears out.",,
+partsscopedAK47_parts,items,Part,KgNone,Scoped AK-47 Parts,,
+partsscopedAK47_partsDesc,items,Part,KgNone,AK-47 parts with integrated scope. Can be crafted once you've read the schematic and assembled with other AK-47 parts.,,
 PoopCannonPartsGroupDesc,items,Part,KgNone,A part of the Poop Cannon. Assemble with other parts to create a complete Poop Cannon once you've read the schematic.,,
 partsPoopCannonBarrel,items,Part,KgNone,Poop Cannon Barrel,,
 partsPoopCannonStock,items,Part,KgNone,Poop Cannon Stock,,
@@ -4422,6 +4433,8 @@ clothHatLight,items,Clothes,KgNone,Cloth Hood with Light,,
 clothHatLightDesc,items,Clothes,KgNone,A cloth hood with a homemade flashlight attached to it with duct tape.,,
 cowboyHatLight,items,Clothes,KgNone,Cowboy Hat with Light,,
 cowboyHatLightDesc,items,Clothes,KgNone,A Cowboy hat with a homemade flashlight attached to it with duct tape.,,
+blackCowboyHatLight,items,Clothes,KgNone,Black Cowboy Hat with Light,,
+blackCowboyHatLightDescDesc,items,Clothes,KgNone,A black cowboy hat with a homemade flashlight attached to it with duct tape.,,
 footballHelmetLight,items,Clothes,KgNone,Football Helmet with Light,,
 footballHelmetLightDesc,items,Clothes,KgNone,A Football Helmet with a homemade flashlight attached to it with duct tape.,,
 ironHelmetLight,items,Clothes,KgNone,Iron Helmet with Light,,

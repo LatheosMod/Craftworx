@@ -520,10 +520,23 @@ Mesh files no longer used:
 		<property name="Buff" value="shotgunWound" />
 		<property name="Buff_chance" value=".8" />
 	</property>
-	<property class="Action1"> <!-- UseAction -->
+	<!-- <property class="Action1"> 
 		<property name="Class" value="Zoom" />
 		<property name="Zoom_max_out" value="40" />
 		<property name="Zoom_max_in" value="40" />
+	</property> -->
+	<property class="Action1"> <!-- AttackAction Melee -->
+		<property name="Class" value="Melee" />
+		<property name="Delay" value="1.33" />
+		<property name="Range" value="2.2" />
+		<property name="Sphere" value="0.2" />
+		<property name="Sound_start" value="swoosh" />
+		<property name="Stamina_usage" value="6" />
+		<property name="Buff" value="stunned" />
+		<property name="Buff_chance" value=".8" />
+		<property name="DamageBonus.head" value="4" />
+		<property name="DamageBonus.glass" value="25" /> 
+		<property name="ActionExp" value="2" />
 	</property>
 	<property name="LightSource" value="lightSource" /> <!-- Start: Needed for the attachment flashlight -->
 	<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
@@ -574,10 +587,23 @@ Mesh files no longer used:
 		<property name="Buff" value="shotgunWound" />
 		<property name="Buff_chance" value=".8" />
 	</property>
-	<property class="Action1"> <!-- UseAction -->
+	<!-- <property class="Action1"> 
 		<property name="Class" value="Zoom" />
 		<property name="Zoom_max_out" value="40" />
 		<property name="Zoom_max_in" value="40" />
+	</property> -->
+	<property class="Action1"> <!-- AttackAction Melee -->
+		<property name="Class" value="Melee" />
+		<property name="Delay" value="1.33" />
+		<property name="Range" value="2.2" />
+		<property name="Sphere" value="0.2" />
+		<property name="Sound_start" value="swoosh" />
+		<property name="Stamina_usage" value="6" />
+		<property name="Buff" value="stunned" />
+		<property name="Buff_chance" value=".8" />
+		<property name="DamageBonus.head" value="4" />
+		<property name="DamageBonus.glass" value="25" /> 
+		<property name="ActionExp" value="2" />
 	</property>
 	<property name="LightSource" value="lightSource" /> <!-- Start: Needed for the attachment flashlight -->
 	<property name="ActivateObject" value="Attachments/flashlight/lightSource" />
@@ -775,7 +801,7 @@ Mesh files no longer used:
 		<property name="Class" value="Ranged" />
 		<property name="Delay" value="0.5" />
 		<property name="Crosshair_min_distance" value="30" />
-		<property name="Crosshair_max_distance" value="100" />
+		<property name="Crosshair_max_distance" value="200" />
 		<property name="Magazine_size" value="5" />
 		<property name="Magazine_items" value="762mmBullet" />
 		<property name="Magazine_item_ray_counts" value="1" />
@@ -886,10 +912,23 @@ Mesh files no longer used:
 		<property name="Buff" value="shotgunWound" />
 		<property name="Buff_chance" value=".8" />
 	</property>
-	<property class="Action1"> <!-- UseAction -->
+	<!-- <property class="Action1"> 
 		<property name="Class" value="Zoom" />
 		<property name="Zoom_max_out" value="40" />
 		<property name="Zoom_max_in" value="40" />
+	</property> -->
+	<property class="Action1"> <!-- AttackAction Melee -->
+		<property name="Class" value="Melee" />
+		<property name="Delay" value="1.33" />
+		<property name="Range" value="2.2" />
+		<property name="Sphere" value="0.2" />
+		<property name="Sound_start" value="swoosh" />
+		<property name="Stamina_usage" value="6" />
+		<property name="Buff" value="stunned" />
+		<property name="Buff_chance" value=".8" />
+		<property name="DamageBonus.head" value="4" />
+		<property name="DamageBonus.glass" value="25" /> 
+		<property name="ActionExp" value="2" />
 	</property>
 	<property name="Group" value="Ammo/Weapons" />
 	<property class="Attributes">
@@ -6864,7 +6903,7 @@ which does not exist, yet. -->
 	<property name="EconomicValue" value="500" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="crossbow,ironCrossbow" />
-		<property name="Skills_to_gain" value="Weapon Smithing" />
+		<property name="Skills_to_gain" value="Fletching" />
 	</property>
 </item>
 
@@ -6914,7 +6953,7 @@ which does not exist, yet. -->
 	<property name="Extends" value="schematicMaster" />
 	<property name="EconomicValue" value="500" />
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunAK47" />
+		<property name="Recipes_to_learn" value="gunAK47,gunscopedAK47,partsscopedAK47_parts" />
 		<property name="Skills_to_gain" value="Gun Smithing" />
 	</property>
 </item>
@@ -6922,7 +6961,7 @@ which does not exist, yet. -->
 <item id="931" name="huntingRifleSchematic">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunHuntingRifle,gunscopedHuntingRifle" />
+		<property name="Recipes_to_learn" value="gunHuntingRifle,gunscopedHuntingRifle,partsscopedHuntingRifle_parts" />
 		<property name="Skills_to_gain" value="Gun Smithing" />
 	</property>
 </item>
@@ -6940,7 +6979,7 @@ which does not exist, yet. -->
 	<property name="Extends" value="schematicMaster" />
 	<property name="EconomicValue" value="500" />
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunRocketLauncher,rocket,rocketCasing,rocketTip,gunPoopCannon,fertilizerRound,partsPoopCannonBarrel,partsPoopCannonStock,partsPoopCannonReceiver,partsPoopCannonParts" />
+		<property name="Recipes_to_learn" value="gunRocketLauncher,rocket,rocketCasing,rocketTip" />
 		<property name="Skills_to_gain" value="Gun Smithing" />
 	</property>
 </item>
@@ -6958,7 +6997,7 @@ which does not exist, yet. -->
 	<property name="EconomicValue" value="500" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="flamingArrow" />
-		<property name="Skills_to_gain" value="Weapon Smithing" />
+		<property name="Skills_to_gain" value="Fletching" />
 	</property>
 </item>
 
@@ -6967,7 +7006,7 @@ which does not exist, yet. -->
 	<property name="EconomicValue" value="500" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="explodingCrossbowBolt" />
-		<property name="Skills_to_gain" value="Weapon Smithing" />
+		<property name="Skills_to_gain" value="Fletching" />
 	</property>
 </item>
 <!--
@@ -8868,7 +8907,7 @@ which does not exist, yet. -->
 		<property name="ActionExpBonusMultiplier" value="3" />
     </property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="3,10" />
+		<property name="EntityDamage" value="5,12" />
         <property name="DegradationRate" value="1,1" />
         <property name="DegradationMax" value="50,650" />
     </property>
@@ -8889,7 +8928,7 @@ which does not exist, yet. -->
 		<property name="ActionExpBonusMultiplier" value="3" />
     </property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="3,10" />
+		<property name="EntityDamage" value="5,12" />
         <property name="DegradationMax" value="50,650" />
     </property>
 	<property name="EconomicValue" value="320" />
@@ -9043,6 +9082,7 @@ which does not exist, yet. -->
     <property class="Action0">
         <property name="Sound_start" value="suppressed_Fire" />
         <property name="Sound_repeat" value="suppressed_Fire" />
+		<property name="Sound_end" value="suppressed_Fire" />
     </property>
 	<property name="DescriptionKey" value="gunsuppressedMP5Desc" />
 </item>
@@ -9055,11 +9095,52 @@ which does not exist, yet. -->
     <property class="Action0">
         <property name="Sound_start" value="suppressed_Fire" />
         <property name="Sound_repeat" value="suppressed_Fire" />
+		<property name="Sound_end" value="suppressed_Fire" />
     </property>
 	<property name="DescriptionKey" value="gunsuppressedAK47Desc" />
+</item>
+
+<item id="2011" name="gunscopedAK47">
+	<property name="Extends" value="gunAK47"/>
+    <property class="Parts">
+		<property name="Pump" value="partsscopedAK47_parts" />
+    </property>
+	<property class="Action0">
+		<property name="Crosshair_min_distance" value="25" />
+		<property name="Crosshair_max_distance" value="200" />
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Zoom" />
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+		<property name="Zoom_max_out" value="40" />
+		<property name="Zoom_max_in" value="15" />
+	</property>
+	<property name="DescriptionKey" value="gunscopedAK47Desc" />
 </item>	
 
-<item id="2011" name="kukri">
+<item id="2012" name="gunscopedsuppressedAK47">
+	<property name="Extends" value="gunAK47"/>
+    <property class="Parts">
+		<property name="Pump" value="partsscopedAK47_parts" />
+        <property name="Barrel" value="partssuppressedAK47_barrel" />
+    </property>
+    <property class="Action0">
+		<property name="Crosshair_min_distance" value="25" />
+		<property name="Crosshair_max_distance" value="200" />
+        <property name="Sound_start" value="suppressed_Fire" />
+        <property name="Sound_repeat" value="suppressed_Fire" />
+		<property name="Sound_end" value="suppressed_Fire" />
+    </property>
+	<property class="Action1">
+		<property name="Class" value="Zoom" />
+		<property name="Zoom_overlay" value="Items/Weapons/HUD/sniper_zoom_overlay" />
+		<property name="Zoom_max_out" value="40" />
+		<property name="Zoom_max_in" value="15" />
+	</property>
+	<property name="DescriptionKey" value="gunscopedsuppressedAK47Desc" />
+</item>	
+
+<item id="2013" name="kukri">
 	<property name="Extends" value="machete" />
 	<property name="CustomIconTint" value="006699" />
 	<property name="RepairTools" value="carbonSteel" />
@@ -9076,7 +9157,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
-<item id="2012" name="gunPoopCannon">
+<item id="2014" name="gunPoopCannon">
 	<property name="Extends" value="gunRocketLauncher"/>
     <property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab" />
 	<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab"/>
@@ -9103,7 +9184,7 @@ which does not exist, yet. -->
 	<property name="ActionSkillGroup" value="Heavy Weapons"/>
 </item>
 
-<item id="2013" name="flamingclubIron">
+<item id="2015" name="flamingclubIron">
 	<property name="Extends" value="clubMaster" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_RefinedPrefab"/>
 	<property name="SellableToTrader" value="true" />
@@ -9129,7 +9210,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
-<item id="2014" name="flamingfireaxeIron">
+<item id="2016" name="flamingfireaxeIron">
 	<property name="Extends" value="fireaxeIron" />
 	<property name="FuelValue" value="50" />
 	<property class="Action0">
@@ -9152,7 +9233,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
-<item id="2015" name="gunflamethrower">
+<item id="2017" name="gunflamethrower">
     <property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab" />
 	<property name="HandMeshfile" value="Items/Tools/torchPrefab"/>
 	<property name="DropMeshfile" value="Items/Tools/torchPrefab"/>	
@@ -9212,7 +9293,7 @@ which does not exist, yet. -->
 <!-- End Weapons -->
 
 <!-- Tools -->
-<item id="2016" name="SeagraveFireaxe">
+<item id="2018" name="SeagraveFireaxe">
 	<property name="Extends" value="fireaxeSteel"/>
 	<property name="SoundDestroy" value="metaldestroy1" />
 	<property class="Action0">
@@ -9227,7 +9308,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="SeagraveFireaxeDesc"/>
 </item>
 
-<item id="2017" name="homemadeFlashlight">
+<item id="2019" name="homemadeFlashlight">
 	<property name="Class" value="ItemClassToggle" />
     <property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab" />
 	<property name="HandMeshfile" value="Items/Tools/flashlight02Prefab"/>
@@ -9268,7 +9349,7 @@ which does not exist, yet. -->
 <!-- End Tools -->
 
 <!-- Parts -->
-<item id="2018" name="partscrossbowStock">
+<item id="2020" name="partscrossbowStock">
 	<property name="Extends" value="partsMaster" />
 	<property name="PartType" value="Stock"/>
     <property name="Material" value="wood" />
@@ -9283,7 +9364,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 	
-<item id="2019" name="partscrossbowLimb">
+<item id="2021" name="partscrossbowLimb">
 	<property name="Extends" value="partsMaster" />
 	<property name="PartType" value="Receiver"/>
     <property name="Degradation" value="100" param1="true" />
@@ -9297,7 +9378,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 	
-<item id="2020" name="partscrossbowDeck">
+<item id="2022" name="partscrossbowDeck">
 	<property name="Extends" value="partsMaster" />
 	<property name="PartType" value="Barrel"/>
     <property name="Degradation" value="100" param1="true" />
@@ -9312,7 +9393,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 	
-<item id="2021" name="partscrossbowScope">
+<item id="2023" name="partscrossbowScope">
 	<property name="Extends" value="partsMaster" />
 	<property name="PartType" value="Pump"/>
     <property name="Degradation" value="100" param1="true" />
@@ -9326,7 +9407,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
-<item id="2022" name="partsscopedHuntingRifle_parts">
+<item id="2024" name="partsscopedHuntingRifle_parts">
 	<property name="Extends" value="partsMaster" />
 	<property name="PartType" value="Pump" />
 	<property name="Weight" value="15" />
@@ -9339,7 +9420,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
  
-<item id="2023" name="partsrifleScope">
+<item id="2025" name="partsrifleScope">
 	<property name="Meshfile" value="Items/Tools/flashlight02Prefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="metal" />
@@ -9364,7 +9445,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
-<item id="2024" name="partsSuppressor">
+<item id="2026" name="partsSuppressor">
 	<property name="Meshfile" value="Items/Food/can_empty" />
 	<property name="Material" value="Mmetal_thin" />
 	<property name="HoldType" value="14" />
@@ -9375,7 +9456,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
-<item id="2025" name="partssuppressedhuntingRifle_barrel">
+<item id="2027" name="partssuppressedhuntingRifle_barrel">
 	<property name="Extends" value="partsMaster" />
 	<property name="PartType" value="Barrel" />
 	<property name="Weight" value="35" />
@@ -9386,11 +9467,11 @@ which does not exist, yet. -->
 		<property name="DegradationMax" value="1500,5000" />
     </property>
 	<property name="EconomicValue" value="525" />
-	<property name="DescriptionKey" value="partsSuppressionDesc"/>
+	<property name="DescriptionKey" value="partssuppressedhuntingRifle_barrelDesc"/>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
-<item id="2026" name="partssuppressedsniper_barrel">
+<item id="2028" name="partssuppressedsniper_barrel">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Barrel" />
     <property name="Weight" value="40" />
@@ -9401,11 +9482,11 @@ which does not exist, yet. -->
 		<property name="DegradationMax" value="1700,7000" />
     </property>
 	<property name="EconomicValue" value="975" />
-	<property name="DescriptionKey" value="partsSuppressionDesc"/>
+	<property name="DescriptionKey" value="partssuppressedsniper_barrelDesc"/>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
-<item id="2027" name="partssuppressedpistol_barrel">
+<item id="2029" name="partssuppressedpistol_barrel">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Barrel" />
     <property name="Weight" value="10" />
@@ -9416,11 +9497,11 @@ which does not exist, yet. -->
 		<property name="DegradationMax" value="700,4000" />
     </property>
 	<property name="EconomicValue" value="462" />
-	<property name="DescriptionKey" value="partsSuppressionDesc"/>
+	<property name="DescriptionKey" value="partssuppressedpistol_barrelDesc"/>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
-<item id="2028" name="partssuppressedmp5_barrel">
+<item id="2030" name="partssuppressedmp5_barrel">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Barrel" />
     <property name="Weight" value="25" />
@@ -9431,11 +9512,11 @@ which does not exist, yet. -->
 		<property name="DegradationMax" value="2250,10000" />
     </property>
 	<property name="EconomicValue" value="1225" />
-	<property name="DescriptionKey" value="partsSuppressionDesc"/>
+	<property name="DescriptionKey" value="partssuppressedmp5_barrelDesc"/>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
-<item id="2029" name="partssuppressedAK47_barrel">
+<item id="2031" name="partssuppressedAK47_barrel">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Barrel" />
     <property name="Weight" value="35" />
@@ -9446,11 +9527,24 @@ which does not exist, yet. -->
 		<property name="DegradationMax" value="2250,10000" />
     </property>
 	<property name="EconomicValue" value="1600" />
-	<property name="DescriptionKey" value="partsSuppressionDesc"/>
+	<property name="DescriptionKey" value="partssuppressedAK47_barrelDesc"/>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
-<item id="2030" name="partsPoopCannonBarrel">
+<item id="2032" name="partsscopedAK47_parts">
+	<property name="Extends" value="partsMaster" />
+	<property name="PartType" value="Pump" />
+	<property name="Weight" value="15" />
+	<property class="Attributes">
+		<property name="Accuracy" value=".6,0.01" />
+		<property name="DegradationMax" value="1500,5000" />
+	</property>
+	<property name="EconomicValue" value="225" />
+	<property name="DescriptionKey" value="partsscopedAK47_partsDesc"/>
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
+</item>
+
+<item id="2033" name="partsPoopCannonBarrel">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Barrel" />
     <property name="Weight" value="35" />
@@ -9465,7 +9559,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
-<item id="2031" name="partsPoopCannonStock">
+<item id="2034" name="partsPoopCannonStock">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Stock" />
     <property name="Weight" value="35" />
@@ -9478,7 +9572,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
-<item id="2032" name="partsPoopCannonReceiver">
+<item id="2035" name="partsPoopCannonReceiver">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Receiver" />
     <property name="HoldType" value="45" />
@@ -9492,7 +9586,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>	
 	
-<item id="2033" name="partsPoopCannonParts">
+<item id="2036" name="partsPoopCannonParts">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Pump" />
     <property name="HoldType" value="45" />
@@ -9502,7 +9596,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>		
 
-<item id="2034" name="partshomemadeFlashlightBarrel">
+<item id="2037" name="partshomemadeFlashlightBarrel">
 	<property name="Extends" value="partsMaster" />
 	<property name="PartType" value="Stock" />
 	<property name="HoldType" value="16" />
@@ -9511,7 +9605,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
-<item id="2035" name="partshomemadeFlashlightCap">
+<item id="2038" name="partshomemadeFlashlightCap">
 	<property name="Extends" value="partsMaster" />
 	<property name="PartType" value="Receiver" />
 	<property name="HoldType" value="16" />
@@ -9520,7 +9614,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
-<item id="2036" name="partshomemadeFlashlightBattery">
+<item id="2039" name="partshomemadeFlashlightBattery">
 	<property name="Extends" value="partsMaster" />
 	<property name="PartType" value="Pump" />
 	<property name="HoldType" value="16" />
@@ -9529,7 +9623,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
-<item id="2037" name="partshomemadeFlashlightLamp">
+<item id="2040" name="partshomemadeFlashlightLamp">
 	<property name="Extends" value="partsMaster" />
 	<property name="PartType" value="Barrel" />
 	<property name="Material" value="glass" />
@@ -9540,7 +9634,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
-<item id="2038" name="partsflamethrower_Barrel">
+<item id="2041" name="partsflamethrower_Barrel">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Barrel" />
 	<property name="CustomIcon" value="partsMP5_barrel" />
@@ -9558,7 +9652,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
-<item id="2039" name="partsflamethrower_Fueltank">
+<item id="2042" name="partsflamethrower_Fueltank">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Stock" />
 	<property name="CustomIcon" value="backpack03" />
@@ -9574,7 +9668,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
-<item id="2040" name="partsflamethrower_Hose">
+<item id="2043" name="partsflamethrower_Hose">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Receiver" />
 	<property name="CustomIcon" value="scrapCable" />
@@ -9591,7 +9685,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
-<item id="2041" name="partsflamethrower_Parts">
+<item id="2044" name="partsflamethrower_Parts">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Pump" />
     <property name="CustomIcon" value="partsAuger_parts" />
@@ -9609,7 +9703,7 @@ which does not exist, yet. -->
 <!-- End Parts -->
 
 <!-- Ammunition -->
-<item id="2042" name="poopBolt">
+<item id="2045" name="poopBolt">
 	<property name="Meshfile" value="Items/Crafting/clay" />
     <property name="Material" value="organic" />
     <property name="HoldType" value="40" />
@@ -9638,7 +9732,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
-<item id="2043" name="fertilizerRound">
+<item id="2046" name="fertilizerRound">
 	<property name="Meshfile" value="Items/Crafting/clay" />
     <property name="Material" value="organic" />
     <property name="HoldType" value="40" />
@@ -9670,7 +9764,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
-<item id="2044" name="flamingBolt">
+<item id="2047" name="flamingBolt">
 	<property name="Extends" value="flamingArrow" />
 	<property name="FuelValue" value="8" />
 	<property class="Action1">
@@ -9685,7 +9779,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
-<item id="2045" name="breacherRound">
+<item id="2048" name="breacherRound">
 	<property name="Extends" value="shotgunSlug"/>
 	<property name="Material" value="lead" />
 	<property class="Attributes">
@@ -9700,7 +9794,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
-<item id="2046" name="FMJTip">
+<item id="2049" name="FMJTip">
 	<property name="Extends" value="bulletTip"/>
 	<property name="Material" value="metal" />
 	<property name="EconomicValue" value="50" />
@@ -9710,7 +9804,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
-<item id="2047" name="napalm">
+<item id="2050" name="napalm">
  	<property name="CustomIcon" value="gasCan"/>
 	<property name="CustomIconTint" value="F54500"/>  
 	<property name="Meshfile" value="ParticleEffects/p_onFire" />
@@ -9753,7 +9847,7 @@ which does not exist, yet. -->
 <!-- End Ammunition -->
 
 <!-- Schematics -->
-<item id="2048" name="repeatingCrossbowSchematic">
+<item id="2051" name="repeatingCrossbowSchematic">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="repeatingCrossbow,partscrossbowStock,partscrossbowLimb,partscrossbowDeck,partscrossbowScope" />
@@ -9762,7 +9856,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="repeatingCrossbowSchematicDesc"/>
 </item>  
 
-<item id="2049" name="SeagraveFireaxeSchematic">
+<item id="2052" name="SeagraveFireaxeSchematic">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -9772,7 +9866,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="SeagraveFireaxeSchematicDesc"/>
 </item>
 
-<item id="2050" name="flamingBoltSchematic"> 
+<item id="2053" name="flamingBoltSchematic"> 
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="flamingBolt" />
@@ -9781,7 +9875,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="flamingBoltSchematicDesc" />
 </item>
 
-<item id="2051" name="breacherRoundSchematic"> 
+<item id="2054" name="breacherRoundSchematic"> 
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="breacherRound,FMJTip" />
@@ -9790,7 +9884,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="breacherRoundSchematicDesc" />
 </item>
 
-<item id="2052" name="flamethrowerSchematic"> 
+<item id="2055" name="flamethrowerSchematic"> 
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<property name="Recipes_to_learn" value="gunflamethrower,napalm" />
@@ -9801,7 +9895,7 @@ which does not exist, yet. -->
 <!-- End Schematics -->
 
 <!-- Lighted Helmets -->
-<item id="2053" name="clothHatLight">
+<item id="2056" name="clothHatLight">
 	<property name="Extends" value="clothHat" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -9811,7 +9905,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="clothHatLightDesc"/>
 </item>
 
-<item id="2054" name="cowboyHatLight">
+<item id="2057" name="cowboyHatLight">
 	<property name="Extends" value="cowboyHat" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -9821,7 +9915,24 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="cowboyHatLightDesc"/>
 </item>
 
-<item id="2055" name="footballHelmetLight">
+<item id="2058" name="blackCowboyHatLight">
+	<property name="Extends" value="cowboyHat" />
+	<property name="CustomIcon" value="cowboyHat" />
+	<property name="CustomIconTint" value="87,87,87" />
+	<property name="HoldType" value="7" />
+    <property name="Meshfile" value="Items/Clothing/Head/PrefabCowboyhat" />
+    <property name="Class" value="ItemClassToggle" />
+    <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+    <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+	<property class="UMA">
+		<property name="Overlay0Tint" value="87,87,87" />
+	</property>
+	<property name="EconomicValue" value="420" />
+	<property name="CraftingSkillGroup" value="Leatherworking"/>
+	<property name="DescriptionKey" value="blackCowboyHatLightDesc"/>
+</item>
+
+<item id="2059" name="footballHelmetLight">
 	<property name="Extends" value="footballHelmet" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -9831,7 +9942,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="footballHelmetLightDesc"/>
 </item>
 
-<item id="2056" name="ironHelmetLight">
+<item id="2060" name="ironHelmetLight">
 	<property name="Extends" value="ironHelmet" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -9841,7 +9952,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="ironHelmetLightDesc"/>
 </item>
 
-<item id="2057" name="militaryHelmetLight">
+<item id="2061" name="militaryHelmetLight">
 	<property name="Extends" value="militaryHelmet" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -9851,7 +9962,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="militaryHelmetLightDesc"/>
 </item>
 
-<item id="2058" name="leatherHoodLight">
+<item id="2062" name="leatherHoodLight">
 	<property name="Extends" value="leatherHood" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -9861,7 +9972,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="leatherHoodLightDesc"/>
 </item>
 
-<item id="2059" name="scrapHelmetLight">
+<item id="2063" name="scrapHelmetLight">
 	<property name="Extends" value="scrapHelmet" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -9871,7 +9982,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="scrapHelmetLightDesc"/>
 </item>
 
-<item id="2060" name="swatHelmetLight">
+<item id="2064" name="swatHelmetLight">
 	<property name="Extends" value="swatHelmet" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -9881,7 +9992,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="swatHelmetLightDesc"/>
 </item>
 
-<item id="2061" name="plantFiberHatLight">
+<item id="2065" name="plantFiberHatLight">
 	<property name="Extends" value="plantFiberHat" />
     <property name="CustomIcon" value="cowboyHatLight" />
 	<property name="CustomIconTint" value="227,206,164" />
@@ -9892,7 +10003,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="plantFiberHatLightDesc"/>
 </item>
 
-<item id="2062" name="heavyBanditGasmaskLight"> <!-- banditArmor -->
+<item id="2066" name="heavyBanditGasmaskLight"> <!-- banditArmor -->
 	<property name="Extends" value="heavyBanditGasmask" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -9902,7 +10013,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="heavyBanditGasmaskLightDesc"/>
 </item>
 
-<item id="2063" name="hazmatMaskLight"> <!-- hazMatArmor -->
+<item id="2067" name="hazmatMaskLight"> <!-- hazMatArmor -->
 	<property name="Extends" value="hazmatMask" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -9912,7 +10023,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="hazmatMaskLightDesc"/>
 </item>
 
-<item id="2064" name="animalHideHoodLight"> <!-- hideArmor -->
+<item id="2068" name="animalHideHoodLight"> <!-- hideArmor -->
 	<property name="Extends" value="animalHideHood" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -9924,7 +10035,7 @@ which does not exist, yet. -->
 <!-- End Lighted Helmets -->
 
 <!-- Quests -->
-<item id="2065" name="qc_shittywaytodie">
+<item id="2069" name="qc_shittywaytodie">
 	<property name="Extends" value="challengeQuestMaster" />
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_shittywaytodie" />
@@ -9933,7 +10044,7 @@ which does not exist, yet. -->
 <!-- End Quests -->
 
 <!-- Food -->
-<item id="2066" name="BaggedMeat">
+<item id="2070" name="BaggedMeat">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
     <property name="Material" value="organic" />
     <property name="HoldType" value="7" />
@@ -9957,7 +10068,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </item>
 	
-<item id="2067" name="saltedMeat">
+<item id="2071" name="saltedMeat">
 	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="31" />
@@ -9966,7 +10077,7 @@ which does not exist, yet. -->
 		<property name="Class" value="Eat" />
 		<property name="Delay" value="2.1" />
 		<property name="Use_time" value="..." />
-		<property name="Gain_food" value="8" />
+		<property name="Gain_food" value="5" />
 		<property name="Gain_water" value="-10" />
 		<property name="Gain_wellness" value="0" />
 		<property name="Sound_start" value="UseActions/player_eating" />
@@ -9979,7 +10090,7 @@ which does not exist, yet. -->
 <!-- End Food -->
 
 <!-- Miscellaneous Items -->
-<item id="2068" name="Sandpaper">  
+<item id="2072" name="Sandpaper">  
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
     <property name="Material" value="cloth" />
@@ -9992,7 +10103,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>           
 
-<item id="2069" name="ZiplockBag">
+<item id="2073" name="ZiplockBag">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="CustomIcon" value="ZiplockBag" />
     <property name="Material" value="Mplastics" />
@@ -10006,7 +10117,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
-<item id="2070" name="dcellBattery">
+<item id="2074" name="dcellBattery">
     <property name="CustomIcon" value="dcellBattery" />
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
@@ -10020,7 +10131,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="dcellBatteryDesc" />
 </item>
 
-<item id="2071" name="carbonSteel">
+<item id="2075" name="carbonSteel">
 	<property name="Meshfile" value="Items/Crafting/ingotIron" />
 	<property name="CustomIconTint" value="006699" />
 	<property name="Material" value="metal" />
@@ -10036,7 +10147,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
-<item id="2072" name="refinedCoal">
+<item id="2076" name="refinedCoal">
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="coal" />
@@ -10050,6 +10161,7 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 <!-- End Miscellaneous Items -->
+
 
 <!-- End Craftworx -->
 

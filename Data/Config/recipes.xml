@@ -2544,6 +2544,22 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="partsAK47_parts" count="1"/>
 </recipe>
 
+<recipe name="gunscopedAK47" count="1" scrapable="True" craft_area="assembly">
+    <ingredient name="flashlight02" count="0"/>
+    <ingredient name="partsAK47_stock" count="1"/>
+	<ingredient name="partsAK47_receiver" count="1"/>
+    <ingredient name="partsAK47_barrel" count="1"/>
+    <ingredient name="partsscopedAK47_parts" count="1"/>
+</recipe>
+
+<recipe name="gunscopedsuppressedAK47" count="1" scrapable="True" craft_area="assembly">
+    <ingredient name="flashlight02" count="0"/>
+    <ingredient name="partsAK47_stock" count="1"/>
+	<ingredient name="partsAK47_receiver" count="1"/>
+    <ingredient name="partssuppressedAK47_barrel" count="1"/>
+    <ingredient name="partsscopedAK47_parts" count="1"/>
+</recipe>
+
 <recipe name="kukri" count="1" scrapable="true">
 	<ingredient name="carbonSteel" count="8" />
 	<ingredient name="wood" count="5" />
@@ -2665,6 +2681,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="partsSuppressor" count="1" />
 </recipe>
 
+<recipe name="partsscopedAK47_parts" count="1" scrapable="True" >
+	<ingredient name="partsrifleScope" count="1" />
+	<ingredient name="partsAK47_parts" count="1" />
+</recipe>
+
 <recipe name="partsPoopCannonBarrel" count="1" scrapable="False" >
     <ingredient name="forgedIron" count="2"/>
 	<ingredient name="shortMetalPipe" count="8"/>
@@ -2781,6 +2802,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="ductTape" count="1" />
 	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="cowboyHat" count="1" />
+</recipe>
+
+<recipe name="blackCowboyHatLight" count="1" scrapable="False" >
+    <ingredient name="ductTape" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
+    <ingredient name="blackCowboyHat" count="1" />
 </recipe>
 	
 <recipe name="footballHelmetLight" count="1" scrapable="False" >

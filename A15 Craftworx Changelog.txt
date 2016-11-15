@@ -39,3 +39,23 @@ Removed poop cannon bits from rocket launcher schematic
 Removed PivotOnFloor property from metal garage doors to allow placing them on the floor as hatches to underground bases
 Added  <property name="ActivationDistance" value="20" /> to elevator to allow calling the elevator up from ground level
 Added traders.xml with additional content from the mod in the trader inventory lists
+
+----->14 Nov 2016<-----
+Craftworx 1.3
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Fixed incorrect recipe for Silent But Deadly II in progression.xml
+Changed action0 for shotgun types (sawn-off, regular, and blunderbuss) to use melee attack instead of zoom
+Added 80% chance of stunning for secondary melee attack on shotgun-type weapons; added secondary attack info to localization
+Reduced food gain on salted meat from 8 to 5
+Changed skill levels on Masamune, Jr. from 1 to 2; Moved Machete from advanced tooling to Masamune, Jr. level 1, and kukri/carbon steel to level 2
+Lowered trader reset timer from 3 to 2
+Added partsscopedHuntingRifle_parts to hunting rifle schematic
+Added scoped and scoped suppressed AK-47; added scopedAK47 and partsscopedAK47_parts to AK-47 schematic, scoped suppressed AK47 to Silent But Deadly IV
+Replaced description text for suppressed weapon barrels for more clarity
+Added blackCowboyHatLight to lighted helmets
+Added icons for scoped ak47, scoped suppressed AK47, and scoped ak47 parts
+Raised player level to 300 to allow for purchasing new skills
+Raised entitydamage on iron bow and iron crossbow from 3,10 to 5,12
+Added more Craftworx items to trader loot
+Changed skill requirement for machete on Masamune, Jr from weapon smithing 50 to weapon smithing 30
+Removed reference to bow making from weapon smithing localization

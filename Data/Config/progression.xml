@@ -2,7 +2,7 @@
 
 <progression>
 <player 
-	max_level="200" 
+	max_level="300" 
 	exp_to_level="8000" 
 	experience_multiplier="1.00905" 
 	skill_points_per_level="5" 
@@ -312,7 +312,6 @@
 		<recipe name="workbench" unlock_level="1"/>
 		<recipe name="forge" unlock_level="1"/>
 		<recipe name="calipers" unlock_level="1"/>
-		<recipe name="machete" unlock_level="1"/>
 	</perk>
 	<!-- End Craftworx Item Usage -->
 	
@@ -582,11 +581,13 @@
 	</crafting_skill>
 
 	<!-- Craftworx Crafting Skill -->
-	<perk name="Masamune, Jr." icon="weapon_smithing" description_key="MasamuneJrDesc" title_key="MasamuneJr" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" >
-		<requirement skill_level="1" required_skill_name="Steel Smithing" required_skill_level="2"/>
-		<requirement skill_level="1" required_skill_name="Science" required_skill_level="15"/>
-		<recipe name="kukri" unlock_level="1"/>
-		<recipe name="carbonSteel" unlock_level="1"/>
+	<perk name="Masamune, Jr." icon="weapon_smithing" description_key="MasamuneJrDesc" title_key="MasamuneJr" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" >
+		<requirement skill_level="1" required_skill_name="Weapon Smithing" required_skill_level="30"/>
+		<recipe name="machete" unlock_level="1"/>
+		<requirement skill_level="2" required_skill_name="Steel Smithing" required_skill_level="2"/>
+		<requirement skill_level="2" required_skill_name="Science" required_skill_level="15"/>
+		<recipe name="kukri" unlock_level="2"/>
+		<recipe name="carbonSteel" unlock_level="2"/>
 	</perk>
 	
 	<crafting_skill name="Fletching" icon="archery" description_key="fletchingDesc" title_key="fletching" group="weapons">
@@ -812,7 +813,7 @@
 	<perk name="Silent But Deadly II" icon="gunsmithing" description_key="silentButDeadly2Desc" title_key="Silent But Deadly II" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
 		<requirement skill_level="1" required_skill_name="Gun Smithing" required_skill_level="20"/>
 		<recipe name="partsSuppressor" unlock_level="1"/>
-		<recipe name="partssuppressedhuntingRifleBarrel" unlock_level="1"/>
+		<recipe name="partssuppressedhuntingRifle_barrel" unlock_level="1"/>
 		<recipe name="gunsuppressedHuntingRifle" unlock_level="1"/>
 		<recipe name="gunQscopedHuntingRifle" unlock_level="1"/>
 	</perk>
@@ -827,8 +828,9 @@
 	<perk name="Silent But Deadly IV" icon="gunsmithing" description_key="silentButDeadly4Desc" title_key="Silent But Deadly IV" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
 		<requirement skill_level="1" required_skill_name="Gun Smithing" required_skill_level="40"/>
 		<recipe name="partsSuppressor" unlock_level="1"/>
-		<recipe name="partssuppressedAK47Barrel" unlock_level="1"/>
+		<recipe name="partssuppressedAK47_barrel" unlock_level="1"/>
 		<recipe name="gunsuppressedAK47" unlock_level="1"/>
+		<recipe name="gunscopedsuppressedAK47" unlock_level="1"/>
 	</perk>
 
 	<perk name="Silent But Deadly V" icon="gunsmithing" description_key="silentButDeadly5Desc" title_key="Silent But Deadly V" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">

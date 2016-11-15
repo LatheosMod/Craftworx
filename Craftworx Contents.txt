@@ -6,6 +6,8 @@ New Weapons and Tools
 	Suppressed Pistol
 	Suppressed SMG
 	Suppressed AK47
+	Scoped AK47
+	Suppressed Scoped AK47
 	Suppressed Sniper Rifle
 	Repeating Crossbow (Assembled from crossbowStock, crossbowDeck, crossbowLimb, crossbowScope)
 	Iron Crossbow
@@ -29,6 +31,7 @@ New Parts
 	Suppressed Hunting Rifle Barrel
 	Suppressed SMG Barrel
 	Suppressed AK47 Barrel
+	Scoped AK47 Parts
 	Suppressed Sniper Rifle Barrel
 	Poop Cannon Parts
 	Flamethrower Parts
@@ -49,7 +52,7 @@ New Items
 	Breacher Rounds (shotgun shells designed to damage doors and safes)
 
 New Armor
-	Helmet lights (uses the homemade flashlight) for cloth hat, cowboy hat, football helmet, iron helmet, military helmet, leather hood, scrap helmet. swat helmet, hazmat mask, heavy bandit gasmask
+	Helmet lights (uses the homemade flashlight) for cloth hat, cowboy hat, bllack cowboy hat, football helmet, iron helmet, military helmet, leather hood, scrap helmet. swat helmet, hazmat mask, heavy bandit gasmask
 	Craftable cotton and leather clothing with new perks
 	
 New Blocks

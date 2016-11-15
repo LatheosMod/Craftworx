@@ -137,6 +137,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="cowboyHat"/>
 			<item name="blackCowboyHat"/>
 			<item name="cowboyHatLight"/>
+			<item name="blackCowboyHatLight"/>
 		</trader_item_group>
 
 		<trader_item_group name="hazmatGear" count="1,2">
@@ -145,12 +146,14 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="hazmatShirt"/>
 			<item name="hazmatGloves"/>
 			<item name="hazmatMask"/>
+			<item name="hazmatMaskLight"/>
 			<item name="militaryFiber" count="1,6" prob="2"/>
 		</trader_item_group>
 
 		<trader_item_group name="banditArmor">
 			<item name="heavyBanditGloves"/>
 			<item name="heavyBanditGasmask"/>
+			<item name="heavyBanditGasmaskLight"/>
 			<item name="heavyBanditBoots"/>
 			<item name="heavyBanditLegArmor"/>
 			<item name="heavyBanditChestArmor"/>
@@ -161,7 +164,9 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="skullCapAll"/>
 			<item group="ballCapAll"/>
 			<item name="clothHat"/>
+			<item name="clothHatLight"/>
 			<item name="footballHelmet"/>
+			<item name="footballHelmetLight"/>
 		</trader_item_group>
 
 		<trader_item_group name="clothes">
@@ -183,6 +188,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="shades"/>
 			<item name="aviatorGoggles"/>
 			<item name="footballHelmet"/>
+			<item name="footballHelmetLight"/>
 			<item name="leatherDuster" prob=".2"/>
 			<item name="leatherDusterBlack" prob=".1"/>
 			<item group="hazmatGear" prob=".1"/>
@@ -219,11 +225,13 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="ironChestArmor"/>
 			<item name="ironGloves"/>
 			<item name="swatHelmet"/>
+			<item name="swatHelmetLight"/>
 		</trader_item_group>
 
 		<trader_item_group name="militaryArmor">
 			<item name="militaryGloves"/>
 			<item name="militaryHelmet"/>
+			<item name="militaryHelmetLight"/>
 			<item name="militaryBoots"/>
 			<item name="militaryLegArmor"/>
 			<item name="militaryVest"/>
@@ -269,6 +277,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="partsAK47_stock"/>
 			<item name="partsAK47_receiver"/>
 			<item name="partsAK47_parts"/>
+			<item name="partsscopedAK47_parts"/>
 			<item name="partsSniperRifle_barrel"/>
 			<item name="partsSniperRifle_stock"/>
 			<item name="partsSniperRifle_receiver"/>
@@ -290,10 +299,16 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="clubSpiked" prob="0.5"/>
 			<item name="huntingKnife" prob="0.5"/>
 			<item name="machete" prob="0.2"/>
+			<item name="flamingclubIron" prob="0.4"/>
+			<item name="flamingfireaxeIron
+" prob="0.4"/>
+			<item name="kukri" prob="0.1"/>
 		</trader_item_group>
 
 		<trader_item_group name="crossbow+ammo" count="all">
 			<item name="crossbow" count="1"/>
+			<item name="ironBow" count="1"/>
+			<item name="ironCrossbow" count="1"/>
 			<item name="ironCrossbowBolt" count="10,30"/>
 		</trader_item_group>
 
@@ -407,6 +422,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="gunMP5" prob="0.8"/>
 			<item name="gunSniperRifle" prob="1"/>
 			<item name="gunAK47" prob="0.6"/>
+			<item name="gunscopedAK47" prob="0.6"/>
 			<item name="gunRocketLauncher" prob="0.4"/>
 			<item name="gunflamethrower" prob="0.4"/>
 			<item name="nightvisionGoggles" prob="0.6"/>
@@ -1211,7 +1227,7 @@ workstations
 	<!-- Trader 1, carries better weapons at higher levels. -->
 	<!-- Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
 	<trader_info id="1" min_inventory="40" max_inventory="80" min_items_swapped="20" max_items_swapped="20"
-		reset_interval="3" open_time="6:05" close_time="21:50">
+		reset_interval="2" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
 			<item group="traderAlways"/>
 			<item group="traderGeneral" count="4,8"/>
