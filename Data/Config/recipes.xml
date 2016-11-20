@@ -2611,6 +2611,24 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="partshomemadeFlashlightLamp" count="1" />
     <ingredient name="partshomemadeFlashlightBattery" count="1" />
 </recipe>
+
+<recipe name="scrapAxe" count="1">
+	<ingredient name="scrapIron" count="50"/>
+	<ingredient name="yuccaFibers" count="5"/>
+	<ingredient name="wood" count="2"/>
+</recipe>
+
+<recipe name="scrapPickaxe" count="1">
+	<ingredient name="scrapIron" count="80"/>
+	<ingredient name="yuccaFibers" count="5"/>
+	<ingredient name="wood" count="3"/>
+</recipe>
+
+<recipe name="scrapShovel" count="1">
+	<ingredient name="scrapIron" count="65"/>
+	<ingredient name="yuccaFibers" count="5"/>
+	<ingredient name="wood" count="3"/>
+</recipe>
 <!-- End Tools -->
 
 <!-- Parts -->

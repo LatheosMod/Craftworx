@@ -10162,6 +10162,60 @@ which does not exist, yet. -->
 </item>
 <!-- End Miscellaneous Items -->
 
+<!-- Scrap tools -->
+<item id="2077" name="scrapAxe">
+	<property name="Extends" value="stoneAxe" />
+	<property name="CustomIcon" value="stoneAxe" />
+	<property name="CustomIconTint" value="E66920" />
+	<property name="Material" value="metal" />
+	<property name="RepairTools" value="scrapIron" />
+	<property class="Action0">
+		<property name="DamageBonus.metal" value="1" />
+	</property>
+	<property class="Action1">
+		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,cobblestones,yuccaFibers" />
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="6,12" />
+		<property name="BlockDamage" value="20,32" />
+		<property name="DegradationMax" value="100,300" />
+		<property name="DegradationRate" value="1,1" />
+	</property>
+	<property name="EconomicValue" value="80" />
+	<property name="DescriptionKey" value="scrapAxeDesc"/>
+</item>
+
+<item id="2078" name="scrapPickaxe">
+	<property name="Extends" value="pickaxeIron" />
+	<property name="CustomIcon" value="pickaxeIron" />
+	<property name="CustomIconTint" value="E66920" />
+	<property name="RepairTools" value="scrapIron" />
+	<property class="Attributes">
+		<property name="EntityDamage" value="4,12" />
+		<property name="BlockDamage" value="16,38" />
+		<property name="DegradationMax" value="200,700" />
+		<property name="DegradationRate" value="1,1" />
+	</property>
+	<property name="EconomicValue" value="120" />
+	<property name="DescriptionKey" value="scrapPickaxeDesc"/>
+</item>
+
+<item id="2079" name="scrapShovel">
+	<property name="Extends" value="stoneShovel" />
+	<property name="CustomIcon" value="stoneShovel" />
+	<property name="CustomIconTint" value="E66920" />
+	<property name="Material" value="metal" />
+	<property name="RepairTools" value="scrapIron" />
+	<property class="Attributes">
+		<property name="EntityDamage" value="5,13" />
+		<property name="BlockDamage" value="16.5,35" />
+		<property name="DegradationMax" value="60,300" />
+		<property name="DegradationRate" value="1,1" />
+	</property>
+	<property name="EconomicValue" value="80" />
+	<property name="DescriptionKey" value="scrapShovelDesc"/>
+</item>
+<!-- End Scrap Tools -->
 
 <!-- End Craftworx -->
 

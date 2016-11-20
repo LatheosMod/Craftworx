@@ -59,3 +59,10 @@ Raised entitydamage on iron bow and iron crossbow from 3,10 to 5,12
 Added more Craftworx items to trader loot
 Changed skill requirement for machete on Masamune, Jr from weapon smithing 50 to weapon smithing 30
 Removed reference to bow making from weapon smithing localization
+
+----->20 Nov 2016<-----
+Craftworx 1.31
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Fixed incorrect item type for seagrave fireaxe and homemade flashlight in localization.txt
+Added scrap iron axe, pickaxe, and shovel - tools that do slightly better than stone, but are not as good as forged iron
+Fixed problem with out of array error on looting player-dropped backpacks (looting window size was off by 1 in windows.xml)
