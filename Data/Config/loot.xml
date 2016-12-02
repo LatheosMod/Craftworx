@@ -785,7 +785,7 @@
 	<item name="10mmBullet" count="10,40"/>
 	<item name="762mmBullet" count="5,30"/>
 	<item name="shotgunSlug" count="3,7"/>
-	<!-- <item name="breacherRound" count="3,7"/> -->
+	<item name="breacherRound" count="3,7"/> 
 	<item name="rocket" count="1,4"/>
 </lootgroup>
 

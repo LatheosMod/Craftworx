@@ -568,9 +568,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30" />
 		<property name="Crosshair_max_distance" value="50" />
 		<property name="Magazine_size" value="8" />
-		<property name="Magazine_items" value="shotgunShell, shotgunSlug" />
-		<property name="Magazine_item_ray_counts" value="8, 1" />
-		<property name="Magazine_item_ray_spreads" value="0.75, 0.25" />
+		<property name="Magazine_items" value="shotgunShell, shotgunSlug,breacherRound" />
+		<property name="Magazine_item_ray_counts" value="8, 1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0.75, 0.25, 0.25"/>
 		<property name="Reload_time" value="2.6" />
 		<property name="Bullet_icon" value="uzi" />
 		<property name="Sound_start" value="Weapons/Ranged/PumpShotgun/pump_shotgun_fire" />
@@ -2041,7 +2041,7 @@ which does not exist, yet. -->
 		<property name="Explosion.ParticleIndex" value="0" /> <!-- no expl. -->
 		<property name="Velocity" value="55" />
 		<property name="FlyTime" value="0" />
-		 <property name="Gravity" value="-4" />
+		<property name="Gravity" value="-4" />
 		<property name="LifeTime" value="12" />
 		<property name="Buff" value="arrowCriticalBleedout" />
 		<property name="Buff_chance" value="0.5" />
@@ -9779,27 +9779,26 @@ which does not exist, yet. -->
 	<property name="CraftingSkillGroup" value="Fletching"/>
 </item>
 
-<!--
 <item id="2048" name="breacherRound">
-	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
-	<property name="Material" value="lead" />
-	<property name="HoldType" value="21" />
-	<property name="Stacknumber" value="250" />
-	<property class="Attributes">
-		<property name="GetQualityFromWeapon" value="true" />
-		<property name="EntityDamage" value="50,75" />
-		<property name="BlockDamage" value="125,175" />
-		<property name="DamageBonus.wood" value="20" />
-		<property name="DamageBonus.metal" value="20" />
-	</property>
-	<property name="EconomicValue" value="70" />
-	<property name="Group" value="Ammo/Weapons" />
-	<property name="DescriptionKey" value="breacherRoundDesc"/>
-	<property name="CraftingSkillGroup" value="Gun Smithing"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab" />
+    <property name="Material" value="lead" />
+    <property name="HoldType" value="21" />
+    <property name="Stacknumber" value="250" /> <!-- STK ammo -->
+    <property class="Attributes">
+        <property name="GetQualityFromWeapon" value="true" />
+        <property name="EntityDamage" value="50,75" />
+        <property name="BlockDamage" value="125,175" />
+        <property name="DamageBonus.wood" value="20" />
+        <property name="DamageBonus.metal" value="20" />
+        <property name="DamageBonus.Mmetal_hard" value="25" />
+    </property>
+    <property name="EconomicValue" value="70" />
+    <property name="Group" value="Ammo/Weapons" />
+    <property name="DescriptionKey" value="breacherRoundDesc"/>
+    <property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
--->
 
-<!-- <item id="2049" name="FMJTip">
+<item id="2049" name="FMJTip">
 	<property name="Extends" value="bulletTip"/>
 	<property name="Material" value="metal" />
 	<property name="EconomicValue" value="50" />
@@ -9807,7 +9806,7 @@ which does not exist, yet. -->
 	<property name="Group" value="Resources,Ammo/Weapons" />
 	<property name="DescriptionKey" value="FMJTipDesc" />
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
-</item> -->
+</item> 
 
 <item id="2050" name="napalm">
  	<property name="CustomIcon" value="gasCan"/>

@@ -84,3 +84,8 @@ Added disassembly to elevatorTest to harvest elevator
 Craftworx 1.33
 Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
 Disabled breacher rounds (and FMJ tips), as they are not currently working as expected
+
+----->01 Dec 2016 <-----
+Craftworx 1.34
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Breacher rounds now fixed; damage may need further tweaking
