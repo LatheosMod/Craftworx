@@ -66,3 +66,21 @@ Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, 
 Fixed incorrect item type for seagrave fireaxe and homemade flashlight in localization.txt
 Added scrap iron axe, pickaxe, and shovel - tools that do slightly better than stone, but are not as good as forged iron
 Fixed problem with out of array error on looting player-dropped backpacks (looting window size was off by 1 in windows.xml)
+Changed level number from grey to red
+
+----->21 Nov 2016<-----
+Craftworx 1.32
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Changed player level foreground to red, text to white
+Changed cntOven mechanical parts drop probability from .1 to .3
+Changed cntFridge mechanical parts drop probability from .1 to .2
+Added scrap cable harvest to cntOven. cntWallOven
+Changed cntFridgeTop & cntFridgeBottom scrap cable drop probability from .15 to .2
+Added mechanical parts harvest to cash registers
+Added harvest (disassemble) to cntDumpster for springs, mechanical parts, metal pipes, and forged iron
+Added disassembly to elevatorTest to harvest elevator
+
+----->01 Dec 2016 <-----
+Craftworx 1.33
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Disabled breacher rounds (and FMJ tips), as they are not currently working as expected

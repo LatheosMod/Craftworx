@@ -2475,10 +2475,11 @@ group desc for stuff like metal siding
 	<property name="Mesh" value="models" />
 	<property name="Model" value="Appliances/oven" param1="main_mesh" />
 	<property name="LootList" value="5" />
-	<drop event="Harvest" name="mechanicalParts" count="2" prob=".1" tool_category="Disassemble" />
+	<drop event="Harvest" name="mechanicalParts" count="2" prob=".3" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="4" prob="1" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="2" prob=".35" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapCable" count="1" prob=".15" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="2" prob=".5" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="2" prob=".3" tool_category="Disassemble" />
 	<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble" />
@@ -2868,7 +2869,7 @@ group desc for stuff like metal siding
 		<property name="electricParts" value="8" />
 		<property name="electronicParts" value="2" />
 	</property>
-	<drop event="Harvest" name="mechanicalParts" count="2" prob=".1" tool_category="Disassemble" />
+	<drop event="Harvest" name="mechanicalParts" count="2" prob=".2" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="4" prob="1" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="3" prob=".35" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
@@ -7316,7 +7317,7 @@ kind of free
 	<drop event="Harvest" name="electronicParts" count="1" prob=".2" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="2" prob=".15" tool_category="Disassemble" />
 	<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble" />
-	<drop event="Harvest" name="scrapCable" count="1" prob=".15" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapCable" count="1" prob=".2" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapIron" count="15" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="5" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
@@ -7332,7 +7333,7 @@ kind of free
 	<drop event="Harvest" name="electronicParts" count="1" prob=".2" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="2" prob=".15" tool_category="Disassemble" />
 	<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble" />
-	<drop event="Harvest" name="scrapCable" count="1" prob=".15" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapCable" count="1" prob=".2" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapIron" count="15" tool_category="Disassemble" />
 </block>
 
@@ -8953,6 +8954,7 @@ kind of free
 	<property name="LootList" value="3" />
 	<drop event="Harvest" name="mechanicalParts" count="2" prob=".1" tool_category="Disassemble" />
 	<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapCable" count="2" prob=".1" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="10" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 </block>
@@ -10799,6 +10801,7 @@ kind of free
 	<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="3" prob=".3" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="4" prob=".2" tool_category="Disassemble" />
+	<drop event="Harvest" name="mechanicalParts" count="1" prob=".15" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="1,15" />
 	<drop event="Destroy" name="oldCash" count="1,3" prob=".05" tool_category="Disassemble" />
 </block>
@@ -10816,6 +10819,7 @@ kind of free
 	<drop event="Harvest" name="electricParts" count="1" prob=".35" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="3" prob=".3" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="4" prob=".2" tool_category="Disassemble" />
+	<drop event="Harvest" name="mechanicalParts" count="1" prob=".15" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="1,15" />
 	<drop event="Destroy" name="oldCash" count="1,3" prob=".05" tool_category="Disassemble" />
 	<property name="EconomicValue" value="250" /> <!-- disassemble value -->
@@ -12167,6 +12171,10 @@ kind of free
 	<property name="Model" value="LootContainers/dumpster" param1="main_mesh" />
 	<property name="MultiBlockDim" value="3,2,2" />
 	<property name="LootList" value="68" />
+	<drop event="Harvest" name="mechanicalParts" count="2" prob=".3" tool_category="Disassemble" />
+	<drop event="Harvest" name="spring" count="4" tool_category="Disassemble" />
+	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble" />
+	<drop event="Harvest" name="forgedIron" count="5" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="20" prob="1" />
 </block>
 
@@ -12908,7 +12916,9 @@ kind of free
 	<property name="Mesh-Damage-1" value="Platform" />
 	<property name="OpenSound" value="UseActions/open_door_wood" />
 	<property name="CloseSound" value="UseActions/close_door_wood" />
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
 	<drop event="Destroy" count="0" />
+	<drop event="Destroy" name="elevatorTest" count="1" tool_category="Disassemble" />
 	<property name="ActivationDistance" value="20" />
 	<property name="Group" value="Building" />
 </block>

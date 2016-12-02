@@ -431,7 +431,7 @@
 			</grid>
 		</rect>
 	</window>
-<!-- Backpack Extpansion -->	
+
 	<window name="windowLooting" width="378" height="378" controller="LootWindow" panel="Left" anchor_side="bottomright" visible="false">		
 		<panel name="header" height="43" depth="0" disableautobackground="true">
 			<sprite depth="1" name="headerbackground" sprite="ui_game_panel_header"/>
@@ -449,7 +449,6 @@
 			</grid>
 		</rect>
 	</window>
-<!-- End Backpack Expansion -->	
 	
 	<window name="windowCreative" width="604" height="730" panel="Left" anchor_side="bottomright" controller="CreativeWindow" normal_color="[iconColor]">
 		<panel name="header" height="43" depth="0" disableautobackground="true">

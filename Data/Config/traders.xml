@@ -392,7 +392,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="minibikesForDumbshits"/>
 			<item name="rocketLauncherSchematic"/>
 			<item name="shotgunSlugSchematic"/>
-			<item name="breacherRoundSchematic"/>
+			<!-- <item name="breacherRoundSchematic"/> -->
 			<item name="sledgehammerSchematic"/>
 			<item name="smgSchematics"/>
 			<item name="sniperRifleSchematic"/>
@@ -434,7 +434,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="44MagBullet" count="4,40" prob="0.5"/>
 			<item name="shotgunShell" count="5,40"/>
 			<item name="shotgunSlug" count="2,12" prob="0.1"/>
-			<item name="breacherRound" count="2,12" prob="0.1"/>
+			<!-- <item name="breacherRound" count="2,12" prob="0.1"/> -->
 			<item name="rocket" count="1,4"/>
 			<item name="napalm" count="1,4"/>
 			<item name="ironArrow" count="10,40"/>
@@ -446,7 +446,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 		<trader_item_group name="ammoSupplies">
 			<item name="bulletCasing" count="8,40"/> <!-- 5 -->
 			<item name="bulletTip" count="20,80"/> <!-- 5 -->
-			<item name="FMJTip" count="20,80"/> <!-- 5 -->
+			<!-- <item name="FMJTip" count="20,80"/> --> <!-- 5 -->
 			<item name="buckshot" count="20,60"/> <!-- 5 -->
 			<item name="gunPowder" count="5,30"/> <!-- 10 -->
 			<item name="paper" count="10,30"/> <!-- 10 -->

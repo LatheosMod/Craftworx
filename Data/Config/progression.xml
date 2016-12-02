@@ -791,15 +791,15 @@
 		<recipe name="bulletCasing" unlock_level="1"/>
 	</perk>
 	
-	<perk name="shotgun Ammo Crafting" icon="gunsmithing" description_key="shotgunShellCraftingDesc" title_key="shotgunShellCrafting" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="firearms">
+	<perk name="shotgun Ammo Crafting" icon="gunsmithing" description_key="shotgunShellCraftingDesc" title_key="shotgunShellCrafting" max_level="2" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="25"/>
 		<recipe name="buckshot" unlock_level="1"/>
 		<recipe name="shotgunShell" unlock_level="1"/>
 		<requirement perk_level="2" required_skill_name="Gun Smithing" required_skill_level="45"/>
 		<recipe name="shotgunSlug" unlock_level="2"/>
-		<requirement perk_level="3" required_skill_name="Gun Smithing" required_skill_level="65"/>
+		<!-- <requirement perk_level="3" required_skill_name="Gun Smithing" required_skill_level="65"/>
 		<recipe name="FMJTip" unlock_level="3"/>
-		<recipe name="breacherRound" unlock_level="3"/>
+		<recipe name="breacherRound" unlock_level="3"/> -->
 	</perk>
 	
 	<!-- Craftworx Crafting Skill -->
