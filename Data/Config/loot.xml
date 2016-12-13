@@ -766,9 +766,40 @@
 	-->
 </lootgroup>
 
+<lootgroup name="magazines" count="1">
+	<item name="sportsIll"/>
+	<item name="muscleFit"/>
+	<item name="amRifle"/>
+	<item name="gunsAmmo"/>
+	<item name="scavMan"/>
+	<item name="bbDig"/>
+	<item name="bladeMag"/>
+	<item name="miningMag"/>
+	<item name="woodMag"/>
+	<item name="famHandy"/>
+	<item name="amHandgun"/>
+	<item name="shotSport"/>
+	<item name="specWeapons"/>
+	<item name="archeryMag"/>
+	<item name="mensHealth"/>
+	<item name="womensHealth"/>
+	<item name="huntWorld"/>
+	<item name="primArcher"/>
+	<item name="popMech"/>
+	<item name="sciAm"/>
+	<item name="popSci"/>
+	<item name="sewWorld"/>
+	<item name="leatherJourn"/>
+	<item name="medArmor"/>
+	<item name="ladHJourn"/>
+	<item name="forbesMag"/>
+	<item name="moneyMag"/>
+</lootgroup>
+
 <lootgroup name="books" count="1">
 	<item group="rareBooks" loot_prob_template="rareBookTemplate"/>
 	<item group="commonBooks"/>
+	<item group="magazines"/>
 </lootgroup>
 
 <lootgroup name="militaryguns+ammo">

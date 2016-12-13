@@ -2,9 +2,9 @@
 
 --- About This Mod ---
 
-Craftworx compatible with Alpha 15
+Craftworx compatible with Alpha 15.1
 
-Current version: Craftworx 1.3
+Current version: Craftworx 1.4
 
 This is a complete overhaul of LathMod, which itself was an overhaul mod for 7 Days to Die. Craftworx is aimed more at folks who enjoy crafting, which means that the crafting skills are more defined than vanilla. Harvesting wood now falls under the Carpentry skill, rather than mining, as do crafting most wood objects in the game. Bows, crossbows, arrows and bolts are now crafted in the Fletching skill, rather than Weapon Smithing. There are also perks and skills which add more ammunition, allow crafting of different kinds of clothing, and more.
 

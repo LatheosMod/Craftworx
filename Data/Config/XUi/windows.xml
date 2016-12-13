@@ -431,6 +431,7 @@
 			</grid>
 		</rect>
 	</window>
+	
 
 	<window name="windowLooting" width="378" height="378" controller="LootWindow" panel="Left" anchor_side="bottomright" visible="false">		
 		<panel name="header" height="43" depth="0" disableautobackground="true">

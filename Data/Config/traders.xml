@@ -370,9 +370,36 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="pistolBook"/>
 			<item name="pumpShotgunSchematic"/>
 			<item name="sawedoffPumpShotgunSchematic"/>
-			<item name="wrenchSchematic"/>
 		</trader_item_group>
-
+		<trader_item_group name="magazines" count="1">
+			<item name="sportsIll"/>
+			<item name="muscleFit"/>
+			<item name="amRifle"/>
+			<item name="gunsAmmo"/>
+			<item name="scavMan"/>
+			<item name="bbDig"/>
+			<item name="bladeMag"/>
+			<item name="miningMag"/>
+			<item name="woodMag"/>
+			<item name="famHandy"/>
+			<item name="amHandgun"/>
+			<item name="shotSport"/>
+			<item name="specWeapons"/>
+			<item name="archeryMag"/>
+			<item name="mensHealth"/>
+			<item name="womensHealth"/>
+			<item name="huntWorld"/>
+			<item name="primArcher"/>
+			<item name="popMech"/>
+			<item name="sciAm"/>
+			<item name="popSci"/>
+			<item name="sewWorld"/>
+			<item name="leatherJourn"/>
+			<item name="medArmor"/>
+			<item name="ladHJourn"/>
+			<item name="forbesMag"/>
+			<item name="moneyMag"/>
+		</trader_item_group>
 		<trader_item_group name="rareBooks" count="1">
 			<item name="ak47Schematic"/>
 			<item name="augerSchematic"/>
@@ -392,7 +419,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="minibikesForDumbshits"/>
 			<item name="rocketLauncherSchematic"/>
 			<item name="shotgunSlugSchematic"/>
-			<!-- <item name="breacherRoundSchematic"/> -->
 			<item name="sledgehammerSchematic"/>
 			<item name="smgSchematics"/>
 			<item name="sniperRifleSchematic"/>
@@ -406,6 +432,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="questChallenge" prob="0.2"/>
 			<item group="rareBooks" prob="0.3"/>
 			<item group="commonBooks"/>
+			<item group="magazines"/>
 		</trader_item_group>
 
 		<trader_item_group name="gunsCommon">
@@ -787,7 +814,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="cigar"/>
 			<item name="cigarette"/>
 			<item name="clawHammer"/>
-			<item name="clawHammerSchematic"/>
 			<item name="clayLump"/>
 			<item name="clayRoofBlock"/>
 			<item name="cloth"/>
@@ -1169,7 +1195,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="workbench"/>
 			<item name="wornBoots"/>
 			<item name="wrench"/>
-			<item name="wrenchSchematic"/>
 			<item name="wroughtIronFenceSheet"/>
 			<item name="yuccaFibers"/>
 			<item name="footballHelmetZU"/>

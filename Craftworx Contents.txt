@@ -50,6 +50,7 @@ New Items
 	D Cell Battery
 	Fuel Log (crafted in the workbench, it burns for 9 minutes)
 	Breacher Rounds (shotgun shells designed to damage doors and safes)
+	Magazines for nearly all skills - read to increase skill level
 
 New Armor
 	Helmet lights (uses the homemade flashlight) for cloth hat, cowboy hat, bllack cowboy hat, football helmet, iron helmet, military helmet, leather hood, scrap helmet. swat helmet, hazmat mask, heavy bandit gasmask

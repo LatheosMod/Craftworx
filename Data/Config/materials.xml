@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8"?> 
 <!-- 
 Materials definitions 
  
@@ -232,6 +232,21 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="Mass" type="int" value="6" />
 	<property name="StabilitySupport" value="true" />
 	<property name="MaxDamage" value="100" />
+</material>
+
+<material id="Mcorn">
+	<property name="damage_category" value="earth" />
+	<property name="surface_category" value="plant" />
+	<property name="particle_category" value="xt_tallgrass" />
+	<property name="particle_destroy_category" value="xt_tallgrass" />
+	<property name="Hardness" type="float" value="1" />
+	<property name="stepsound" value="grass" />
+	<property name="lightopacity" value="0" />
+	<property name="plant" value="true" />
+	<property name="stability_glue" value="1" />
+	<property name="Mass" type="int" value="1" />
+	<property name="StabilitySupport" value="false" />
+	<property name="MaxDamage" value="1" />
 </material>
 
 <material id="Mtallgrass">
@@ -719,7 +734,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 
 <!-- snow needs to have 1+ fertile_level or the decorator will not spawn any plants in the snow biome -->
 <material id="snow">
-    <property name="damage_category" value="snow" />
+	<property name="damage_category" value="snow" />
 	<property name="surface_category" value="earth" />
 	<property name="particle_category" value="snow" />
 	<property name="particle_destroy_category" value="snow" />

@@ -568,7 +568,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30" />
 		<property name="Crosshair_max_distance" value="50" />
 		<property name="Magazine_size" value="8" />
-		<property name="Magazine_items" value="shotgunShell, shotgunSlug,breacherRound" />
+		<property name="Magazine_items" value="shotgunShell, shotgunSlug, breacherRound" />
 		<property name="Magazine_item_ray_counts" value="8, 1, 1"/>
 		<property name="Magazine_item_ray_spreads" value="0.75, 0.25, 0.25"/>
 		<property name="Reload_time" value="2.6" />
@@ -2041,7 +2041,7 @@ which does not exist, yet. -->
 		<property name="Explosion.ParticleIndex" value="0" /> <!-- no expl. -->
 		<property name="Velocity" value="55" />
 		<property name="FlyTime" value="0" />
-		<property name="Gravity" value="-4" />
+		 <property name="Gravity" value="-4" />
 		<property name="LifeTime" value="12" />
 		<property name="Buff" value="arrowCriticalBleedout" />
 		<property name="Buff_chance" value="0.5" />
@@ -2148,8 +2148,9 @@ which does not exist, yet. -->
 		<property name="Class" value="Projectile" />
 		<property name="Explosion.ParticleIndex" value="0" />
 		<!-- no expl. -->
-		<property name="Velocity" value="75" />
-		<property name="FlyTime" value="0.15" />
+		<property name="Velocity" value="55" />
+		<property name="FlyTime" value="0" />
+		<property name="Gravity" value="-6" />
 		<property name="LifeTime" value="12" />
 		<property name="DamageBonus.head" value="5" />
 		<property name="DamageBonus.glass" value="25" />
@@ -2217,8 +2218,9 @@ which does not exist, yet. -->
 		<property name="Buff_chance" value="0.5" />
 		<property name="Explosion.ParticleIndex" value="0" /> <!-- no expl. -->
 		<property name="Velocity" value="80" />
-		<property name="FlyTime" value=".25" />
-		<property name="LifeTime" value="17" />
+		<property name="FlyTime" value="0" />
+		<property name="Gravity" value="-4" />
+		<property name="LifeTime" value="12" />
 		<property name="DamageBonus.head" value="5" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
@@ -2251,8 +2253,9 @@ which does not exist, yet. -->
 		<property name="Buff_chance" value="0.5" />
 		<property name="Explosion.ParticleIndex" value="0" />
 		<property name="Velocity" value="85" />
-		<property name="FlyTime" value=".25" />
-		<property name="LifeTime" value="17" />
+		<property name="FlyTime" value="0" />
+		<property name="Gravity" value="-4" />
+		<property name="LifeTime" value="12" />
 		<property name="DamageBonus.head" value="5" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
@@ -2285,8 +2288,9 @@ which does not exist, yet. -->
 		<property name="Explosion.ParticleIndex" value="0" />
 		<!-- no expl. -->
 		<property name="Velocity" value="65" />
-		<property name="FlyTime" value=".25" />
-		<property name="LifeTime" value="17" />
+		<property name="FlyTime" value="0" />
+		<property name="Gravity" value="-6" />
+		<property name="LifeTime" value="12" />
 		<property name="DamageBonus.head" value="5" />
 		<property name="DamageBonus.glass" value="25" />
 		<property name="DamageBonus.wood" value="0.1" />
@@ -2451,7 +2455,7 @@ which does not exist, yet. -->
 	<property name="Meshfile" value="Items/Crafting/clayPrefab" />
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="40" />
-	<property name="Stacknumber" value="500" /> <!-- STK resource -->
+	<property name="Stacknumber" value="250" /> <!-- STK resource -->
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="5" />
 	<property name="Group" value="Resources" />
@@ -7147,7 +7151,7 @@ which does not exist, yet. -->
 	<property name="Extends" value="schematicMaster" />
 	<property name="EconomicValue" value="500" />
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="minibikeChassis,minibikeWheels,minibikeSeat,minibikeHandlebars" />
+		<property name="Recipes_to_learn" value="minibikeChassis,minibikeSeat,minibikeHandlebars" />
 		<property name="Skills_to_gain" value="Miscellaneous Crafting" />
 	</property>
 </item>
@@ -7582,7 +7586,7 @@ which does not exist, yet. -->
 	<property name="HoldType" value="45" />
 	<property name="Material" value="Mplastics" />
 	<property name="Weight" value="1" />
-	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+	<property name="Stacknumber" value="2000" /> <!-- STK resource -->
 	<property name="EconomicValue" value="32" />
 	<property name="Group" value="Resources" />
 	<property name="CraftingIngredientExp" value="15" />
@@ -7851,7 +7855,7 @@ which does not exist, yet. -->
 	<property name="HoldType" value="45" />
 	<property name="Material" value="MelectricParts" />
 	<property name="Weight" value="1" />
-	<property name="Stacknumber" value="500" /> <!-- STK resource -->
+	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
 	<property name="EconomicValue" value="32" />
 	<property name="Group" value="Resources" />
 	<property name="CraftingIngredientExp" value="15" />
@@ -7866,7 +7870,7 @@ which does not exist, yet. -->
 	<property name="HoldType" value="45" />
 	<property name="Material" value="MelectronicParts" />
 	<property name="Weight" value="1" />
-	<property name="Stacknumber" value="500" /> <!-- STK resource -->
+	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
 	<property name="EconomicValue" value="32" />
 	<property name="Group" value="Resources" />
 	<property name="CraftingIngredientExp" value="15" />
@@ -7881,7 +7885,7 @@ which does not exist, yet. -->
 	<property name="HoldType" value="45" />
 	<property name="Material" value="metal" />
 	<property name="Weight" value="5" />
-	<property name="Stacknumber" value="500" /> <!-- STK resource -->
+	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
 	<property name="EconomicValue" value="32" />
 	<property name="Group" value="Resources" />
 	<property name="CraftingIngredientExp" value="15" />
@@ -8178,7 +8182,7 @@ which does not exist, yet. -->
 	<property name="Weight" value="10" />
 	<property name="HoldType" value="3" />
 	<property name="FuelValue" value="20" />
-	<property name="Stacknumber" value="50" /> <!-- STK resource -->
+	<property name="Stacknumber" value="500" /> <!-- STK resource -->
 	<property name="EconomicValue" value="30" />
 	<property name="Group" value="Chemicals" />
 	<property name="CraftingSkillGroup" value="Science"/>
@@ -8892,6 +8896,7 @@ which does not exist, yet. -->
 	<property name="IsDeveloper" value="true" />
 </item>
 
+
 <!-- Craftworx Start -->
 
 <!-- Weapons -->
@@ -9601,6 +9606,7 @@ which does not exist, yet. -->
 	<property name="PartType" value="Stock" />
 	<property name="HoldType" value="16" />
 	<property name="EconomicValue" value="38" />
+    <property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="partshomemadeFlashlightBarrelDesc" />
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
@@ -9610,6 +9616,7 @@ which does not exist, yet. -->
 	<property name="PartType" value="Receiver" />
 	<property name="HoldType" value="16" />
 	<property name="EconomicValue" value="38" />
+    <property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="partshomemadeFlashlightCapDesc" />
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
@@ -9619,6 +9626,7 @@ which does not exist, yet. -->
 	<property name="PartType" value="Pump" />
 	<property name="HoldType" value="16" />
 	<property name="EconomicValue" value="38" />
+    <property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="partshomemadeFlashlightBatteryDesc" />
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
@@ -9630,6 +9638,7 @@ which does not exist, yet. -->
 	<property name="HoldType" value="45" />
 	<property name="Weight" value="10" />
 	<property name="EconomicValue" value="240" />
+    <property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="partshomemadeFlashlightLampDesc" />
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
@@ -10052,6 +10061,7 @@ which does not exist, yet. -->
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
     <property name="Material" value="organic" />
     <property name="HoldType" value="7" />
+	<property name="Stacknumber" value="150" /> <!-- STK resource -->
 	<property name="CraftingIngredientTime" value="2" />
     <property class="Action1">
         <!-- UseAction -->
@@ -10100,6 +10110,7 @@ which does not exist, yet. -->
     <property name="Material" value="cloth" />
     <property name="HoldType" value="45" />
     <property name="Weight" value="5" />
+	<property name="Stacknumber" value="50" /> <!-- STK resource -->
 	<property name="EconomicValue" value="25" />
 	<property name="EconomicBundleSize" value="5" />
     <property name="Group" value="Resources" />
@@ -10113,6 +10124,7 @@ which does not exist, yet. -->
     <property name="Material" value="Mplastics" />
     <property name="HoldType" value="14" />
     <property name="Weight" value="5" />
+	<property name="Stacknumber" value="500" /> <!-- STK resource -->
 	<property name="CraftingIngredientTime" value="1" />
 	<property name="EconomicValue" value="24" />
 	<property name="EconomicBundleSize" value="5" />
@@ -10221,6 +10233,250 @@ which does not exist, yet. -->
 </item>
 <!-- End Scrap Tools -->
 
+<!-- Magazines -->
+<item id="2079" name="sportsIll">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Athletics" />
+    </property>
+	<property name="DescriptionKey" value="sportsIllDesc"/>
+</item>
+
+<item id="2080" name="muscleFit">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Athletics" />
+    </property>
+	<property name="DescriptionKey" value="muscleFitDesc"/>
+</item>
+
+<item id="2081" name="amRifle">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Rifles" />
+    </property>
+	<property name="DescriptionKey" value="amRifleDesc"/>
+</item>
+
+<item id="2082" name="gunsAmmo">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Gun Smithing" />
+    </property>
+	<property name="DescriptionKey" value="gunsAmmoDesc"/>
+</item>
+
+<item id="2083" name="scavMan">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Scavenging" />
+    </property>
+	<property name="DescriptionKey" value="scavManDesc"/>
+</item>
+
+<item id="2084" name="bbDig">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Blunt Weapons" />
+    </property>
+	<property name="DescriptionKey" value="bbDigDesc"/>
+</item>
+
+<item id="2085" name="bladeMag">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Blade Weapons" />
+    </property>
+	<property name="DescriptionKey" value="bladeMagDesc"/>
+</item>
+
+<item id="2086" name="miningMag">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Mining Tools" />
+    </property>
+	<property name="DescriptionKey" value="miningMagDesc"/>
+</item>
+
+<item id="2087" name="woodMag">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Carpentry" />
+    </property>
+	<property name="DescriptionKey" value="woodMagDesc"/>
+</item>
+
+<item id="2088" name="famHandy">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Construction Tools" />
+    </property>
+	<property name="DescriptionKey" value="famHandyDesc"/>
+</item>
+
+<item id="2089" name="amHandgun">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Pistols" />
+    </property>
+	<property name="DescriptionKey" value="amHandgunDesc"/>
+</item>
+
+<item id="2090" name="shotSport">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Shotguns" />
+    </property>
+	<property name="DescriptionKey" value="shotSportsDesc"/>
+</item>
+
+<item id="2091" name="specWeapons">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Heavy Weapons" />
+    </property>
+	<property name="DescriptionKey" value="specWeaponsDesc"/>
+</item>
+
+<item id="2092" name="archeryMag">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Archery" />
+    </property>
+	<property name="DescriptionKey" value="archeryMagDesc"/>
+</item>
+
+<item id="2093" name="mensHealth">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Medicine" />
+    </property>
+	<property name="DescriptionKey" value="mensHealthDesc"/>
+</item>
+
+<item id="2094" name="womensHealth">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Medicine" />
+    </property>
+	<property name="DescriptionKey" value="womensHealthDesc"/>
+</item>
+
+<item id="2095" name="huntWorld">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Weapon Smithing" />
+    </property>
+	<property name="DescriptionKey" value="huntWorldDesc"/>
+</item>
+
+<item id="2096" name="primArcher">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Fletching" />
+    </property>
+	<property name="DescriptionKey" value="primArcherDesc"/>
+</item>
+
+<item id="2097" name="popMech">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Tool Smithing" />
+    </property>
+	<property name="DescriptionKey" value="popMechesc"/>
+</item>
+
+<item id="2098" name="sciAm">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Science" />
+    </property>
+	<property name="DescriptionKey" value="sciAmDesc"/>
+</item>
+
+<item id="2099" name="popSci">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Science" />
+    </property>
+	<property name="DescriptionKey" value="popSciDesc"/>
+</item>
+
+<item id="2100" name="sewWorld">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Tailoring" />
+    </property>
+	<property name="DescriptionKey" value="sewWorldDesc"/>
+</item>
+
+<item id="2101" name="leatherJourn">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Leatherworking" />
+    </property>
+	<property name="DescriptionKey" value="leatherJournDesc"/>
+</item>
+
+<item id="2102" name="medArmor">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Armor Smithing" />
+    </property>
+	<property name="DescriptionKey" value="medArmorDesc"/>
+</item>
+
+<item id="2103" name="ladHJourn">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Miscellaneous Crafting" />
+    </property>
+	<property name="DescriptionKey" value="ladHJournDesc"/>
+</item>
+
+<item id="2104" name="forbesMag">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Barter" />
+    </property>
+	<property name="DescriptionKey" value="forbesMagDesc"/>
+</item>
+
+<item id="2105" name="moneyMag">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<!-- UseAction -->
+		<property name="Skills_to_gain" value="Barter" />
+    </property>
+	<property name="DescriptionKey" value="moneyMagDesc"/>
+</item>
+<!-- End Magazines -->
 <!-- End Craftworx -->
 
 <!--

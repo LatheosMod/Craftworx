@@ -4,10 +4,10 @@
 <player 
 	max_level="300" 
 	exp_to_level="8000" 
-	experience_multiplier="1.00905" 
+	experience_multiplier="1.0142" 
 	skill_points_per_level="5" 
 	skill_point_multiplier="0"/>
-	<!-- that's 4000 XP for level 1 and 56k for level 199, total cumulative of 3.97MXP -->
+	<!-- that's 8000 XP for level 1 and 134k for level 199, total cumulative of 9MXP aka 2x of A15.0 -->
 
 <skills 
 	max_level="100" 
@@ -41,7 +41,6 @@
 			<setvalue skill_level="90,100" value="57,60"/>	
 		</effect>
 	</player_skill>
-	
 	<perk name="Health Nut" icon="run" description_key="healthNutDesc" title_key="healthNut" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" always_fire="true" group="health">
 		<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="20"/>
 		<requirement perk_level="2" required_skill_name="Athletics" required_skill_level="40"/>
@@ -65,7 +64,6 @@
 			<add perk_level="5" value="50"/>
 		</effect>
 	</perk>
-	
 	<perk name="Sexual Tyranosaurus" icon="run" description_key="sexualTyranosaurusDesc" title_key="sexualTyranosaurus" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" always_fire="true" group="health">
 		<requirement perk_level="1" required_skill_name="Athletics" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Athletics" required_skill_level="40"/>
@@ -81,7 +79,6 @@
 			<add perk_level="5" value="1"/>
 		</effect>
 	</perk>
-	
 	<player_skill name="Scavenging" icon="loot_sack" description_key="scavengingDesc" title_key="scavenging" group="scavenging">
 		<effect name="LootTime">
 			<multiply skill_level="1,10" value="1,0.76"/>
@@ -105,7 +102,6 @@
 			<add skill_level="70,100" value="41,50" />
 		</effect>
 	</player_skill>
-	
 	<perk name="Fast Eddie" icon="loot_sack" description_key="fastEddieDesc" title_key="fastEddie" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" always_fire="true" group="scavenging">
 		<requirement perk_level="1" required_skill_name="Scavenging" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Scavenging" required_skill_level="25"/>
@@ -117,7 +113,6 @@
 			<multiply skill_level="3" value="0.25"/>
 		</effect>
 	</perk>
-	
 	<perk name="Quality Joe" icon="quality_joe" description_key="qualityJoeDesc" title_key="qualityJoe" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">
 		<requirement skill_level="1" required_skill_name="Scavenging" required_skill_level="1"/>
 		<requirement skill_level="2" required_skill_name="Scavenging" required_skill_level="30"/>
@@ -129,7 +124,6 @@
 			<add skill_level="3" value="100"/>
 		</effect>
 	</perk>
-	
 	<action_skill name="Light Armor" icon="light_armor" description_key="lightArmorDesc" title_key="lightArmor" exp_to_level="57" experience_multiplier="1.0195" group="clothing">
 	<!-- 10 hits to make level 2, 3000 hits to max it... instead of 64000 -->
 		<effect name="ArmorDefense">
@@ -141,8 +135,7 @@
 			<add skill_level="49,70" value=".13,.16" />
 			<add skill_level="70,100" value=".16,.2" />
 		</effect>
-	</action_skill>
-	
+		</action_skill>
 	<action_skill name="Heavy Armor" icon="armor_iron" description_key="heavyArmorDesc" title_key="heavyArmor" exp_to_level="57" experience_multiplier="1.0195" group="clothing">
 		<effect name="ArmorDefense">
 			<add skill_level="1,5" value="0,.03" />
@@ -170,7 +163,6 @@
 			<multiply skill_level="1,100" value="0,0" />
 		</effect>
 	</action_skill>
-	
 	<action_skill name="Blade Weapons" exp_to_level="150" icon="knife" description_key="bladeWeaponsDesc" title_key="bladeWeapons" group="weapons">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04" />
@@ -206,7 +198,6 @@
 			<multiply skill_level="5" value="0.5"/>
 		</effect>
 	</perk>
-	
 	<perk name="The Decapitator" icon="knife" description_key="theDecapitatorDesc" title_key="decapitator" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
 		<requirement perk_level="1" required_skill_name="Blade Weapons" required_skill_level="50"/>
 		<requirement perk_level="2" required_skill_name="Blade Weapons" required_skill_level="75"/>
@@ -218,7 +209,6 @@
 			<add skill_level="3" value="0.3"/>
 		</effect>
 	</perk>
-	
 	<action_skill name="Mining Tools" exp_to_level="500" icon="mining" description_key="miningToolsDesc" title_key="miningTools" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
@@ -234,7 +224,7 @@
 		</effect>
 	</action_skill>
 	
-	<!-- Craftworx Item Usage Skill -->
+	<!-- Craftworx -->
 	<action_skill name="Carpentry" icon="mining" description_key="carpentryDesc" title_key="carpentry" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
@@ -271,8 +261,7 @@
 			<multiply skill_level="5" value="0.5"/>
 		</effect>
 	</perk>
-	<!-- End Craftworx Item Usage Skill-->
-	
+	<!-- End Craftworx -->
 	<action_skill name="Construction Tools" exp_to_level="500" icon="resource" description_key="constructionToolsDesc" title_key="constructionTools" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
@@ -287,15 +276,13 @@
 			<multiply skill_level="90,100" value="1.95,2.00"/>
 		</effect>
 	</action_skill>
-	
 	<perk name="Concrete Mixing" icon="resource" description_key="concreteMixingDesc" title_key="concreteMixing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="tools">
-		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="40"/>
+		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="20"/>
 		<recipe name="cement" unlock_level="1"/>
 		<recipe name="concreteMix" unlock_level="1"/>
 	</perk>
-	
 	<perk name="Steel Smithing" icon="resource" description_key="steelSmithingDesc" title_key="steelSmithing" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="tools">
-		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="50"/>
+		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="40"/>
 		<recipe name="forgedSteel" unlock_level="1"/>
 		<recipe name="steelArrowHead" unlock_level="1"/>
 		<requirement skill_level="2" required_skill_name="Construction Tools" required_skill_level="50"/>
@@ -305,22 +292,21 @@
 		<requirement skill_level="3" required_skill_name="Tool Smithing" required_skill_level="50"/>
 		<recipe name="mechanicalParts" unlock_level="3"/>
 	</perk>
-	
-	<!-- Craftworx Item Usage Skill -->
+
+	<!-- Craftworx -->
 	<perk name="Advanced Tooling" icon="resource" description_key="AdvancedToolingSkillDesc" title_key="AdvancedTooling" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="30"/>
 		<recipe name="workbench" unlock_level="1"/>
 		<recipe name="forge" unlock_level="1"/>
 		<recipe name="calipers" unlock_level="1"/>
 	</perk>
-	<!-- End Craftworx Item Usage -->
+	<!-- End Craftworx -->
 	
 	<perk name="ChemStationPerk" icon="resource" description_key="chemStationPerkDesc" title_key="chemistryStation" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="50"/>
 		<requirement skill_level="1" required_skill_name="Science" required_skill_level="15"/>
 		<recipe name="chemistryStation" unlock_level="1"/>
 	</perk>
-	
 	<action_skill name="Pistols" exp_to_level="150" icon="pistol" description_key="pistolsDesc" title_key="pistols" group="firearms">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04" />
@@ -332,7 +318,6 @@
 			<multiply skill_level="70,100" value="1.23,1.28" />
 		</effect>
 	</action_skill>
-	
 	<perk name="The Outlaw" icon="pistol" description_key="theOutlawDesc" title_key="theOutlaw" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="firearms">
 		<requirement perk_level="1" required_skill_name="Pistols" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Pistols" required_skill_level="20"/>
@@ -348,7 +333,6 @@
 			<multiply skill_level="5" value="1.5625"/>
 		</effect>
 	</perk>
-	
 	<perk name="Dead Shot" icon="pistol" description_key="deadShotDesc" title_key="deadShot" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="firearms">
 		<requirement perk_level="1" required_skill_name="Pistols" required_skill_level="50"/>
 		<requirement perk_level="2" required_skill_name="Pistols" required_skill_level="75"/>
@@ -360,7 +344,6 @@
 			<add skill_level="3" value="0.3"/>
 		</effect>
 	</perk>
-	
 	<action_skill name="Shotguns" exp_to_level="150" icon="shotgun" description_key="shotgunsDesc" title_key="shotguns" group="firearms">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04" />
@@ -372,7 +355,6 @@
 			<multiply skill_level="70,100" value="1.23,1.28" />
 		</effect>
 	</action_skill>
-	
 	<perk name="Boom Stick" icon="shotgun" description_key="boomStickDesc" title_key="boomStick" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="firearms">
 		<requirement perk_level="1" required_skill_name="Shotguns" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Shotguns" required_skill_level="20"/>
@@ -388,7 +370,6 @@
 			<multiply skill_level="5" value="1.5625"/>
 		</effect>
 	</perk>
-	
 	<perk name="Splatter Gun" icon="shotgun" description_key="splatterGunDesc" title_key="splatterGun" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="firearms">
 		<requirement perk_level="1" required_skill_name="Shotguns" required_skill_level="50"/>
 		<requirement perk_level="2" required_skill_name="Shotguns" required_skill_level="75"/>
@@ -400,7 +381,6 @@
 			<add skill_level="3" value="0.3"/>
 		</effect>
 	</perk>
-	
 	<action_skill name="Rifles" exp_to_level="150" icon="rifle" description_key="riflesDesc" title_key="rifles" group="firearms">
 		<effect name="EntityDamage">
 			<multiply perk_level="0" value="1"/>
@@ -413,7 +393,6 @@
 			<multiply skill_level="70,100" value="1.23,1.28" />
 		</effect>
 	</action_skill>
-	
 	<perk name="Better Lead Than Dead" icon="rifle" description_key="betterLeadThanDeadDesc" title_key="betterLeadThanDead" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="firearms">
 		<requirement perk_level="1" required_skill_name="Rifles" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Rifles" required_skill_level="20"/>
@@ -429,8 +408,7 @@
 			<multiply skill_level="5" value="1.5625"/>
 		</effect>
 	</perk>
-	
-	<!-- Craftworx Item Usage Skill -->
+	<!-- Craftworx -->
 	<action_skill name="Heavy Weapons" exp_to_level="150" icon="rifle" description_key="heavyweaponsDesc" title_key="heavyweapons" group="firearms">
 		<effect name="EntityDamage">
 			<multiply perk_level="0" value="1"/>
@@ -471,7 +449,7 @@
 			<multiply skill_level="5" value="1.5625"/>
 		</effect>
 	</perk>
-	<!-- End Craftworx Item Usage Skill-->
+	<!-- End Craftworx -->
 	
 	<action_skill name="Archery" exp_to_level="150" icon="archery" description_key="archeryDesc" title_key="archery" group="weapons">
 		<effect name="EntityDamage">
@@ -484,8 +462,10 @@
 			<multiply skill_level="70,100" value="1.23,1.28" />
 		</effect>
 	</action_skill>
-	
-	<!-- Craftworx Item Usage Skill-->
+		
+		
+		
+	<!-- Craftworx -->
 	<perk name="William Tell" icon="archery" description_key="WilliamTellDesc" title_key="WilliamTell" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
 		<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Archery" required_skill_level="20"/>
@@ -507,8 +487,7 @@
 			<add skill_level="5" value="0.4"/>
 		</effect>
 	</perk>
-	<!-- End Craftworx Item Usage Skill-->
-
+	<!-- End Craftworx -->
 	<player_skill name="Medicine" icon="medical" description_key="medicineDesc" title_key="medicine" group="health">
 		<effect name="HealthGain">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
@@ -579,8 +558,7 @@
 			<multiply skill_level="70,100" value=".44,.167" /> <!-- =10 points at QL 600 -->
 		</effect>
 	</crafting_skill>
-
-	<!-- Craftworx Crafting Skill -->
+	<!-- Craftworx -->
 	<perk name="Masamune, Jr." icon="weapon_smithing" description_key="MasamuneJrDesc" title_key="MasamuneJr" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" >
 		<requirement skill_level="1" required_skill_name="Weapon Smithing" required_skill_level="30"/>
 		<recipe name="machete" unlock_level="1"/>
@@ -643,8 +621,7 @@
 			<multiply skill_level="70,100" value=".44,.167" /> <!-- =10 points at QL 600 -->
 		</effect>
 	</crafting_skill>
-	<!-- End Craftworx Crafting Skill -->
-	
+	<!-- End Craftworx -->
 	<crafting_skill name="Tool Smithing" icon="tool_smithing" description_key="toolSmithingDesc" title_key="toolSmithing" group="tools">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
@@ -698,7 +675,6 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
-	
 	<crafting_skill name="Gun Smithing" icon="gunsmithing" description_key="gunSmithingDesc" title_key="gunSmithing" group="firearms">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
@@ -762,35 +738,32 @@
 			<!-- Known bug; see XML.txt; "12" and zero skills: 30 QL loss; "1.6" + Fixer = 2 points, almost down to 1 -->
 		</effect>
 	</crafting_skill>
-	
 	<perk name="9mm Round Crafting" icon="gunsmithing" description_key="9mmRoundCraftingDesc" title_key="9mmRoundCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="10"/>
 		<recipe name="9mmBullet" unlock_level="1"/>
 		<recipe name="bulletTip" unlock_level="1"/>
 		<recipe name="bulletCasing" unlock_level="1"/>
 	</perk>
-	
 	<perk name="10mm Round Crafting" icon="gunsmithing" description_key="10mmRoundCraftingDesc" title_key="10mmRoundCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="20"/>
 		<recipe name="10mmBullet" unlock_level="1"/>
 		<recipe name="bulletTip" unlock_level="1"/>
 		<recipe name="bulletCasing" unlock_level="1"/>
 	</perk>
-	
 	<perk name="44 Magnum Round Crafting" icon="gunsmithing" description_key="44MagnumRoundCraftingDesc" title_key="44MagnumRoundCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="40"/>
 		<recipe name="44MagBullet" unlock_level="1"/>
 		<recipe name="bulletTip" unlock_level="1"/>
 		<recipe name="bulletCasing" unlock_level="1"/>
 	</perk>
-	
 	<perk name="762mm Round Crafting" icon="gunsmithing" description_key="762mmRoundCraftingDesc" title_key="762mmRoundCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="30"/>
 		<recipe name="762mmBullet" unlock_level="1"/>
 		<recipe name="bulletTip" unlock_level="1"/>
 		<recipe name="bulletCasing" unlock_level="1"/>
 	</perk>
-	
+
+	<!-- Craftworx -->
 	<perk name="shotgun Ammo Crafting" icon="gunsmithing" description_key="shotgunShellCraftingDesc" title_key="shotgunShellCrafting" max_level="3" skill_point_cost_multiplier="1" skill_point_cost_per_level="5" group="firearms">
 		<requirement perk_level="1" required_skill_name="Gun Smithing" required_skill_level="25"/>
 		<recipe name="buckshot" unlock_level="1"/>
@@ -802,7 +775,6 @@
 		<recipe name="breacherRound" unlock_level="3"/> 
 	</perk>
 	
-	<!-- Craftworx Crafting Skill -->
 	<perk name="Silent But Deadly I" icon="gunsmithing" description_key="silentButDeadly1Desc" title_key="Silent But Deadly I" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
 		<requirement skill_level="1" required_skill_name="Gun Smithing" required_skill_level="10"/>
 		<recipe name="partsSuppressor" unlock_level="1"/>
@@ -839,7 +811,7 @@
 		<recipe name="partssuppressedsniper_barrel" unlock_level="1"/>
 		<recipe name="gunsuppressedSniperRifle" unlock_level="1"/>
 	</perk>
-	<!--End Craftworx Crafting Skill -->
+	<!--End Craftworx -->
 	
 	<crafting_skill name="Science" icon="science" description_key="scienceDesc" title_key="science" group="crafting">
 		<effect name="CraftingTime">
@@ -894,7 +866,6 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
-	
 	<crafting_skill name="Tailoring" icon="tailoring" description_key="tailoringDesc" title_key="tailoring" group="clothing">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
@@ -948,8 +919,7 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
-
-	<!-- Craftworx Crafting Skill -->
+	<!-- Craftworx -->
 	<perk name="Clothier" icon="tailoring" description_key="clothierDesc" title_key="Clothier" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
 		<requirement skill_level="1" required_skill_name="Tailoring" required_skill_level="10"/>
 		<recipe name="tshirtWhite" unlock_level="1"/>
@@ -961,7 +931,7 @@
 		<recipe name="sweatshirt" unlock_level="3"/>
 		<recipe name="hoodedSweatshirtWhite" unlock_level="3"/>
 	</perk>
-	<!-- End Craftworx Crafting Skill -->
+	<!-- End Craftworx -->
 	
 	<crafting_skill name="Leatherworking" icon="armor_leather" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
 		<effect name="CraftingTime">
@@ -1016,13 +986,11 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
-	
 	<perk name="Leather Tanning" icon="armor_leather" description_key="leatherTanningPerkDesc" title_key="leatherTanningPerk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
 		<requirement skill_level="1" required_skill_name="Leatherworking" required_skill_level="1"/>
 		<recipe name="leather" unlock_level="1"/>
 	</perk>
-	
-	<!-- Craftworx Crafting Skill -->
+	<!-- Craftworx -->
 	<perk name="Cordwainer" icon="armor_leather" description_key="cordwainerDesc" title_key="cordwainer" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
 		<requirement skill_level="1" required_skill_name="Leatherworking" required_skill_level="10"/>
 		<recipe name="cowboyBootsBrown" unlock_level="1"/>
@@ -1034,8 +1002,7 @@
 		<recipe name="overalls" unlock_level="3"/>
 		<recipe name="leatherDusterBlack" unlock_level="3"/>
 	</perk>
-	<!-- End Craftworx Crafting Skill -->
-
+	<!-- End Craftworx -->
 	<crafting_skill name="Armor Smithing" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
@@ -1089,7 +1056,6 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
-	
 	<crafting_skill name="Miscellaneous Crafting" exp_to_level="300" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting">
 		<effect name="CraftingTime">
 			<multiply skill_level="1,5" value="1,.931" />
@@ -1143,7 +1109,6 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
-	
 	<perk name="The Survivor" icon="run" description_key="theSurvivorDesc" title_key="theSurvivor" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="10" group="health">
 		<requirement perk_level="1" required_player_level="1" />
 		<requirement perk_level="2" required_player_level="10" />
@@ -1167,7 +1132,6 @@
 			<multiply perk_level="5" value="2.0"/>
 		</effect>
 	</perk>
-	
 	<perk name="Run Forest Run" icon="run" description_key="runForestRunDesc" title_key="runForestRun" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" passive_effect="true" group="health">
 		<requirement perk_level="1" required_player_level="1" />
 		<requirement perk_level="2" required_player_level="10" />
@@ -1183,7 +1147,6 @@
 			<multiply perk_level="5" value="0.5"/>
 		</effect>
 	</perk>
-	
 	<perk name="The Camel" icon="run" description_key="theCamelDesc" title_key="theCamel" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" passive_effect="true" group="health">
 		<requirement perk_level="1" required_player_level="1" />
 		<requirement perk_level="2" required_player_level="10" />
@@ -1199,7 +1162,6 @@
 			<multiply perk_level="5" value="0.5"/>
 		</effect>
 	</perk>
-	
 	<perk name="Quicker Crafting" icon="forge" description_key="quickerCraftingDesc" title_key="quickerCrafting" max_level="5" skill_point_cost_multiplier="0" passive_effect="true" skill_point_cost_per_level="10" group="crafting">
 		<requirement perk_level="1" required_player_level="1" />
 		<requirement perk_level="2" required_player_level="10" />
@@ -1215,7 +1177,6 @@
 			<multiply skill_level="5" value="0.5"/>
 		</effect>
 	</perk>
-	
 	<perk name="The Fixer" icon="wrench" description_key="theFixerDesc" title_key="theFixer" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" passive_effect="true" group="crafting">
 		<requirement perk_level="1" required_player_level="1" />
 		<requirement perk_level="2" required_player_level="10" />
