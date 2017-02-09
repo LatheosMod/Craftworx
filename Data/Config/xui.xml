@@ -79,6 +79,7 @@
 		<window_group name="dragAndDrop">
 			<window name="dragAndDropItemStack" />
 		</window_group>
+		
 
 <!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
 
@@ -102,6 +103,7 @@
 <!--		<window name="SMXminiMap" /> -->
 		</window_group>
 
+
 <!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
 
 		<window_group name="toolTip">
@@ -120,6 +122,7 @@
 		<window_group name="timer">
 			<window name="windowTimer"/>
 		</window_group>
+		
 
 <!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
 
@@ -139,6 +142,7 @@
 																										<!-- 1: Standard Temp Frame -->
 																										<!-- 2: Medieval Temp Frame - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
 		</window_group>
+
 
 <!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
 

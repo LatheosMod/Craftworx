@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?> 
+<?xml version="1.0" encoding="utf-8"?>
 <!--
 Models that are no longer used:
 	<property name="Model" value="Entities/Buildings/window03Prefab" />
@@ -688,6 +688,7 @@ group desc for stuff like metal siding
 	<property name="IsDeveloper" value="true" />
 	<property name="CustomIcon" value="blueberrySeed" />
 	<property name="Material" value="plants" />
+	<property name="LightOpacity" value="0" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="BillboardPlant" />
 	<property name="Mesh" value="grass" />
@@ -711,6 +712,7 @@ group desc for stuff like metal siding
 <block id="120" name="cropsHarvestableMaster">
 	<property name="IsDeveloper" value="true" />
 	<property name="Material" value="plants" />
+	<property name="LightOpacity" value="0" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="BillboardPlant" />
 	<property name="Mesh" value="grass" />
@@ -771,6 +773,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="woodDebris" count="1" prob=".3" stick_chance="1" />
 	<property name="EconomicValue" value="6" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Construction"/>
 </block>
 
 <block id="124" name="cobblestoneMaster">
@@ -848,6 +851,7 @@ group desc for stuff like metal siding
 	<property name="Class" value="ModelTree" />
 	<property name="Shape" value="ModelTree" />
 	<property name="Material" value="treeWoodSmall" />
+	<property name="LightOpacity" value="0" />
 	<property name="Texture" value="116" />
 	<property name="IsDeveloper" value="true" />
 	<property name="CanPlayersSpawnOn" value="false" />
@@ -928,6 +932,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="scrapIron" count="10,20" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="160" />
+	<property name="CraftingSkillGroup" value="Construction"/>
 </block>
 
 <block id="134" name="rConcreteMaster">
@@ -946,6 +951,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="rockSmall" count="12" />
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="7" />
+	<property name="CraftingSkillGroup" value="Construction"/>
 </block>
 
 <block id="135" name="pouredConcreteMaster">
@@ -978,6 +984,7 @@ group desc for stuff like metal siding
 	</property>
 	<property name="CustomUpgradeSound" value="Crafting/place_block_concrete" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Construction"/>
 </block>
 
 <block id="137" name="brickNoUpgradeMaster">
@@ -1006,6 +1013,7 @@ group desc for stuff like metal siding
 	</property>
 	<property name="EconomicValue" value="8" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Construction"/>
 </block>
 
 <block id="139" name="adobeMaster">
@@ -1029,6 +1037,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="destroyedStone" count="1" prob=".1" stick_chance="1" />
 	<property name="EconomicValue" value="11" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Construction"/>
 </block>
 
 <block id="140" name="concreteMaster">
@@ -1050,6 +1059,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="25" />
 	<property name="EconomicBundleSize" value="10" />
+	<property name="CraftingSkillGroup" value="Construction"/>
 </block>
 
 <block id="141" name="rScrapIronMaster">
@@ -1091,6 +1101,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".2" stick_chance="1" />
 	<property name="EconomicValue" value="25" />
 	<property name="EconomicBundleSize" value="5" />
+	<property name="CraftingSkillGroup" value="Construction"/>
 </block>
 
 <block id="143" name="stoneMaster">
@@ -1148,6 +1159,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="15" />
 	<property name="EconomicBundleSize" value="2" />
+	<property name="CraftingSkillGroup" value="Construction"/>
 </block>
 
 <block id="146" name="rWoodMetalMaster">
@@ -4494,6 +4506,7 @@ kind of free
 
 <block id="530" name="plantedMushroom1">
 	<property name="Material" value="Mmushrooms" />
+	<property name="LightOpacity" value="0" />
 	<property name="Shape" value="Ext3dModel" />
 	<property name="Mesh" value="models" />
 	<property name="Texture" value="241" />
@@ -7876,6 +7889,7 @@ kind of free
 <block id="903" name="plantedCornDead"> <!-- dead corn for prefab use -->
 	<property name="CustomIcon" value="plantedCorn3Harvest" /> <property name="CustomIconTint" value="ffffa0" />
 	<property name="Material" value="Mcorn" />
+	<property name="LightOpacity" value="0" />
 	<property name="StabilitySupport" value="false" />
 	<property name="Shape" value="New" />
 	<property name="Model" value="corn_dead_shape" />
@@ -11931,6 +11945,7 @@ kind of free
 	<drop event="Harvest" name="scrapIron" count="20" prob="1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="2" prob=".05" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="1" prob=".15" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapCable" count="1" prob=".15" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="1,15" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1" />
 	<property name="BigDecorationRadius" value="5" />
@@ -13952,7 +13967,6 @@ kind of free
 
 
 <!-- End Custom Blocks -->
-
 <!-- ore block visualisation.  Uncomment this section to make underground ores visible.
 
 <block id="7" name="ironOre">

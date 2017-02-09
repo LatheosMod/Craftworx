@@ -371,6 +371,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="pumpShotgunSchematic"/>
 			<item name="sawedoffPumpShotgunSchematic"/>
 		</trader_item_group>
+
 		<trader_item_group name="magazines" count="1">
 			<item name="sportsIll"/>
 			<item name="muscleFit"/>
@@ -478,7 +479,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="gunPowder" count="5,30"/> <!-- 10 -->
 			<item name="paper" count="10,30"/> <!-- 10 -->
 			<item name="ironArrowHead" count="5,25" prob="0.05"/> <!-- 5 -->
-			<item name="steelArrowHead" count="5,25" prob="0.05"/> <!-- 5 -->
+			<item name="steelArrowHead" count="5,25" prob="0.05"/> <!-- 5 -->>
 			<item name="feather" count="10,45"/> <!-- 5 -->
 		</trader_item_group>
 
@@ -1251,7 +1252,7 @@ workstations
 	<!-- Trader 1, carries better weapons at higher levels. -->
 	<!-- Note that all COUNTS are eventually multiplied by an item's EconomicBundleSize so "10 wood" in the list are "500 wood" on the trader. -->
 	<trader_info id="1" min_inventory="40" max_inventory="80" min_items_swapped="20" max_items_swapped="20"
-		reset_interval="2" open_time="6:05" close_time="21:50">
+		reset_interval="3" open_time="6:05" close_time="21:50">
 		<trader_items count="all">
 			<item group="traderAlways"/>
 			<item group="traderGeneral" count="4,8"/>

@@ -569,7 +569,6 @@
 	<item name="gunAK47"/>
 	<item name="762mmBullet" count="1,20"/>
 </lootgroup>
-
 <lootgroup name="mp5+ammo" count="all">
 	<item name="gunMP5"/>
 	<item name="10mmBullet" count="1,20"/>
@@ -579,7 +578,6 @@
 	<item name="gunflamethrower"/>
 	<item name="napalm" count="1,2"/>
 </lootgroup>
-
 <lootgroup name="huntingRifle+ammo" count="all">
 	<item name="gunHuntingRifle"/>
 	<item name="762mmBullet" count="1,10"/>
@@ -667,7 +665,6 @@
 	<item name="gunPoopCannon"/>
 	<item name="fertilizerRound" count="2,6"/>
 </lootgroup>
-
 <lootgroup name="guns+ammo">
 	<item group="commonWeaponParts"/>
 	<item group="pistol+ammo" prob="0.01"/>
@@ -717,7 +714,6 @@
 	<item name="minibikesForDumbshits"/>
 	<item name="rocketLauncherSchematic"/>
 	<item name="shotgunSlugSchematic"/>
-	<!-- <item name="breacherRoundSchematic"/> -->
 	<item name="sledgehammerSchematic"/>
 	<item name="smgSchematics"/>
 	<item name="sniperRifleSchematic"/>
@@ -726,7 +722,6 @@
 	<item name="nailgunSchematic"/>
 	<item group="questChallenge" count="1"/>
 	<item name="SeagraveFireaxeSchematic"/>
-	<!-- <item name="leatherDusterSchematic"/> -->
 	<!--
 	<item name="handleBarsSchematic"/>
 	<item name="theRiddleOfSteel"/>
@@ -795,7 +790,6 @@
 	<item name="forbesMag"/>
 	<item name="moneyMag"/>
 </lootgroup>
-
 <lootgroup name="books" count="1">
 	<item group="rareBooks" loot_prob_template="rareBookTemplate"/>
 	<item group="commonBooks"/>
