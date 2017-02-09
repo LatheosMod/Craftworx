@@ -96,3 +96,24 @@ Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, 
 Updated for Alpha 15.1
 Added 27 skill magazines, found in the same places as books, which add a single point in various skills
 Breacher Round Schematic removed; now only available as a purchased perk
+
+----->28 Dec 2016<-----
+Craftworx 1.41
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Changed CraftingIngredientTime on fertilizer from "2" to ".75"
+Added chance to harvest scrap cable from car frames (car perfect->car damaged->car frame)
+
+----->05Feb 2017<-----
+Craftworx 1.5
+Updated for Alpha 15.2
+Includes stallionsden's Backpack Expansion (with help from DreamSmith), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Changed Mining Tools to Mining & Construction tools to Construction in progression, items, and localization xmls
+Changeed skill level requirements for clothier from 10/30/50 to 1/15/30
+Removed Cordwainer skill and moved recipes to Leather Tanning, changing it from one level to three
+Reordered progression.xml to make skills and eprks group better
+Changed armor smithing, gun smithing, tool smithing and weapons smithing to smithing armor, smithing guns, smithing tools, and smithing weapons to group better in progression.xml
+Changed CraftingSkillGroup for Repair kits from Gun Smithing to Science
+Increased stack size of gas cans from 2000 to 5000
+Increased seed yield on plants from 1 to 2
+Changed backpack expansion dll from 75 to 90-slots. The pack in-game remains set at 75, but users can now increase the pack to 90 if they choose to make the changes
+Added craftingskillgroup=construction to cobblestone frames, adobe, brick, concrete, scrap iron frames, rebar frames, and steel blocks
