@@ -1,5 +1,6 @@
 <styles>
 
+
 <!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
 
 	<style name="SMXUnitFrameWindow" type="window">
@@ -90,14 +91,326 @@
 				These values are also accessible from window and control xml files 
 				as long as this style file is included in a window file.
 		-->
+		<!-- ZOMPACT NAMED WINDOW ENTRIES -->
+		<!-- 
+		The below variables control the backpack and minibike windows.
+		Backpack window width does not need to be set. There is nothing in the right pane to move.
+		If you want the backpack grid like vanilla adjust below to vanilla values.
+		-->
+		<style_entry name="zompact_backpackrows" value="5"/><!-- Backpack item grid rows --><!-- Vanilla value: 4 -->
+		<style_entry name="zompact_backpackcolumns" value="18"/><!-- Backpack item grid columns --><!-- Vanilla value: 8 -->
+		<style_entry name="zompact_backpackwindowwidth" value="1128"/><!-- Backpack window width  Base Value: 1008   Add (X) for each column over 16-->
+		<style_entry name="zompact_backpackwindowheight" value="646"/><!-- Backpack window height Base Value: 150    Add (X) for each row over (Y)-->
 		
+		<style_entry name="zompact_minibikebasketcolumns" value="3"/><!-- Minibike Storage Grid Columns (technically rows, it seems to be read the opposite of what you expect. Ive named the variables to make sense here, but they fill the normal entry.) -->
+		<style_entry name="zompact_minibikebasketrows" value="6"/><!-- Minibike Storage Grid Rows (technically columns, see above.) -->
+		<!-- The 2 variables above need to be set in loot.xml. find "Minibike Storage" adjust "3,6" to match new size -->
+		
+		<style_entry name="zompact_minibikebasketwidth" value="225"/><!-- Minibike Storage Window Width  columns x75 -->
+		<style_entry name="zompact_minibikebasketheight" value="450"/><!-- Minibike Storage Window Height  rows x75 -->
+		<style_entry name="zompact_minibikebasketthemebgvalue" value="225,50"/><!-- width,height. ONLY ADJUST WIDTH to match what you set above. This is a theme variable. If you do not adjust this, and theme the via zompact_minibikebasket, the image used will not match the width of the window -->
+		
+		<style_entry name="zompact_lootrows" value="10"/><!-- Loot item grid rows --><!-- Vanilla value: 10   is maximum size leave at 10-->
+		<style_entry name="zompact_lootcolumns" value="12"/><!-- Loot item grid columns --><!-- Vanilla value: 9 increase to (total inventory spaces)+18=   divide by 10 round up over is ok -->
+		<!-- must adjust in loot.xml find player dropped backpacks (5,10) must match loot window or you will lose items on death-->
+		<!-- adjusted csharp file must be installed for all bag size increases or items will be lost.-->
+		
+		<!--Advanced Style Changes-->
+		<style_entry name="zompact_backpackcellsize" value="63"/><!-- Backpack grid cell size --><!-- Zompact Default: 63 Vanilla value: 75 -->
+		<style_entry name="zompact_backpackcellbgsize" value="63,63"/><!-- Backpack grid cell themed background size. MUST BE SAME SIZE as zompact_backpackcellsize --><!-- 63,63 Default -->
+		<style_entry name="zompact_backpackcelliconsize" value="57"/><!-- Backpack grid cell item icon size. MUST BE 6 less than zompact_backpackcellsize --><!-- 57 default -->
+		<style_entry name="zompact_backpackcellstackvaluepos" value="-2,-40"/><!-- Backpack grid cell item stack value position. ONLY ADJUST VERTICAL(-2,-40)(horizontal,vertical) MUST BE 23 less than zompact_backpackcellsize -->
+		<style_entry name="zompact_backpackcellcenter" value="32,-32"/><!-- Backpack grid cell center value. (zompact_backpackcellsize/2) closet approximation rounded, no decimals --><!-- 32,-32 Default -->
+		
+		<!-- ZOMPACT NAMED WINDOW ENTRIES END -->
+		<!-- ZOMPACT NAMED THEME ENTRIES START -->
+		<!--
+		To install a theme, create your images using the sizes below (in W x H), then insert the referenced location into each variable.
+		You can use a single image for the entire window(most*), or alternatively fill in the header variables to layer another over the background image. (*Trader and Crafting list are the exception to a single image, as items from 2 seperate windows converge)
+		
+		If you are changing only a couple items, you can host the image online. reference @url
+		If you are theming the entire UI, they must be a local reference. The game will choke (CPU pegged 100%) trying to load to the main menu if everything is referenced online. (4790K/16GB/1080/SSD 100Mb/40Mb fibre connection, imgur host for those wondering)
+		To use a offline image, the referenced location must be @file:Mods\Zompact\Themes\[YOURTHEME]\[YOURIMG.EXT] (mod folder inside the 7days directory. PNG or JPG. OPTIMIZE OR LAG!!! Dont use a 800Kb PNG when you can use a 30Kb or less JPG)
+		I have no idea what would happen if you attempted to load a individual image into each element. 
+		
+		The Storage/Loot window header, Quest Tracker must be a custom sprite as the windows resize automatically. 
+		Cant really do much that looks nice IMO (not that Ive worked out anyway), so instead, change the colour and opacity to whatever you like via named Zompact Colour Entry to match your theme.
+		If you wish to use a image here, you will need to uncomment the necessary sprite(s) to enable. Make sure to disable the other background sprite(s) by commenting it(them) out. see comments next to 'variables'.
+		
+		Resetting any value to blank, "", will use system defaults.
+		-->
+		<!-- Main Hud -->
+		<style_entry name="zompact_compass" value=""/><!-- 595 x 31 Compass Background-->
+		<style_entry name="zompact_hudleft" value=""/><!-- 635 x 42 World Stats Background--><!-- top 5 pixels is player xp bar, bottom pixel is bottom of screen -->
+		<style_entry name="zompact_hudright" value=""/><!-- 635 x 42 Player PVE/PVP Stats--><!-- top 5 pixels is player xp bar, bottom pixel is bottom of screen -->
+		<style_entry name="zompact_hudbuffbg" value=""/><!-- 640 x 95 OPTIONAL background to the hud buffs display. NO CUSTOMIZABLE CELLS for these.(All cells are drawn at all times even if not used by a buff) -->
+		<style_entry name="zompact_hudclothingbg" value=""/><!-- 640 x 95 OPTIONAL background to the hud clothing display, seperate to the cells-->
+		<style_entry name="zompact_hudshwf" value=""/><!-- 150 x 20 --><!-- Must be an overlay, transparent section for the fill bar -->
+		<style_entry name="zompact_hudvehicle" value=""/><!-- 200 x 20 --><!-- Must be an overlay, transparent section for the fill bar -->
+		<style_entry name="zompact_toolbelt" value=""/><!-- 610 x 75 --><!-- Optional, not necessary, little room left/right no room available top/bottom. pointless really, its there if you want to use it -->
+		<style_entry name="zompact_xpoverlay" value=""/><!-- 1783 x 6 --><!-- Must be an overlay, transparent section for the fill bar -->
+		<style_entry name="zompact_activeitembg" value=""/><!-- 162 x 70 Active Item Background / Ammo Counter Background-->
+		<style_entry name="zompact_collecteditembg" value=""/><!-- 162 x 43 Collected Item Background -->
+		<!-- Main Screens -->
+		<style_entry name="zompact_paging" value=""/> <!-- 700 x 61 Main Menu Background-->
+		<style_entry name="zompact_nonpaging" value=""/> <!-- 500 x 61 Forge/Workbench Header Background-->
+		<style_entry name="zompact_craftitembg" value=""/><!-- 200 x 250 Crafting item Background-->
+		<style_entry name="zompact_craftitemdescbg" value=""/><!-- 415 x 250 Crafting Item Description Background-->
+		<style_entry name="zompact_craftitemamountbg" value=""/><!-- 140 x 50 Crafting Item Counter Background--><!-- these counters must be kept seperate due to way the windows work, if you cover this area from either craftlistsearchbg or craftlistheaderbg this item will be hidden -->
+		<style_entry name="zompact_craftitemdescheader" value=""/><!-- 405 x 30 Crafting Item Description header background-->
+		<style_entry name="zompact_craftlistsearchbg" value=""/><!-- 255 x 50 Crafting List Search Background-->
+		<style_entry name="zompact_craftlistpagibg" value=""/><!-- 400 x 60 Crafting List Pagination background-->
+		<style_entry name="zompact_craftlistmenubg" value=""/><!-- 45 x 450 Crafting List Menu Background-->
+		<style_entry name="zompact_craftlistheaderbg" value=""/><!-- 400 x 50 Crafting List Header Background-->
+		<style_entry name="zompact_creative" value=""/><!-- 420 x 62 Creative Menu Header Background -->
+		<style_entry name="zompact_creativemenu" value=""/><!-- 50 x 300 Creative Menu Menu Background-->
+		<style_entry name="zompact_emptybg" value=""/><!-- 700 x 250 Inspect/Empty Item info panel background-->
+		<style_entry name="zompact_itembg" value=""/><!-- 200 x 250 Item Info Panel Background-->
+		<style_entry name="zompact_itemdescbg" value=""/><!-- 450 x 250 Item description background-->
+		<style_entry name="zompact_itemdescheader" value=""/><!-- 440 x 30 item description header background-->
+		<style_entry name="zompact_itemstatsheader" value=""/><!-- 440 x 30 item stats header background-->
+		<style_entry name="zompact_itemqualityheader" value=""/><!-- 190 x 40 item quality header //Used when a item doesnt have a quality colour value attached -->
+		<style_entry name="zompact_backpack" value=""/><!-- 1008 x 50 inventory header background-->
+		<style_entry name="zompact_workbench" value=""/><!-- 200 x 250 workbench window background-->
+		<style_entry name="zompact_forge" value=""/><!-- 300 x 250 forge window background-->
+		<style_entry name="zompact_burnbg" value=""/> <!-- 120 x 50 burn time background-->
+		<style_entry name="zompact_burnbtnbg" value=""/> <!-- 200 x 50 burn button background-->
+		<style_entry name="zompact_activebuffbg" value=""/><!-- 290 x 300 active buffs background in character screen-->
+		<style_entry name="zompact_activebuffheader" value=""/><!-- 290 x 30 active buffs header background in character screen-->
+		<style_entry name="zompact_charbg" value=""/><!-- 320 x 500 character background-->
+		<style_entry name="zompact_charheader" value=""/><!-- 320 x 30 character header background-->
+		<style_entry name="zompact_charflag" value=""/><!-- 100 x 100 character level flag-->
+		<style_entry name="zompact_buffitembg" value=""/><!-- 200 x 250 buff item info background-->
+		<style_entry name="zompact_buffitemdescbg" value=""/><!-- 500 x 250 buff item info description background-->
+		<style_entry name="zompact_buffitemstatsheader" value=""/><!-- 490 x 30 buff item stats header background -->
+		<style_entry name="zompact_buffitemdescheader" value=""/><!-- 490 x 30 buff item description header background-->
+		<style_entry name="zompact_map" value=""/><!-- 718 x 43 Map header background--><!-- DO NOT REPOSITION THE MAP SCREEN AT ALL, YOU WILL BREAK WAYPOINTS -->
+		<style_entry name="zompact_maptoolbar" value=""/><!-- 718 x 43 map toolbar background --><!-- DO NOT REPOSITION THE MAP SCREEN AT ALL, YOU WILL BREAK WAYPOINTS -->
+		<style_entry name="zompact_waypointbg" value=""/><!-- 350 x 50 map waypoint background --><!-- DO NOT REPOSITION THE MAP SCREEN AT ALL, YOU WILL BREAK WAYPOINTS -->
+		<style_entry name="zompact_waypointtoolbar" value=""/><!-- 350 x 100 map waypoint toolbar background --><!-- DO NOT REPOSITION THE MAP SCREEN AT ALL, YOU WILL BREAK WAYPOINTS -->
+		<style_entry name="zompact_sharedbg" value=""/><!-- 350 x 50 map shared waypoints background--><!-- DO NOT REPOSITION THE MAP SCREEN AT ALL, YOU WILL BREAK WAYPOINTS -->
+		<style_entry name="zompact_sharedtoolbar" value=""/><!-- 350 x 50 map shared waypoints toolbar background--><!-- DO NOT REPOSITION THE MAP SCREEN AT ALL, YOU WILL BREAK WAYPOINTS -->
+		<style_entry name="zompact_playersmenu" value=""/> <!-- 1126 x 50 players menu background-->
+		<style_entry name="zompact_playerspagi" value=""/> <!-- 1126 x 50 players menu pagination-->
+		<style_entry name="zompact_playersheader" value=""/> <!-- 1126 x 50 players header background-->
+		<style_entry name="zompact_minibike" value=""/><!-- 300 x 250 Minibike background-->
+		<style_entry name="zompact_bikeitemdescheader" value=""/><!-- 290 x 30 Minibike Description header-->
+		<style_entry name="zompact_minibikebasket" value=""/><!-- 225 x 50 Minibike Storage header-->
+		<style_entry name="zompact_assembly" value=""/><!-- 300 x 250 Assembly background-->
+		<style_entry name="zompact_assemblyitemdescheader" value=""/><!-- 290 x 30 Assembly item header background-->
+		<style_entry name="zompact_skillsheader" value=""/><!-- 700 x 50 Skills header background-->
+		<style_entry name="zompact_skillslistmenu" value=""/><!-- 700 x 50 skills list menu background-->
+		<style_entry name="zompact_skillslistheader" value=""/><!-- 700 x 50 skills list item header background-->
+		<style_entry name="zompact_skillsinfoheader" value=""/><!-- 603 x 50 skills info header-->
+		<style_entry name="zompact_skillsinfoicon" value=""/><!-- 154 x 154 skills icon background-->
+		<style_entry name="zompact_skillsinfodesc" value=""/><!-- 440 x 210 skills item info description background-->
+		<style_entry name="zompact_skillsinfoprogress" value=""/><!-- 603 x 30 skills item progress background-->
+		<style_entry name="zompact_skillsinforequirements" value=""/><!-- 603 x 470 skills item requirements background-->
+		<style_entry name="zompact_questlistheader" value=""/><!-- 450 x 50 quest list header background -->
+		<style_entry name="zompact_questlistsearch" value=""/><!-- 450 x 50 quest list search background-->
+		<style_entry name="zompact_questinfoheader" value=""/><!-- 753 x 50 quest info header background-->
+		<style_entry name="zompact_questinfodesc" value=""/><!-- 753 x 500 quest info description background-->
+		<style_entry name="zompact_questobjheader" value=""/><!-- 743 x 40 quest objective/rewards header background-->
+		<style_entry name="zompact_questofferheader" value=""/><!-- 606 x 50 quest offer header background-->
+		<style_entry name="zompact_questofferdesc" value=""/><!-- 606 x 329 quest offer description background-->
+		<style_entry name="zompact_questofferaccept" value=""/><!-- 303 x 36 quest offer accept button background-->
+		<style_entry name="zompact_questofferdecline" value=""/><!-- 303 x 36 quest offer decline button background-->
+		<style_entry name="zompact_journallistheader" value=""/><!-- 450 x 50 journal list header background-->
+		<style_entry name="zompact_journallistsearch" value=""/><!-- 450 x 50 journal list search background-->
+		<style_entry name="zompact_journalinfoheader" value=""/><!-- 653 x 50 journal info header background-->
+		<style_entry name="zompact_journalinfodesc" value=""/><!-- 653 x 266 journal info description background-->
+		<style_entry name="zompact_traderheader" value=""/><!-- 400 x 50 trader header background-->
+		<style_entry name="zompact_tradermenu" value=""/><!-- 45 x 570 trader menu background -->
+		<style_entry name="zompact_tradersearch" value=""/><!-- 255 x 50 trader search background-->
+		<style_entry name="zompact_tradercounter" value=""/><!-- 140 x 50 trader item counter background--><!-- these counters must be kept seperate due to way windows work, if you cover this area from either tradersearch, traderheader or traderitemheader this item will be hidden -->
+		<style_entry name="zompact_traderpagi" value=""/><!-- 110 x 35 trader item pagination background-->
+		<style_entry name="zompact_traderitemheader" value=""/><!-- 400 x 30 trader item list header background-->
+		<style_entry name="zompact_vendingitem" value=""/><!-- 200 x 250 trader vending machine item background-->
+		<style_entry name="zompact_vendingdesc" value=""/><!-- 330 x 250 trader vending machine item description background-->
+		<style_entry name="zompact_vendingdescheader" value=""/><!-- 320 x 30 trader vending machine item description header background -->
+		<style_entry name="zompact_vendingstatsheader" value=""/><!-- 320 x 30 trader vending machine item stats header background-->
+		<!-- Buttons/Grids -->
+		<style_entry name="zompact_action" value=""/> <!-- 75 x 50 --><!-- iteminfopanel, craftinfopanel, assemble, minibike buttons -->
+		<style_entry name="zompact_backpackcell" value=""/> <!-- 63 x 63 --><!-- Inventory cell background -->
+		<style_entry name="zompact_toolbeltcell" value=""/> <!-- 75 x 75 --><!-- Toolbelt Cell background. Hud numbering will be hidden if this field is filled. If you want to keep hud numbers but change background and border colours do so below zompact_toolbeltcellcbg / zompact_toolbeltcellcbr -->
+		<style_entry name="zompact_lootstackcell" value=""/> <!-- 75 x 75 --><!-- Storage/Loot cell background -->
+		<style_entry name="zompact_workcell" value=""/><!-- 60 x 60 --><!-- Workbench/forge/chemistry/cement/campfire cell background-->
+		<style_entry name="zompact_outputcell" value=""/><!-- 50 x 50 --><!-- Workbench/forge/chemistry/cement/campfire output cell background -->
+		<style_entry name="zompact_itempartscell" value=""/><!-- 41 x 41 --><!-- item parts cell background (item info panel)-->
+		<style_entry name="zompact_requiredcell" value=""/><!-- 60 x 60 --><!-- forge/campfire required parts cell background-->
+		<style_entry name="zompact_ingredientcell" value=""/><!-- 75 x 50 --><!-- Crafting ingredients have/needed cell background -->
+		<style_entry name="zompact_creativecell" value=""/><!-- 60 x 60 --><!-- creative menu cell background -->
+		<style_entry name="zompact_clothingcell" value=""/><!-- 59 x 59 --><!--Hud clothing cell background -->
+		<style_entry name="zompact_queuecell" value=""/><!-- 50 x 50 --><!-- Crafting Queue Cell background -->
+		<style_entry name="zompact_activebuffcell" value=""/><!-- 280 x 35 --><!-- Active buffs menu cell background in character screen -->
+		<style_entry name="zompact_buffcell" value=""/><!-- 50 x 50 --><!-- Buff cell background in the buff info panel screen-->
+		<style_entry name="zompact_vehiclecell" value=""/><!-- 50 x 50 --><!-- Minibike parts cell background -->
+		<style_entry name="zompact_assemblycell" value=""/><!-- 58 x 50 --><!-- Assembly parts cell background -->
+		<style_entry name="zompact_skillcell" value=""/> <!-- 700 x 38 --> <!-- Skill List Entry Cell background. Can be 43 high if your design includes the skill progress bar. Bottom pixel of progress bar is bottom of cell -->
+		<style_entry name="zompact_questcell" value=""/><!-- 450 x 43 --><!-- Quest list entry cell background -->
+		<style_entry name="zompact_journalcell" value=""/><!-- 450 x 43 --><!-- Journal list entry cell background -->
+		<style_entry name="zompact_tradercell" value=""/><!-- 405 x 50 --><!--Trader item list cell background -->
+		<style_entry name="zompact_recipecell" value=""/> <!-- 200 x 50 --><!-- Crafting item list cell background -->
+		<style_entry name="zompact_waypointcell" value=""/><!-- 350 x 43 --><!-- Map waypoint cell background -->
+		<style_entry name="zompact_invitecell" value=""/><!-- 350 x 43 --><!-- Map shared waypoints cell background -->
+		<style_entry name="zompact_playerscell" value=""/><!-- 1128 x 43 --><!-- Players list cell background -->
+		<!-- ZOMPACT NAMED THEME ENTRIES END -->
 		<!--NAMED COLORS-->
+		<!-- Zompact Colours Start -->
+		<!-- Main HUD -->
+		<style_entry name="zompact_xpbg" value="120,120,120,255"/> <!-- HUD Player XP bar background color 120,120,120,255 default-->
+		<style_entry name="zompact_xp" value="235,235,235,255"/> <!-- HUD Player XP bar colour 235,235,235,255 default-->
+		<style_entry name="zompact_trackerbg" value="52,52,52,150"/><!-- HUD Quest tracker Background color/opacity. A custom sprite can be enabled here if you want to create one. name it: zompacttracker.png (enable sprite in windows.xml (search zompacttracker))-->
+		<style_entry name="zompact_questtrackertext" value="[white]"/><!-- HUD Quest tracker text colour -->
+		<style_entry name="zompact_toolbeltcellcbg" value="52,52,52,255"/><!-- HUD Toolbelt cell coloured sprite background. Change this value to change the color of the toolbelt cell background. WARNING! zompact_toolbeltcell overrides this option -->
+		<style_entry name="zompact_toolbeltcellcbr" value="40,40,40,255"/><!-- HUD Toolbelt cell coloured sprite border. Change this value to change the color of the toolbelt cell border. WARNING! zompact_toolbeltcell overrides this option -->
+		<style_entry name="zompact_activeitem" value="52,52,52,150"/><!-- HUD Active Item Background color/opacity. A custom background can be applied here from the Main Hud Section at the top if you wish. -->
+		<style_entry name="zompact_activeitemtext" value="[white]"/><!-- HUD active item text colour (ammo counter) -->
+		<style_entry name="zompact_collecteditem" value="52,52,52,150"/><!-- HUD Collected Item background color/opacity. A custom background can be applied here from the Main Hud Section at the top if you wish.-->
+		<style_entry name="zompact_collecteditemtext" value="[white]"/><!-- HUD collected item text colour -->
+		<style_entry name="zompact_hudcompassbgcolour" value="[black]"/><!-- HUD compass background colour -->
+		<style_entry name="zompact_hudcompassbrcolour" value="[red]"/><!-- HUD compass border colour -->
+		<style_entry name="zompact_hudshwficons" value="[white]"/><!-- HUD Stamina/health/water/food icons colour -->
+		<style_entry name="zompact_hudshwftext" value="[white]"/><!-- HUD Stamina/health/water/food text colour -->
+		<style_entry name="zompact_hudstatbarcolour" value="52,52,52,255"/><!-- HUD world/player stat bar background colour -->
+		<style_entry name="zompact_hudlefttext" value="[white]"/><!-- HUD world stats bar text colour -->
+		<style_entry name="zompact_hudlefticons" value="[white]"/><!-- HUD world stats bar icon colour -->
+		<style_entry name="zompact_hudrighttext" value="[white]"/><!-- HUD Player PVP/PVE bar text colour -->
+		<style_entry name="zompact_hudrighticons" value="[white]"/><!-- HUD Player PVP/PVE bar icon colour -->
+		<style_entry name="zompact_hudactivebufftext" value="[white]"/><!-- HUD active buff %/Timer colour -->
+		<style_entry name="zompact_hudvehicleicons" value="[white]"/><!-- HUD minibike bar icon colour -->
+		<style_entry name="zompact_hudvehicletext" value="[white]"/><!-- HUD minibike bar text colour -->
+		<style_entry name="zompact_beltnumbers" value="[white]"/><!-- HUD toolbelt number text colour -->
+		<!-- Hover/Selected Colours -->
+		<style_entry name="zompact_highlight" value="255,0,0,255"/> <!-- highlight color on hover - paging menu's, inventory, toolbelt, storage, workbench etc -->
+		<style_entry name="zompact_holding" value="255,0,0,255"/> <!-- selected item color - paging menu's, inventory, toolbelt, storage, workbench etc -->
+		<!-- Grids/Cells -->
+		<style_entry name="zompact_button" value="52,52,52,255"/><!-- Button colour. iteminfopanel, buffinfo, emptyinfo, craftinginfo, close, repair, refuel-->
+		<style_entry name="zompact_searchcbg" value="100,100,100,255"/><!-- Search input box background colour -->
+		<style_entry name="zompact_searchtext" value="[white]"/><!-- Search input box text colour -->
+		<style_entry name="zompact_countercontrolcbg" value="[black]"/><!-- Counter input box background colour -->
+		<style_entry name="zompact_countercontroltext" value="[white]"/><!-- Counter input box text colour -->
+		<style_entry name="zompact_backpackcellcbg" value="52,52,52,255"/><!-- Backpack cell coloured sprite background. Change this value to change the color of the backpack cell background. WARNING! zompact_backpackcell overrides this option -->
+		<style_entry name="zompact_backpackcellcbr" value="40,40,40,255"/><!-- Backpack cell coloured sprite border. Change this value to change the color of the backpack cell border. WARNING! zompact_backpackcell overrides this option -->
+		<style_entry name="zompact_creativecellcbg" value="52,52,52,255"/><!-- Creative cell coloured sprite background. Change this value to change the color of the creative cell background. WARNING! zompact_creativecell overrides this option -->
+		<style_entry name="zompact_creativecellcbr" value="40,40,40,255"/><!-- Creative cell coloured sprite border. Change this value to change the color of the creative cell border. WARNING! zompact_creativecell overrides this option -->
+		<style_entry name="zompact_lootcellcbg" value="52,52,52,255"/><!-- Lootstack cell coloured sprite background. Change this value to change the color of the lootstack cell background. WARNING! zompact_lootstackcell overrides this option -->
+		<style_entry name="zompact_lootcellcbr" value="40,40,40,255"/><!-- Lootstack cell coloured sprite border. Change this value to change the color of the lootstack cell border. WARNING! zompact_lootstackcell overrides this option -->
+		<style_entry name="zompact_buffcellcbg" value="52,52,52,255"/><!-- Buff Item cell coloured sprite background. Change this value to change the color of the buff item cell background. WARNING! zompact_buffcell overrides this option -->
+		<style_entry name="zompact_buffcellcbr" value="40,40,40,255"/><!-- Buff Item cell coloured sprite border. Change this value to change the color of the buff item cell border. WARNING! zompact_buffcell overrides this option -->
+		<style_entry name="zompact_ingredientbg" value="52,52,52,255"/><!-- Ingredient cell coloured sprite background. Change this value to change the color of the ingredient cell background. WARNING! zompact_ingredientcell overrides this option -->
+		<style_entry name="zompact_ingredientinset" value="100,100,100,255"/><!-- Ingredient cell coloured sprite inset. Change this value to change the color of the ingredient cell inset. WARNING! zompact_ingredientcell overrides this option -->
+		<style_entry name="zompact_workcellcbg" value="[darkGrey]"/><!-- Work cell coloured sprite background. Change this value to change the color of the work cell background. WARNING! zompact_workcell overrides this option -->
+		<style_entry name="zompact_workcellcbr" value="[black]"/><!-- Work cell coloured sprite border. Change this value to change the color of the work cell border. WARNING! zompact_workcell overrides this option -->
+		<style_entry name="zompact_outputcellcbg" value="52,52,52,255"/><!-- Output cell coloured sprite background. Change this value to change the color of the output cell background. WARNING! zompact_outputcell overrides this option -->
+		<style_entry name="zompact_outputcellcbr" value="[black]"/><!-- Output cell coloured sprite border. Change this value to change the color of the output cell border. WARNING! zompact_outputcell overrides this option -->
+		<style_entry name="zompact_recipecellcbg" value="52,52,52,255"/><!-- Recipe cell coloured sprite background. Change this value to change the color of the Recipe cell background. WARNING! zompact_recipecell overrides this option -->
+		<style_entry name="zompact_recipecellcbr" value="40,40,40,255"/><!-- Recipe cell coloured sprite border. Change this value to change the color of the Recipe cell border. WARNING! zompact_recipecell overrides this option -->
+		<style_entry name="zompact_reqcellcbg" value="[darkGrey]"/><!-- Required Item cell coloured sprite background. Change this value to change the color of the Required item cell background. WARNING! zompact_requiredcell overrides this option -->
+		<style_entry name="zompact_reqcellcbr" value="[black]"/><!-- Required Item cell coloured sprite border. Change this value to change the color of the Required item cell border. WARNING! zompact_requiredcell overrides this option -->
+		<style_entry name="zompact_queuecellcbg" value="90,90,90,255"/><!-- Crafting Queue cell coloured sprite background. Change this value to change the color of the Queue cell background. WARNING! zompact_queuecell overrides this option -->
+		<style_entry name="zompact_queuecellcbr" value="40,40,40,255"/><!-- Crafting Queue cell coloured sprite border. Change this value to change the color of the Queue cell border. WARNING! zompact_queuecell overrides this option -->
+		<style_entry name="zompact_questcellcbg" value="52,52,52,255"/><!-- Quest entry list cell coloured sprite background. Change this value to change the color of the Quest entry cell background. WARNING zompact_questcell overrides this option -->
+		<style_entry name="zompact_skillcellcbg" value="52,52,52,255"/><!-- Skill entry list cell coloured sprite background. Change this value to change the color of the Skill entry cell background. WARNING zompact_skillcell overrides this option -->
+		<style_entry name="zompact_journalcellcbg" value="52,52,52,255"/><!-- Quest entry list cell coloured sprite background. Change this value to change the color of the Quest entry cell background. WARNING zompact_questcell overrides this option -->
+		<style_entry name="zompact_tradercellcbg" value="52,52,52,255"/><!-- Trader item cell coloured sprite background. Change this value to change the color of the Trader item cell background. WARNING! zompact_tradercell overrides this option -->
+		<style_entry name="zompact_tradercellcbr" value="40,40,40,255"/><!-- Trader item cell coloured sprite border. Change this value to change the color of the Trader item cell border. WARNING! zompact_tradercell overrides this option -->
+		<!-- Main Screens -->
+		<style_entry name="zompact_flatthemecolor" value="52,52,52,255"/><!-- Changes all the header and background colours of the default theme. You still need to edit the cells or HUD items to match -->
+		<style_entry name="zompact_flatthemehrcolor" value="70,70,70,255"/><!-- Changes all the hard rule colours of the default theme. DEFAULT 70,70,70,255-->
+		<style_entry name="zompact_lootbg" value="52,52,52,255"/> <!-- Storage/Loot window header. Either change colour/opacity here, or use a custom sprite name zompactloot.png (enable sprite in windows.xml (search zompactloot)) placed into the ItemIcons folder. By Default this is empty -->	
+		<style_entry name="zompact_pagingheadertext" value="[white]"/><!-- Paging menu/Non Paging window header text colour -->
+		<style_entry name="zompact_windownametext" value="[white]"/><!-- Main windows text colour. Used where any window has a main header -->
+		<style_entry name="zompact_windownameicons" value="[white]"/><!-- Main windows icon colour. Used where any window has a main header-->
+		<style_entry name="zompact_burntimetext" value="[beige]"/><!-- Burn time text colour Forge/Chemistry/Campfire -->
+		<style_entry name="zompact_burnbtntext" value="[beige]"/><!-- Burn button text colour Forge/Chemistry/Campfire -->
+		<style_entry name="zompact_craftcounttext" value="[beige]"/><!-- Crafting Queue item count text colour -->
+		<style_entry name="zompact_forgebankname" value="[white]"/><!-- Forge bank storage item label text colour -->
+		<style_entry name="zompact_forgebankvalue" value="[beige]"/><!-- Forge bank storage item values text colour -->
+		<style_entry name="zompact_chartrophycolour" value="[beige]"/><!-- Character window. player level icon colour -->
+		<style_entry name="zompact_charleveltext" value="[white]"/><!-- Character window. player level text colour -->
+		<style_entry name="zompact_charicons" value="[white]"/><!-- Character window. protection icons colour -->
+		<style_entry name="zompact_charlabeltext" value="[white]"/><!-- Character window. stats label text colour -->
+		<style_entry name="zompact_charlabelvalue" value="[beige]"/><!-- Character window. stats label value text colour -->
+		<style_entry name="zompact_itemheadertext" value="[white]"/><!-- Item info panel item window header text colour (item name, stats/description header text) -->
+		<style_entry name="zompact_itemdesctext" value="[white]"/><!-- Item info panel item window description text colour -->
+		<style_entry name="zompact_itemwindowicons" value="[white]"/><!-- Item info panel item window icons colour -->
+		<style_entry name="zompact_durabilitybg" value="0,0,0,0"/> <!-- use this if you wish to add a durability bar background to the iteminfopanel. -->
+		<style_entry name="zompact_itemqualitytabtext" value="[white]"/><!-- Item info panel item quality text colour -->
+		<style_entry name="zompact_itemstackvaluetext" value="[white]"/><!-- Itemstack stack value colour toolbelt/backpack/storage/loot-->
+		<style_entry name="zompact_itemstacknametext" value="[white]"/><!-- Itemstack hover text colour toolbelt/backpack/storage/loot-->
+		<style_entry name="zompact_itemstatstextoverride" value=""/><!-- Item Stats Text Color. The white and beige by default is hardcoded(* could be wrong, let me know) . if you use this, the entire text will be this one colour used in iteminfo, buffinfo windows -->
+		<style_entry name="zompact_recipeneedtext" value="[white]"/><!-- Crafting ingredients need text colour -->
+		<style_entry name="zompact_recipehavetext" value="170,170,170,255"/><!-- Crafting ingredients have text colour -->
+		<style_entry name="zompact_unlockedrecipecount" value="[white]"/><!-- Crafting unlocked receipe count text colour -->
+		<style_entry name="zompact_activebuffentrytext" value="[white]"/><!-- Character screen active buff menu text colour -->
+		<style_entry name="zompact_activebuffentrytimer" value="[beige]"/><!-- Character screen active buff menu timer text colour -->
+		<style_entry name="zompact_tooltiptext" value="[white]"/><!-- Tooltip text colour -->
+		<style_entry name="zompact_tooltipbg" value="[black]"/><!--Tooltip background colour -->
+		<style_entry name="zompact_journaltimestamp" value="[lightGrey]"/><!-- Journal timestamp text colour -->
+		<style_entry name="zompact_playersamount" value="[white]"/><!-- Players window player count text colour -->
+		<style_entry name="zompact_playersicons" value="[white]"/><!-- Players list header icon colour -->
+		<style_entry name="zompact_playerslabels" value="[white]"/><!-- Players list cell entry text colour -->
+		<style_entry name="zompact_questcompletedtext" value="[lightGrey]"/><!--Quest info panel. quest completed text colour -->
+		<style_entry name="zompact_questobjentry" value=""/><!-- this is an override, entire text will be the colour specified. -->
+		<style_entry name="zompact_questrewentry" value=""/><!-- this is an override, entire text will be the colour specified. -->
+		<style_entry name="zompact_skillentryprogressbg" value="[lightGrey]"/><!-- Skill list entry progress bar background colour-->
+		<style_entry name="zompact_skillentryprogress" value="[red]"/><!-- Skill list entry progress bar colour-->
+		<style_entry name="zompact_skillpointshave" value="[beige]"/><!-- Unlocked skill count colour in window title bar -->
+		<style_entry name="zompact_skillitemicon" value="[white]"/><!-- Skill item info panel. Selected skill item icon colour -->
+		<style_entry name="zompact_skillxplabel" value="[beige]"/><!-- Skill item info panel. XP TO NEXT LEVEL text colour -->
+		<style_entry name="zompact_traderrestocktimer" value="[beige]"/><!-- Trader window. Restock timer text colour -->
+		<style_entry name="zompact_tradercoin" value="[lightGrey]"/><!-- Trader available coin text colour -->
+		<style_entry name="zompact_vendingprice" value="[beige]"/><!-- Rental cost text colour -->
+		<style_entry name="zompact_waypointicon" value="[white]"/><!-- waypoint/shared waypoint cell icon colour -->
+		<style_entry name="zompact_waypointnametext" value="[white]"/><!-- waypoint/shared waypoint cell text colour -->
+		<style_entry name="zompact_waypointdistancetext" value="[white]"/><!-- waypoint/shared waypoint cell distance text colour -->
+		<style_entry name="zompact_vehiclequalitytext" value="[white]"/><!-- minibike quality text colour -->
+		<style_entry name="zompact_vehicledurabilitytext" value="[beige]"/><!-- minibike durability text colour -->
+		<style_entry name="zompact_vehiclestatstext" value="[beige]"/><!-- minibike stats text colour -->
+		<!-- Additional Colour Sets -->
+		<style_entry name="blue" value="0,0,255"/>
+		<style_entry name="orange" value="255,128,0"/>
+		<style_entry name="yellow" value="255,255,0"/>
+		<style_entry name="purple" value="128,0,128"/>
+		<style_entry name="pink" value="255,192,203"/>
+		<style_entry name="gold" value="255,215,0"/>
+		<style_entry name="chocolate" value="210,105,30"/>
+		<style_entry name="teal" value="0,128,128"/>
+		<style_entry name="indianred" value="176,23,31"/>
+		<style_entry name="lightpink" value="255,182,193"/>
+		<style_entry name="hotpink" value="255,105,180"/>
+		<style_entry name="fuchsia" value="255,0,255"/>
+		<style_entry name="darkviolet" value="148,0,211"/>
+		<style_entry name="indigo" value="75,0,130"/>
+		<style_entry name="mediumpurple" value="147,112,219"/>
+		<style_entry name="lightslateblue" value="132,112,255"/>
+		<style_entry name="royalblue" value="65,105,225"/>
+		<style_entry name="lightsteelblue" value="176,196,222"/>
+		<style_entry name="skyblue" value="135,206,235"/>
+		<style_entry name="turquoiseblue" value="0,199,140"/>
+		<style_entry name="mediumspringgreen" value="0,250,154"/>
+		<style_entry name="mediumseagreen" value="60,179,113"/>
+		<style_entry name="emeraldgreen" value="0,201,87"/>
+		<style_entry name="cobaltgreen" value="61,145,64"/>
+		<style_entry name="lime" value="50,205,50"/>
+		<style_entry name="darkgreen" value="0,100,0"/>
+		<style_entry name="greenyellow" value="173,255,47"/>
+		<style_entry name="olive" value="128,128,0"/>
+		<style_entry name="khaki" value="240,230,140"/>
+		<style_entry name="goldenrod" value="218,165,32"/>
+		<style_entry name="darkorange" value="255,140,0"/>
+		<style_entry name="sandybrown" value="244,164,96"/>
+		<style_entry name="orangered" value="255,69,0"/>
+		<style_entry name="darkred" value="139,0,0"/>
+		<!-- Zompact Colours End-->
+		
 		<style_entry name="limeGreen" 		value="222,255,163,255"/>
 		<style_entry name="tan" 					value="182,166,123,255"/>
 		<style_entry name="beige" 				value="222,206,163"/>
 		<style_entry name="borderColor" 	value="0,0,0"/>
 		<style_entry name="darkGrey" 		value="64,64,64"/>
-		<style_entry name="mediumGrey" 	value="96,96,96"/>
+		<style_entry name="mediumGrey" 	value="0,0,0,100"/>
 		<style_entry name="lightGrey" 		value="128,128,128"/>
 		<style_entry name="white" 				value="255,255,255"/>
 		<style_entry name="black" 				value="0,0,0"/>
@@ -114,13 +427,14 @@
 		
 		<style_entry name="iconColor" 						value="255,255,255" />
 		<style_entry name="labelColor" 						value="255,255,255" />
-		<style_entry name="selectedColor" 					value="222,206,163" />
+		<style_entry name="selectedColor" 					value="[zompact_holding]" />
 		<style_entry name="hoverColor"						value="250,255,163" />
 		
 		<style_entry name="disabledLabelColor"				value="160,160,160" />
 		
 		<!--NAMED SPRITES-->
 		<style_entry name="default_sprite" value="menu_empty"/>
+		
 		
 		<!--NAMED SOUNDS-->
 		<style_entry name="default_click" 	value="/UI/ui_menu_click"/>
@@ -204,8 +518,8 @@
 		<style_entry name="atlas" value="UIAtlas"/>
 		<style_entry name="sprite" value="[default_sprite]"/>
 		<style_entry name="defaultcolor" value="[iconColor]"/>
-		<style_entry name="hovercolor" value="[hoverColor]" />
-		<style_entry name="selectedcolor" value="[selectedColor]" />
+		<style_entry name="hovercolor" value="[zompact_highlight]" />
+		<style_entry name="selectedcolor" value="[zompact_holding]" />
 		<style_entry name="hoverscale" value="1.25" />
 	</style>
 	
@@ -229,26 +543,100 @@
 	
 	<!--ITEM STACKS-->
 	<style name="itemStack">
-		<style_entry name="select_color" value="[beige]"/>
+		<style_entry name="select_color" value="[zompact_holding]"/>
 		<style_entry name="press_color" value="[limeGreen]"/>
 		<style_entry name="final_pressed_color" value="[lightGrey]"/>
-		<style_entry name="background_color" value="[mediumGrey]"/>
+		<style_entry name="background_color" value="0,0,0,1"/>
 		<style_entry name="highlight_color" value="[hoverColor]"/>
 		<style_entry name="holding_color" value="[white]"/>
-		<style_entry name="width" value="72"/>
-		<style_entry name="height" value="72"/>
+		<style_entry name="width" value="75"/>
+		<style_entry name="height" value="75"/>
 		<style_entry name="hover_icon_grow" value="1.5"/>
 		<style_entry name="on_press" value="true"/>
 		<style_entry name="sound_volume" value="0.75"/>
 		<style_entry name="pickup_sound" value="[pickup_click]"/>
 		<style_entry name="place_sound" value="[place_click]"/>
 	</style>
-	
+	<style name="itemStackClothing">
+		<style_entry name="select_color" value="[zompact_holding]"/>
+		<style_entry name="press_color" value="[limeGreen]"/>
+		<style_entry name="final_pressed_color" value="[lightGrey]"/>
+		<style_entry name="background_color" value="[mediumGrey]"/>
+		<style_entry name="highlight_color" value="[hoverColor]"/>
+		<style_entry name="holding_color" value="[white]"/>
+		<style_entry name="width" value="59"/>
+		<style_entry name="height" value="59"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
+	</style>
+	<style name="itemStackWork">
+		<style_entry name="select_color" value="[zompact_holding]"/>
+		<style_entry name="press_color" value="[limeGreen]"/>
+		<style_entry name="final_pressed_color" value="[lightGrey]"/>
+		<style_entry name="background_color" value="0,0,0,1"/>
+		<style_entry name="highlight_color" value="[hoverColor]"/>
+		<style_entry name="holding_color" value="[white]"/>
+		<style_entry name="width" value="60"/>
+		<style_entry name="height" value="60"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
+	</style>
+	<style name="outputstack">
+		<style_entry name="select_color" value="[zompact_holding]"/>
+		<style_entry name="press_color" value="[limeGreen]"/>
+		<style_entry name="final_pressed_color" value="[lightGrey]"/>
+		<style_entry name="background_color" value="[mediumGrey]"/>
+		<style_entry name="highlight_color" value="[hoverColor]"/>
+		<style_entry name="holding_color" value="[white]"/>
+		<style_entry name="width" value="50"/>
+		<style_entry name="height" value="50"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
+	</style>
+	<style name="itemStackParts">
+		<style_entry name="select_color" value="[zompact_holding]"/>
+		<style_entry name="press_color" value="[limeGreen]"/>
+		<style_entry name="final_pressed_color" value="[transparent]"/>
+		<style_entry name="background_color" value="0,0,0,1"/>
+		<style_entry name="highlight_color" value="[hoverColor]"/>
+		<style_entry name="holding_color" value="[white]"/>
+		<style_entry name="width" value="41"/>
+		<style_entry name="height" value="41"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
+	</style>
+	<style name="itemStackBackpack">
+		<style_entry name="select_color" value="[zompact_holding]"/>
+		<style_entry name="press_color" value="[limeGreen]"/>
+		<style_entry name="final_pressed_color" value="[lightGrey]"/>
+		<style_entry name="background_color" value="100,100,100,0"/>
+		<style_entry name="highlight_color" value="[hoverColor]"/>
+		<style_entry name="holding_color" value="[white]"/>
+		<style_entry name="width" value="[zompact_backpackcellsize]"/>
+		<style_entry name="height" value="[zompact_backpackcellsize]"/>
+		<style_entry name="hover_icon_grow" value="1.5"/>
+		<style_entry name="on_press" value="true"/>
+		<style_entry name="sound_volume" value="0.75"/>
+		<style_entry name="pickup_sound" value="[pickup_click]"/>
+		<style_entry name="place_sound" value="[place_click]"/>
+	</style>
 	<style name="vehicleStack">
 		<style_entry name="background_color" value="[darkGrey]"/>
-		<style_entry name="highlight_color" value="[lightGrey]"/>
-		<style_entry name="width" value="374"/>
-		<style_entry name="height" value="58"/>
+		<style_entry name="highlight_color" value="[hoverColor]"/>
+		<style_entry name="width" value="50"/>
+		<style_entry name="height" value="50"/>
 		<style_entry name="hover_icon_grow" value="1.5"/>
 		<style_entry name="on_press" value="true"/>
 		<style_entry name="sound_volume" value="0.75"/>
@@ -259,8 +647,8 @@
 	<style name="itemPartStack">
 		<style_entry name="background_color" value="[darkGrey]"/>
 		<style_entry name="highlight_color" value="[mediumGrey]"/>
-		<style_entry name="width" value="374"/>
-		<style_entry name="height" value="58"/>
+		<style_entry name="width" value="58"/>
+		<style_entry name="height" value="50"/>
 		<style_entry name="hover_icon_grow" value="1.5"/>
 		<style_entry name="on_press" value="true"/>
 		<style_entry name="sound_volume" value="0.75"/>
@@ -278,6 +666,8 @@
 	
 	<style name="hover">
 		<style_entry name="on_hover" value="true"/>
+		<style_entry name="highlight_color" value="[zompact_highlight]"/>
+		<style_entry name="holding_color" value="[zompact_holding]"/>
 	</style>
 	
 	<style name="scroll">
@@ -290,7 +680,7 @@
 	
 	<style name="header.panel" type="panel">
 		<style_entry name="name" value="header"/>
-		<style_entry name="height" value="43"/>
+		<style_entry name="height" value="22"/>
 		<style_entry name="depth" value="1"/>
 		<style_entry name="backgroundspritename" value="ui_game_panel_header"/>
 	</style>
@@ -298,16 +688,25 @@
 	<style name="header.icon" type="sprite">
 		<style_entry name="name" value="windowIcon"/>
 		<style_entry name="depth" value="2"/>
-		<style_entry name="pos" value="5,-5"/>
-		<style_entry name="size" value="32,32"/>
+		<style_entry name="pos" value="5,-1"/>
+		<style_entry name="size" value="22,22"/>
 	</style>
 	
 	<style name="header.name" type="label">
 		<style_entry name="name" value="windowName"/>
 		<style_entry name="depth" value="2"/>
-		<style_entry name="pos" value="42,-6"/>
+		<style_entry name="pos" value="30,-1"/>
 		<style_entry name="size" value="250,32"/>
-		<style_entry name="font_size" value="32"/>
+		<style_entry name="font_size" value="20"/>
+		<style_entry name="justify" value="center"/>
+	</style>
+	<style name="header.name2" type="label">
+		<style_entry name="name" value="windowName"/>
+		<style_entry name="depth" value="2"/>
+		<style_entry name="pos" value="30,-1"/>
+		<style_entry name="size" value="200,23"/>
+		<style_entry name="font_size" value="20"/>
+		<style_entry name="justify" value="center"/>
 	</style>
 	
 	<style name="header.timer" type="label">
@@ -315,13 +714,13 @@
 		<style_entry name="depth" value="2"/>
 		<style_entry name="size" value="64,28"/>
 		<style_entry name="text" value="00:00"/>
-		<style_entry name="font_size" value="26"/>
-		<style_entry name="color" value="[mediumGrey]"/>
-		<style_entry name="justify" value="right"/>
+		<style_entry name="font_size" value="22"/>
+		<style_entry name="color" value="[lightGrey]"/>
+		<style_entry name="justify" value="left"/>
 		<style_entry name="anchor_side" value="right"/>
 		<style_entry name="pivot" value="right"/>
 		<style_entry name="anchor_run_once" value="false"/>
-		<style_entry name="anchor_offset" value="-68,0"/>
+		<style_entry name="anchor_offset" value="-200,0"/>
 	</style>
 	
 	<!--PAGING WINDOW-->
@@ -540,19 +939,22 @@
 	
 	<style name="workstation.reserve.name" type="label">
 		<style_entry name="depth" value="2"/>
-		<style_entry name="height" value="24"/>
-		<style_entry name="width" value="53"/>
+		<style_entry name="height" value="20"/>
+		<style_entry name="width" value="50"/>
+		<style_entry name="font_size" value="20"/>
 	</style>
 	
 	<style name="workstation.reserve.weight" type="label">
 		<style_entry name="depth" value="2"/>
-		<style_entry name="height" value="24"/>
-		<style_entry name="width" value="74"/>
+		<style_entry name="height" value="20"/>
+		<style_entry name="width" value="100"/>
 		<style_entry name="color" value="[beige]"/>
+		<style_entry name="font_size" value="20"/>
 	</style>
 	
 	<style name="compass.window" type="window">
 		<style_entry name="pos" value="-200,-9"/>
+
 		<style_entry name="size" value="400,43"/>
 		<style_entry name="anchor" value="CenterTop"/>
 	</style>
@@ -608,7 +1010,5 @@
 		<style_entry name="invalid_color" value="[red]"/>
 		<style_entry name="valid_sprite" value="ui_game_symbol_check"/>
 		<style_entry name="invalid_sprite" value="ui_game_symbol_x"/>
-		<style_entry name="width" value="603"/>
-		<style_entry name="height" value="400"/>
 	</style>
 </styles>

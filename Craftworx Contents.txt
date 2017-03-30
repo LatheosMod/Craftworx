@@ -82,6 +82,7 @@ New Quest
 	
 Includes
 	Sirillion's SMX UI
+	Dust2Death's ZompactUI
 	stallionsden's Backpack Expansion
 	Valmar's Expanded Traps
 	SylenThunder's Lighted Glass Blocks

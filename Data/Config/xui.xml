@@ -10,17 +10,15 @@
 		<window_group name="character" controller="XUiC_CharacterSheetWindowGroup">
 			<window name="CharacterFrameWindow"/>
 			<window name="buffInfoPanel"/>
-			<window name="PlayerStatsWindow" />
 			<window name="ActiveBuffsWindow" />
+			<window name="HUDClothing" />  <!-- Equipped Clothing // Modified ZompactUI -->
 		</window_group>		
 		
 		<window_group name="workstation_campfire" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-			<window name="windowToolsCampfire" />
-			<window name="windowFuel" />
-			<window name="windowOutput" />
+			<window name="windowCampfire"/><!-- Campfire //ZompactUI -->
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		
@@ -28,10 +26,7 @@
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-			<window name="windowToolsForge" />
-			<window name="windowFuel" />
-			<window name="windowForgeInput" />
-			<window name="windowOutput" />
+			<window name="windowForge" /><!-- Forge //ZompactUI -->
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		
@@ -39,7 +34,7 @@
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-			<window name="windowOutput" />
+			<window name="windowCement" /><!-- Cement //ZompactUI -->
 			<window name="windowNonPagingHeader" />
 		</window_group>		
 		
@@ -47,31 +42,29 @@
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-			<window name="windowOutput" />
+			<window name="windowWorkbench"/><!-- Workbench //ZompactUI -->
 			<window name="windowNonPagingHeader" />
-			<window name="windowCombine" />
 		</window_group>				
 
 		<window_group name="workstation_chemistryStation" controller="XUiC_WorkstationWindowGroup">
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
-			<window name="windowFuel" />
-			<window name="windowOutput" />
+			<window name="windowChemistry"/><!-- Chemistry //ZompactUI -->
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		
-		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup">
+		<window_group name="looting" controller="XUiC_LootWindowGroup">
 			<window name="windowLooting"/>
-			<window name="windowNonPagingHeader" />
+			<window name="windowNonPagingHeader"/>
 		</window_group>
 		
 		<window_group name="creative" controller="XUiC_CreativeWindowGroup">
 			<window name="windowCreative" />
 		</window_group>
 		
-		<window_group name="backpack">	
-			<window name="itemInfoPanel"/>
+		<window_group name="backpack">
+			<window name="itemInfoPanel"/> 
 			<window name="emptyInfoPanel" />
 			<window name="windowBackpack"/>
 		</window_group>
@@ -81,30 +74,15 @@
 		</window_group>
 		
 
-<!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
-
+<!-- <<< SMX START >>> -->
 		<window_group name="compass">
-			<window name="SMXCompass1" />									<!-- Swappable frame. Change between different compass frames by changing the number. Choose between 1-2 -->
-																										<!-- 1: Standard Compass -->
-																										<!-- 2: Medieval Compass - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
-<!--		<window name="windowCompass" /> -->
-			<window name="SMXQuestTracker" anchor="RightTop" />
-			<window name="SMXBuffFrame4" anchor="LeftBottom" />				<!-- Swappable frame. Change between different buff frames by changing the number. Choose between 1-4 -->
-																										<!-- 1: Standard Buff Frames -->
-																										<!-- 2: Standard Buff Frames - Small -->
-																										<!-- 3: Improved Buff Frames -->
-																										<!-- 4: Improved Buff Frames - Small -->
+			<window name="SMXCompass1" />									
 			<window name="SMX" anchor="RightTop" />
-			<window name="SMXLevelXPUF1" />									<!-- Swappable frame. Change between different Level/XP displays by changing the number. Choose between 1-2 -->
-																										<!-- 1: Standard Level/XP Frame -->
-																										<!-- 2: Medieval Level/XP Frame - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
-
+			<window name="SMXLevelXPUF1" />									
 			<window name="SMXDayTimeFrame" />
-<!--		<window name="SMXminiMap" /> -->
+			<window name="SMXBuffFrame4" anchor="LeftBottom" />	
 		</window_group>
-
-
-<!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
+<!-- <<< SMX END >>> -->
 
 		<window_group name="toolTip">
 			<window name="toolTip" />
@@ -123,38 +101,26 @@
 			<window name="windowTimer"/>
 		</window_group>
 		
-
-<!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
-
+<!-- <<< SMX START >>> -->
 		<window_group name="toolbelt">
-			<window name="SMXToolbelt1" anchor="CenterBottom" />			<!-- Swappable frame. Change between different tool belts by changing the number. Choose between 1-2 -->
-																										<!-- 1: Standard Tool Belt -->
-																										<!-- 2: Medieval Tool Belt - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
-<!--		<window name="windowToolbelt" anchor="CenterBottom" /> -->
-			<window name="SMXUnitFrame1" anchor="LeftBottom" />				<!-- Swappable frame. Change between different unit frames by changing the number. Choose between 1-2 -->
-																										<!-- 1: Standard Unit Frame -->
-																										<!-- 2: Medieval Unit Frame - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
+			<window name="SMXToolbelt1" anchor="CenterBottom" />
+			<window name="SMXUnitFrame1" anchor="LeftBottom" />	
 <!--		<window name="HUDLeftStatBars" anchor="LeftBottom" /> -->
 			<window name="SMXHudOther" anchor="RightBottom" />
 <!--		<window name="HUDRightStatBars" anchor="RightBottom" /> -->
-<!--		<window name="windowQuestTracker" anchor="RightTop" /> -->
-			<window name="SMXTempFrameUF1" />								<!-- Swappable frame. Change between different temperature displays by changing the number. Choose between 1-2 -->
-																										<!-- 1: Standard Temp Frame -->
-																										<!-- 2: Medieval Temp Frame - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
+			<window name="windowQuestTracker2" /><!-- Zompact Quest Tracker // 1: bottom right 2: top right 3. top left 4. bottom left -->
+			<window name="SMXTempFrameUF1" />
 		</window_group>
-
-
-<!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
-
+<!-- <<< SMX END >>> -->
+		
 		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">
-			<window name="windowVehicle"/>
 			<window name="windowNonPagingHeader" />
 			<window name="windowVehicleStats" />
 			<window name="windowVehicleStorage" />
 		</window_group>
 		
 		<window_group name="windowpaging">
-			<window name="windowPagingHeader" anchor="CenterTop"/>
+			<window name="windowPagingHeader"/>
 		</window_group>
 
 		<window_group name="map">
@@ -189,8 +155,8 @@
 		<window_group name="quests" controller="XUiC_QuestWindowGroup">
 			<window name="windowQuestList" />
 			<window name="windowQuestDescription" />
-			<window name="windowQuestObjectives" />
-			<window name="windowQuestRewards" />
+			<!-- <window name="windowQuestObjectives" />
+			<window name="windowQuestRewards" />  -->
 		</window_group>
 		
 		<window_group name="journal" controller="XUiC_JournalWindowGroup">
