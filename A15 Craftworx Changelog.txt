@@ -125,3 +125,8 @@ Includes stallionsden's Backpack Expansion (with help from DreamSmith), Valmar's
 Changed the UI to a highly modified hybrid of Sirillion's SMX and Dust2Death's ZompactUI - This UI *WILL NOT BE RELEASED SEPARATELY*
 Reduced amount of gas harvested from cars 
 Renamed smithing skills for clarity with the rest of the mod
+
+----->03 Apr 2017<-----
+Craftworx 1.61
+Includes stallionsden's Backpack Expansion (with help from DreamSmith), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI, Dust2Death's ZompactUI
+Added missing heavy and light armor books to the assortment of magazines

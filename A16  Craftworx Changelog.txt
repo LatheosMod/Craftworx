@@ -1,0 +1,41 @@
+A16 changelog
+	
+<----- 28-31 Aug 2017----->
+Craftworx 2.0
+Includes modified Sirillion's SMX UI
+Updated for Alpha 16.2
+Added Resources to property/Group for flashlight02
+Changed zoom secondary action for pump shotguns to melee attack
+Changed actionSkillGroup on fireaxes from Mining Tools to Carpentry
+Changed CraftingSkillGroup on archery weapons from craftSkillWeapons to craftSkillFletching
+Changed CraftingSkillGroup on archery ammo from craftSkillWeapons to craftSkillFletching
+Changed CraftingSkillGroup on clothing items from craftSkillMiscellaneous to craftSkillTailoring
+Changed stacknumber on bandages from 5 to 10
+Changed stacknumber on foodYuccaFruit from 50 to 100
+Changed stacknumber on foodYuccaJuice from 15 to 30
+Changed stacknumber on rawMeat from 50 to 100
+Changed stacknumber on bottledWater from 15 to 30
+Changed stacknumber on goldenRodTea from 15 to 30 
+Changed stacknumber on redTea from 15 to 30 
+Changed stacknumber on coffee from 15 to 30 
+Changed stacknumber on beer from 15 to 30 
+Changed stacknumber on grainAlcohol from 15 to 30 
+Added item springCable, cable constructed from straightened springs at the workbench
+Removed craftable calipers as they are no longer used by the game
+Fixed perk spelling error - it's "Tyrannosaurus", with two 'n's
+Removed calipers from advanced tooling perk
+Changed Gun Bunny to only add flamethrower recipe at level 1 (other recipes back as found scematics)
+Changed dismemberment values on William Tell perk to mirror those of the decapitator blade perk
+Reduced requirements for Masamune, Jr perk, as science skill is now rolled into the steel perk
+Changed Silent But Deadly perk to a single item with five levels, as was originally intended but not possible in A15
+Changed backpack size to 72 to work with SMX's Big Bag option
+Increased count of leather crafted from animal hide from 1 to 2
+Fixed null reference error in recipes.xml due to presence of calipers in the recipe
+Fixed duplicate rocket launcher entry in loot.xml
+Fixed missing icons
+Fixed runaway skill points by adding exp_gain_multiplier="0" to new perks updated to new skill point purchasing system
+Added flamingBolt to usable ammunition types for crossbow
+Added recipe for blackCowboyHat
+Added 4th level to Tinker Tailor perk, requires level 4 craftskillArmor & craftskillTailoring, adding recipes for blackCowboyHat and leatherDusterBlack
+Fixed typo in springCable description
+Added harvesting springs to fridges, ovens, and added disassemble option to dumpsters

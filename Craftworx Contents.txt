@@ -10,14 +10,11 @@ New Weapons and Tools
 	Suppressed Scoped AK47
 	Suppressed Sniper Rifle
 	Repeating Crossbow (Assembled from crossbowStock, crossbowDeck, crossbowLimb, crossbowScope)
-	Iron Crossbow
 	Iron Bow
 	Poop Cannon
 	Poop Launcher
 	Kukri
 	Flamethrower (Updated from Andy's Mods flamethrower for A12)
-	Seagrave Fireaxe
-	Homemade Flashlight (Assembled from Flashlight Lamp, Flashlight Barrel, Flashlight Battery Pack, and Flashlight Cap)
 
 New Parts
 	Scoped Hunting Rifle Parts
@@ -35,34 +32,21 @@ New Parts
 	Suppressed Sniper Rifle Barrel
 	Poop Cannon Parts
 	Flamethrower Parts
-	Homemade Flashlight Parts
 	
 New Items
-	Craftable Weapon Oil from Biofuel
-	Craftable Scrap Cable
-	Craftable Calipers in the forge
 	Craftable Beaker in the forge
 	Carbon Steel
 	Alternate arrow and crossbow bolt recipes
 	Flaming crossbow bolt
 	Refined coal (crafted at the chemistry workbench from 25 coal, burning for 15 minutes)
 	Salted Meat
-	D Cell Battery
-	Fuel Log (crafted in the workbench, it burns for 9 minutes)
-	Breacher Rounds (shotgun shells designed to damage doors and safes)
-	Magazines for nearly all skills - read to increase skill level
+	Magazines for most skills - read to increase skill level 
+	Spring Cable (craftable at workbench from springs, used in recipies that formerly used scrap cable)
 
 New Armor
 	Helmet lights (uses the homemade flashlight) for cloth hat, cowboy hat, bllack cowboy hat, football helmet, iron helmet, military helmet, leather hood, scrap helmet. swat helmet, hazmat mask, heavy bandit gasmask
-	Craftable cotton and leather clothing with new perks
+	Craftable cotton clothing with new perk
 	
-New Blocks
-    Elevator (crafted at the workbench)
-	Craftable Metal Pipes in the forge (straight, corner, joint, cap, valve, and flange)
-	Valmar's Expanded Traps (Fire, Adhesive, Nail Mine)
-	Safed Fire Trap
-	SylenThunder's Glass Light Blocks
-
 New Perks
 	Carpentry
 	Fletching
@@ -73,17 +57,10 @@ New Perks
 	Paul Bunyan
 	William Tell
 	Gun Bunny
-	Clothier
-	Cordwainer
-	2 Extra levels to shotgun ammo crafting
+	Tinker, Tailor, etc.
 
 New Quest
     A Shifty Way to Die - kill five zombies with the poop launcher
 	
 Includes
 	Sirillion's SMX UI
-	Dust2Death's ZompactUI
-	stallionsden's Backpack Expansion
-	Valmar's Expanded Traps
-	SylenThunder's Lighted Glass Blocks
-

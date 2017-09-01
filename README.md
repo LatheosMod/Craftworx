@@ -4,13 +4,11 @@
 
 --- About This Mod ---
 
-Craftworx compatible with Alpha 15
+Craftworx compatible with Alpha 16
 
-This is a complete overhaul of LathMod, which itself was an overhaul mod for 7 Days to Die. Craftworx is a mod aimed more at folks who enjoy crafting, which means that the crafting skills are more defined than vanilla. Harvesting wood now falls under the Carpentry skill, rather than mining, as do crafting most wood objects in the game. Bows, crossbows, arrows and bolts are now crated in the Fletching skill, rather than Weapon Smithing. There are also perks and skills which add more ammunition, allow crafting of different kinds of clothing, and more.
+I made a number of changes to CraftWorx in A16, removing a number of parts that are no longer necessary in the current build. I've removed all modified blocks (inclusding Valmar's traps), as I don't see them as necessary. I may later revisit the Fuel Log, depending on how whether it seems left out after playing the new version. Carpentry is back, but currently not attached to crafted wood block types, which may change later. Tailoring is also back, and set up in line with the other crafting skills using purchased point levels. Clothier has been renamed Tinker, Tailor, etc., and may later incorporate crafting leather clothing (it currently only covers the same cotton clothes as in A15).
 
-Advancing in crafting takes a bit longer than in vanilla, as the skill levels for concrete, steel, and Advanced Tooling (which replaces workbench and also locks the forge) have been raised from vanilla levels. Craftworx adds suppressed firearms, iron bows and crossbows, and a few other new weapons. Several perks have been renamed for clarity, and new perks have been added as well
-
-Craftworx features a custom HUD created by adapting and combining Sirillion's SMX UI and Dust2Death's ZompactUI (This custom UI **WILL NOT** be exported to a stand-alone UI), Stallionsden's Backpack Expansion, Valmar's Expanded Traps (modified), a flamethrower from Andy of Andy's Mods (originally for A12 but updated to A15), and SylenThunder's Lighted Glass Blocks (updated from A13). Credit for those parts of this mod goes to them.
+Craftworx features a custom HUD created by adapting Sirillion's SMX UI, and a flamethrower from Andy of Andy's Mods (originally for A12 but updated to A16). Credit for those parts of this mod goes to them. Additionally, Valmar, Sirillion and StompyNZ were extremely helpful in getting parts of this mod working properly. Thanks, guys!
 
 Links:
 
@@ -19,18 +17,6 @@ https://7daystodie.com/forums/forumdisplay.php?61-Modding
 
 Sirillion's SMX UI
 https://7daystodie.com/forums/showthread.php?42922-SMX-By-Sirillion
-
-Dust2Death's ZompactUI
-https://7daystodie.com/forums/showthread.php?53886-UI-Zompact-Overhaul-A15
-
-SylenThunder's Lighted Glass Blocks
-https://7daystodie.com/forums/showthread.php?35324-A13-Glass-Light-Blocks
-
-stallionsden's Backpack Expansion
-https://7daystodie.com/forums/showthread.php?34533-Backpack-Expansion
-
-Valmar's Expanded Traps
-https://7daystodie.com/forums/showthread.php?35830-Expanded-Traps
 
 Magoli's CompoPack (Prefabs)
 https://7daystodie.com/forums/showthread.php?28057-Compo-Pack-for-Random-Gen
