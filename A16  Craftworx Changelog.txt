@@ -62,3 +62,6 @@ Changed ZiplockBag to zippedBag
 Added bagged versions of boiled meat, charred meat, grilled meat, meat stew, bacon and eggs
 Changed BaggedMeat to baggedMeat for consistency
 Changed scrapAxe to extend fireaxeIron instead of stoneAxe, removed repair functionality
+Increased seed yield on all plants from 1 to 2
+Changed flamingBolt recipe to use oil and tallow instead of gunpowder and animal fat
+Fixed incorrect version of SMX in mods folder (thanks to chrismura on the Steam forums!)

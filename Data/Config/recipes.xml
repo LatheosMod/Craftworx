@@ -131,7 +131,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="aloePlant" count="4"/>
 </recipe>
 
-<recipe name="plantedAloe1" count="1" craft_time="1">
+<recipe name="plantedAloe1" count="2" craft_time="1">
 	<ingredient name="aloePlant" count="1"/>
 </recipe>
 
@@ -299,7 +299,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="plantedBlueberry1" count="1" craft_time="1">
+<recipe name="plantedBlueberry1" count="2" craft_time="1">
 	<ingredient name="blueberries" count="1"/>
 </recipe>
 
@@ -496,11 +496,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="rawMeat" count="1"/>
 </recipe>
 
-<recipe name="plantedChrysanthemum1" count="1" craft_time="1">
+<recipe name="plantedChrysanthemum1" count="2" craft_time="1">
 	<ingredient name="chrysanthemumPlant" count="1"/>
 </recipe>
 
-<recipe name="plantedCoffee1" count="1" craft_time="1">
+<recipe name="plantedCoffee1" count="2" craft_time="1">
 	<ingredient name="coffeeBeans" count="1"/>
 </recipe>
 
@@ -902,11 +902,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="plantedCorn1" count="1" craft_time="1">
+<recipe name="plantedCorn1" count="2" craft_time="1">
 	<ingredient name="corn" count="1"/>
 </recipe>
 
-<recipe name="plantedCotton1" count="1" craft_time="1">
+<recipe name="plantedCotton1" count="2" craft_time="1">
 	<ingredient name="cottonPlant" count="1"/>
 </recipe>
 
@@ -1174,7 +1174,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="plantedGoldenrod1" count="1" craft_time="1">
+<recipe name="plantedGoldenrod1" count="2" craft_time="1">
 	<ingredient name="goldenrodPlant" count="1"/>
 </recipe>
 
@@ -1325,7 +1325,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="10"/>
 </recipe>
 
-<recipe name="plantedHop1" count="1" craft_time="1">
+<recipe name="plantedHop1" count="2" craft_time="1">
 	<ingredient name="hopsFlower" count="1"/>
 </recipe>
 
@@ -1410,7 +1410,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="4"/>
 </recipe>
 
-<recipe name="leather" count="1">
+<recipe name="leather" count="2">
 	<ingredient name="animalHide" count="1"/>
 </recipe>
 
@@ -1777,7 +1777,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="100"/>
 </recipe>
 
-<recipe name="plantedPotato1" count="1" craft_time="1">
+<recipe name="plantedPotato1" count="2" craft_time="1">
 	<ingredient name="potato" count="1"/>
 </recipe>
 
@@ -2289,7 +2289,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="1"/>
 </recipe>
 
-<recipe name="plantedYucca1" count="1" craft_time="1">
+<recipe name="plantedYucca1" count="2" craft_time="1">
 	<ingredient name="foodYuccaFruit" count="1"/>
 </recipe>
 
@@ -2985,9 +2985,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="flamingBolt" count="1" craft_area="workbench">
 	<ingredient name="steelCrossbowBolt" count="1"/>
-	<ingredient name="gunPowder" count="2"/>
+	<ingredient name="oil" count="2"/>
 	<ingredient name="cloth" count="1"/>
-	<ingredient name="animalFat" count="1"/>
+	<ingredient name="tallow" count="1"/>
 </recipe>
 
 <recipe name="napalm" count="1" scrapable="False" craft_area="chemistryStation" craft_time="150" learn_exp_gain="80" craft_exp_gain="200" >
