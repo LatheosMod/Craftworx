@@ -627,7 +627,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="oilShale" count="20,60"/> <!-- 50 -->
 			<item name="animalHide" count="5,25"/>
 			<item name="leather" count="5,30"/>
-			<item name="ZiplockBag" count="5,15"/>
+			<item name="zippedBag" count="5,15"/>
 			<item name="scrapBrass" count="5,40"/> <!-- 10 -->
 			<item name="clayLump" count="5,25"/> <!-- 150 -->
 			<item name="scrapLead" count="5,90"/> <!-- 5 -->

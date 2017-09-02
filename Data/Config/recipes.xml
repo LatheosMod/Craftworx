@@ -2841,7 +2841,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="ductTape" count="2"/>
 </recipe>
 
-<recipe name="ZiplockBag" count="1" >
+<recipe name="zippedBag" count="1" >
 	<ingredient name="scrapPlastics" count="5"/>
 	<ingredient name="ductTape" count="1"/>
 </recipe>
@@ -3078,13 +3078,38 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- End Lighted Helmets -->
 
 <!-- Food -->
-<recipe name="BaggedMeat" count="1" scrapable="False" craft_time="2">
+<recipe name="baggedMeat" count="1" scrapable="False" craft_time="2">
     <ingredient name="rawMeat" count="1"/>
-	<ingredient name="ZiplockBag" count="1"/>
+	<ingredient name="zippedBag" count="1"/>
 </recipe>
 
 <recipe name="rawMeat" count="1" scrapable="False" craft_time="2">
-    <ingredient name="BaggedMeat" count="1"/>
+    <ingredient name="baggedMeat" count="1"/>
+</recipe>
+
+<recipe name="baggedcharredMeat" count="1" scrapable="False" craft_time="2">
+    <ingredient name="charredMeat" count="1"/>
+	<ingredient name="zippedBag" count="1"/>
+</recipe>
+
+<recipe name="baggedgrilledMeat" count="1" scrapable="False" craft_time="2">
+    <ingredient name="grilledMeat" count="1"/>
+	<ingredient name="zippedBag" count="1"/>
+</recipe>
+
+<recipe name="baggedboiledMeat" count="1" scrapable="False" craft_time="2">
+    <ingredient name="boiledMeat" count="1"/>
+	<ingredient name="zippedBag" count="1"/>
+</recipe>
+
+<recipe name="baggedmeatStew" count="1" scrapable="False" craft_time="2">
+    <ingredient name="meatStew" count="1"/>
+	<ingredient name="zippedBag" count="1"/>
+</recipe>
+
+<recipe name="baggedbaconAndEggs" count="1" scrapable="False" craft_time="2">
+    <ingredient name="baconAndEggs" count="1"/>
+	<ingredient name="zippedBag" count="1"/>
 </recipe>
 
 <recipe name="saltedMeat" count="1" craft_time="5">

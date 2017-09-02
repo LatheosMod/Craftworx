@@ -55,3 +55,10 @@ Decreased fertilizer crafting times
 Increased spring harvest from cntCar03SedanDamage1 from 2,4 to 4,8
 Added chance to harvest minibike wheels from cntCar03SedanDamage1
 
+<----- 2 Sep 2017 ----->
+Craftworx 2.11
+Includes modified Sirillion's SMX UI
+Changed ZiplockBag to zippedBag
+Added bagged versions of boiled meat, charred meat, grilled meat, meat stew, bacon and eggs
+Changed BaggedMeat to baggedMeat for consistency
+Changed scrapAxe to extend fireaxeIron instead of stoneAxe, removed repair functionality

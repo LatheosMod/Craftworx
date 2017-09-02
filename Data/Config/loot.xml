@@ -1049,7 +1049,7 @@
 	<item name="electricParts" count="1,2" prob="0.05"/>
 	<item name="potassiumNitratePowder" count="2,6" prob="0.15"/>
 	<item name="paint" count="5,20" prob="0.15"/>
-	<item name="ZiplockBag" count="1,3" />
+	<item name="zippedBag" count="1,3" />
 </lootgroup>
 
 <lootgroup name="rareOres"> <!-- 907 average -->
@@ -1091,7 +1091,7 @@
 	<item group="treasureMaps" count="1" prob="0.092"/>
 	<item name="femur" count="1,2" prob="0.05"/>
 	<item name="scrapPlastics" count="1,2" prob="0.3"/>
-	<item name="ZiplockBag" count="1,3" />
+	<item name="zippedBag" count="1,3" />
 </lootgroup>
 
 <lootgroup name="rareAutomotive">

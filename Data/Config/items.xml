@@ -10495,7 +10495,7 @@ Mesh files no longer used:
 <!-- End Quests -->
 
 <!-- Food -->
-<item id="2060" name="BaggedMeat">
+<item id="2060" name="baggedMeat">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
     <property name="Material" value="organic" />
     <property name="HoldType" value="7" />
@@ -10513,10 +10513,11 @@ Mesh files no longer used:
         <property name="Gain_sickness" value="30" />
         <property name="Buff" value="foodPoisoning" />
         <property name="Sound_start" value="UseActions/player_eating" />
+		<property name="Create_item" value="zippedBag"/>
     </property>
 	<property name="EconomicValue" value="32" />
     <property name="Group" value="Food/Cooking" />
-	<property name="DescriptionKey" value="BaggedMeatDesc" />
+	<property name="DescriptionKey" value="baggedMeatDesc" />
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 	
@@ -10556,9 +10557,9 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftingSkilllScience"/>
 </item>           
 
-<item id="2063" name="ZiplockBag">
+<item id="2063" name="zippedBag">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
-	<property name="CustomIcon" value="ZiplockBag" />
+	<property name="CustomIcon" value="zippedBag" />
     <property name="Material" value="Mplastics" />
     <property name="HoldType" value="14" />
     <property name="Weight" value="5" />
@@ -10567,7 +10568,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="24" />
 	<property name="EconomicBundleSize" value="5" />
     <property name="Group" value="Resources" />
-	<property name="DescriptionKey" value="ZiplockBagDesc" />
+	<property name="DescriptionKey" value="zippedBagDesc" />
 	<property name="CraftingSkillGroup" value="craftingSkilllScience"/>
 </item>
 
@@ -10617,21 +10618,15 @@ Mesh files no longer used:
 
 <!-- Scrap tools -->
 <item id="2067" name="scrapAxe">
-	<property name="Extends" value="stoneAxe" />
-	<property name="CustomIcon" value="stoneAxe" />
+	<property name="Extends" value="fireaxeIron" />
+	<property name="CustomIcon" value="fireaxeIron" />
 	<property name="CustomIconTint" value="E66920" />
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="scrapIron" />
-	<property class="Action0">
-		<property name="DamageBonus.metal" value="1" />
-	</property>
-	<property class="Action1">
-		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,cobblestones,yuccaFibers" />
-	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="6,12" />
 		<property name="BlockDamage" value="20,32" />
-		<property name="DegradationMax" value="100,300" />
+		<property name="DegradationMax" value="100,450" />
 		<property name="DegradationRate" value="1,1" />
 	</property>
 	<property name="EconomicValue" value="80" />
@@ -10649,7 +10644,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="200,700" />
 		<property name="DegradationRate" value="1,1" />
 	</property>
-	<property name="EconomicValue" value="120" />
+	<property name="EconomicValue" value="80" />
 	<property name="DescriptionKey" value="scrapPickaxeDesc"/>
 </item>
 
@@ -10662,7 +10657,7 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="EntityDamage" value="5,13" />
 		<property name="BlockDamage" value="16.5,35" />
-		<property name="DegradationMax" value="60,300" />
+		<property name="DegradationMax" value="100,450" />
 		<property name="DegradationRate" value="1,1" />
 	</property>
 	<property name="EconomicValue" value="80" />
@@ -10896,6 +10891,126 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineBodyArmorDesc"/>
 </item>
 <!-- End Magazines -->
+
+<!-- Bagged Food -->
+<item id="2095" name="baggedcharredMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="100"/> <!-- STK food -->
+	<property name="EconomicValue" value="22"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="10"/>
+		<property name="Buff" value="eatFood_9_Trigger"/>
+		<property name="Gain_water" value="-5"/>
+		<property name="Gain_wellness" value="0.65"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Create_item" value="zippedBag"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+	<property name="DescriptionKey" value="baggedcharredMeatDesc" />
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+</item>
+
+<item id="2096" name="baggedgrilledMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="100"/> <!-- STK food -->
+	<property name="EconomicValue" value="24"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="16"/>
+		<property name="Buff" value="eatFood_14_Trigger"/>
+		<property name="Gain_water" value="-3"/>
+		<property name="Gain_wellness" value="1.35"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Create_item" value="zippedBag"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+	<property name="DescriptionKey" value="baggedgrilledMeatDesc" />
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+</item>
+
+<item id="2097" name="baggedboiledMeat">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="100"/> <!-- STK food -->
+	<property name="EconomicValue" value="52"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="12"/>
+		<property name="Buff" value="eatFood_9_Trigger"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="0.675"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Create_item" value="zippedBag"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+	<property name="DescriptionKey" value="baggedboiledMeatDesc" />
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+</item>
+
+<item id="2098" name="baggedmeatStew">
+	<property name="Meshfile" value="Items/Food/venison_stewPrefab"/>
+	<property name="Material" value="organic"/>
+	<property name="HoldType" value="23"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="200"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="1.0"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="60"/>
+		<property name="Gain_water" value="0"/>
+		<property name="Gain_wellness" value="6"/>
+		<property name="Sound_start" value="player_drinking"/>
+		<property name="Buff" value="stewWarming,eatFood_78_Trigger"/>
+		<property name="Create_item" value="zippedBag"/>
+	</property>
+	<property name="Group" value="Food/Cooking"/>
+	<property name="DescriptionKey" value="baggedmeatStewDesc" />
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+</item>
+
+<item id="2099" name="baggedbaconAndEggs">
+	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="31"/>
+	<property name="Material" value="organic"/>
+	<property name="Stacknumber" value="50"/> <!-- STK food -->
+	<property name="EconomicValue" value="64"/>
+	<property class="Action1">
+		<property name="Class" value="Eat"/>
+		<property name="Delay" value="2.1"/>
+		<property name="Use_time" value="..."/>
+		<property name="Gain_health" value="0"/>
+		<property name="Gain_food" value="16"/>
+		<property name="Buff" value="eatFood_15_Trigger"/>
+		<property name="Gain_wellness" value="1.35"/>
+		<property name="Sound_start" value="player_eating"/>
+		<property name="Create_item" value="zippedBag"/>
+	</property>
+    <property name="Group" value="Food/Cooking" />
+	<property name="DescriptionKey" value="baggedbaconAndEggsDesc" />
+	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+</item>
+<!-- End Bagged Food -->
 
 <!-- End Craftworx -->
 
