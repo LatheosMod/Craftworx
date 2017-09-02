@@ -41,12 +41,12 @@ Fixed typo in springCable description
 Added harvesting springs to fridges, ovens, and added disassemble option to dumpsters
 
 <----- 1 Sep 2017 ----->
-CraftWorx 2.1
+Craftworx 2.1
 Includes modified Sirillion's SMX UI
-Incrased stack size of foodYuccaFruit from 100 to 250
+Increased stack size of foodYuccaFruit from 100 to 250
 Increased stack sizes on cloth, military fiber, feather, leather, paper from 250 to 1000
 Increased stack sizes on cottonplant, oldcash, snowberryplant, chrysanthemumPlant, aloePlant, hopsFlower, goldenrodplant, shortMetalPipe, forgedIron, forgedSteel from 500 to 750
-Increasd stack sizes on iron, steel arroheads from 250 to 750
+Increased stack sizes on iron, steel arrowheads from 250 to 750
 Increased stack size of buckshot, animalhide from 250 to 500
 Increased stack size on repairKit from 50 to 150
 Increased stack size on oil from 50 to 500
