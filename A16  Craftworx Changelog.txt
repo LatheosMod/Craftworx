@@ -39,3 +39,19 @@ Added recipe for blackCowboyHat
 Added 4th level to Tinker Tailor perk, requires level 4 craftskillArmor & craftskillTailoring, adding recipes for blackCowboyHat and leatherDusterBlack
 Fixed typo in springCable description
 Added harvesting springs to fridges, ovens, and added disassemble option to dumpsters
+
+<----- 1 Sep 2017 ----->
+CraftWorx 2.1
+Includes modified Sirillion's SMX UI
+Incrased stack size of foodYuccaFruit from 100 to 250
+Increased stack sizes on cloth, military fiber, feather, leather, paper from 250 to 1000
+Increased stack sizes on cottonplant, oldcash, snowberryplant, chrysanthemumPlant, aloePlant, hopsFlower, goldenrodplant, shortMetalPipe, forgedIron, forgedSteel from 500 to 750
+Increasd stack sizes on iron, steel arroheads from 250 to 750
+Increased stack size of buckshot, animalhide from 250 to 500
+Increased stack size on repairKit from 50 to 150
+Increased stack size on oil from 50 to 500
+Changed forge, workbench, chemistry station, cement mixer from harvesting parts to harvesting the whole item
+Decreased fertilizer crafting times
+Increased spring harvest from cntCar03SedanDamage1 from 2,4 to 4,8
+Added chance to harvest minibike wheels from cntCar03SedanDamage1
+

@@ -963,23 +963,25 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="feather" count="1"/>
 </recipe>
 
-<recipe name="fertilizer" count="1" craft_area="chemistryStation">
+<!-- Craftworx - decreased fertilizer craft time -->
+<recipe name="fertilizer" count="1" craft_time="10" craft_area="chemistryStation">
 	<ingredient name="turd" count="1"/>
 	<ingredient name="potassiumNitratePowder" count="10"/>
 	<ingredient name="dirtFragment" count="3"/>
 </recipe>
 
-<recipe name="fertilizer" count="1" craft_area="campfire" craft_tool="beaker">
+<recipe name="fertilizer" count="1" craft_time="10" craft_area="campfire" craft_tool="beaker">
 	<ingredient name="turd" count="2"/>
 	<ingredient name="potassiumNitratePowder" count="15"/>
 	<ingredient name="dirtFragment" count="3"/>
 </recipe>
 
-<recipe name="fertilizer" count="1" craft_area="cementMixer">
+<recipe name="fertilizer" count="1" craft_time="10" craft_area="cementMixer">
 	<ingredient name="rottingFlesh" count="10"/>
 	<ingredient name="potassiumNitratePowder" count="15"/>
 	<ingredient name="dirtFragment" count="10"/>
 </recipe>
+<!-- End Craftworx -->
 
 <recipe name="fireaxeIron" count="1">
 	<ingredient name="forgedIron" count="20"/>
