@@ -72,4 +72,4 @@ Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life an
 Changed flaming iron club to use 5 tallow instead of 10 animal fat
 Massive overhaul of blocks, items, loot, progression, recipes to bring in many of LavenderJosh's Quality of Life mod
 Rebalancing of block harvests, items, progression, and recipes
-Secong changelog file included in download to cover the changes incorparationg LavenderJosh's Quality of Life mod
+Second changelog file included in download to cover the changes incorporating LavenderJosh's Quality of Life mod
