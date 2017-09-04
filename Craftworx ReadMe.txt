@@ -4,11 +4,11 @@
 
 Craftworx is compatible with Alpha 16.3b12
 
-Current version: Craftworx 2.0
+Current version: Craftworx 2.5
 
 I made a number of changes to CraftWorx in A16, removing a number of parts that are no longer necessary in the current build. I've removed all modified blocks (inclusding Valmar's traps), as I don't see them as necessary. I may later revisit the Fuel Log, depending on how whether it seems left out after playing the new version. Carpentry is back, but currently not attached to crafted wood block types, which may change later. Tailoring is also back, and set up in line with the other crafting skills using purchased point levels. Clothier has been renamed Tinker, Tailor, etc., and may later incorporate crafting leather clothing (it currently only covers the same cotton clothes as in A15).
 
-Craftworx features a custom HUD created by adapting Sirillion's SMX UI, and a flamethrower from Andy of Andy's Mods (originally for A12 but updated to A16). Credit for those parts of this mod goes to them. Additionally, Valmar, Sirillion and StompyNZ were extremely helpful in getting parts of this mod working properly. Thanks, guys!
+Craftworx features a custom HUD created by adapting Sirillion's SMX UI, LavenderJosh's Quality of Life and Firearms Improvement Mod, and a flamethrower from Andy of Andy's Mods (originally for A12 but updated to A16). Credit for those parts of this mod goes to them. Additionally, Valmar, Sirillion and StompyNZ were extremely helpful in getting parts of this mod working properly. Thanks, guys!
 
 Links:
 
@@ -17,6 +17,9 @@ https://7daystodie.com/forums/forumdisplay.php?61-Modding
 
 Sirillion's SMX UI
 https://7daystodie.com/forums/showthread.php?42922-SMX-By-Sirillion
+
+LavenderJosh's Quality of Life and Firearms Improvement Mod
+https://7daystodie.com/forums/showthread.php?71340-Quality-of-Life-and-Firearms-Improvement-Mod
 
 Magoli's CompoPack (Prefabs)
 https://7daystodie.com/forums/showthread.php?28057-Compo-Pack-for-Random-Gen

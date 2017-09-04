@@ -65,3 +65,11 @@ Changed scrapAxe to extend fireaxeIron instead of stoneAxe, removed repair funct
 Increased seed yield on all plants from 1 to 2
 Changed flamingBolt recipe to use oil and tallow instead of gunpowder and animal fat
 Fixed incorrect version of SMX in mods folder (thanks to chrismura on the Steam forums!)
+
+<----- 3 Sep 2017 ----->
+Craftworx 2.5
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod
+Changed flaming iron club to use 5 tallow instead of 10 animal fat
+Massive overhaul of blocks, items, loot, progression, recipes to bring in many of LavenderJosh's Quality of Life mod
+Rebalancing of block harvests, items, progression, and recipes
+Secong changelog file included in download to cover the changes incorparationg LavenderJosh's Quality of Life mod
