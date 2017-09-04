@@ -78,48 +78,48 @@ Mesh files no longer used:
 	<property name="CritChance" value="0.10"/>
 	<property name="Group" value="Ammo/Weapons,Basics"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, value 100>120, sellable -->
 <item id="7" name="clubIron">
 	<property name="Extends" value="clubMaster"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_RefinedPrefab"/>
 	<property name="Material" value="metal"/>
-	<property name="EconomicValue" value="100"/>
+	<property name="EconomicValue" value="120"/>
 	<property name="SellableToTrader" value="true"/>
 	<property name="RepairTools" value="scrapIron"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property class="Action0">
-		<property name="Stamina_usage" value="8"/>
+		<property name="Stamina_usage" value="5.2"/>									
 		<property name="Buff" value="criticalBlunt"/>
 		<property name="Buff_chance" value="0.2"/>
 		<property name="DamageBonus.head" value="4"/>
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="9,16"/>
-		<property name="BlockDamage" value="11.8,29.5"/>
+		<property name="EntityDamage" value="10,17"/>
+		<property name="BlockDamage" value="11.8,22.5"/>
 		<property name="DegradationMax" value="200,600"/>
 	</property>
 	<property name="CritChance" value="0.2"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="DescriptionKey" value="clubIronDesc"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, value 192>220, sellable -->
 <item id="8" name="clubBarbed">
 	<property name="Extends" value="clubIron"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_BarbedPrefab"/>
 	<property name="RepairTools" value="forgedIron"/>
-	<property name="EconomicValue" value="192"/>
-	<property name="SellableToTrader" value="true"/>
+	<property name="EconomicValue" value="220"/>
+  <property name="SellableToTrader" value="true"/>
 	<property class="Action0"> <!-- AttackAction -->
-		<property name="Stamina_usage" value="6.5"/>
+		<property name="Stamina_usage" value="6.4"/>
 		<property name="Delay" value="1.15"/>
 		<property name="Buff" value="bleeding,criticalBlunt"/>
 		<property name="Buff_chance" value="0.3,0.3"/>
 		<property name="DamageBonus.head" value="5"/>
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="8,19"/>
-		<property name="BlockDamage" value="7.2,18"/>
+		<property name="EntityDamage" value="12,21"/>
+		<property name="BlockDamage" value="12.5,24"/>
 		<property name="DegradationMax" value="200,600"/>
 		<property name="DegradationRate" value="1,1"/>
 	</property>
@@ -127,28 +127,29 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="DescriptionKey" value="clubBarbedDesc"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, value 300>340, sellable -->
 <item id="9" name="clubSpiked">
 	<property name="Extends" value="clubIron"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Club/Club_Wood_SpikedPrefab"/>
 	<property name="RepairTools" value="forgedIron"/>
-	<property name="EconomicValue" value="300"/>
+	<property name="EconomicValue" value="340"/>
 	<property name="SellableToTrader" value="true"/>
 	<property class="Action0"> <!-- AttackAction -->
-		<property name="Stamina_usage" value="8.5"/>
+		<property name="Stamina_usage" value="7.8"/>						
 		<property name="Buff" value="bleeding,criticalBlunt"/>
 		<property name="Buff_chance" value="0.5,0.4"/>
 		<property name="DamageBonus.head" value="6"/>
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="12,30"/>
-		<property name="BlockDamage" value="15.2,38"/> <!-- 30% of an iron pick -->
+		<property name="EntityDamage" value="14,25"/>
+		<property name="BlockDamage" value="15.2,34"/> <!-- 30% of an iron pick -->
 		<property name="DegradationMax" value="200,600"/>
 		<property name="DegradationRate" value="1,1"/>
 	</property>
 	<property name="CritChance" value="0.4"/>
 	<property name="DescriptionKey" value="clubSpikedDesc"/>
 </item>
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, damage boni adjusted, delay slighly reduced, range improved, value 500>900 -->
 <item id="12" name="sledgehammer">
 	<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab"/>
 	<property name="Material" value="metal"/>
@@ -158,25 +159,26 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
 	<property name="FuelValue" value="30"/>
-	<property name="EconomicValue" value="500"/>
+	<property name="EconomicValue" value="900"/>
 	<property name="CritChance" value="0.4"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
-		<property name="Delay" value="1.8"/>
-		<property name="Range" value="2.4"/>
+		<property name="Delay" value="1.7"/>
+		<property name="Range" value="3"/>
 		<property name="Sphere" value="0.2"/>
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="SlowSwoosh"/>
-		<property name="Stamina_usage" value="15"/>
+		<property name="Stamina_usage" value="11.7"/>
 		<property name="Buff" value="criticalBlunt,stunned,sprainedLeg"/>
 		<property name="Buff_chance" value="0.5,0.3,0.3"/>
-		<property name="DamageBonus.wood" value="0.5"/>
-		<property name="DamageBonus.head" value="4"/>
-		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.stone" value="1.5"/>
+		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.head" value="8"/>						   
+		<property name="DamageBonus.glass" value="5"/>
 		<property name="ToolCategory.Butcher" value="0" param1="10"/>
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="20,50"/>
+		<property name="EntityDamage" value="24,44"/>
 		<property name="BlockDamage" value="82,206"/> <!-- 80% of a steel pick -->
 		<property name="DegradationMax" value="300,1000"/>
 		<property name="DegradationRate" value="1,1"/>
@@ -227,15 +229,16 @@ Mesh files no longer used:
 	<property name="AlwaysActive" value="true"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - value lowered 600>400, weight 5>25 -->
 <item id="17" name="flashlight02">
 	<property name="Class" value="ItemClassToggle"/>
 	<property name="Meshfile" value="Items/Tools/flashlight02Prefab"/>
 	<property name="Material" value="metal"/>
-	<property name="Weight" value="5"/>
+	<property name="Weight" value="25"/>
 	<property name="RepairTools" value="repairKit"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
-	<property name="EconomicValue" value="600"/>
+	<property name="EconomicValue" value="400"/>
 	<property name="HoldType" value="13"/>
 	<property name="LightSource" value="lightSource"/>
 	<property name="ActivateObject" value="lightSource"/>
@@ -315,7 +318,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Blade Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, delay reduced, value 120>240 -->
 <item id="21" name="huntingKnife">
 	<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knifePrefab"/>
 	<property name="Material" value="metal"/>
@@ -323,16 +326,16 @@ Mesh files no longer used:
 	<property name="HoldType" value="36"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="FuelValue" value="12"/>
-	<property name="EconomicValue" value="120"/>
+	<property name="EconomicValue" value="240"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
-		<property name="Delay" value="1.2"/>
+		<property name="Delay" value="1.0"/>
 		<property name="Range" value="2.2"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="5.5"/>
+		<property name="Stamina_usage" value="3.2"/>
 		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.leaves" value="25"/>
@@ -341,8 +344,8 @@ Mesh files no longer used:
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="10,20"/>
-		<property name="BlockDamage" value="1,2"/>
+		<property name="EntityDamage" value="8,14"/>
+		<property name="BlockDamage" value="2,3"/>
 		<property name="DegradationMax" value="200,600"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="0.01,0.02"/>
@@ -352,7 +355,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, range adjusted -->
 <item id="22" name="machete">
 	<property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab"/>
 	<property name="Material" value="metal"/>
@@ -367,10 +370,10 @@ Mesh files no longer used:
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.2"/>
-		<property name="Range" value="2.2"/>
+		<property name="Range" value="2.4"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="6.51"/>
+		<property name="Stamina_usage" value="5.4"/>
 		<property name="DamageBonus.wood" value="3"/>
 		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -380,9 +383,9 @@ Mesh files no longer used:
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="12,30"/>
-		<property name="BlockDamage" value="4,10"/>
-		<property name="DegradationMax" value="200,800"/>
+		<property name="EntityDamage" value="16,28"/>
+		<property name="BlockDamage" value="7,12"/>
+		<property name="DegradationMax" value="300,800"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="0.01,0.03"/>
 	</property>
@@ -395,6 +398,7 @@ Mesh files no longer used:
 
 <!-- 40* * * * * * * * * * firearms * * * * * * * * * * -->
 
+  <!-- Craftworx - QoLaFIM A16.2 - headshot bonus for all guns adjusted -->
 <item id="40" name="gunPistol">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
 	<property name="Material" value="metal"/>
@@ -435,7 +439,7 @@ Mesh files no longer used:
 	<property name="Sound_reload" value="pistol_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
-		<property name="DamageBonus.head" value="6"/>
+		<property name="DamageBonus.head" value="8"/>		   
 		<property name="DamageBonus.wood" value="3"/>
 		<property name="DamageBonus.earth" value="0.4"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -485,7 +489,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="pistol_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
-		<property name="DamageBonus.head" value="6"/>
+		<property name="DamageBonus.head" value="8"/>		   
 		<property name="DamageBonus.wood" value="3"/>
 		<property name="DamageBonus.earth" value="0.4"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -547,7 +551,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="44magnum_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
-		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.head" value="12"/>
 		<property name="DamageBonus.wood" value="4"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -603,10 +607,13 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="shotgun_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="3"/>
+    <!-- Craftworx - QoLaFIM A16.2 - wood damage bonus 2>4, added stone/metal to test -->
+		<property name="DamageBonus.head" value="8"/>
 		<property name="DamageBonus.glass" value="1"/>
-		<property name="DamageBonus.wood" value="2"/>
+		<property name="DamageBonus.wood" value="4"/>
 		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.stone" value="1"/>
+		<property name="DamageBonus.metal" value="1"/>
 		<property name="Buff" value="shotgunWound"/>
 		<property name="Buff_chance" value="1.0"/>
 	</property>
@@ -674,10 +681,13 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="shotgun_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="3"/>
+    <!-- Craftworx - QoLaFIM A16.2 - wood damage bonus 2>4, added stone/metal to test -->
+		<property name="DamageBonus.head" value="8"/>
 		<property name="DamageBonus.glass" value="1"/>
-		<property name="DamageBonus.wood" value="2"/>
+		<property name="DamageBonus.wood" value="4"/>
 		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="DamageBonus.stone" value="1"/>
+		<property name="DamageBonus.metal" value="1"/>
 		<property name="Buff" value="shotgunWound"/>
 		<property name="Buff_chance" value="1.0"/>
 	</property>
@@ -737,7 +747,7 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20"/>
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="4"/>
+		<property name="DamageBonus.head" value="7"/>
 		<property name="DamageBonus.wood" value="5"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -798,7 +808,7 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash_ak"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.head" value="8"/>
 		<property name="DamageBonus.wood" value="5"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -858,7 +868,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="hunting_rifle_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="6"/>
+		<property name="DamageBonus.head" value="9"/>
 		<property name="DamageBonus.wood" value="5"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -901,7 +911,8 @@ Mesh files no longer used:
 		<property name="Delay" value="0.5"/>
 		<property name="Crosshair_min_distance" value="45"/> <!-- 45 -->
 		<property name="Crosshair_max_distance" value="54"/> <!-- 54 -->
-		<property name="Magazine_size" value="5"/>
+    <!-- Craftworx - QoLaFIM A16.2 - magazine size 5>7 -->
+		<property name="Magazine_size" value="7"/>
 		<property name="Magazine_items" value="762mmBullet"/>
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0"/>
@@ -914,7 +925,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="sniperrifle_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="9"/>
+		<property name="DamageBonus.head" value="14"/>
 		<property name="DamageBonus.wood" value="5"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.glass" value="1"/>
@@ -1013,7 +1024,7 @@ Mesh files no longer used:
 		<property name="Sound_reload" value="blunderbuss_reload"/>
 		<property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-		<property name="DamageBonus.head" value="3"/>
+		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.wood" value="2.5"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.earth" value="0.2"/>
@@ -1042,6 +1053,7 @@ Mesh files no longer used:
 
 <!-- * * * * * * * * * * player / zombie / animal weapons / hands (and great big fangs) * * * * * * * * * * -->
 
+  <!-- Craftworx - QoLaFIM A16.2 - range upped to 1.9 -->
 <item id="69" name="handMaster">
 	<property name="CreativeMode" value="None"/>
 	<property name="Material" value="organic"/>
@@ -1052,7 +1064,7 @@ Mesh files no longer used:
 	<property class="Action0"><!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="0.8"/>
-		<property name="Range" value="1.65"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
+		<property name="Range" value="1.9"/> <!-- This not what "clientside melee combat" means. =) This is the adjustment afterwards due to code changes. -->
 		<property name="Sphere" value="0.1"/>
 		<property name="Block_range" value="2.5"/>
 		<property name="DamageEntity" value="10"/>
@@ -1098,14 +1110,15 @@ Mesh files no longer used:
 	<!--use_action class="LiftUpTerrain" delay="1" use_time="..." gain_health="-5"gain_stamina="-20" gain_food="0" gain_water="10" gain_sickness="15" condition_raycast_block="77,78,79,80" sound_start="player_drinking" /-->
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - entity damage slightly buffed 10>12, stun chance lowered 0.5>0.35 -->
 <item id="76" name="handZombie">
 	<property name="Extends" value="handMaster"/>
 	<property name="CreativeMode" value="None"/>
 	<property class="Action0">
-		<property name="DamageEntity" value="10"/>
+		<property name="DamageEntity" value="12"/>
 		<property name="DamageBlock" value="20"/>
 		<property name="Buff" value="bleeding,infection,stunned"/>
-		<property name="Buff_chance" value="0.04,0.04,0.5"/>
+		<property name="Buff_chance" value="0.04,0.04,0.35"/>
 	</property>
 </item>
 
@@ -1120,6 +1133,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - stun chance lowered 0.4>0.3 -->
 <item id="78" name="handZombieBurning">
 	<property name="Extends" value="handMaster"/>
 	<property name="CreativeMode" value="None"/>
@@ -1129,16 +1143,17 @@ Mesh files no longer used:
 		<property name="DamageEntity" value="12"/>
 		<property name="DamageBlock" value="2"/>
 		<property name="Buff" value="burningSmall,infection,stunned"/>
-		<property name="Buff_chance" value="0.5,0.07,0.4"/>
+		<property name="Buff_chance" value="0.5,0.07,0.3"/>
 	</property>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - range consequently raised 1.75>2 -->
 <item id="79" name="handZombieCop">
 	<property name="Extends" value="handMaster"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="Degradation" value="99999" param1="true"/>
 	<property class="Action0">
-		<property name="Range" value="1.75"/>
+		<property name="Range" value="2"/>
 		<property name="DamageEntity" value="20"/>
 		<property name="DamageBlock" value="250"/>
 		<property name="Buff" value="bleeding,infection,stunned"/>
@@ -1186,14 +1201,16 @@ Mesh files no longer used:
 	</property>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - damage lowered 18>15, range lowered to 1.2, delay raised 0.7>0.9, zombie dogs suck! >:[ -->
 <item id="81" name="handAnimalZombieDog">
 	<property name="Extends" value="handMaster"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
-		<property name="Delay" value="0.7"/>
-		<property name="DamageEntity" value="18"/>
-		<property name="DamageBlock" value="18"/>
+    <property name="Range" value="1.2"/>
+		<property name="Delay" value="0.9"/>
+		<property name="DamageEntity" value="15"/>
+		<property name="DamageBlock" value="15"/>
 		<property name="Buff" value="bleeding,infection"/>
 		<property name="Buff_chance" value="0.3,0.2"/>
 		<property name="DamageBonus.earth" value="4"/>
@@ -1238,13 +1255,14 @@ Mesh files no longer used:
 	</property>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - stun chance lowered 0.5>0.35 -->
 <item id="85" name="handZombieHazMat">
 	<property name="Extends" value="handMaster"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="9"/>
 	<property class="Action0">
 		<property name="Buff" value="bleeding,infection1,stunned"/>
-		<property name="Buff_chance" value="0.04,0.25,0.5"/>
+		<property name="Buff_chance" value="0.04,0.25,0.35"/>
 	</property>
 </item>
 
@@ -1415,17 +1433,17 @@ Mesh files no longer used:
 		<property name="Block_range" value="5"/>
 	</property>
 </item>
-
+  <!-- QoLaFIM A16.2 - lowered infection chance 0.4>0.25, damage 10>8 -->
 <item id="103" name="handAnimalZombieVulture">
 	<property name="Extends" value="handMaster"/>
 	<property name="CreativeMode" value="None"/>
 	<property name="HoldType" value="35"/>
 	<property class="Action0">
 		<property name="Delay" value="0.7"/>
-		<property name="DamageEntity" value="10"/>
+		<property name="DamageEntity" value="8"/>
 		<property name="DamageBlock" value="10"/>
 		<property name="Buff" value="bleeding,infection"/>
-		<property name="Buff_chance" value="0.1,0.4"/>
+		<property name="Buff_chance" value="0.1,0.25"/>
 	</property>
 </item>
 
@@ -1446,6 +1464,7 @@ Mesh files no longer used:
 
 <!-- * * * * * * * * * * tools for mining / farming, manual or motorised * * * * * * * * * * -->
 
+  <!-- Craftworx - QoLaFIM A16.2 - damage boni adjusted -->
 <item id="105" name="stoneAxe">
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/stone_axePrefab"/>
 	<property name="Material" value="stone"/>
@@ -1471,8 +1490,8 @@ Mesh files no longer used:
 		<property name="DamageBonus.wood" value="1"/>
 		<property name="DamageBonus.earth" value="0.2083"/>
 		<property name="DamageBonus.stone" value="0.625"/>
-		<property name="DamageBonus.metal" value="0.4167"/>
-		<property name="DamageBonus.organic" value="0.8334"/>
+		<property name="DamageBonus.metal" value="0.5"/>
+		<property name="DamageBonus.organic" value="1"/>
 		<property name="ActionExp" value="2"/>
 		<property name="ToolCategory.Butcher" value="0.5" param1="3.5"/>
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
@@ -1516,7 +1535,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1"/>
 	</property>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, damage boni adjusted, delay raised, range improved, value 240>430 -->
 <item id="107" name="fireaxeIron">
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
 	<property name="Material" value="metal"/>
@@ -1525,21 +1544,21 @@ Mesh files no longer used:
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="FuelValue" value="30"/>
-	<property name="EconomicValue" value="240"/>
+	<property name="EconomicValue" value="430"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property class="Action0">
 		<property name="Class" value="Melee"/>
-		<property name="Delay" value="1.1"/>
-		<property name="Range" value="2.1"/>
+		<property name="Delay" value="1.2"/>
+		<property name="Range" value="2.4"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="8.27"/>
+		<property name="Stamina_usage" value="7.4"/>
 		<property name="DamageBonus.wood" value="1"/>
 		<property name="DamageBonus.head" value="2"/>
 		<property name="DamageBonus.glass" value="0.25"/>
-		<property name="DamageBonus.stone" value="0.25"/>
-		<property name="DamageBonus.metal" value="0.25"/>
+		<property name="DamageBonus.stone" value="0.5"/>
+		<property name="DamageBonus.metal" value="0.5"/>
 		<property name="DamageBonus.earth" value="0.2"/>
 		<property name="DamageBonus.organic" value="1"/>
 		<property name="ActionExp" value="4"/>
@@ -1548,8 +1567,8 @@ Mesh files no longer used:
 		<property name="Sound_harvesting" value="open_animal" param1="organic" />
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="6,15"/>
-		<property name="BlockDamage" value="30,48"/>
+		<property name="EntityDamage" value="12,23"/>
+		<property name="BlockDamage" value="35,60"/>
 		<property name="DegradationMax" value="200,1000"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="0,0.05"/>
@@ -1559,26 +1578,28 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, delay raised, value 912>1440 -->
 <item id="108" name="fireaxeSteel">
 	<property name="Extends" value="fireaxeIron"/>
 	<property name="CustomIcon" value="fireaxeIron"/> <!-- xxx model to be replaced -->
 	<property name="CustomIconTint" value="a0a0ff"/>
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
 	<property name="RepairTools" value="forgedSteel"/>
-	<property name="EconomicValue" value="912"/>
+	<property name="EconomicValue" value="1440"/>
 	<property class="Action0">
-		<property name="Stamina_usage" value="15"/>
+		<property name="Delay" value="1.3"/>
+		<property name="Stamina_usage" value="8.2"/>
+		<property name="DamageBonus.wood" value="1.4"/>
 		<property name="ToolCategory.Butcher" value="0.75" param1="10"/>
 		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="9,22"/>
-		<property name="BlockDamage" value="30,72"/>
+		<property name="EntityDamage" value="18,34"/>
+		<property name="BlockDamage" value="54,92"/>
 		<property name="DegradationMax" value="500,1400"/>
 	</property>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, damage boni adjusted, delay raised, range improved, value 240>540 -->
 <item id="113" name="pickaxeIron">
 	<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab"/>
 	<property name="Material" value="metal"/>
@@ -1588,7 +1609,7 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
 	<property name="FuelValue" value="30"/>
-	<property name="EconomicValue" value="240"/>
+	<property name="EconomicValue" value="540"/>
 	<property class="Action0">
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.0"/>
@@ -1596,11 +1617,12 @@ Mesh files no longer used:
 		<property name="Sphere" value="0.1"/>
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="7.52"/>
-		<property name="DamageBonus.glass" value="1"/>
-		<property name="DamageBonus.head" value="2"/>
-		<property name="DamageBonus.wood" value="0.2"/>
-		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="Stamina_usage" value="6.6"/>
+		<property name="DamageBonus.glass" value="3"/>
+		<property name="DamageBonus.head" value="6"/>
+		<property name="DamageBonus.wood" value="0.5"/>
+		<property name="DamageBonus.earth" value="0.5"/>
+
 		<property name="DamageBonus.organic" value="0.2"/>
 		<property name="ToolCategory.harvestingTools" value="1" param1="1"/>
 		<property name="ActionExp" value="4"/>
@@ -1608,8 +1630,8 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="5,15"/>
-		<property name="BlockDamage" value="24,60.5"/>
+		<property name="EntityDamage" value="10,19"/>
+		<property name="BlockDamage" value="36,90"/>
 		<property name="DegradationMax" value="200,1000"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="-0.1,0"/>
@@ -1619,23 +1641,24 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="miningTip"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, delay lowered, value 912>1800 -->
 <item id="114" name="pickaxeSteel">
 	<property name="Extends" value="pickaxeIron"/>
 	<property name="Meshfile" value="Items/Tools/pickaxe_steelPrefab"/>
 	<property name="HoldType" value="4"/>
 	<property name="RepairTools" value="forgedSteel"/>
-	<property name="EconomicValue" value="912"/>
+	<property name="EconomicValue" value="1800"/>
 	<property class="Action0">
-		<property name="Delay" value="1.5"/>
-		<property name="Stamina_usage" value="20.4"/>
-		<property name="DamageBonus.head" value="4"/>
+		<property name="Delay" value="1.4"/>
+		<property name="Stamina_usage" value="8.2"/>
+		<property name="DamageBonus.head" value="6"/>
+		<property name="DamageBonus.wood" value="0.4"/>
 		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="6,20"/>
-		<property name="BlockDamage" value="55,137"/> <!-- up to x4 from skills -->
+		<property name="EntityDamage" value="12,23"/>
+		<property name="BlockDamage" value="80,200"/> <!-- up to x4 from skills -->
 		<property name="DegradationMax" value="500,1400"/>
 	</property>
 </item>
@@ -1685,6 +1708,7 @@ Mesh files no longer used:
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, damage boni adjusted, range improved, value 240>360 -->
 <item id="118" name="shovelIron">
 	<property name="Meshfile" value="Items/Tools/shovel_ironPrefab"/>
 	<property name="Material" value="metal"/>
@@ -1694,19 +1718,19 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="30"/>
-	<property name="EconomicValue" value="240"/>
+	<property name="EconomicValue" value="360"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.1"/>
-		<property name="Range" value="2"/>
+		<property name="Range" value="2.6"/>
 		<property name="Block_range" value="4"/>
 		<property name="Sphere" value="0.2"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="8.27"/>
+		<property name="Stamina_usage" value="5.4"/>
 		<property name="DamageBonus.earth" value="2"/>
 		<property name="DamageBonus.glass" value="0.5"/>
 		<property name="DamageBonus.head" value="4"/>
-		<property name="DamageBonus.wood" value="0.25"/>
+		<property name="DamageBonus.wood" value="0.5"/>
 		<property name="DamageBonus.stone" value="0.5"/>
 		<property name="DamageBonus.metal" value="0.25"/>
 		<property name="DamageBonus.organic" value="0.7"/>
@@ -1715,7 +1739,7 @@ Mesh files no longer used:
 		<property name="ActionExp" value="4"/>
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="7,15.5"/>
+		<property name="EntityDamage" value="8,17"/>
 		<property name="BlockDamage" value="18,44"/> <!-- dirt blocks have up to 250 hp; skills + perks up to x4 the damage  -->
 		<property name="DegradationMax" value="200,1000"/>
 		<property name="DegradationRate" value="1,1"/>
@@ -1727,27 +1751,29 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="miningTip"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, value 912>1200 -->
 <item id="119" name="shovelSteel">
 	<property name="Extends" value="shovelIron"/>
 	<property name="Meshfile" value="Items/Tools/shovel_steelPrefab"/>
 	<property name="CustomIcon" value="shovelIron"/>
 	<property name="CustomIconTint" value="a0a0ff"/>
 	<property name="RepairTools" value="forgedSteel"/>
-	<property name="EconomicValue" value="912"/>
+	<property name="EconomicValue" value="1200"/>
 	<property class="Action0">
 		<property name="Delay" value="1.2"/>
-		<property name="Stamina_usage" value="16.36"/>
+		<property name="Stamina_usage" value="6.8"/>
+		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.earth" value="3"/>
 		<property name="DamageBonus.organic" value="1"/>
 		<property name="ToolCategory.harvestingTools" value="1.4" param1="1"/>
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="8,19"/>
+		<property name="BlockDamage" value="27,66"/>
+		<property name="EntityDamage" value="12,26"/>
 		<property name="DegradationMax" value="500,1400"/>
 	</property>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, damage boni adjusted, range improved, value 200>288 -->
 <item id="122" name="hoeIron">
 	<property name="Meshfile" value="Items/Tools/hoe_ironPrefab"/>
 	<property name="Material" value="metal"/>
@@ -1757,16 +1783,16 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="24"/>
-	<property name="EconomicValue" value="200"/>
+	<property name="EconomicValue" value="288"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1"/>
-		<property name="Range" value="2"/>
+		<property name="Range" value="2.4"/>
 		<property name="Sphere" value="0.2"/>
 		<property name="Block_range" value="4"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="6.5"/>
-		<property name="DamageBonus.head" value="3"/>
+		<property name="Stamina_usage" value="5.4"/>
+		<property name="DamageBonus.head" value="4"/>
 		<property name="DamageBonus.earth" value="2"/>
 		<property name="DamageBonus.glass" value="0.2"/>
 		<property name="DamageBonus.stone" value="0"/>
@@ -1798,9 +1824,9 @@ Mesh files no longer used:
 		<property name="Adjacentblock" value="dirt"/>
 	</property> -->
 	<property class="Attributes">
-		<property name="EntityDamage" value="4,12"/>
+		<property name="EntityDamage" value="8,17"/>
 		<!-- clubWood 10.5 (42) DPS, clubIron 12 (48) DPS, clubBarbed 16 (82) DPS, clubSpiked 22 (135) DPS -->
-		<property name="BlockDamage" value="10,20"/>
+		<property name="BlockDamage" value="12,29"/>
 		<property name="DegradationMax" value="200,1000"/>
 		<property name="DegradationRate" value="1,1"/>
 		<property name="DismembermentBaseChance" value="-0.3,-0.15"/>
@@ -1811,7 +1837,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, damage boni adjusted, value 288>874 -->
 <item id="126" name="wrench">
 	<property name="Meshfile" value="Items/Tools/wrenchPrefab"/>
 	<property name="Material" value="metal"/>
@@ -1820,7 +1846,7 @@ Mesh files no longer used:
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
-	<property name="EconomicValue" value="288"/>
+	<property name="EconomicValue" value="874"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="1.1"/>
@@ -1828,13 +1854,14 @@ Mesh files no longer used:
 		<property name="Block_range" value="4"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="8.27"/>
-		<property name="DamageBonus.head" value="3"/>
+		<property name="Stamina_usage" value="6.4"/>
+		<property name="DamageBonus.head" value="4"/>
 		<property name="DamageBonus.glass" value="1"/>
-		<property name="DamageBonus.stone" value="0.5"/>
-		<property name="DamageBonus.wood" value="1"/>
+		<property name="DamageBonus.stone" value="2"/>
+		<property name="DamageBonus.wood" value="2"/>
 		<property name="DamageBonus.metal" value="2"/>
 		<property name="DamageBonus.organic" value="0.5"/>
+		<property name="DamageBonus.cloth" value="2"/>
 		<property name="ActionExp" value="4"/>
 		<property name="ToolCategory.Disassemble" value="1" param1="2"  />
 		<property name="Sound_harvesting" value="wrench_harvest" param1="metal" />
@@ -1850,7 +1877,7 @@ Mesh files no longer used:
 		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers"/>
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="4,10"/>
+		<property name="EntityDamage" value="10,17"/>
 		<property name="BlockDamage" value="2,10"/>
 		<property name="DegradationMax" value="500,1400"/>
 		<property name="DegradationRate" value="1,1"/>
@@ -1861,7 +1888,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, range reduced, value 200>140 -->
 <item id="127" name="clawHammer">
 	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
 	<property name="Material" value="metal"/>
@@ -1871,7 +1898,7 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="FuelValue" value="18"/>
-	<property name="EconomicValue" value="200"/>
+	<property name="EconomicValue" value="140"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Melee"/>
 		<property name="Delay" value="0.8"/>
@@ -1879,7 +1906,7 @@ Mesh files no longer used:
 		<property name="Block_range" value="4"/>
 		<property name="Sphere" value="0.1"/>
 		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="6"/>
+		<property name="Stamina_usage" value="4.4"/>
 		<property name="DamageBonus.head" value="4"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="DamageBonus.stone" value="1"/>
@@ -1899,7 +1926,7 @@ Mesh files no longer used:
 		<property name="Allowed_upgrade_items" value="wood,clayLump,dirtFragment,snowBall,scrapIron,forgedIron,forgedSteel,steelPolish,concreteMix,cobblestones,yuccaFibers,nail"/>
 	</property>
 	<property class="Attributes">
-		<property name="EntityDamage" value="8,20"/>
+		<property name="EntityDamage" value="6,15"/>
 		<property name="BlockDamage" value="15,40"/>
 		<property name="DegradationMax" value="100,600"/>
 		<property name="DegradationRate" value="1,1"/>
@@ -1999,7 +2026,8 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
 		<property name="DamageBonus.wood" value="10"/>
-		<property name="DamageBonus.head" value="5"/>
+    <!-- Craftworx - QoLaFIM A16.2 - head damage bonus raised -->
+		<property name="DamageBonus.head" value="7"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="SupportHarvesting" value="true"/>
 		<property name="UseMeleeCrosshair" value="true"/>
@@ -2050,7 +2078,8 @@ Mesh files no longer used:
 		<property name="Horde_meter_distance" value="20"/>
 		<property name="Particles_muzzle_smoke" value="nozzlesmoke_chainsaw"/>
 		<property name="DamageBonus.wood" value="0.25"/>
-		<property name="DamageBonus.head" value="3"/>
+    <!-- Craftworx - QoLaFIM A16.2 - head damage bonus raised -->
+		<property name="DamageBonus.head" value="5"/>
 		<property name="DamageBonus.glass" value="1"/>
 		<property name="SupportHarvesting" value="true"/>
 		<property name="UseMeleeCrosshair" value="true"/>
@@ -2063,7 +2092,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - value 216>418 -->
 <item id="133" name="wireTool">
 	<property name="Meshfile" value="Items/Tools/wire_strippersPrefab"/>
 	<property name="Material" value="metal"/>
@@ -2072,7 +2101,7 @@ Mesh files no longer used:
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="metaldestroy1"/>
-	<property name="EconomicValue" value="216"/>
+	<property name="EconomicValue" value="418"/>
 	<property class="Action0">
 		<property name="Class" value="DisconnectPower"/>
 	</property>
@@ -2191,14 +2220,14 @@ Mesh files no longer used:
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - value raised 220>800, it was dirt cheap considering its effectiveness! -->
 <item id="146" name="crossbow">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab"/>
 	<property name="Material" value="metal"/>
 	<property name="RepairTools" value="forgedIron"/>
 	<property name="HoldType" value="26"/>
 	<property name="FuelValue" value="70"/>
-	<property name="EconomicValue" value="220"/>
+	<property name="EconomicValue" value="800"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
@@ -2336,28 +2365,29 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="19"/>
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - stack size 250>500 -->
 <item id="156" name="shotgunShell">
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="250"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
 	<property name="DropScale" value="4"/>
 	<property name="EconomicValue" value="17"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
-		<property name="EntityDamage" value="6,10"/>
+    <!-- Craftworx - QoLaFIM A16.2 - entity damage raised 6,10>9,15 -->
+		<property name="EntityDamage" value="9,15"/>
 		<property name="BlockDamage" value="5.4,13.5"/>
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - stack size 128>500 -->
 <item id="157" name="shotgunSlug">
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="128"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="500"/> <!-- STK ammo -->
 	<property name="EconomicValue" value="56"/>
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
@@ -2378,13 +2408,15 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true"/>
 		<property name="EntityDamage" value="250,500"/>
-		<property name="BlockDamage" value="50,200"/> <!-- this is not working yet, it uses damage from Action1 -->
+    <!-- Craftworx - QoLaFIM A16.2 - experimental blockdamage increase, seems to work fine -->
+		<property name="BlockDamage" value="1200,3500"/> <!-- this is not working yet, it uses damage from Action1 -->
 	</property>
 	<property class="Action1">
 		<property name="Class" value="Projectile"/>
 		<property name="Explosion.ParticleIndex" value="4"/> <!-- which Prefab/particle is used -->
-		<property name="Explosion.RadiusBlocks" value="5"/> <!-- damage radius for blocks -->
-		<property name="Explosion.BlockDamage" value="500"/> <!-- damage for blocks in the center of the explosion -->
+    <!-- Craftworx - QoLaFIM A16.2 - block radius and damage increased 5>6, 500>1500 -->
+		<property name="Explosion.RadiusBlocks" value="6"/> <!-- damage radius for blocks -->
+		<property name="Explosion.BlockDamage" value="1500"/> <!-- damage for blocks in the center of the explosion -->
 		<property name="Explosion.RadiusEntities" value="5"/> <!-- damage radius for entities -->
 		<property name="Explosion.EntityDamage" value="350"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
 		<property name="Velocity" value="50"/>
@@ -2407,12 +2439,13 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
 
+    <!-- Craftworx - QoLaFIM A16.2 - stack number increased 1000>5000 -->
 <item id="161" name="gasCan">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="MFuelBarrel"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="5000"/> <!-- STK resource -->
 	<property name="FuelValue" value="2"/>
 	<property name="EconomicValue" value="83"/> <!-- oil barrel 500 -->
 	<property name="EconomicBundleSize" value="100"/>
@@ -2843,6 +2876,7 @@ Mesh files no longer used:
 
 <!-- * * * * * * * * * * parts for assembled weapons, tools, and vehicles * * * * * * * * * * -->
 
+  <!-- Craftworx - QoLaFIM A16.2 - master value lowered 750>500  -->
 <item id="200" name="partsMaster">
 	<property name="CreativeMode" value="None"/>
 	<property name="PartType" value="Barrel"/>
@@ -2853,7 +2887,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
-	<property name="EconomicValue" value="750"/>
+	<property name="EconomicValue" value="500"/>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
@@ -2861,6 +2895,7 @@ Mesh files no longer used:
 	<property name="CraftingIngredientExp" value="80"/>-->
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - all pistol parts value reduced 412>328 -->
 <item id="210" name="partsPistol_grip">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsPistolGroupDesc"/>
@@ -2870,7 +2905,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="10,10"/>
 		<property name="DegradationMax" value="2000,5000"/>
 	</property>
-	<property name="EconomicValue" value="412"/>
+	<property name="EconomicValue" value="328"/>
 </item>
 <item id="211" name="partsPistol_receiver">
 	<property name="Extends" value="partsMaster"/>
@@ -2881,7 +2916,7 @@ Mesh files no longer used:
 		<property name="FalloffRange" value="22,50"/>
 		<property name="DegradationMax" value="2000,5000"/>
 	</property>
-	<property name="EconomicValue" value="412"/>
+	<property name="EconomicValue" value="328"/>
 </item>
 <item id="212" name="partsPistol_parts">
 	<property name="Extends" value="partsMaster"/>
@@ -2892,7 +2927,7 @@ Mesh files no longer used:
 		<!-- <property name="Accuracy" value="1,0.01"/> -->
 		<property name="DegradationMax" value="2000,5000"/>
 	</property>
-	<property name="EconomicValue" value="412"/>
+	<property name="EconomicValue" value="328"/>
 </item>
 <item id="213" name="partsPistol_barrel">
 	<property name="Extends" value="partsMaster"/>
@@ -2900,13 +2935,15 @@ Mesh files no longer used:
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="10"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="13,19"/>
+    <!-- Craftworx - QoLaFIM A16.2 - entity damage raised 13,19>19,29  -->
+		<property name="EntityDamage" value="19,29"/>
 		<property name="BlockDamage" value="7,13"/>
 		<property name="DegradationMax" value="2000,5000"/>
 	</property>
-	<property name="EconomicValue" value="412"/>
+	<property name="EconomicValue" value="328"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - all magnum parts value reduced 1125>844 -->
 <item id="216" name="parts44Magnum_grip">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="parts44MagnumGroupDesc"/>
@@ -2916,7 +2953,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="20,34"/>
 		<property name="DegradationMax" value="4000,12500"/>
 	</property>
-	<property name="EconomicValue" value="1125"/>
+	<property name="EconomicValue" value="844"/>
 </item>
 <item id="217" name="parts44Magnum_cylinder">
 	<property name="Extends" value="partsMaster"/>
@@ -2927,7 +2964,7 @@ Mesh files no longer used:
 		<property name="FalloffRange" value="30,50"/>
 		<property name="DegradationMax" value="4000,12500"/>
 	</property>
-	<property name="EconomicValue" value="1125"/>
+	<property name="EconomicValue" value="844"/>
 </item>
 <item id="218" name="parts44Magnum_parts">
 	<property name="Extends" value="partsMaster"/>
@@ -2938,7 +2975,7 @@ Mesh files no longer used:
 		<!-- <property name="Accuracy" value="1,0.05"/> -->
 		<property name="DegradationMax" value="4000,12500"/>
 	</property>
-	<property name="EconomicValue" value="1125"/>
+	<property name="EconomicValue" value="844"/>
 </item>
 <item id="219" name="parts44Magnum_frame">
 	<property name="Extends" value="partsMaster"/>
@@ -2946,13 +2983,15 @@ Mesh files no longer used:
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="20"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="52,88"/>
+    <!-- Craftworx - QoLaFIM A16.2 - entity damage raised 52,88>78,132  -->
+		<property name="EntityDamage" value="78,132"/>
 		<property name="BlockDamage" value="14,24"/>
 		<property name="DegradationMax" value="4000,12500"/>
 	</property>
-	<property name="EconomicValue" value="1125"/>
+	<property name="EconomicValue" value="844"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - all shotgun parts value reduced 525>394 -->
 <item id="222" name="partsPumpShotgun_stockShort">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsPumpShotgunShortGroupDesc"/>
@@ -2964,7 +3003,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="9,9"/>
 		<property name="DegradationMax" value="1800,4500"/>
 	</property>
-	<property name="EconomicValue" value="525"/>
+	<property name="EconomicValue" value="394"/>
 </item>
 <item id="223" name="partsPumpShotgun_receiver">
 	<property name="Extends" value="partsMaster"/>
@@ -2975,7 +3014,7 @@ Mesh files no longer used:
 		<property name="FalloffRange" value="36,60"/>
 		<property name="DegradationMax" value="1800,4500"/>
 	</property>
-	<property name="EconomicValue" value="525"/>
+	<property name="EconomicValue" value="394"/>
 </item>
 <item id="224" name="partsPumpShotgun_parts">
 	<property name="Extends" value="partsMaster"/>
@@ -2986,7 +3025,7 @@ Mesh files no longer used:
 		<!-- <property name="Accuracy" value="1,0.08"/> -->
 		<property name="DegradationMax" value="1800,4500"/>
 	</property>
-	<property name="EconomicValue" value="525"/>
+	<property name="EconomicValue" value="394"/>
 </item>
 <item id="225" name="partsPumpShotgun_barrelShort">
 	<property name="Extends" value="partsMaster"/>
@@ -2996,7 +3035,7 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="DegradationMax" value="1800,4500"/>
 	</property>
-	<property name="EconomicValue" value="525"/>
+	<property name="EconomicValue" value="394"/>
 </item>
 <item id="226" name="partsPumpShotgun_stock">
 	<property name="Extends" value="partsMaster"/>
@@ -3009,7 +3048,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="9,9"/>
 		<property name="DegradationMax" value="1800,4500"/>
 	</property>
-	<property name="EconomicValue" value="675"/>
+	<property name="EconomicValue" value="394"/>
 </item>
 <item id="227" name="partsPumpShotgun_barrel">
 	<property name="Extends" value="partsMaster"/>
@@ -3019,9 +3058,10 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="DegradationMax" value="1800,4500"/>
 	</property>
-	<property name="EconomicValue" value="675"/>
+	<property name="EconomicValue" value="394"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - all MP5 parts value reduced 1125>900 -->
 <item id="230" name="partsMP5_stock">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsMP5GroupDesc"/>
@@ -3031,7 +3071,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="13,18"/>
 		<property name="DegradationMax" value="5600,14000"/>
 	</property>
-	<property name="EconomicValue" value="1125"/>
+	<property name="EconomicValue" value="900"/>
 </item>
 <item id="231" name="partsMP5_receiver">
 	<property name="Extends" value="partsMaster"/>
@@ -3042,7 +3082,7 @@ Mesh files no longer used:
 		<property name="FalloffRange" value="40,72"/>
 		<property name="DegradationMax" value="5600,14000"/>
 	</property>
-	<property name="EconomicValue" value="1125"/>
+	<property name="EconomicValue" value="900"/>
 </item>
 <item id="232" name="partsMP5_parts">
 	<property name="Extends" value="partsMaster"/>
@@ -3054,7 +3094,7 @@ Mesh files no longer used:
 		<property name="Accuracy" value="5,5"/> <!-- 10 -->
 		<property name="DegradationMax" value="5600,14000"/>
 	</property>
-	<property name="EconomicValue" value="1125"/>
+	<property name="EconomicValue" value="900"/>
 </item>
 <item id="233" name="partsMP5_barrel">
 	<property name="Extends" value="partsMaster"/>
@@ -3062,13 +3102,15 @@ Mesh files no longer used:
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="25"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="17,29"/>
+    <!-- Craftworx - QoLaFIM A16.2 - entity damage raised 17,29>25,39  -->
+		<property name="EntityDamage" value="25,39"/>
 		<property name="BlockDamage" value="3,5"/>
 		<property name="DegradationMax" value="5600,14000"/>
 	</property>
-	<property name="EconomicValue" value="1125"/>
+	<property name="EconomicValue" value="900"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - all AK47 part value reduced 1500>1200 -->
 <item id="236" name="partsAK47_stock">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsAK47GroupDesc"/>
@@ -3079,7 +3121,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="5600,14000"/>
 		<property name="DismembermentBaseChance" value="-0.2,-0.1"/>
 	</property>
-	<property name="EconomicValue" value="1500"/>
+	<property name="EconomicValue" value="1200"/>
 </item>
 <item id="237" name="partsAK47_receiver">
 	<property name="Extends" value="partsMaster"/>
@@ -3090,7 +3132,7 @@ Mesh files no longer used:
 		<property name="FalloffRange" value="54,90"/>
 		<property name="DegradationMax" value="5600,14000"/>
 	</property>
-	<property name="EconomicValue" value="1500"/>
+	<property name="EconomicValue" value="1200"/>
 </item>
 <item id="238" name="partsAK47_parts">
 	<property name="Extends" value="partsMaster"/>
@@ -3101,7 +3143,7 @@ Mesh files no longer used:
 		<property name="Accuracy" value="7,7"/> <!-- 14.5 -->
 		<property name="DegradationMax" value="5600,14000"/>
 	</property>
-	<property name="EconomicValue" value="1500"/>
+	<property name="EconomicValue" value="1200"/>
 </item>
 <item id="239" name="partsAK47_barrel">
 	<property name="Extends" value="partsMaster"/>
@@ -3110,13 +3152,15 @@ Mesh files no longer used:
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="35"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="42,70"/>
+    <!-- Craftworx - QoLaFIM A16.2 - entity damage raised 42,70>63,105  -->
+		<property name="EntityDamage" value="63,105"/>
 		<property name="BlockDamage" value="5,9.5"/>
 		<property name="DegradationMax" value="5600,14000"/>
 	</property>
-	<property name="EconomicValue" value="1500"/>
+	<property name="EconomicValue" value="1200"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - all hunting rifle parts value reduced 750>562 -->
 <item id="242" name="partsHuntingRifle_stock">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsHuntingRifleGroupDesc"/>
@@ -3129,6 +3173,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="10,15"/>
 		<property name="DegradationMax" value="2500,6250"/>
 	</property>
+  <property name="EconomicValue" value="562"/>
 </item>
 <item id="243" name="partsHuntingRifle_receiver">
 	<property name="Extends" value="partsMaster"/>
@@ -3139,6 +3184,7 @@ Mesh files no longer used:
 		<property name="FalloffRange" value="96,160"/>
 		<property name="DegradationMax" value="2500,6250"/>
 	</property>
+  <property name="EconomicValue" value="562"/>
 </item>
 <item id="244" name="partsHuntingRifle_parts">
 	<property name="Extends" value="partsMaster"/>
@@ -3150,6 +3196,7 @@ Mesh files no longer used:
 		<property name="Accuracy" value="11,11"/> <!-- 29 -->
 		<property name="DegradationMax" value="2500,6250"/>
 	</property>
+  <property name="EconomicValue" value="562"/>
 </item>
 <item id="245" name="partsHuntingRifle_barrel">
 	<property name="Extends" value="partsMaster"/>
@@ -3157,12 +3204,15 @@ Mesh files no longer used:
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="35"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="45,75"/>
+    <!-- Craftworx - QoLaFIM A16.2 - entity damage raised 45,75>67,112  -->
+		<property name="EntityDamage" value="67,112"/>
 		<property name="BlockDamage" value="8,14"/>
 		<property name="DegradationMax" value="2500,6250"/>
 	</property>
+  <property name="EconomicValue" value="562"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - sniper rifle parts value...raised, interestingly O.o 875>1312  -->
 <item id="248" name="partsSniperRifle_stock">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsSniperRifleGroupDesc"/>
@@ -3174,7 +3224,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="15,21"/>
 		<property name="DegradationMax" value="3500,8750"/>
 	</property>
-	<property name="EconomicValue" value="875"/>
+	<property name="EconomicValue" value="1312"/>
 </item>
 <item id="249" name="partsSniperRifle_receiver">
 	<property name="Extends" value="partsMaster"/>
@@ -3185,7 +3235,7 @@ Mesh files no longer used:
 		<property name="FalloffRange" value="96,160"/>
 		<property name="DegradationMax" value="3500,8750"/>
 	</property>
-	<property name="EconomicValue" value="875"/>
+	<property name="EconomicValue" value="1312"/>
 </item>
 <item id="250" name="partsSniperRifle_parts">
 	<property name="Extends" value="partsMaster"/>
@@ -3197,7 +3247,7 @@ Mesh files no longer used:
 		<property name="Accuracy" value="13,13"/> <!-- 39 -->
 		<property name="DegradationMax" value="3500,8750"/>
 	</property>
-	<property name="EconomicValue" value="875"/>
+	<property name="EconomicValue" value="1312"/>
 </item>
 <item id="251" name="partsSniperRifle_barrel">
 	<property name="Extends" value="partsMaster"/>
@@ -3205,11 +3255,12 @@ Mesh files no longer used:
 	<property name="PartType" value="Barrel"/>
 	<property name="Weight" value="40"/>
 	<property class="Attributes">
-		<property name="EntityDamage" value="41.4,69"/>
+    <!-- Craftworx - QoLaFIM A16.2 - entity damage raised 41.4,69>70,120, should be slighly above hunting rifle  -->
+		<property name="EntityDamage" value="70,120"/>
 		<property name="BlockDamage" value="8,14"/>
 		<property name="DegradationMax" value="3500,8750"/>
 	</property>
-	<property name="EconomicValue" value="875"/>
+	<property name="EconomicValue" value="1312"/>
 </item>
 
 <item id="254" name="partsRocketLauncher_stock">
@@ -3282,6 +3333,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+  <!-- Craftworx - QoLaFIM A16.2 - craft skill weapons>science -->
 <item id="262" name="partsChainsaw_blade">
 	<property name="Extends" value="partsMaster"/>
 	<property name="PartType" value="Barrel"/>
@@ -3290,11 +3342,12 @@ Mesh files no longer used:
 		<property name="EntityDamage" value="21,35"/>
 		<property name="BlockDamage" value="1.5,3"/>
 		<!-- <property name="Accuracy" value="1, 0.01"/> -->
-		<property name="DismembermentBaseChance" value="0.01,0.03"/>
+    <!-- Craftworx - QoLaFIM A16.2 - dismember base chance raised 0.01,0.03>0.05,0.1 -->
+		<property name="DismembermentBaseChance" value="0.05,0.1"/>
 		<property name="DismembermentBonus" value="0,0"/>
 		<property name="DegradationMax" value="3000,6000"/>
 	</property>
-	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Resources,Tools/Traps"/>
 </item>
 <item id="265" name="partsAuger_parts">
@@ -3308,6 +3361,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+  <!-- Craftworx - QoLaFIM A16.2 - craft skill weapons>science -->
 <item id="266" name="partsAuger_blade">
 	<property name="Extends" value="partsMaster"/>
 	<property name="PartType" value="Barrel"/>
@@ -3318,7 +3372,7 @@ Mesh files no longer used:
 		<!-- <property name="Accuracy" value="1, 0.01"/> -->
 		<property name="DegradationMax" value="3000,6000"/>
 	</property>
-	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Resources,Tools/Traps"/>
 </item>
 
@@ -3349,7 +3403,7 @@ Mesh files no longer used:
 	<property name="Material" value="metal"/>
 	<property name="RepairTools" value="repairKit"/>
 	<property name="HoldType" value="45"/>
-	<property name="EconomicValue" value="500"/>
+	<property name="EconomicValue" value="250"/>
 	<property class="Attributes">
 		<property name="VehiclePlayerStaminaDrainRate" value="1,0"/>
 		<property name="DegradationMax" value="1200,6000"/>
@@ -3818,10 +3872,11 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - value 140  -->
 <item id="371" name="leatherGloves"> <!-- leatherArmor -->
 	<property name="Extends" value="leatherBoots"/>
 	<property name="FuelValue" value="20"/>
+	<property name="EconomicValue" value="140"/>
 	<property name="EquipSlot" value="Hands"/>
 	<property class="UMA">
 		<property name="Mesh" value="armor_leather_gloves"/>
@@ -3856,10 +3911,11 @@ Mesh files no longer used:
 		<property name="UISlot" value="ChestArmor"/>
 	</property>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - value 170  -->
 <item id="374" name="leatherHood"> <!-- leatherArmor -->
 	<property name="Extends" value="leatherBoots"/>
 	<property name="FuelValue" value="20"/>
+	<property name="EconomicValue" value="170"/>
 	<property name="EquipSlot" value="Head"/>
 	<property class="UMA">
 		<property name="Mesh" value="armor_leather_hood"/>
@@ -4015,10 +4071,11 @@ Mesh files no longer used:
 		<property name="UISlot" value="ChestArmor"/>
 	</property>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - value raised to 540 -->
 <item id="386" name="ironHelmet"> <!-- ironArmor -->
 	<property name="Extends" value="ironBoots"/>
 	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="540"/>
 	<property name="EquipSlot" value="Head"/>
 	<property class="UMA">
 		<property name="Mesh" value="armor_iron_helmet"/>
@@ -4037,10 +4094,11 @@ Mesh files no longer used:
 		<property name="Mask9" value="Eyes" param1="outer"/>
 	</property>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - value lowered to 330 -->
 <item id="387" name="ironGloves"> <!-- ironArmor -->
 	<property name="Extends" value="ironBoots"/>
 	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="330"/>
 	<property name="EquipSlot" value="Hands"/>
 	<property class="UMA">
 		<property name="Mesh" value="armor_iron_gloves"/>
@@ -4512,6 +4570,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - value lowered 1200>940 -->
 <item id="464" name="miningHelmet">
 	<property name="Waterproof" value="0.15"/>
 	<property name="Class" value="ItemClassToggle"/>
@@ -4521,7 +4580,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="forgedIron"/>
 	<property name="HoldType" value="45"/>
 	<property name="Weight" value="60"/>
-	<property name="EconomicValue" value="1200"/>
+	<property name="EconomicValue" value="940"/>
 	<property name="LightSource" value="Entities/Lighting/miningHelmetLightSource"/>
 	<property name="EquipSlot" value="Head"/>
 	<property name="Degradation" value="250" param1="true"/>
@@ -4651,6 +4710,7 @@ Mesh files no longer used:
 		<property name="CreativeMode" value="Dev"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - value lowered 150>75 -->
 <item id="471" name="shades">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
@@ -4661,7 +4721,7 @@ Mesh files no longer used:
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="Encumbrance" value="0"/>
 	<property name="Weight" value="5"/>
-	<property name="EconomicValue" value="150"/>
+	<property name="EconomicValue" value="75"/>
 	<property class="Attributes"> <!-- clothGeneric -->
 		<property name="ConcussiveProtection" value="0.065,0.13"/>
 		<property name="PunctureProtection" value="0.065,0.13"/>
@@ -4736,6 +4796,7 @@ Mesh files no longer used:
 	<property name="Extends" value="shades"/>
 	<property name="CustomIcon" value="shades"/>
 	<property name="CustomIconTint" value="80,80,80"/>
+	<property name="EconomicValue" value="150"/>
 	<property class="UMA">
 		<property name="Overlay0Tint" value="80,80,80"/>
 	</property>
@@ -5048,14 +5109,14 @@ Mesh files no longer used:
 		<property name="Overlay1Tint" value="98,130,163"/>
 	</property>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - weight 1>5 -->
 <item id="503" name="facialPiercings">
 	<property name="Insulation" value="0"/>
 	<property name="Encumbrance" value="0.1"/>
 	<property name="Material" value="metal"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="EquipSlot" value="Face"/>
-	<property name="Weight" value="1"/>
+	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="50"/>
 	<property name="Stacknumber" value="1"/>
 	<property name="HoldType" value="45"/>
@@ -5101,10 +5162,11 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTailoring"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
-
+  <!-- Craftworx - QoLaFIM A16.2 - value lowered to 80 -->
 <item id="508" name="runningShoes">
 	<property name="Extends" value="leatherBoots"/>
 	<property name="Weight" value="25"/>
+	<property name="EconomicValue" value="80"/>
 	<property name="Encumbrance" value="0.02"/>
 	<property class="Attributes">
 		<property name="DegradationMax" value="250,600"/>
@@ -5253,6 +5315,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - value lowered 800>240, too numerous to be a treasure -->
 <item id="520" name="pufferCoat">
 	<property name="Insulation" value="40"/>
 	<property name="Waterproof" value="0.45"/>
@@ -5262,7 +5325,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="cloth"/>
 	<property name="Weight" value="30"/>
 	<property name="FuelValue" value="6"/>
-	<property name="EconomicValue" value="800"/>
+	<property name="EconomicValue" value="240"/>
 	<property name="HoldType" value="45"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="EquipSlot" value="Chest"/>
@@ -5522,6 +5585,7 @@ Mesh files no longer used:
 	</property>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - value lowered 800>240 -->
 <item id="544" name="jacketWhite">
 	<property name="Insulation" value="30"/>
 	<property name="Waterproof" value="0.4"/>
@@ -5531,7 +5595,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="cloth"/>
 	<property name="Weight" value="30"/>
 	<property name="FuelValue" value="6"/>
-	<property name="EconomicValue" value="800"/>
+	<property name="EconomicValue" value="240"/>
 	<property name="HoldType" value="45"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="EquipSlot" value="Chest"/>
@@ -6123,7 +6187,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="15"/> <!-- STK medical -->
+	<property name="Stacknumber" value="50"/> <!-- STK medical -->
 	<property class="Action0">
 		<property name="Class" value="UseOther"/>
 		<property name="Delay" value="1.0"/>
@@ -6185,9 +6249,10 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="firstAidTip"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - value raised 15>50 -->
 <item id="657" name="firstAidBandage">
 	<property name="Extends" value="bandage"/>
-	<property name="EconomicValue" value="15"/>
+	<property name="EconomicValue" value="50"/>
 	<property class="Action0">
 		<property name="Buff" value="firstAid"/>
 	</property>
@@ -6199,9 +6264,10 @@ Mesh files no longer used:
 	<property name="CraftingIngredientExp" value="2"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - value raised 200>350, cures first stage infection (cause of alcohol) -->
 <item id="658" name="firstAidKit">
 	<property name="Extends" value="bandage"/>
-	<property name="EconomicValue" value="200"/>
+	<property name="EconomicValue" value="350"/>
 	<property class="Action0">
 		<property name="Gain_health" value="50"/>
 		<property name="Sound_start" value="player_firstAidKit"/>
@@ -6211,26 +6277,28 @@ Mesh files no longer used:
 		<property name="Gain_health" value="50"/>
 		<property name="Sound_start" value="player_firstAidKit"/>
 		<property name="Buff" value="firstAidLarge"/>
+		<property name="Debuff" value="infection"/>
 	</property>
 	<property name="DescriptionKey" value="firstAidKitDesc"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - value lowered 800>150, what's so expensive about some plastic? Less HP damage (25>10), gain some thirst -->
 <item id="661" name="bloodDrawKit">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mplastics"/>
 	<property name="Weight" value="6"/>
-	<property name="EconomicValue" value="800"/>
+	<property name="EconomicValue" value="150"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="250"/> <!-- STK loot -->
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
-		<property name="Gain_health" value="-25"/>
+		<property name="Gain_health" value="-10"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="0"/>
+		<property name="Gain_water" value="-5"/>
 		<property name="Sound_start" value="player_blooddraw"/>
 		<property name="Buff" value="bloodDrawTrigger"/>
 		<property name="Consume" value="false"/>
@@ -6249,7 +6317,7 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="250"/> <!-- STK resource -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
-	<property name="SellableToTrader" value="false"/>
+	<property name="SellableToTrader" value="true"/>
 	<property name="HoldType" value="45"/>
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
@@ -6319,7 +6387,8 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="-30"/>
+    <!-- Craftworx - QoLaFIM A16.2 - thirst 30>10 -->
+		<property name="Gain_water" value="-10"/>
 		<property name="Sound_start" value="player_painkillers"/>
 		<property name="Buff" value="painkillerBuff"/>
 	</property>
@@ -6365,11 +6434,12 @@ Mesh files no longer used:
 	<property name="ActionExp" value="10"/>
 </item>
 
+  <!-- Craftworx - QoLaFIM A16.2 - value raised 140>200 -->
 <item id="668" name="antibiotics">
 	<property name="Meshfile" value="Items/Health/painkillersPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="16"/>
-	<property name="EconomicValue" value="140"/>
+	<property name="EconomicValue" value="200"/>
 	<property name="Stacknumber" value="50"/> <!-- STK loot -->
 	<property class="Action0">
 		<property name="Class" value="UseOther"/>
@@ -6494,16 +6564,16 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="EconomicValue" value="80"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="10"/> <!-- STK food -->
+	<property name="Stacknumber" value="15"/> <!-- STK food -->
 	<property class="Action1">
 		<property name="Class" value="Eat"/>
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="5"/>
+		<property name="Gain_food" value="8"/>
 		<property name="Buff" value="eatFood_4_Trigger"/>
 		<property name="Gain_water" value="0"/>
-		<property name="Gain_stamina" value="40"/>
+		<property name="Gain_stamina" value="15"/>
 		<property name="Gain_wellness" value="0.4"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Debuff" value="infection"/>
@@ -6527,8 +6597,9 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="3"/>
 		<property name="Buff" value="eatFood_2_Trigger"/>
-		<property name="Gain_water" value="0"/>
-		<property name="Gain_stamina" value="10"/>
+		<property name="Gain_water" value="2"/>
+
+		<property name="Gain_stamina" value="5"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Group" value="Food/Cooking"/> <!-- ,Medicine -->
@@ -6655,7 +6726,7 @@ Mesh files no longer used:
 	<property class="Action1">
 		<property name="Gain_food" value="5"/>
 		<property name="Buff" value="eatFood_3_Trigger"/>
-		<property name="Gain_water" value="0"/>
+		<property name="Gain_water" value="5"/>
 	</property>
 </item>
 
@@ -6711,7 +6782,7 @@ Mesh files no longer used:
 		<property name="Delay" value="2.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="7"/>
+		<property name="Gain_food" value="1"/>
 		<property name="Buff" value="eatFood_4_Trigger"/>
 		<property name="Gain_water" value="-5"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -6758,7 +6829,7 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="1"/>
+		<property name="Gain_food" value="3"/>
 		<property name="Buff" value="eatFood_1_Trigger"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -6777,7 +6848,7 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="3"/>
+		<property name="Gain_food" value="5"/>
 		<property name="Buff" value="eatFood_2_Trigger"/>
 		<property name="Gain_water" value="0"/>
 		<property name="Gain_stamina" value="2"/>
@@ -6845,7 +6916,7 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="10"/>
+		<property name="Gain_food" value="5"/>
 		<property name="Buff" value="foodPoisoning,eatFood_3_Trigger"/>
 		<property name="Buff_chance" value="0.6,1"/>
 		<property name="Gain_water" value="0"/>
@@ -6873,7 +6944,7 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="15"/>
+		<property name="Gain_food" value="7"/>
 		<property name="Buff" value="foodPoisoning,eatFood_4_Trigger"/>
 		<property name="Buff_chance" value="0.6,1"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -6885,7 +6956,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/raw_meatPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="100"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicValue" value="20"/>
 	<property name="CraftingIngredientTime" value="15"/>
 	<property class="Action1">
@@ -6909,7 +6980,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Food/meat_rabbit"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="100"/> <!-- STK food -->
+	<property name="Stacknumber" value="250"/> <!-- STK food -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -7081,7 +7152,7 @@ Mesh files no longer used:
 		<property name="Gain_food" value="3"/>
 		<property name="Buff" value="foodPoisoning,eatFood_1_Trigger"/>
 		<property name="Buff_chance" value="0.4,1"/>
-		<property name="Gain_water" value="0"/>
+		<property name="Gain_water" value="2"/>
 		<property name="Gain_stamina" value="-8"/>
 		<property name="Gain_sickness" value="30"/>
 		<property name="Sound_start" value="player_eating"/>
@@ -7209,9 +7280,9 @@ Mesh files no longer used:
 		<property name="Delay" value="1.0"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="21"/>
-		<property name="Gain_water" value="0"/>
-		<property name="Gain_wellness" value="0.5"/>
+		<property name="Gain_food" value="30"/>
+		<property name="Gain_water" value="5"/>
+		<property name="Gain_wellness" value="1.5"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="stewWarming,eatFood_12_Trigger"/>
 		<!-- jar from cooking food <property name="Create_item" value="emptyJar"/> -->
@@ -7224,7 +7295,7 @@ Mesh files no longer used:
 	<property name="Material" value="metal"/>
 	<property name="Weight" value="5"/>
 	<property name="HoldType" value="14"/>
-	<property name="Stacknumber" value="15"/> <!-- STK resource -->
+	<property name="Stacknumber" value="50"/> <!-- STK resource -->
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
@@ -7252,7 +7323,7 @@ Mesh files no longer used:
 	<property name="Material" value="metal"/>
 	<property name="Weight" value="5"/>
 	<property name="HoldType" value="14"/>
-	<property name="Stacknumber" value="1"/>
+	<property name="Stacknumber" value="10"/>
 	<property name="EconomicValue" value="8"/>
 	<property name="CraftingIngredientTime" value="10"/>
 	<property class="Action1">
@@ -7415,7 +7486,7 @@ Mesh files no longer used:
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="-10"/>
+		<property name="Gain_water" value="7"/>
 		<property name="Gain_stamina" value="100"/>
 		<property name="Gain_wellness" value="-0.1"/>
 		<property name="Sound_start" value="player_drinking"/>
@@ -7439,7 +7510,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="0"/>
 		<property name="Gain_stamina" value="0"/>
 		<property name="Gain_food" value="0"/>
-		<property name="Gain_water" value="0"/>
+		<property name="Gain_water" value="8"/>
 		<property name="Sound_start" value="player_drinking"/>
 		<property name="Buff" value="DrinkBeer,extinguishFireBuff"/>
 		<property name="Create_item" value="emptyJar"/>
@@ -8279,14 +8350,15 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Mmetal_weak"/>
-	<property name="Weight" value="5"/>
-	<property name="Stacknumber" value="1200"/> <!-- STK resource -->
-	<property name="SellableToTrader" value="false"/>
+	<property name="Weight" value="25"/>
+	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
+	<property name="SellableToTrader" value="true"/>
 	<property name="HoldType" value="45"/>
 	<property name="DropScale" value="3"/>
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources"/>
+	<property name="MeltTimePerUnit" value="0.2"/>
 </item>
 
 <item id="1305" name="scrapIron">
@@ -8301,7 +8373,8 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="RepairTime" value="0.5"/>
 	<property name="RepairAmount" value="20"/>
-	<property name="CraftingIngredientTime" value="0.2"/>
+	<property name="MeltTimePerUnit" value="0.2"/>
+	<property name="CraftingIngredientTime" value="0.05"/>
 </item>
 
 <item id="1306" name="forgedIron">
@@ -8346,8 +8419,9 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="Mplastics"/>
 	<property name="Weight" value="1"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
-	<property name="EconomicValue" value="16"/>
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
+	<property name="EconomicValue" value="60"/>
+	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
 	<property name="CraftingIngredientTime" value="2"/>
@@ -8516,7 +8590,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="stone"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
 	<property name="DropScale" value="1"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="70"/>
@@ -8528,7 +8602,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="stone"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="70"/>
 	<property name="Group" value="Building,Resources"/>
@@ -8540,7 +8614,7 @@ Mesh files no longer used:
 	<property name="Material" value="Mconcrete"/>
 	<property name="Weight" value="20"/>
 	<property name="HoldType" value="34"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="9"/>
 	<property name="EconomicBundleSize" value="20"/>
 	<property name="Group" value="Resources"/>
@@ -8562,7 +8636,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/cloth"/>
 	<property name="Material" value="cloth"/>
 	<property name="HoldType" value="14"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
 	<property name="RepairAmount" value="50"/>
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="5"/>
@@ -8576,7 +8650,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="paper"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="1"/>
 	<property name="EconomicValue" value="15"/>
@@ -8689,7 +8763,7 @@ Mesh files no longer used:
 	<property name="Material" value="paper"/>
 	<property name="FuelValue" value="1"/>
 	<property name="Weight" value="1"/>
-	<property name="Stacknumber" value="750"/> <!-- STK resource -->
+	<property name="Stacknumber" value="3000"/> <!-- STK resource -->
 	<!--
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -8739,7 +8813,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/featherPrefab"/>
 	<property name="Material" value="cloth"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
 	<property name="FuelValue" value="1"/>
 	<!-- <property name="CraftingIngredientExp" value="0"/> -->
 	<property name="EconomicValue" value="10"/>
@@ -8777,7 +8851,7 @@ Mesh files no longer used:
 	<property name="Material" value="coal"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="6000"/> <!-- STK resource -->
-	<property name="FuelValue" value="20"/>
+	<property name="FuelValue" value="40"/>
 	<property name="DropScale" value="8"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="EconomicBundleSize" value="10"/>
@@ -8801,7 +8875,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/gun_powderPrefab"/>
 	<property name="Material" value="dirt"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="Stacknumber" value="2500"/> <!-- STK resource -->
 	<property name="EconomicValue" value="22"/>
 	<property name="EconomicBundleSize" value="10"/>
 	<property name="Group" value="Resources,Ammo/Weapons,Tools/Traps"/>
@@ -8813,7 +8887,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="36"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
@@ -8824,7 +8898,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/bullet_casingPrefab"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
@@ -8836,7 +8910,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="lead"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="500"/> <!-- STK resource -->
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
 	<property name="Group" value="Resources,Ammo/Weapons"/>
@@ -8925,7 +8999,7 @@ Mesh files no longer used:
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
-	<property name="EconomicValue" value="100"/>
+	<property name="EconomicValue" value="70"/>
 	<property name="Group" value="Chemicals"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
@@ -8935,8 +9009,8 @@ Mesh files no longer used:
 	<property name="Material" value="Msteel"/>
 	<property name="Weight" value="0"/>
 	<property name="HoldType" value="3"/>
-	<property name="Stacknumber" value="250"/> <!-- STK resource -->
-	<property name="EconomicValue" value="35"/>
+	<property name="Stacknumber" value="1000"/> <!-- STK resource -->
+	<property name="EconomicValue" value="75"/>
 	<property name="Group" value="Chemicals"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
@@ -8946,7 +9020,7 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
 	<property name="Material" value="organic"/>
-	<property name="Stacknumber" value="1000"/> <!-- STK ammo -->
+	<property name="Stacknumber" value="2500"/> <!-- STK ammo -->
 	<property name="Group" value="Resources"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="EconomicBundleSize" value="50"/>
@@ -8995,7 +9069,7 @@ Mesh files no longer used:
 	<property name="Material" value="metal"/>
 	<property name="Weight" value="5"/>
 	<property name="HoldType" value="14"/>
-	<property name="Stacknumber" value="500"/>
+	<property name="Stacknumber" value="1000"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="CraftingIngredientTime" value="9"/>
 	<!-- DTD-610TL Animation for throwing does not work properly.
@@ -9023,6 +9097,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 </item>
 
+<!-- Craftworx - A16 Better Balance Mod - Allow jars to be refilled with sink water -->
 <item id="1368" name="emptyJar">
 	<property name="Meshfile" value="Items/Food/emptyJarPrefab"/>
 	<property name="Material" value="glass"/>
@@ -9041,6 +9116,9 @@ Mesh files no longer used:
 		<property name="Focused_blockname_3" value="waterStaticBucket"/>
 		<property name="Focused_blockname_4" value="waterMovingBucket"/>
 		<property name="Focused_blockname_5" value="waterSource8"/>
+		<!-- A16 Better Balance Mod -->
+		<property name="Focused_blockname_6" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -9068,6 +9146,9 @@ Mesh files no longer used:
 		<property name="Focused_blockname_3" value="waterStaticBucket"/>
 		<property name="Focused_blockname_4" value="waterMovingBucket"/>
 		<property name="Focused_blockname_5" value="waterSource8"/>
+		<!-- A16 Better Balance Mod -->
+		<property name="Focused_blockname_6" value="cntCabinetOldSink" />
+		<property name="Focused_blockname_7" value="cntGraniteSink" />
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Tools/Traps"/>
@@ -9140,6 +9221,8 @@ Mesh files no longer used:
 	<property name="Stacknumber" value="250"/> <!-- STK loot -->
 	<property name="Weight" value="20"/>
 	<property name="EconomicValue" value="40"/>
+	<property name="CraftingIngredientExp" value="5"/>
+	<property name="CraftingIngredientTime" value="5"/>
 	<property name="Group" value="Resources"/>
 </item>
 
@@ -9156,7 +9239,7 @@ Mesh files no longer used:
 	<property name="Meshfile" value="Items/Crafting/radiator"/>
 	<property name="Material" value="brass"/>
 	<property name="HoldType" value="21"/>
-	<property name="Stacknumber" value="5"/> <!-- STK loot -->
+	<property name="Stacknumber" value="250"/> <!-- STK loot -->
 	<property name="Weight" value="100"/>
 	<property name="EconomicValue" value="200"/>
 	<property name="Group" value="Resources"/>
@@ -9265,7 +9348,7 @@ Mesh files no longer used:
 	<property name="RepairTools" value="repairKit"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="Weight" value="100"/>
+	<property name="Weight" value="500"/>
 	<property name="EconomicValue" value="1000"/>
 	<property name="Group" value="Resources"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -9307,9 +9390,9 @@ Mesh files no longer used:
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="glass"/>
 	<property name="HoldType" value="45"/>
-	<property name="Stacknumber" value="50"/> <!-- STK loot -->
+	<property name="Stacknumber" value="250"/> <!-- STK loot -->
 	<property name="Weight" value="10"/>
-	<property name="EconomicValue" value="240"/>
+	<property name="EconomicValue" value="180"/>
 	<property name="Group" value="Resources"/>
 </item>
 
@@ -9365,7 +9448,7 @@ Mesh files no longer used:
 	<property name="Material" value="Msteel"/>
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="500"/> <!-- STK resource -->
-	<property name="Weight" value="10"/>
+	<property name="Weight" value="50"/>
 	<property name="EconomicValue" value="22"/>
 	<property name="Group" value="Resources"/>
 </item>
@@ -9385,7 +9468,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="3"/>
 	<property name="Stacknumber" value="10"/> <!-- STK loot -->
 	<property name="Weight" value="15"/>
-	<property name="EconomicValue" value="750"/>
+	<property name="EconomicValue" value="125"/>
 	<property name="Group" value="Chemicals"/>
 </item>
 
@@ -9396,7 +9479,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="45"/>
 	<property name="Stacknumber" value="1"/> <!-- STK resource -->
 	<property name="Weight" value="100"/>
-	<property name="EconomicValue" value="405"/>
+	<property name="EconomicValue" value="250"/>
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
@@ -9459,7 +9542,7 @@ Mesh files no longer used:
 	<property name="ResourceUnit" value="true"/>
 	<property name="MeltTimePerUnit" value="0.25"/>
 	<property name="UserHidden" value="true"/>
-	<property name="CraftingIngredientTime" value="0.5"/>
+	<property name="CraftingIngredientTime" value="0.1"/>
 	<property name="CreativeMode" value="None" />
 </item>
 
@@ -9467,6 +9550,7 @@ Mesh files no longer used:
 	<property name="Extends" value="unit_iron"/>
 	<property name="CustomIcon" value="scrapBrass"/>
 	<property name="Material" value="brass"/>
+	<property name="CraftingIngredientTime" value="0.5"/>
 	<property name="CreativeMode" value="None" />
 </item>
 
@@ -9474,6 +9558,7 @@ Mesh files no longer used:
 	<property name="Extends" value="unit_iron"/>
 	<property name="CustomIcon" value="scrapLead"/>
 	<property name="Material" value="lead"/>
+	<property name="CraftingIngredientTime" value="0.5"/>
 	<property name="CreativeMode" value="None" />
 </item>
 
@@ -9481,6 +9566,7 @@ Mesh files no longer used:
 	<property name="Extends" value="unit_iron"/>
 	<property name="CustomIcon" value="brokenGlass"/>
 	<property name="Material" value="glass"/>
+	<property name="CraftingIngredientTime" value="0.5"/>
 	<property name="CreativeMode" value="None" />
 </item>
 
@@ -9488,6 +9574,7 @@ Mesh files no longer used:
 	<property name="Extends" value="unit_iron"/>
 	<property name="CustomIcon" value="rockSmall"/>
 	<property name="Material" value="stone"/>
+	<property name="CraftingIngredientTime" value="0.5"/>
 	<property name="CreativeMode" value="None" />
 </item>
 
@@ -9495,6 +9582,7 @@ Mesh files no longer used:
 	<property name="Extends" value="unit_iron"/>
 	<property name="CustomIcon" value="clayLump"/>
 	<property name="Material" value="clay"/>
+	<property name="CraftingIngredientTime" value="0.5"/>
 	<property name="CreativeMode" value="None" />
 </item>
 
@@ -9994,7 +10082,7 @@ Mesh files no longer used:
 	<property name="PartType" value="Barrel" />
 	<property name="Weight" value="35" />
     <property class="Attributes">
-		<property name="EntityDamage" value="30,75" />
+		<property name="EntityDamage" value="67,112" />
 		<property name="BlockDamage" value="6,14" />
 		<property name="DegradationRate" value="26,26" />
 		<property name="DegradationMax" value="1500,5000" />
@@ -10009,7 +10097,7 @@ Mesh files no longer used:
     <property name="PartType" value="Barrel" />
     <property name="Weight" value="40" />
     <property class="Attributes">
-		<property name="EntityDamage" value="27.6,69" />
+		<property name="EntityDamage" value="70,120" />
 		<property name="BlockDamage" value="6,14" />
 		<property name="DegradationRate" value="26,26" />
 		<property name="DegradationMax" value="1700,7000" />
@@ -10024,7 +10112,7 @@ Mesh files no longer used:
     <property name="PartType" value="Barrel" />
     <property name="Weight" value="10" />
     <property class="Attributes">
-		<property name="EntityDamage" value="7.6, 19" />
+		<property name="EntityDamage" value="19,29" />
 		<property name="BlockDamage" value="5,13" />
 		<property name="DegradationRate" value="26,26" />
 		<property name="DegradationMax" value="700,4000" />
@@ -10039,7 +10127,7 @@ Mesh files no longer used:
     <property name="PartType" value="Barrel" />
     <property name="Weight" value="25" />
     <property class="Attributes">	
-		<property name="EntityDamage" value="11.6,29" />
+		<property name="EntityDamage" value="25,39" />
 		<property name="BlockDamage" value="2,5" />
 		<property name="DegradationRate" value="26,26" />
 		<property name="DegradationMax" value="2250,10000" />
@@ -10054,7 +10142,7 @@ Mesh files no longer used:
     <property name="PartType" value="Barrel" />
     <property name="Weight" value="35" />
     <property class="Attributes">	
-		<property name="EntityDamage" value="28,70" />
+		<property name="EntityDamage" value="50,95" />
 		<property name="BlockDamage" value="4,9.5" />
 		<property name="DegradationRate" value="26,26" />
 		<property name="DegradationMax" value="2250,10000" />
@@ -10624,12 +10712,13 @@ Mesh files no longer used:
 	<property name="Material" value="metal" />
 	<property name="RepairTools" value="scrapIron" />
 	<property class="Attributes">
-		<property name="EntityDamage" value="6,12" />
-		<property name="BlockDamage" value="20,32" />
+		<property name="EntityDamage" value="8,15" />
+		<property name="BlockDamage" value="25,48" />
 		<property name="DegradationMax" value="100,450" />
 		<property name="DegradationRate" value="1,1" />
 	</property>
 	<property name="EconomicValue" value="80" />
+	<property name="Group" value="Tools/Traps,Basics"/>
 	<property name="DescriptionKey" value="scrapAxeDesc"/>
 </item>
 
@@ -10639,12 +10728,13 @@ Mesh files no longer used:
 	<property name="CustomIconTint" value="E66920" />
 	<property name="RepairTools" value="scrapIron" />
 	<property class="Attributes">
-		<property name="EntityDamage" value="4,12" />
-		<property name="BlockDamage" value="16,38" />
+		<property name="EntityDamage" value="6,11" />
+		<property name="BlockDamage" value="27,70" />
 		<property name="DegradationMax" value="200,700" />
 		<property name="DegradationRate" value="1,1" />
 	</property>
 	<property name="EconomicValue" value="80" />
+	<property name="Group" value="Tools/Traps,Basics"/>
 	<property name="DescriptionKey" value="scrapPickaxeDesc"/>
 </item>
 
@@ -10661,6 +10751,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1" />
 	</property>
 	<property name="EconomicValue" value="80" />
+	<property name="Group" value="Tools/Traps,Basics"/>
 	<property name="DescriptionKey" value="scrapShovelDesc"/>
 </item>
 <!-- End Scrap Tools -->

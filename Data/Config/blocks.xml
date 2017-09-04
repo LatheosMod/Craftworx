@@ -54,9 +54,17 @@ tbnsew:
 	<property name="Map.Color" value="100,100,100"/>
 	<property class="RepairItems"> <property name="cobblestones" value="6"/> </property>
 	<property name="HarvestOverdamage" value="true"/> <!-- default=true -->
+  <!-- Craftworx - QoLaFIM -->
 	<drop event="Harvest" name="rockSmall" count="25" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="ironFragment" count="2" tool_category="harvestingTools"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="ironFragment" count="3" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="rockSmall" count="15" />
+	<drop event="Destroy" name="ironFragment" count="1,2" prob="0.5" />
+	<drop event="Destroy" name="potassiumNitratePowder" count="2,10" prob="0.33" />
+	<drop event="Destroy" name="scrapLead" count="2,10" prob="0.33" />
+	<drop event="Destroy" name="coal" count="2,10" prob="0.33" />
+	<drop event="Destroy" name="rawDiamond" count="1" prob="0.002"/>
+	<drop event="Destroy" name="goldNugget" count="1" prob="0.01"/>
+	<drop event="Destroy" name="silverNugget" count="1" prob="0.02"/>
 	<drop event="Fall" name="rockSmall" count="50" prob="0.23" stick_chance="0"/>
 	<drop event="Fall" name="ironFragment" count="4" prob="0.23" stick_chance="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.1" stick_chance="0.5"/>
@@ -144,16 +152,16 @@ tbnsew:
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM2 - slightly more potassium 20>25 -->
 <block id="6" name="potassiumNitrate">
 	<property name="Material" value="coal"/>
 	<property name="Shape" value="Terrain"/>
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="300"/>
 	<property name="DropScale" value="2"/>
-	<drop event="Harvest" name="potassiumNitratePowder" count="20" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="potassiumNitratePowder" count="25" tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Fall" name="potassiumNitratePowder" count="20" prob="0.5" stick_chance="0"/>
+	<drop event="Fall" name="potassiumNitratePowder" count="25" prob="0.5" stick_chance="0"/>
 	<property name="CanMobsSpawnOn" value="true"/>
 </block>
 
@@ -224,6 +232,7 @@ tbnsew:
 	<property name="SellableToTrader" value="false"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - more lead 15>20 -->
 <block id="11" name="leadOre">
 	<property name="Material" value="lead"/>
 	<property name="Shape" value="Terrain"/>
@@ -231,9 +240,9 @@ tbnsew:
 	<property name="Texture" value="316"/>
 	<property name="Weight" value="100"/>
 	<property name="DropScale" value="2"/>
-	<drop event="Harvest" name="scrapLead" count="15" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="scrapLead" count="20" tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Fall" name="scrapLead" count="15" prob="0.5" stick_chance="0"/>
+	<drop event="Fall" name="scrapLead" count="20" prob="0.5" stick_chance="0"/>
 	<property name="CanMobsSpawnOn" value="true"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="1"/>
@@ -482,15 +491,16 @@ tbnsew:
 	<property name="SellableToTrader" value="false"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - slightly more coal 20>25 -->
 <block id="27" name="coalOre">
 	<property name="Material" value="coal"/>
 	<property name="Shape" value="Terrain"/>
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="34"/>
 	<property name="DropScale" value="2"/>
-	<drop event="Harvest" name="coal" count="20" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="coal" count="25" tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Fall" name="coal" count="20" prob="0.5" stick_chance="0"/>
+	<drop event="Fall" name="coal" count="25" prob="0.5" stick_chance="0"/>
 	<property name="CanMobsSpawnOn" value="true"/>
 </block>
 
@@ -556,7 +566,7 @@ tbnsew:
 	<drop event="Fall" name="sod" count="1" prob="0.25" stick_chance="1"/>
 	<drop event="Fall" name="dirtFragment" count="20" prob="0.187" stick_chance="0"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - more wood 2>10,20 -->
 <block id="32" name="woodDebris">
 	<property name="Material" value="wood_regular"/>
 	<property name="MaxDamage" value="30"/>
@@ -564,7 +574,7 @@ tbnsew:
 	<property name="Shape" value="Terrain"/>
 	<property name="Mesh" value="terrain"/>
 	<property name="Texture" value="438"/>
-	<drop event="Harvest" name="wood" count="2" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="10,20" tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DropScale" value="2"/>
 	<property name="Map.Color" value="110,95,49"/>
@@ -935,7 +945,7 @@ NOT the TextureNumber.
 	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
 group desc for stuff like metal siding
 -->
-
+  <!-- Craftworx - QoLaFIM - scrapIron 10>35,50, harvest>destroy -->
 <block id="115" name="corrugatedMetalMaster">
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="scrapFrameGroupDesc"/>
@@ -951,7 +961,7 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="scrapIron" count="10"/>
+	<drop event="Destroy" name="scrapIron" count="35,50"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="15"/>
@@ -1069,7 +1079,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" count="0"/>
 	<property name="DescriptionKey" value="plantsBlockGroupDesc"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 15>50,75, chance to harvest steel -->
 <block id="121" name="stainlessSteelMaster">
 	<property name="Group" value="Building"/>
 	<property name="Material" value="MstainlessSteel"/>
@@ -1078,7 +1088,8 @@ group desc for stuff like metal siding
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="77"/> -->
 	<property name="CreativeMode" value="None"/>
 	<property class="RepairItems"> <property name="forgedSteel" value="12"/> <property name="steelPolish" value="3"/> </property>
-	<drop event="Harvest" name="scrapIron" count="15"/>
+	<drop event="Harvest" name="scrapIron" count="50,75"/>
+  <drop event="Harvest" name="forgedSteel" count="0,4"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="5"/>
@@ -1086,7 +1097,7 @@ group desc for stuff like metal siding
 	<property name="SellableToTrader" value="false"/>
 	<property name="DescriptionKey" value="steelBlockGroupDesc"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 17>50,75, changed harvest to destroy, repair adjusted -->
 <block id="122" name="scrapIronNoUpgradeMaster">
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
@@ -1094,8 +1105,8 @@ group desc for stuff like metal siding
 	<property name="Texture" value="307"/>
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="87"/> -->
 	<property name="CreativeMode" value="None"/>
-	<property class="RepairItems"> <property name="scrapIron" value="30"/> </property>
-	<drop event="Harvest" name="scrapIron" count="17"/>
+	<property class="RepairItems"> <property name="scrapIron" value="120"/> </property>
+	<drop event="Destroy" name="scrapIron" count="50,75"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="20"/>
@@ -1191,15 +1202,15 @@ group desc for stuff like metal siding
 	<property name="CreativeMode" value="None"/>
 	<!-- <property name="PickupJournalEntry" value="farmingTip"/> -->
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 10>35,50, harvest>destroy, scrap iron repair -->
 <block id="130" name="corrugatedMetalNoUpgradeMaster">
 	<property name="Group" value="Building"/>
 	<property name="Material" value="metal"/> <!-- 300 HP -->
 	<property name="Texture" value="194"/>
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="57"/> -->
 	<property name="CreativeMode" value="None"/>
-	<property class="RepairItems"> <property name="forgedIron" value="2"/> </property>
-	<drop event="Harvest" name="scrapIron" count="10" prob="1"/>
+	<property class="RepairItems"> <property name="scrapIron" value="80"/> </property>
+	<drop event="Destroy" name="scrapIron" count="35,50" prob="1"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.6" stick_chance="1"/>
 	<property name="EconomicValue" value="12"/>
@@ -1242,7 +1253,7 @@ group desc for stuff like metal siding
 	<property name="EconomicValue" value="50"/>
 	<property name="EconomicBundleSize" value="20"/>
 </block>
-
+  <!-- Craftworx -  QoLaFIM A16.2 - scrapIron 15>75,120, chance to harvest steel -->
 <block id="133" name="steelMaster">
 	<property name="Group" value="Building"/>
 	<property name="Material" value="Msteel"/>
@@ -1259,7 +1270,8 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="scrapIron" count="15" prob="1"/>
+	<drop event="Harvest" name="scrapIron" count="75,120" prob="1"/>
+	<drop event="Harvest" name="forgedSteel" count="0,2" prob="0.5"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="160"/>
@@ -1371,7 +1383,7 @@ group desc for stuff like metal siding
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="10"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 17>50,75, repair adjusted, harvest>destroy -->
 <block id="141" name="rScrapIronMaster">
 	<property name="Group" value="Building"/>
 	<property name="Material" value="Mmetal_medium"/>
@@ -1379,7 +1391,7 @@ group desc for stuff like metal siding
 	<property name="Texture" value="352"/>
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="110"/> -->
 	<property name="CreativeMode" value="None"/>
-	<property class="RepairItems"> <property name="scrapIron" value="30"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="120"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="pouredConcreteMaster"/>
 		<property name="Item" value="concreteMix"/>
@@ -1387,13 +1399,13 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_concrete"/>
-	<drop event="Harvest" name="scrapIron" count="17"/>
+	<drop event="Destroy" name="scrapIron" count="50,75"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="40"/>
 	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,5>15,25 -->
 <block id="142" name="rebarFrameMaster">
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="rebarFrameGroupDesc"/>
@@ -1418,7 +1430,7 @@ group desc for stuff like metal siding
 	<property name="CustomUpgradeSound" value="place_block_concrete"/>
 	<!-- <property name="CustomUpgradeSound" value="place_block_wood"/> -->
 	<property class="RepairItems"> <property name="forgedIron" value="1"/> </property>
-	<drop event="Destroy" name="scrapIron" count="1,5"/>
+	<drop event="Destroy" name="scrapIron" count="15,25"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.2" stick_chance="1"/>
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="5"/>
@@ -1439,7 +1451,7 @@ group desc for stuff like metal siding
 	<property name="SellableToTrader" value="false"/>
 	<property name="DescriptionKey" value="buildingBlockGroupDesc"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 17>50,75, repair/upgrade adjusted, harvest>destroy -->
 <block id="144" name="scrapIronMaster">
 	<property name="Group" value="Building"/>
 	<property name="Material" value="Mmetal_medium"/>
@@ -1447,7 +1459,7 @@ group desc for stuff like metal siding
 	<property name="Texture" value="307"/>
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="87"/> -->
 	<property name="CreativeMode" value="None"/>
-	<property class="RepairItems"> <property name="scrapIron" value="30"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="150"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rScrapIronMaster"/>
 		<property name="Item" value="scrapIron"/>
@@ -1455,13 +1467,13 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="scrapIron" count="17"/>
+	<drop event="Destroy" name="scrapIron" count="50,75"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="20"/>
 	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>35,50, repair/upgrade adjusted -->
 <block id="145" name="scrapIronFrameMaster">
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="scrapFrameGroupDesc"/>
@@ -1476,20 +1488,21 @@ group desc for stuff like metal siding
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
 	<property name="CreativeMode" value="None"/>
-	<property class="RepairItems"> <property name="scrapIron" value="12"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="60"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronMaster"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="40"/>
+		<property name="ItemCount" value="200"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="35,50"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="15"/>
 	<property name="EconomicBundleSize" value="2"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - scrapIron 1,8>25,40, repair/upgrade adjusted -->
 <block id="146" name="rWoodMetalMaster">
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="buildingBlockGroupDesc"/>
@@ -1498,15 +1511,15 @@ group desc for stuff like metal siding
 	<property name="Texture" value="380"/>
 	<!-- <property name="ImposterExchange" value="imposterBlock" param1="120"/> -->
 	<property name="CreativeMode" value="None"/>
-	<property class="RepairItems"> <property name="scrapIron" value="10"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="50"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronMaster"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="40"/>
+		<property name="ItemCount" value="200"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Destroy" name="scrapIron" count="1,8"/>
+	<drop event="Destroy" name="scrapIron" count="25,40"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -2630,6 +2643,7 @@ group desc for stuff like metal siding
 	<property name="CreativeMode" value="Dev"/>
 </block>
 
+    <!-- Craftworx - QoLaFIM - heatmapstrength 4>2 -->
 <block id="267" name="animalGore">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Gore" />
@@ -2646,7 +2660,7 @@ group desc for stuff like metal siding
 	<!-- property name="UpgradeRated.Rate" value="15"/>
 	-->
 	<property name="Density" value="0.1"/>
-	<property name="HeatMapStrength" value="4.0"/>
+	<property name="HeatMapStrength" value="2.0"/>
 	<!-- HeatMapTime: Every "bit" of heat is like a game object. It DECAYS in x seconds. (scales with game time)
 	If a gore block generates +5 every minute but HeatMapTime is set to 3 minutes then one gore block will only accumulate +15 total.
 	HeatMapTime 36 roughly equals 1 minute. -->
@@ -2708,12 +2722,13 @@ group desc for stuff like metal siding
 	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronStairs25"/> </property>
 	<property name="DowngradeBlock" value="woodStairs25"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - added maxdamage 50 -->
 <block id="274" name="cntGarageStorage">
 	<property name="CustomIcon" value="cntGarageStorage"/>
 	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="MCardboardLoot"/>
+	<property name="MaxDamage" value="50"/>
 	<property name="Texture" value="276,276,270,270,270,270"/>
 	<property name="LootList" value="22"/>
 	<property class="RepairItems"> <property name="paper" value="10"/> <property name="wood" value="4"/> </property>
@@ -2814,7 +2829,7 @@ group desc for stuff like metal siding
 	<property name="LootList" value="7"/>
 	<drop event="Destroy" name="brokenGlass" count="1,2"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 50>180,250, harvest to destroy -->
 <block id="287" name="securityGateCTRPlate">
 	<property name="Material" value="metal"/>
 	<property name="MaxDamage" value="2000"/>
@@ -2823,8 +2838,8 @@ group desc for stuff like metal siding
 	<property name="Texture" value="446"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
 	<property class="RepairItems"> <property name="forgedIron" value="8"/> </property>
-	<drop event="Harvest" name="scrapIron" count="50" prob="1"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="180,250" prob="1"/>
+	
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.6" stick_chance="1"/>
 	<property name="EconomicValue" value="80"/>
 </block>
@@ -2976,6 +2991,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="Rocks/Rock12" param1="main_mesh"/>
 </block>
 
+      <!-- Craftworx - QoLaFIM - heatmapstrength 1.5>1 -->
 <block id="309" name="campfire">
 	<property name="Class" value="Campfire"/>
 	<property name="Material" value="MstoneNoGlue"/>
@@ -2988,7 +3004,7 @@ group desc for stuff like metal siding
 	<property name="ParticleName" value="campfire"/>
 	<property name="ParticleOffset" value="0.5,0,0.5"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="HeatMapStrength" value="1.5"/>
+	<property name="HeatMapStrength" value="1"/>
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="25"/>
 	<property name="BuffsWhenWalkedOn" value="blockBurn3Trigger"/>
@@ -3008,7 +3024,7 @@ group desc for stuff like metal siding
 	<property name="EconomicBundleSize" value="1"/>
 	<property name="SellableToTrader" value="false"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>15,25 -->
 <block id="310" name="cookingPot">
 	<property name="Material" value="MmetalNoGlue"/>
 	<property name="MaxDamage" value="100"/>
@@ -3019,13 +3035,13 @@ group desc for stuff like metal siding
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CanPickup" value="true"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="15,25"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="Group" value="Food/Cooking"/>
 	<property name="EconomicValue" value="12"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 10>100,150, no plastic -->
 <block id="311" name="cntOven">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="metal"/>
@@ -3039,8 +3055,8 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="electronicParts" count="0,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="spring" count="1,2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapPlastics" count="0,2" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="10" prob="1"/>
+
+	<drop event="Destroy" name="scrapIron" count="100,150" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="360"/> <!-- disassemble value 355 -->
 </block>
@@ -3089,7 +3105,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="sectionalPlaidCouchSofaMiddle"/>
 	<property name="Model" value="Furniture/sectionalArm" param1="main_mesh"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5>15,25 -->
 <block id="316" name="porchLight01">
 	<property name="Class" value="Light"/>
 	<property name="CreativeMode" value="Dev"/>
@@ -3103,7 +3119,7 @@ group desc for stuff like metal siding
 	<property name="ImposterDontBlock" value="true"/>
 	<property class="RepairItems"> <property name="forgedIron" value="1"/> <property name="electricParts" value="3"/> </property>
 	<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble"/> <!-- HV: mounted lamp -->
-	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="15,25" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="-1"/>
 	<property name="Group" value="Science"/>
@@ -3183,7 +3199,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble"/>
 	<property name="EconomicValue" value="191"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5>15,25, scrap iron repair -->
 <block id="327" name="cntMailbox">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="Mmetal_thin"/>
@@ -3194,8 +3210,8 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="14"/>
 	<property name="FuelValue" value="150"/>
-	<property class="RepairItems"> <property name="forgedIron" value="2"/> <property name="wood" value="3"/> </property>
-	<drop event="Destroy" name="scrapIron" count="5"/>
+	<property class="RepairItems"> <property name="scrapIron" value="80"/> <property name="wood" value="3"/> </property>
+	<drop event="Destroy" name="scrapIron" count="15,25"/>
 	<property name="EconomicValue" value="12"/>
 	<property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
 </block>
@@ -3224,6 +3240,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="Furniture/pew_segment03" param1="main_mesh"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - loot list entry changed 1>36 -->
 <block id="331" name="cntChest01">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="wood+wood"/>
@@ -3233,7 +3250,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="LootContainers/chest01" param1="main_mesh"/> <property name="HandleFace" value="Bottom"/>
 	<property name="ImposterExchange" value="imposterQuarter" param1="154"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="1"/>
+	<property name="LootList" value="36"/>
 	<property class="RepairItems"> <property name="wood" value="10"/> </property>
 	<drop event="Destroy" name="wood" count="1,5"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
@@ -3243,7 +3260,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="cntChest01"/>
 	<property name="Model" value="LootContainers/chest02" param1="main_mesh"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 15,50>75,120 -->
 <block id="333" name="metalRivetSheet">
 	<property name="Material" value="Mmetal_hard"/>
 	<property name="Shape" value="New"/>
@@ -3252,7 +3269,7 @@ group desc for stuff like metal siding
 	<property name="Texture" value="46"/>
 	<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
 	<property name="DowngradeBlock" value="scrapIronSheet"/>
-	<drop event="Destroy" name="scrapIron" count="15,50" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="75,120" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -3263,7 +3280,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="UpgradeRated.ToBlock" value="concreteCTRPlate"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5>40,75 -->
 <block id="335" name="cntTrash_can01">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="Mmetal_thin"/>
@@ -3274,10 +3291,10 @@ group desc for stuff like metal siding
 	<property name="ImposterExchange" value="imposterCTREighth" param1="143"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="16"/>
-	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="40,75" prob="1"/>
 	<property name="EconomicValue" value="40"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5>25,40 -->
 <block id="336" name="cntBin">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="Mmetal_thin"/>
@@ -3288,7 +3305,7 @@ group desc for stuff like metal siding
 	<property name="ImposterExchange" value="imposterCTREighth" param1="75"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="2"/>
-	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="25,40" prob="1"/>
 	<property name="EconomicValue" value="40"/>
 </block>
 
@@ -3307,7 +3324,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="6"/>
 </block>
-
+  <!-- Craftworx QoLaFIM A16.2 - drop plastic on destroy -->
 <block id="338" name="cntSuitcase">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="cloth"/>
@@ -3319,7 +3336,7 @@ group desc for stuff like metal siding
 	<property name="LootList" value="36"/>
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapPlastics" count="2,8" tool_category="Disassemble"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapPlastics" count="1,4"/>
 </block>
 
 <block id="339" name="cntStorageChest">
@@ -3338,7 +3355,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - disassemble>harvest, added paper -->
 <block id="340" name="cntTrashPile01">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="trash"/>
@@ -3350,7 +3367,8 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="2"/>
 	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="scrapPlastics" count="0,2" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapPlastics" count="0,2" prob="0.2" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="paper" count="0,2" prob="0.2" tool_category="harvestingTools"/>
 </block>
 
 <block id="341" name="cntTrashPile02">
@@ -3395,7 +3413,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="LootContainers/trash_pile09" param1="main_mesh"/>
 	<property name="ImposterExchange" value="imposterCTREighth" param1="116"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>75,120, harvest adjustments, scrap iron repair -->
 <block id="349" name="cntFridge">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="metal"/>
@@ -3407,7 +3425,7 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="DescriptionKey" value="refrigeratorGroupDesc"/>
 	<property class="RepairItems">
-		<property name="forgedIron" value="10"/>
+		<property name="scrapIron" value="200"/>
 		<property name="shortMetalPipe" value="2"/>
 		<property name="electricParts" value="8"/>
 		<property name="electronicParts" value="2"/>
@@ -3418,12 +3436,12 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="electronicParts" count="0,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="20,50" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapPlastics" count="0,3" prob="0.2" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="5,15" prob="1"/>
+	<drop event="Harvest" name="scrapPlastics" count="5,8" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="75,120"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="192"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - added scrap iron on destroy -->
 <block id="350" name="cntGasPump">
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="64"/>
@@ -3444,7 +3462,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="electricParts" count="2,7" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="75,120"/>
 	<property name="LPHardnessScale" value="0"/> <!-- disable LP for TNT blocks -->
 	<property name="EconomicValue" value="400"/> <!-- disassemble value -->
 </block>
@@ -3547,7 +3565,7 @@ group desc for stuff like metal siding
 	<property name="Texture" value="542"/>
 	<property name="Model" value="pole_diagonal_centered_cross"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>75,120 -->
 <block id="363" name="poleTop01">
 	<property name="Material" value="metal"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -3558,10 +3576,10 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="forgedIron" count="1,4"/>
 	<drop event="Harvest" name="forgedSteel" count="0,3"/>
 	<drop event="Harvest" name="mechanicalParts" count="2,6" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="75,120"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>75,120, added glass -->
 <block id="364" name="streetLight01">
 	<property name="Class" value="Light"/>
 	<property name="CreativeMode" value="Dev"/>
@@ -3573,12 +3591,13 @@ group desc for stuff like metal siding
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="Model" value="Entities/Lighting/street_light01Prefab"/> <property name="HandleFace" value="Bottom"/>
 	<drop event="Harvest" name="electricParts" count="4,8" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="75,120"/>
+	<drop event="Destroy" name="brokenGlass" count="4,10"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="-1"/>
 	<property name="Group" value="Science"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,10>40,75, harvest adjusted -->
 <block id="365" name="airConditioner">
 	<property name="Material" value="metal"/>
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
@@ -3590,11 +3609,11 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="mechanicalParts" count="0,4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1,5" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="1,10" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="40,75" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="450"/> <!-- disassemble value -->
 </block>
-
+  <!-- Craftworx - QoLaFIM - maxdamage 1500, forged steel repair -->
 <block id="366" name="cntDeskSafe">
 	<property name="Class" value="SecureLoot"/>
 	<property name="Material" value="Mmetal_hard"/>
@@ -3607,14 +3626,14 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="11"/>
 	<property name="DescriptionKey" value="cntGunSafeDesc"/>
-	<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
+	<property class="RepairItems"> <property name="forgedSteel" value="10"/> </property>
 	<property name="DowngradeBlock" value="cntDeskSafeInsecure"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 	<property name="EconomicValue" value="300"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - maxdamage 1500, forged steel repair -->
 <block id="367" name="cntWallSafe">
 	<property name="Class" value="SecureLoot"/>
 	<property name="Material" value="Mmetal_hard"/>
@@ -3625,7 +3644,7 @@ group desc for stuff like metal siding
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="LootList" value="11"/>
 	<property name="DescriptionKey" value="cntGunSafeDesc"/>
-	<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
+	<property class="RepairItems"> <property name="forgedSteel" value="10"/> </property>
 	<property name="DowngradeBlock" value="cntWallSafeInsecure"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -3661,7 +3680,7 @@ group desc for stuff like metal siding
 <block id="372" name="treasureChest"> <!-- do not rename -->
 	<property name="Class" value="Loot"/>
 	<property name="CustomIcon" value="cntChest01"/>
-	<property name="Material" value="wood+wood"/>
+	<property name="Material" value="wood_weak"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
@@ -3796,7 +3815,7 @@ group desc for stuff like metal siding
 	<property name="LightOpacity" value="0"/>
 	<property name="UpgradeRated.ToBlock" value="concreteEighth"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>50,75, repair adjusted -->
 <block id="384" name="scrapIronSheet">
 	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
 	<property name="Material" value="Mmetal_medium"/>
@@ -3804,7 +3823,7 @@ group desc for stuff like metal siding
 	<property name="Model" value="billboard"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="307"/>
-	<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="120"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="metalRivetSheet"/>
 		<property name="Item" value="forgedIron"/>
@@ -3812,12 +3831,12 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="50,75"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building,Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="20"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>50,75 -->
 <block id="385" name="metalTrussingBlock">
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="Shape" value="New"/>
@@ -3829,7 +3848,7 @@ group desc for stuff like metal siding
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
 	<property class="RepairItems"> <property name="forgedIron" value="4"/> </property>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="50,75"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="metalTrussingBlockDesc"/>
@@ -3864,7 +3883,7 @@ group desc for stuff like metal siding
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="UpgradeRated.ToBlock" value="concretePillar50"/>
 </block>
-
+  <!-- QoLaFIM A16.2 - upgrade cost lowered -->
 <block id="389" name="ladderMetal">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster" param1="DescriptionKey"/>
 	<property name="MaxDamage" value="500"/>
@@ -3882,7 +3901,7 @@ group desc for stuff like metal siding
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="ladderSteel"/>
 		<property name="Item" value="forgedSteel"/>
-		<property name="ItemCount" value="5"/>
+		<property name="ItemCount" value="2"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 </block>
@@ -4134,7 +4153,7 @@ group desc for stuff like metal siding
 	<property name="Extends" value="cinderBlocks01"/>
 	<property name="Model" value="Industrial/cinder_blocks02" param1="main_mesh"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 15>50,75, harvest>destroy -->
 <block id="417" name="scrapMetalPile">
 	<property name="Material" value="MmetalNoGlue"/>
 	<property name="MaxDamage" value="50"/>
@@ -4145,7 +4164,7 @@ group desc for stuff like metal siding
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="IsDecoration" value="true"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<drop event="Harvest" name="scrapIron" count="15" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="50,75" tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 </block>
 
@@ -4295,6 +4314,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" count="0"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - scrapIron 3>10,15, can be picked up -->
 <block id="430" name="barbedFence">
 	<property name="Class" value="TrunkTip"/>
 	<property name="Material" value="MbarbedFence"/>
@@ -4315,7 +4335,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="20"/> <property name="scrapIron" value="8"/> </property>
 	<drop event="Harvest" name="wood" count="8"/>
 	<drop event="Harvest" name="scrapIron" count="3"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="10,15"/>
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="EconomicValue" value="11"/>
@@ -4554,6 +4574,7 @@ kind of free
 	<!-- A15
 	<property name="BuffsWhenWalkedOn" value="sleepingBedTrigger"/>
 	-->
+  <!-- Craftworx - QoLaFIM - scrapIron 5>15,25, harvest adjusted -->
 	<property class="RepairItems">
 		<property name="cloth" value="20"/>
 		<property name="cottonPlant" value="20"/>
@@ -4566,11 +4587,12 @@ kind of free
 	<drop event="Harvest" name="spring" count="3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="cottonPlant" count="8" tool_category="Disassemble"/>
 	<drop event="Harvest" name="cloth" count="8"/>
-	<drop event="Destroy" name="scrapIron" count="5"/>
+	<drop event="Destroy" name="scrapIron" count="15,25"/>
 	<property name="Group" value="Building,Decor/Miscellaneous"/>
 	<property name="EconomicValue" value="1330"/>
 </block>
 
+  <!-- QoLaFIM A16.2 - scrapIron 10>50,75, harvest adjusted -->
 <block id="464" name="bed01Frame">
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -4579,8 +4601,8 @@ kind of free
 	<property name="Model" value="Furniture/bed01_frame" param1="main_mesh"/>
 	<property name="MultiBlockDim" value="1,1,2"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<drop event="Harvest" name="shortMetalPipe" count="2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="10"/>
+	<drop event="Harvest" name="shortMetalPipe" count="4,6" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="50,75" tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 </block>
 
@@ -4668,7 +4690,7 @@ kind of free
 	<property name="Extends" value="driftwood"/>
 	<property name="Model" value="Plants/driftwood2" param1="main_mesh"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5,15>30,50 -->
 <block id="470" name="signRoadArrowheadApache">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Material" value="Mmetal_medium"/>
@@ -4679,7 +4701,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-	<drop event="Destroy" name="scrapIron" count="5,15" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="30,50" prob="1"/>
 </block>
 
 <block id="471" name="signRoadAZ260eastSpeed65">
@@ -4944,6 +4966,7 @@ kind of free
 	<property name="Model" value="Signs/sign_street_maple" param1="main_mesh"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - scrapIron 5>15,25 -->
 <block id="517" name="rebarDestroyed">
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -4952,7 +4975,7 @@ kind of free
 	<property name="Texture" value="571"/>
 	<property name="ImposterExclude" value="true"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<drop event="Destroy" name="scrapIron" count="5" prob="1.0"/>
+	<drop event="Destroy" name="scrapIron" count="15,25" prob="1.0"/>
 </block>
 
 <block id="518" name="chair01">
@@ -4969,6 +4992,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="1,3" prob="1"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - changed lootlist entry 6>44 -->
 <block id="519" name="cntDesk01">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="wood_weak"/>
@@ -4980,7 +5004,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterBlock" param1="81"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="FuelValue" value="300"/>
-	<property name="LootList" value="6"/>
+	<property name="LootList" value="44"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="wood" value="15"/> </property>
 	<drop event="Destroy" name="wood" count="2,6" prob="1"/>
@@ -4988,6 +5012,7 @@ kind of free
 	<property name="EconomicBundleSize" value="20"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - changed lootlist entry 6>44, scrapIron 25>100,180 -->
 <block id="520" name="cntDesk02">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="metal"/>
@@ -4998,15 +5023,15 @@ kind of free
 	<property name="MultiBlockDim" value="2,1,1"/>
 	<property name="ImposterExchange" value="imposterBlock" param1="147"/>
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="LootList" value="6"/>
+	<property name="LootList" value="44"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property class="RepairItems"> <property name="spring" value="4"/> <property name="forgedIron" value="15"/> </property>
-	<drop event="Destroy" name="scrapIron" count="25"/>
+	<drop event="Destroy" name="scrapIron" count="100,180"/>
 	<!-- <drop event="Harvest" name="[recipe]" count="1" tool_category="Disassemble"/>-->
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="570"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5,15>30,50, scrap iron repair -->
 <block id="521" name="officeChair01">
 	<property name="Material" value="furniture"/>
 	<property name="Shape" value="Ext3dModel"/>
@@ -5020,22 +5045,23 @@ kind of free
 		<property name="leather" value="5"/>
 		<property name="cottonPlant" value="10"/>
 		<property name="mechanicalParts" value="2"/>
-		<property name="forgedIron" value="3"/>
+		<property name="scrapIron" value="80"/>
 	</property>
 	<drop event="Harvest" name="mechanicalParts" count="1,2" tool_category="Disassemble"/>
 	<drop event="Destroy" name="leather" count="2,4"/>
-	<drop event="Destroy" name="scrapIron" count="5,15"/>
+	<drop event="Destroy" name="scrapIron" count="30,50"/>
 	<property name="EconomicValue" value="65"/>
 </block>
 
+  <!-- QoLaFIM A16.2 - scrapIron 17>40,75, harvest>destroy ,scrap iron repair -->
 <block id="522" name="storeShelving01">
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="Material" value="metal"/>
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Commercial/store_shelving01" param1="main_mesh"/>
-	<property class="RepairItems"> <property name="forgedIron" value="3"/> </property>
-	<drop event="Harvest" name="scrapIron" count="17"/>
+	<property class="RepairItems"> <property name="scrapIron" value="80"/> </property>
+	<drop event="Destroy" name="scrapIron" count="40,75"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="18"/>
@@ -5198,6 +5224,7 @@ kind of free
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	-->
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
+
 	<drop event="Destroy" count="0"/>
 	<drop event="Destroy" name="spring" count="0,2" prob="1" tool_category="Disassemble"/>
 	<drop event="Destroy" name="mechanicalParts" count="0,2" prob="1" tool_category="Disassemble"/>
@@ -5245,7 +5272,7 @@ kind of free
 	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property class="RepairItems"> <property name="glassBulletproofCTRPlate" value="1"/> </property>
 </block>
-
+  <!-- Craftworx - QoLaFIM - disassemble>harvesting tools -->
 <block id="542" name="cntBirdnest">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="wood_weak"/>
@@ -5256,9 +5283,9 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="25"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<drop event="Harvest" name="cloth" count="1" prob="0.3" tool_category="Disassemble"/>
-	<drop event="Harvest" name="feather" count="3" prob="0.35" tool_category="Disassemble"/>
-	<drop event="Harvest" name="feather" count="2" prob="0.6" tool_category="Disassemble"/>
+	<drop event="Harvest" name="cloth" count="1" prob="0.3" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="feather" count="3" prob="0.35" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="feather" count="2" prob="0.6" tool_category="harvestingTools"/>
 	<drop event="Destroy" name="yuccaFibers" count="2,8"/>
 </block>
 
@@ -5343,7 +5370,7 @@ kind of free
 	<property name="Extends" value="sectionalLeatherCouchSofaArm"/>
 	<property name="Model" value="Furniture/sectionalMiddle2" param1="main_mesh"/>
 </block>
-
+  <!-- QoLaFIM A16.2 - added scrapIron -->
 <block id="552" name="tv">
 	<property name="Material" value="MelectronicParts"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -5357,6 +5384,7 @@ kind of free
 	<drop event="Harvest" name="electronicParts" count="1,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapPlastics" count="2"/>
+	<drop event="Destroy" name="scrapIron" count="10,25"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 </block>
@@ -5379,6 +5407,7 @@ kind of free
 	<property name="Model" value="Furniture/tv_large_2" param1="main_mesh"/>
 </block>
 
+      <!-- Craftworx - QoLaFIM - heatmapstrength 1.5>1 -->
 <block id="556" name="forge">
 	<property name="Class" value="Forge"/>
 	<property name="Material" value="Mstone_scrap"/>
@@ -5393,7 +5422,7 @@ kind of free
 	<property name="ParticleOffset" value="0.5,0,0.5"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="HeatMapStrength" value="1.5"/>
+	<property name="HeatMapStrength" value="1"/>
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="25"/>
 	<!-- <property name="BuffsWhenWalkedOn" value="burningSmall"/> dont think the forge class supports this -->
@@ -5424,7 +5453,7 @@ kind of free
 	<property name="DescriptionKey" value="forgeDesc"/>
 	<property name="EconomicValue" value="214"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 30>75,120, harvest adjusted -->
 <block id="557" name="cntMunitionsBox">	<!-- military ammo -->
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="metal"/>
@@ -5436,13 +5465,13 @@ kind of free
 	<property name="ImposterExchange" value="imposterHalf" param1="112"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="LootList" value="40"/>
-	<drop event="Harvest" name="forgedIron" count="2,4" prob="1"/>
-	<drop event="Harvest" name="forgedSteel" count="2,4" prob="0.5"/>
-	<drop event="Harvest" name="scrapIron" count="30" prob="1"/>
+	<drop event="Harvest" name="forgedIron" count="2,4" prob="1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="forgedSteel" count="0,2" prob="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="75,120" prob="1"/>
 	<drop event="Destroy" count="0"/>
 	<property name="EconomicValue" value="250"/> <!-- disassemble value -->
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 32>60,100, harvest>destroy -->
 <block id="558" name="ironBarsCentered">
 	<property name="CustomIcon" value="ironBars"/>
 	<property name="Material" value="Mmetal_hard"/>
@@ -5455,14 +5484,15 @@ kind of free
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="Collide" value="movement,melee,rocket"/> <!-- -rocket -->
 	<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
-	<drop event="Harvest" name="scrapIron" count="32"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="60,100"/>
+	
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="DescriptionKey" value="ironBarsDesc"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - harvest adjusted for ALL trees! -->
 <block id="559" name="treeJuniper6m">
 	<property name="Extends" value="treeMaster"/>
 	<property name="Model" value="Entities/Trees/Hollywood_Juniper15mPrefab"/>
@@ -5471,7 +5501,8 @@ kind of free
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<property name="ParticleOnDeath" value="treeGib_small_dust"/>
-	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="50" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="20" prob="1" />
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 </block>
 
@@ -5481,8 +5512,11 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,10,1"/>
 	<property name="BigDecorationRadius" value="2"/>
-	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="50" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="20" prob="1" />	
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+	<drop event="Destroy" name="feather" count="4,10" prob="0.3"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.1"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt"/>
 </block>
 
@@ -5493,8 +5527,11 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,19,1"/>
 	<property name="BigDecorationRadius" value="2"/>
-	<drop event="Harvest" name="wood" count="70" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="120" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="40" prob="1" />
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
+	<drop event="Destroy" name="feather" count="4,10" prob="0.4"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.15"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt"/>
 </block>
 
@@ -5505,8 +5542,11 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,24,1"/>
 	<property name="BigDecorationRadius" value="3"/>
-	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
+	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="60" prob="1" />
+	<drop event="Destroy" name="treePlantedMountainPine1m" count="1,2"/>
+	<drop event="Destroy" name="feather" count="4,10" prob="0.6"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.4"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
 </block>
 
@@ -5517,8 +5557,11 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,27,1"/>
 	<property name="BigDecorationRadius" value="3"/>
-	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
+	<drop event="Harvest" name="wood" count="180" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="80" prob="1" />
+	<drop event="Destroy" name="feather" count="4,10" prob="0.6"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.4"/>
+	<drop event="Destroy" name="treePlantedMountainPine1m" count="1,2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_75m"/>
 </block>
 
@@ -5529,8 +5572,11 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,28,1"/>
 	<property name="BigDecorationRadius" value="4"/>
-	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="treePlantedMountainPine1m" count="2"/>
+	<drop event="Harvest" name="wood" count="200" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="100" prob="1" />
+	<drop event="Destroy" name="feather" count="8,20" prob="0.9"/>
+	<drop event="Destroy" name="egg" count="2,5" prob="0.7"/>
+	<drop event="Destroy" name="treePlantedMountainPine1m" count="1,2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_75m"/>
 </block>
 
@@ -5541,8 +5587,9 @@ kind of free
 	<property name="MultiBlockDim" value="1,21,1"/>
 	<property name="BigDecorationRadius" value="3"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
-	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
+	<drop event="Destroy" name="wood" count="60" prob="1" />
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 </block>
 
@@ -5553,7 +5600,10 @@ kind of free
 	<property name="MultiBlockDim" value="1,7,1"/>
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="ParticleOnDeath" value="treeGib_birch_small"/>
-	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="50" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="20" prob="1" />
+	<drop event="Destroy" name="feather" count="4,10" prob="0.3"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.1"/>
 </block>
 
 <block id="567" name="treeBirch12m">
@@ -5564,7 +5614,10 @@ kind of free
 	<property name="MultiBlockDim" value="1,4,1"/>
 	<property name="BigDecorationRadius" value="3"/>
 	<property name="ParticleOnDeath" value="treeGib_birch_small"/>
-	<drop event="Harvest" name="wood" count="70" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="120" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="40" prob="1" />
+	<drop event="Destroy" name="feather" count="4,10" prob="0.4"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.2"/>
 </block>
 
 <block id="568" name="treeBirch15m">
@@ -5575,7 +5628,10 @@ kind of free
 	<property name="MultiBlockDim" value="1,13,1"/>
 	<property name="BigDecorationRadius" value="4"/>
 	<property name="ParticleOnDeath" value="treeGib_birch"/>
-	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="60" prob="1" />
+	<drop event="Destroy" name="feather" count="4,10" prob="0.7"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.5"/>
 </block>
 
 <block id="569" name="treeDeadShrub">
@@ -5597,8 +5653,11 @@ kind of free
 	<property name="MultiBlockDim" value="1,5,1"/>
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="ParticleOnDeath" value="treeGib_birch_6m"/>
-	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="50" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="20" prob="1" />
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
+	<drop event="Destroy" name="feather" count="4,10" prob="0.3"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.1"/>
 </block>
 
 <block id="571" name="treeMaple13m">
@@ -5609,8 +5668,11 @@ kind of free
 	<property name="MultiBlockDim" value="1,7,1"/>
 	<property name="BigDecorationRadius" value="3"/>
 	<property name="ParticleOnDeath" value="treeGib_birch_small"/>
-	<drop event="Harvest" name="wood" count="70" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="120" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="40" prob="1" />
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
+	<drop event="Destroy" name="feather" count="4,10" prob="0.4"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.15"/>
 </block>
 
 <block id="572" name="rConcreteCNRRoundTop">
@@ -5628,8 +5690,11 @@ kind of free
 	<property name="MultiBlockDim" value="1,7,1"/>
 	<property name="BigDecorationRadius" value="4"/>
 	<property name="ParticleOnDeath" value="treeGib_birch_15m"/>
-	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="60" prob="1" />
 	<drop event="Destroy" name="treePlantedMaple1m" count="2"/>
+	<drop event="Destroy" name="feather" count="4,10" prob="0.6"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.4"/>
 </block>
 
 <block id="574" name="treeMaple16m">
@@ -5640,8 +5705,11 @@ kind of free
 	<property name="MultiBlockDim" value="1,10,1"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="ParticleOnDeath" value="treeGib_birch"/>
-	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="180" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="80" prob="1" />
 	<drop event="Destroy" name="treePlantedMaple1m" count="2"/>
+	<drop event="Destroy" name="feather" count="4,10" prob="0.75"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.5"/>
 </block>
 
 <block id="575" name="treeMaple17m">
@@ -5652,8 +5720,11 @@ kind of free
 	<property name="MultiBlockDim" value="1,6,1"/>
 	<property name="BigDecorationRadius" value="6"/>
 	<property name="ParticleOnDeath" value="treeGib_birch"/>
-	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="200" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="100" prob="1" />
 	<drop event="Destroy" name="treePlantedMaple1m" count="2"/>
+	<drop event="Destroy" name="feather" count="10,20" prob="0.9"/>
+	<drop event="Destroy" name="egg" count="2,5" prob="0.7"/>
 </block>
 
 <block id="576" name="steelCNRRound">
@@ -5672,9 +5743,10 @@ kind of free
 	<property name="MultiBlockDim" value="1,3,1"/>
 	<property name="BigDecorationRadius" value="3"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_small"/>
-	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="40" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="20" prob="1" />
 	<drop event="Harvest" name="coal" count="3,5" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
+	
 </block>
 
 <block id="578" name="treeBurntPine02">
@@ -5684,9 +5756,10 @@ kind of free
 	<property name="ModelOffset" value="0.7,-1,-0.7"/>
 	<property name="MultiBlockDim" value="1,5,1"/>
 	<property name="BigDecorationRadius" value="4"/>
-	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="120" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="40" prob="1" />
 	<drop event="Harvest" name="coal" count="8,15" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
+	
 </block>
 
 <block id="579" name="treeBurntPine03">
@@ -5697,6 +5770,7 @@ kind of free
 	<property name="MultiBlockDim" value="2,9,2"/>
 	<property name="BigDecorationRadius" value="4"/>
 	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="60" prob="4" />
 	<drop event="Harvest" name="coal" count="10,20" tool_category="harvestingTools"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
@@ -5715,9 +5789,10 @@ kind of free
 	<property name="MultiBlockDim" value="1,4,1"/>
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="40" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="20" prob="1" />
 	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
-	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
+	<drop event="Destroy" name="treePlantedMaple1m" count="1" prob="0.5"/>
 </block>
 
 <block id="582" name="treeDeadTree02"> <!-- almost a shrub -->
@@ -5738,7 +5813,8 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,6,1"/>
 	<property name="BigDecorationRadius" value="1"/>
-	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="40" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="20" prob="1" />
 	<property name="FallOver" value="true"/>
 	<property name="ParticleOnDeath" value="treeGib_winter_small"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
@@ -5751,8 +5827,11 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,12,1"/>
 	<property name="BigDecorationRadius" value="2"/>
-	<drop event="Harvest" name="wood" count="70" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="120" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="40" prob="1" />
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
+	<drop event="Destroy" name="feather" count="4,10" prob="0.5"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.2"/>
 	<property name="ParticleOnDeath" value="treeGib_winter01"/>
 </block>
 
@@ -5769,6 +5848,7 @@ kind of free
 	<property name="IsPlant" value="true"/> <!-- it shall never be placed on rocks -->
 	<property name="LootList" value="35"/>
 	<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="15" prob="1" />
 	<drop event="Destroy" count="0"/>
 </block>
 
@@ -5779,8 +5859,11 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,19,1"/>
 	<property name="BigDecorationRadius" value="2"/>
-	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="60" prob="1" />
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
+	<drop event="Destroy" name="feather" count="4,10" prob="0.6"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.4"/>
 	<property name="ParticleOnDeath" value="treeGib_winter02"/>
 </block>
 
@@ -5791,8 +5874,11 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,28,1"/>
 	<property name="BigDecorationRadius" value="2"/>
-	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="180" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="80" prob="1" />
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
+	<drop event="Destroy" name="feather" count="10,20" prob="0.9"/>
+	<drop event="Destroy" name="egg" count="2,5" prob="0.7"/>
 	<property name="ParticleOnDeath" value="treeGib_winter03"/>
 </block>
 
@@ -6047,7 +6133,7 @@ kind of free
 	<property name="Weight" value="16"/>
 	<property name="EconomicValue" value="80"/> <!-- disassemble value -->
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>75,120 -->
 <block id="623" name="cntFileCabinet">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="metal"/>
@@ -6058,11 +6144,11 @@ kind of free
 	<property name="LootList" value="44"/>
 	<property name="Model" value="Entities/LootContainers/file_cabinetPrefab"/>
 	<drop event="Harvest" name="mechanicalParts" count="0,2" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="75,120"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 </block>
-
+  <!-- Craftworx - QoLaFIM - value lowered 300>40 -->
 <block id="624" name="cntCooler">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="wood_weak"/>
@@ -6080,9 +6166,9 @@ kind of free
 	<drop event="Destroy" name="scrapPlastics" count="2,7" tool_category="Disassemble"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
-	<property name="EconomicValue" value="300"/> <!-- disassemble value -->
+	<property name="EconomicValue" value="40"/> <!-- disassemble value -->
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>30,60 -->
 <block id="625" name="schoolDesk">
 	<property name="Material" value="furniture"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -6092,7 +6178,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Model" value="Furniture/school_desk" param1="main_mesh"/>
 	<drop event="Destroy" name="scrapPlastics" count="1,5"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="30,60"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -6106,7 +6192,7 @@ kind of free
 	<property name="LootList" value="43"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>25,50, harvest adjusted -->
 <block id="627" name="fountain">
 	<property name="Material" value="metal"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -6114,12 +6200,13 @@ kind of free
 	<property name="Texture" value="282"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Plumbing/fountain" param1="main_mesh"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="25,50"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 	<property name="DescriptionKey" value="decorativeBlockGroupDesc"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - forged steel repair -->
 <block id="628" name="cntGunSafe">
 	<property name="Group" value="Building"/>
 	<property name="Class" value="SecureLoot"/>
@@ -6132,12 +6219,12 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="LootList" value="42"/>
 	<property name="DowngradeBlock" value="cntGunSafeInsecure"/>
-	<property class="RepairItems"> <property name="forgedIron" value="20"/> </property>
+	<property class="RepairItems"> <property name="forgedSteel" value="20"/> </property>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="690"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 10>40,75, harvest>destroy -->
 <block id="629" name="cntGraniteSink">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="metal"/>
@@ -6146,10 +6233,10 @@ kind of free
 	<property name="IsDecoration" value="true"/>
 	<property name="Texture" value="373,261,262,345,345,345"/> <!-- 373/374=sink, 82=cabinetWood -->
 	<property name="LootList" value="8"/>
-	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
+	
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble"/>
+	<drop event="Harvest" name="shortMetalPipe" count="1,3"/>
+	<drop event="Destroy" name="scrapIron" count="40,75"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="80"/> <!-- disassemble value -->
 	<property name="ImposterExchange" value="imposterBlock" param1="116"/>
@@ -6305,7 +6392,7 @@ kind of free
 	<property name="Model" value="wedge60"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="DowngradeBlock" value="rConcreteWedge"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - upgrade cost adjusted -->
 <block id="642" name="secureReinforcedDoorWooden">
 	<property name="DescriptionKey" value="doorGroupDesc"/>
 	<property name="Class" value="DoorSecure"/>
@@ -6329,7 +6416,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="metalReinforcedDoorWooden"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="12"/>
+		<property name="ItemCount" value="60"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
@@ -6339,7 +6426,7 @@ kind of free
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 6>15,25 -->
 <block id="643" name="metalReinforcedDoorWooden">
 	<property name="DescriptionKey" value="doorGroupDesc"/>
 	<property name="Class" value="DoorSecure"/>
@@ -6368,7 +6455,7 @@ kind of free
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="secureReinforcedDoorWooden"/>
-	<drop event="Harvest" name="scrapIron" count="6" prob="1"/>
+	<drop event="Harvest" name="scrapIron" count="15,25" prob="1"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
@@ -6913,7 +7000,7 @@ kind of free
 	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
 	<property name="SellableToTrader" value="false"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 200>240,400, harvest adjusted -->
 <block id="696" name="cntCollapsedWorkbench">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
@@ -6934,8 +7021,8 @@ kind of free
 		<property name="mechanicalParts" value="20"/>
 		<property name="wood" value="50"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="wood" count="20" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="240,400"/>
+	<drop event="Destroy" name="wood" count="20"/>
 	<drop event="Harvest" name="forgedIron" count="10" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="8" tool_category="Disassemble"/>
 	<drop event="Harvest" name="wood" count="20" tool_category="Disassemble"/>
@@ -6945,7 +7032,7 @@ kind of free
 	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
 	<property name="SellableToTrader" value="false"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="697" name="cntCollapsedCementMixer">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
@@ -6965,8 +7052,8 @@ kind of free
 		<property name="spring" value="4"/>
 		<property name="mechanicalParts" value="10"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="300" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="forgedIron" count="10" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="240,400" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="forgedIron" count="6,12" tool_category="Disassemble"/>
 	<drop event="Harvest" name="spring" count="2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="4" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0"/>
@@ -6975,7 +7062,7 @@ kind of free
 	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
 	<property name="SellableToTrader" value="false"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="698" name="cntCollapsedChemistryStation">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
@@ -6996,10 +7083,10 @@ kind of free
 		<property name="shortMetalPipe" value="10"/>
 		<property name="wood" value="40"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="80" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="wood" count="16" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="75,150"/>
+	<drop event="Destroy" name="wood" count="20"/>
 	<drop event="Harvest" name="forgedIron" count="4" tool_category="Disassemble"/>
-	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="shortMetalPipe" count="5,8" tool_category="Disassemble"/>
 	<drop event="Harvest" name="wood" count="15" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -7071,14 +7158,14 @@ kind of free
 
 <block id="703" name="rWoodLogSpike2"> <!-- log spike 2 rWood -->
 	<property name="Extends" value="woodLogSpike1"/>
-	<property name="Damage" value="4"/>
+	<property name="Damage" value="5"/>
 	<property name="Damage_received" value="7"/>
 	<property name="Texture" value="379"/>
 	<property name="ImposterExchange" value="imposterPyramid" param1="119"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rWoodMetalLogSpike3"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="20"/>
+		<property name="ItemCount" value="50"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="woodLogSpike1"/>
@@ -7087,7 +7174,7 @@ kind of free
 
 <block id="704" name="rWoodMetalLogSpike3"> <!-- log spike 3 wood+metal -->
 	<property name="Extends" value="rWoodLogSpike2" param1="RepairItems"/>
-	<property name="Damage" value="5"/>
+	<property name="Damage" value="7"/>
 	<property name="Damage_received" value="10"/>
 	<property name="Material" value="metal"/>
 	<property name="Texture" value="380"/>
@@ -7095,11 +7182,11 @@ kind of free
 	<property class="RepairItems"> <property name="scrapIron" value="20"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapIronLogSpike4"/>
-		<property name="ItemCount" value="40"/>
+		<property name="ItemCount" value="50"/>
 	</property>
 	<property name="DowngradeBlock" value="rWoodLogSpike2"/>
 	<drop event="Destroy" name="wood" count="0"/>
-	<drop event="Destroy" name="scrapIron" count="8"/>
+	<drop event="Destroy" name="scrapIron" count="25,40"/>
 </block>
 
 <block id="705" name="rWoodPillar100">
@@ -7341,8 +7428,12 @@ kind of free
 	<property name="CreativeMode" value="Dev"/>
 	<property name="CustomIcon" value="treeMaple17m"/>
 	<property name="PlantGrowing.FertileLevel" value="15"/>
-	<drop event="Harvest" name="wood" count="160" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="200" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="100" prob="1" />
 	<drop event="Destroy" name="treePlantedMaple1m" count="2"/>
+	<drop event="Destroy" name="feather" count="10,20" prob="0.9"/>
+	<drop event="Destroy" name="egg" count="2,5" prob="0.8"/>
+	<drop event="Destroy" name="treePlantedMaple1m" count="1,2"/>
 </block>
 
 <block id="733" name="rScrapIronBlock">
@@ -7473,7 +7564,7 @@ kind of free
 	<property name="CanPickup" value="true" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeTipStairs" /> </property>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 400>2000 -->
 <block id="749" name="metalReinforcedWoodDrawBridge">
 	<property name="Class" value="DrawBridge"/>
 	<property name="Material" value="metal"/>
@@ -7494,7 +7585,7 @@ kind of free
 		<property name="forgedIron" value="100"/>
 		<property name="wood" value="800"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="400" prob="1"/>
+	<drop event="Harvest" name="scrapIron" count="2000" prob="1"/>
 	<drop event="Harvest" name="wood" count="400" prob="1"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Destroy" name="spring" count="4,12" prob="1" tool_category="Disassemble"/>
@@ -7837,7 +7928,7 @@ kind of free
 	<property name="CanPickup" value="true"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWedgeTipCNRFullBottom"/> </property>
 </block>
-
+  <!-- Craftworx - QoLaFIM - upgrade cost adjusted -->
 <block id="788" name="ladderWood">
 	<property name="Group" value="Building,Basics"/>
 	<property name="Class" value="Ladder"/>
@@ -7854,7 +7945,7 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="ladderMetal"/>
 		<property name="Item" value="forgedIron"/>
-		<property name="ItemCount" value="5"/>
+		<property name="ItemCount" value="3"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="ImposterExclude" value="true"/>
@@ -8317,7 +8408,7 @@ kind of free
 	<drop event="Harvest" name="spring" count="1,2" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="5,15" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="40,75" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="156"/>
@@ -8331,7 +8422,7 @@ kind of free
 	<drop event="Harvest" name="spring" count="1,2" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="5,15" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="40,75" tool_category="Disassemble"/>
 </block>
 
 <block id="842" name="treeForestGrassDiagonal">
@@ -8515,7 +8606,8 @@ kind of free
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="CanPlayersSpawnOn" value="false"/>
-	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="40" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="20"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 
@@ -8590,7 +8682,7 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="OnlySimpleRotations" value="true"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="878" name="morticianDrawer">
 	<property name="Material" value="Msteel"/>
 	<property name="MaxDamage" value="4000"/>
@@ -8598,21 +8690,24 @@ kind of free
 	<property name="Model" value="mortician_drawer"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="267,446,446,307,307,307"/>
 	<property class="RepairItems"> <property name="forgedSteel" value="10"/> </property>
+	<drop event="Destroy" name="scrapIron" count="180,300" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="forgedIron" count="3,6" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="60"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="90,150" tool_category="Disassemble"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="284"/>
 	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="879" name="furnaceDrawer">
 	<property name="Material" value="Mmetal_hard"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="mortician_drawer"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="446,267,385,307,307,307"/>
 	<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
-	<drop event="Harvest" name="scrapIron" count="40"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="180,300" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="forgedIron" count="3,6" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="90,150" tool_category="Disassemble"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="164"/>
 	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
@@ -8781,7 +8876,7 @@ kind of free
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="20"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5,15>30,50, scrap iron repair -->
 <block id="896" name="wroughtIronFenceSheet">
 	<property name="Material" value="Mmetal_thin"/>
 	<property name="Shape" value="New"/>
@@ -8791,8 +8886,8 @@ kind of free
 	<property name="Texture" value="281"/>
 	<property name="ShapeMinBB" value="0.3,0,0.3"/>
 	<property name="DescriptionKey" value="fencesGroupDesc"/>
-	<drop event="Destroy" name="scrapIron" count="5,15" prob="1"/>
-	<property class="RepairItems"> <property name="forgedIron" value="1"/> </property>
+	<drop event="Destroy" name="scrapIron" count="30,50" prob="1"/>
+	<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
 	<property name="EconomicValue" value="25"/>
 	<property name="EconomicBundleSize" value="10"/>
 </block>
@@ -8803,7 +8898,7 @@ kind of free
 	<property name="Model" value="wedge60_inside_corner"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="DowngradeBlock" value="rConcreteWedgeCNRInsideBottom"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - tire chance 0.3>0.25 -->
 <block id="898" name="tire">
 	<property name="Material" value="furniture"/>
 	<property name="Shape" value="Ext3dModel"/>
@@ -8812,7 +8907,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Model" value="OutdoorDecor/tire" param1="main_mesh"/>
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
-	<drop event="Destroy" name="minibikeWheels" count="1" prob="0.3"/>
+	<drop event="Destroy" name="minibikeWheels" count="1" prob="0.25"/>
 </block>
 
 <block id="899" name="scrapIronArrowSlitHalf">
@@ -9197,7 +9292,7 @@ kind of free
 	<property name="Model" value="wedge60_inside_corner_2"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="DowngradeBlock" value="rConcreteWedgeCNRInsideTop"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 10/5>30,50, harvest adjusted -->
 <block id="944" name="cntCabinetOldSink">
 	<property name="Class" value="Loot"/>
 	<property name="Shape" value="New"/>
@@ -9207,13 +9302,13 @@ kind of free
 	<property name="Texture" value="374,78,79,84,84,84"/> <!-- 373/374=sink, 84=cabinetWood -->
 	<property name="LootList" value="8"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble"/>
+	<drop event="Harvest" name="shortMetalPipe" count="1,3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="30,50" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="5"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 	<property name="ImposterExchange" value="imposterBlock" param1="43"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5>75,120, scrap iron repair -->
 <block id="945" name="cntWashingMachine">
 	<property name="Class" value="Loot"/>
 	<property name="Shape" value="New"/>
@@ -9223,7 +9318,7 @@ kind of free
 	<property name="Texture" value="267,267,554,267,267,267"/>
 	<property name="LootList" value="18"/>
 	<property class="RepairItems">
-		<property name="forgedIron" value="4"/>
+		<property name="scrapIron" value="200"/>
 		<property name="shortMetalPipe" value="3"/>
 		<property name="mechanicalParts" value="1"/>
 		<property name="electricParts" value="1"/>
@@ -9231,12 +9326,12 @@ kind of free
 	<drop event="Harvest" name="shortMetalPipe" count="1,4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="0,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="5"/>
+	<drop event="Destroy" name="scrapIron" count="75,120"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 	<property name="ImposterExchange" value="imposterBlock" param1="77"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5>75,120, harvest adjusted, scrap iron repair -->
 <block id="946" name="cntTrashCompactor">
 	<property name="CustomIcon" value="cntFridgeBottom"/>
 	<property name="Class" value="Loot"/>
@@ -9247,13 +9342,13 @@ kind of free
 	<property name="Texture" value="267,267,266,267,267,267"/>
 	<property name="LootList" value="46"/>
 	<property class="RepairItems">
-		<property name="forgedIron" value="5"/>
+		<property name="scrapIron" value="200"/>
 		<property name="mechanicalParts" value="2"/>
 		<property name="electricParts" value="1"/>
 	</property>
 	<drop event="Harvest" name="mechanicalParts" count="0,3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="5"/>
+	<drop event="Destroy" name="scrapIron" count="75,120"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 	<property name="ImposterExchange" value="imposterBlock" param1="77"/>
@@ -9272,6 +9367,7 @@ kind of free
 	<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneBlock"/> </property>
 </block>
 
+  <!-- Craftworx - QoLaFIM - scrapIron 15>20,40,75 -->
 <block id="949" name="ladderSteel">
 	<property name="Class" value="Ladder"/>
 	<property name="Material" value="Msteel"/>
@@ -9288,8 +9384,8 @@ kind of free
 	<property class="RepairItems"> <property name="forgedSteel" value="4"/> </property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="ladderMetal"/>
-	<drop event="Harvest" name="scrapIron" count="15" prob="1"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="40,75" prob="1"/>
+
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="80"/>
 	<property name="DescriptionKey" value="ladderMetalDesc"/>
@@ -9646,7 +9742,7 @@ kind of free
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteArrowSlitHalf"/> </property>
 	<property name="DescriptionKey" value="woodArrowSlitGroupDesc"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest redone -->
 <block id="1056" name="cntGreenDrawerInsecure">
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="greenDrawer"/>
@@ -9659,8 +9755,9 @@ kind of free
 	<property name="Texture" value="385,446,446,307,307,307"/>
 	<property name="ImposterExchange" value="imposterSheet" param1="123"/>
 	<property class="RepairItems"> <property name="forgedIron" value="6"/> </property>
-	<drop event="Harvest" name="scrapIron" count="32"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="120,200" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="forgedIron" count="2,4" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="60,100" tool_category="Disassemble"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="128"/>
 	<property name="Group" value="Building"/>
@@ -9687,13 +9784,13 @@ kind of free
 	<property name="Extends" value="cntGarageStorage" param1="DescriptionKey"/>
 	<property name="LootList" value="96"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>50,75 -->
 <block id="1060" name="corrugatedMetalGable">
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="wedge_tip_half"/>
 	<property name="Texture" value="194"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="50,75"/>
 	<property name="DescriptionKey" value="scrapIronGroupDesc"/>
 </block>
 
@@ -9823,16 +9920,16 @@ kind of free
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5,10>120,200 -->
 <block id="1076" name="cntWallOven">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="metal"/>
 	<property name="Texture" value="346,345,341,345,262,345"/>
 	<property name="LootList" value="3"/>
 	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="spring" count="1,2" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="5,10" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="120,200" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -9869,7 +9966,7 @@ kind of free
 	<property name="Extends" value="railingBlackSheet"/>
 	<property name="Texture" value="48"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,12>15,25 -->
 <block id="1095" name="barbedWireSheet">
 	<property name="Class" value="Damage"/>
 	<property name="Damage" value="1"/>
@@ -9887,7 +9984,7 @@ kind of free
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="BuffsWhenWalkedOn" value="trapDamage1Trigger"/>
 	<property class="RepairItems"> <property name="scrapIron" value="15"/> </property>
-	<drop event="Destroy" name="scrapIron" count="1,12" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="15,25" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="15"/>
 </block>
@@ -10382,7 +10479,7 @@ kind of free
 	<property name="CustomIcon" value="scrapIronFrameWedgeTipStairs" />
 	<property name="CanPickup" value="false" />
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 8>40,75 -->
 <block id="1164" name="commercialDoor1_v1">
 	<property name="DescriptionKey" value="doorGroupDesc"/>
 	<property name="Class" value="DoorSecure"/>
@@ -10411,12 +10508,12 @@ kind of free
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
-	<drop event="Harvest" name="scrapIron" count="8" prob="1"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="40,75" prob="1"/>
+
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - upgrade cost adjusted -->
 <block id="1165" name="commercialDoor1_v2">
 	<property name="Extends" value="commercialDoor1_v1"/>
 	<property name="Material" value="wood_regular"/>
@@ -10426,16 +10523,16 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="commercialDoor1_v3"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="20"/>
+		<property name="ItemCount" value="100"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="commercialDoor1_v1"/>
 	<property class="RepairItems"> <property name="wood" value="3"/> </property>
 	<drop event="Harvest" name="wood" count="2" prob="1"/>
-	<drop event="Harvest" name="scrapIron" count="0" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="0" prob="1"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 8>25,40 -->
 <block id="1166" name="commercialDoor1_v3">
 	<property name="DescriptionKey" value="doorGroupDesc"/>
 	<property name="Class" value="DoorSecure"/>
@@ -10458,7 +10555,7 @@ kind of free
 	<property name="CloseSound" value="close_door_metal"/>
 	<property name="DowngradeBlock" value="commercialDoor1_v2"/>
 	<property class="RepairItems"> <property name="scrapIron" value="20"/> </property>
-	<drop event="Harvest" name="scrapIron" count="8" prob="1"/>
+	<drop event="Harvest" name="scrapIron" count="25,40" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 	<drop event="Destroy" count="0"/>
@@ -10503,6 +10600,7 @@ kind of free
 	<property name="DowngradeBlock" value="commercialDoor4_v2"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - drops doorknob when destroyed -->
 <block id="1176" name="houseFrontDoor1_v1">
 	<property name="DescriptionKey" value="doorGroupDesc"/>
 	<property name="Class" value="DoorSecure"/>
@@ -10532,7 +10630,7 @@ kind of free
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_wood"/>
 	<drop event="Harvest" name="wood" count="2" prob="1"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="doorKnob" count="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -10559,7 +10657,7 @@ kind of free
 	<property name="Model" value="wedge_tip_stairs" /> <property name="Place" value="TowardsPlacerInverted" />
 	<property name="UpgradeRated.ToBlock" value="concreteWedgeTipStairs" />
 </block>
-
+  <!-- Craftworx - QoLaFIM - upgrade cost adjusted -->
 <block id="1180" name="houseFrontDoor1_v2">
 	<property name="Extends" value="houseFrontDoor1_v1"/>
 	<property name="Material" value="wood_weak"/>
@@ -10569,13 +10667,14 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="houseFrontDoor1_v3"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="20"/>
+		<property name="ItemCount" value="100"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="houseFrontDoor1_v1"/>
+	<drop event="Destroy" name="doorKnob" count="0" />
 </block>
-
+  <!-- Craftworx - QoLaFIM - added scrap iron harvest -->
 <block id="1181" name="houseFrontDoor1_v3">
 	<property name="Extends" value="commercialDoor1_v3"/>
 	<property name="Texture" value="241"/>
@@ -10584,6 +10683,8 @@ kind of free
 	<property name="OpenSound" value="open_door_wood"/>
 	<property name="CloseSound" value="close_door_wood"/>
 	<property name="DowngradeBlock" value="houseFrontDoor1_v2"/>
+	<drop event="Harvest" name="scrapIron" count="25,40" prob="1"/>
+	<drop event="Destroy" name="doorKnob" count="0" />
 </block>
 
 <block id="1182" name="cntShippingCrateShamway">
@@ -10974,7 +11075,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterCTRPlate" param1="70"/>
 	<property name="DowngradeBlock" value="houseFrontDoor2_v2"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>40,75 -->
 <block id="1229" name="signShopGas">
 	<property name="CustomIcon" value="signShopGas"/>
 	<property name="Material" value="metal"/>
@@ -10986,7 +11087,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterDontBlockCTRPlate" param1="21"/>
 	<drop event="Harvest" name="electricParts" count="2,6" tool_category="Disassemble"/> <!-- HV: store sign -->
 	<drop event="Harvest" name="scrapPlastics" count="2,6" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="40,75"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 </block>
@@ -11029,7 +11130,7 @@ kind of free
 	<property name="Model" value="Entities/Signs/gasSignLitWall_LargePrefab"/>
 	<property name="ImposterExchange" value="imposterDontBlockSheet" param1="21"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>40,75 -->
 <block id="1237" name="signShopGunStore">
 	<property name="Material" value="metal"/>
 	<property name="StabilitySupport" value="false"/>
@@ -11040,7 +11141,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterDontBlockCTRPlate" param1="21"/>
 	<drop event="Harvest" name="electricParts" count="2,6" tool_category="Disassemble"/> <!-- HV: store sign -->
 	<drop event="Harvest" name="scrapPlastics" count="2,6" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="40,75"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 </block>
@@ -11109,7 +11210,7 @@ kind of free
 	<property name="Model" value="cube_half"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="cobblestoneHalf"/> </property>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="1248" name="ironDoor1_v1">
 	<property name="Class" value="DoorSecure"/>
 	<property name="Material" value="Mmetal_hard"/> <!-- 2500 -->
@@ -11137,8 +11238,9 @@ kind of free
 		<property name="UpgradeHitCount" value="5"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="scrapIron" count="40" prob="1"/>
-	<drop event="Destroy" count="0"/>
+  <drop event="Destroy" name="scrapIron" count="160,260" tool_category="harvestingTools"/>
+  <drop event="Harvest" name="forgedIron" count="2,5" tool_category="Disassemble"/>
+  <drop event="Destroy" name="scrapIron" count="80,130" tool_category="Disassemble"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 	<property name="EconomicValue" value="60"/>
@@ -11202,7 +11304,7 @@ kind of free
 	<property name="EconomicValue" value="5"/>
 	<property name="EconomicBundleSize" value="10"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - upgrade cost adjusted -->
 <block id="1252" name="woodHatch1_v2">
 	<property name="Extends" value="woodHatch1_v1"/>
 	<property name="DescriptionKey" value="doorGroupDesc"/>
@@ -11211,12 +11313,12 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="woodHatch1_v3"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="12"/>
+		<property name="ItemCount" value="60"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="woodHatch1_v1"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="1253" name="woodHatch1_v3">
 	<property name="Extends" value="woodHatch1_v1"/>
 	<property name="DescriptionKey" value="doorGroupDesc"/>
@@ -11230,7 +11332,7 @@ kind of free
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<drop event="Harvest" name="wood" count="0"/>
-	<drop event="Harvest" name="scrapIron" count="6" prob="1"/>
+	<drop event="Harvest" name="scrapIron" count="15,25" prob="1"/>
 	<property name="DowngradeBlock" value="woodHatch1_v2"/>
 </block>
 
@@ -11314,7 +11416,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>40,75, scrap iron repair -->
 <block id="1261" name="cntBeerCooler">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="Mmetal_weak"/>
@@ -11322,7 +11424,7 @@ kind of free
 	<property name="Place" value="TowardsPlacer90"/>
 	<property name="LootList" value="52"/>
 	<property class="RepairItems">
-		<property name="forgedIron" value="4"/>
+		<property name="scrapIron" value="80"/>
 		<property name="shortMetalPipe" value="3"/>
 		<property name="electricParts" value="5"/>
 		<property name="electronicParts" value="1"/>
@@ -11330,7 +11432,7 @@ kind of free
 	<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="shortMetalPipe" count="1,2" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="40,75"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
@@ -11646,6 +11748,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterBlock" param1="110"/>
 </block>
 
+      <!-- Craftworx - QoLaFIM - heatmapstrength 1>0.1 -->
 <block id="1301" name="candleWall">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Torch"/>
@@ -11660,14 +11763,14 @@ kind of free
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="ParticleName" value="candleWall_flame"/>
 	<property name="CanPickup" value="true" param1="candle"/>
-	<property name="HeatMapStrength" value="1"/>
+	<property name="HeatMapStrength" value="0.1"/>
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="15"/>
 	<drop event="Destroy" name="candle" count="1"/>
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="torchGroupDesc"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>25,60 -->
 <block id="1302" name="signShopBookStore">
 	<property name="Material" value="metal"/>
 	<property name="StabilitySupport" value="false"/>
@@ -11679,7 +11782,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterDontBlockCTRPlate" param1="21"/>
 	<drop event="Harvest" name="electricParts" count="2,6" tool_category="Disassemble"/> <!-- HV: store sign -->
 	<drop event="Harvest" name="scrapPlastics" count="2,6" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="25,60"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -11729,7 +11832,7 @@ kind of free
 	<property name="Model" value="Entities/Signs/bookSignLitWall_LargePrefab"/>
 	<property name="ImposterExchange" value="imposterDontBlockSheet" param1="21"/>
 </block>
-
+  <!-- QoLaFIM A16.2 - scrapIron 1,15>25,60 -->
 <block id="1310" name="signShopPharmacy">
 	<property name="Material" value="metal"/>
 	<property name="StabilitySupport" value="false"/>
@@ -11741,7 +11844,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterDontBlockCTRPlate" param1="21"/>
 	<drop event="Harvest" name="electricParts" count="2,6" tool_category="Disassemble"/> <!-- HV: store sign -->
 	<drop event="Harvest" name="scrapPlastics" count="2,6" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="25,60"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -11791,7 +11894,7 @@ kind of free
 	<property name="Model" value="Entities/Signs/pharmacySignLitWall_LargePrefab"/>
 	<property name="ImposterExchange" value="imposterDontBlockSheet" param1="21"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>25,60 -->
 <block id="1318" name="signShopToolStore">
 	<property name="Material" value="metal"/>
 	<property name="StabilitySupport" value="false"/>
@@ -11803,7 +11906,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterDontBlockCTRPlate" param1="21"/>
 	<drop event="Harvest" name="electricParts" count="2,6" tool_category="Disassemble"/> <!-- HV: store sign -->
 	<drop event="Harvest" name="scrapPlastics" count="2,6" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="25,60"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -11958,7 +12061,7 @@ kind of free
 	<property name="Model" value="ramp_corner"/>
 	<property name="ImposterDontBlock" value="true"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>25,60 -->
 <block id="1339" name="cashRegisterEmpty">
 	<property name="Material" value="MmetalNoGlue"/>
 	<property name="MaxDamage" value="250"/>
@@ -11968,10 +12071,10 @@ kind of free
 	<property name="Model" value="LootContainers/cash_register_empty" param1="main_mesh"/>
 	<drop event="Harvest" name="electricParts" count="1,3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,3" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="25,60"/>
 	<drop event="Destroy" name="oldCash" count="1,3" prob="0.05" tool_category="Disassemble"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>25,60 -->
 <block id="1340" name="cntCashRegister">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="MmetalNoGlue"/>
@@ -11983,12 +12086,12 @@ kind of free
 	<property name="LootList" value="55"/>
 	<drop event="Harvest" name="electricParts" count="1,3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,3" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="25,60"/>
 	<drop event="Destroy" name="oldCash" count="1,3" prob="0.05" tool_category="Disassemble"/>
 	<property name="EconomicValue" value="250"/> <!-- disassemble value -->
 </block>
 	<!-- 5 Free -->
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>75,120 -->
 <block id="1346" name="shoppingCartEmpty">
 	<property name="Material" value="metal"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
@@ -11998,12 +12101,12 @@ kind of free
 	<property name="ImposterExchange" value="imposterCTREighth" param1="111"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<drop event="Harvest" name="mechanicalParts" count="1,3" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="75,120"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property name="EconomicValue" value="100"/> <!-- disassemble value -->
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>75,120 -->
 <block id="1347" name="cntShoppingCart">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="metal"/>
@@ -12015,25 +12118,25 @@ kind of free
 	<property name="LootList" value="54"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<drop event="Harvest" name="mechanicalParts" count="1,3" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="75,120"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - material metal to Mplastics, scrapIron 5 to scrapPlastics 5,10 -->
 <block id="1348" name="shoppingBasketEmpty">
-	<property name="Material" value="metal"/>
+	<property name="Material" value="Mplastics"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/shopping_basket_empty" param1="main_mesh"/>
 	<property name="CanPickup" value="true"/>
 	<property name="PickupTarget" value="shoppingBasketItem"/>
-	<drop event="Destroy" name="scrapIron" count="5"/>
+	<drop event="Destroy" name="scrapPlastics" count="5,10"/>
 </block>
 
-
+  <!-- Craftworx - QoLaFIM - material metal to Mplastics -->
 <block id="1349" name="cntShoppingBasket">
 	<property name="Class" value="Loot"/>
-	<property name="Material" value="metal"/>
+	<property name="Material" value="Mplastics"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
@@ -12054,13 +12157,14 @@ kind of free
 	<property name="UpgradeRated.ToBlock" value="concreteStairs50"/>
 </block>
 
+      <!-- Craftworx - QoLaFIM - heatmapstrength 4.05>0.5 -->
 <block id="1351" name="wallTorchPlayer">
 	<property name="Extends" value="wallTorch"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="wallTorch"/>
 	<property name="Stacknumber" value="50"/>
 	<property name="Class" value="TorchHeatMap"/>
-	<property name="HeatMapStrength" value="4.05"/>
+	<property name="HeatMapStrength" value="0.5"/>
 	<property name="HeatMapTime" value="1200"/> <!-- str1, t600, f5 = 2.5; str1, t900, f5 = 4; str4.05, t1200, f15 = 4.05-8.1; -->
 	<property name="HeatMapFrequency" value="15"/>
 	<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
@@ -12075,13 +12179,14 @@ kind of free
 	<property name="ImposterExchange" value="imposterRamp" param1="63"/>
 </block>
 
+    <!-- Craftworx - QoLaFIM - heatmapstrength 1>0.1 -->
 <block id="1353" name="candleWallPlayer">
 	<property name="Extends" value="candleWall"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="candleWall"/>
 	<property name="Stacknumber" value="50"/>
 	<property name="Class" value="TorchHeatMap"/>
-	<property name="HeatMapStrength" value="1"/>
+	<property name="HeatMapStrength" value="0.1"/>
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="15"/>
 	<property name="DescriptionKey" value="torchPlayerGroupDesc"/>
@@ -12138,7 +12243,7 @@ kind of free
 	<property name="Shape" value="New"/>
 	<property name="Model" value="wedge_tip_half"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>25,60 -->
 <block id="1360" name="signShopGrocery">
 	<property name="Material" value="metal"/>
 	<property name="StabilitySupport" value="false"/>
@@ -12150,7 +12255,7 @@ kind of free
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="electricParts" count="2,6" tool_category="Disassemble"/> <!-- HV: store sign -->
 	<drop event="Harvest" name="scrapPlastics" count="2,6" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="25,60"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -12285,7 +12390,7 @@ kind of free
 	<property class="UpgradeBlock"> <property name="ToBlock" value="WindowPlug03"/> </property>
 	<property name="DowngradeBlock" value="WindowPlug01"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - upgrade cost adjusted -->
 <block id="1380" name="WindowPlug03">
 	<property name="Extends" value="plainWoodWindowPlug"/>
 	<property name="Material" value="wood+wood"/>
@@ -12296,20 +12401,20 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="WindowPlug04"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="20"/>
+		<property name="ItemCount" value="100"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="WindowPlug02"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - upgrade cost adjusted -->
 <block id="1381" name="WindowPlug04">
 	<property name="Extends" value="WindowPlug03"/>
 	<property name="Material" value="wood+metal"/>
 	<property name="Model" value="WindowPlug04"/>
 	<property name="Texture" value="408,408,384,408,384,408"/>
 	<property name="ImposterExchange" value="imposterCTRPlate" param1="57"/>
-	<property class="RepairItems"> <property name="wood" value="0"/> <property name="scrapIron" value="20"/> </property>
+	<property class="RepairItems"> <property name="wood" value="0"/> <property name="scrapIron" value="100"/> </property>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronWindowPlug05CTRPlate"/> </property>
 	<property name="DowngradeBlock" value="WindowPlug03"/>
 </block>
@@ -12663,7 +12768,7 @@ kind of free
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronHalf" /> </property>
 	<property name="DowngradeBlock" value="solidScrapIronFrameHalf" />
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5,15>60,120 -->
 <block id="1418" name="rScrapIronTable">
 	<property name="Material" value="metal"/>
 	<property name="Shape" value="New"/>
@@ -12674,7 +12779,7 @@ kind of free
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="60,120"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="20"/>
 </block>
@@ -12686,7 +12791,7 @@ kind of free
 	<property class="UpgradeBlock"> <property name="ToBlock" value="pouredConcreteHalf" /> </property>
 	<property name="DowngradeBlock" value="scrapIronHalf" />
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>60,120, scrap iron repair -->
 <block id="1420" name="rustyIronTable">
 	<property name="Material" value="metal"/>
 	<property name="Shape" value="New"/>
@@ -12694,10 +12799,10 @@ kind of free
 	<property name="UseGlobalUV" value="Local"/>
 	<property name="Texture" value="282"/>
 	<property name="ImposterExclude" value="true"/>
-	<property class="RepairItems"> <property name="forgedIron" value="4"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="160"/> </property>
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="60,120"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="42"/>
 </block>
@@ -12736,11 +12841,12 @@ kind of free
 	<property class="UpgradeBlock"> <property name="ToBlock" value="stainlessSteelRamp"/> </property>
 	<property name="DowngradeBlock" value="rConcreteRamp"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted, maxdamage 1500, forged steel repair -->
 <block id="1426" name="cntDeskSafeInsecure">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="CustomIcon" value="cntDeskSafe"/>
 	<property name="Material" value="Mmetal_hard"/>
+	<property name="MaxDamage" value="1500"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
@@ -12749,17 +12855,17 @@ kind of free
 	<property name="ImposterExchange" value="imposterCTREighth" param1="18"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="11"/>
-	<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
+	<property class="RepairItems"> <property name="forgedSteel" value="10"/> </property>
 	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="forgedIron" count="1,2" prob="0.1"/>
-	<drop event="Harvest" name="forgedSteel" count="0,2" prob="0.05"/>
-	<drop event="Harvest" name="scrapIron" count="5,15"/>
+	<drop event="Harvest" name="forgedSteel" count="2,5" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="180,300" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="120,180" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Destroy" name="spring" count="1,2" tool_category="Disassemble"/>
 	<drop event="Destroy" name="mechanicalParts" count="1,3" tool_category="Disassemble"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted, maxdamage 1500, forged steel repair -->
 <block id="1427" name="cntWallSafeInsecure">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="CustomIcon" value="cntWallSafe"/>
@@ -12771,17 +12877,17 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="11"/>
-	<property class="RepairItems"> <property name="forgedIron" value="10"/> </property>
-	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="forgedIron" count="1,2" prob="0.1"/>
-	<drop event="Harvest" name="forgedSteel" count="0,2" prob="0.05"/>
-	<drop event="Harvest" name="scrapIron" count="5,15"/>
-	<drop event="Destroy" count="0"/>
+	<property class="RepairItems"> <property name="forgedSteel" value="10"/> </property>
+	<drop event="Harvest" name="forgedSteel" count="2,5" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="180,300" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="120,180" tool_category="Disassemble"/>
+	
+	
 	<drop event="Destroy" name="spring" count="1,2" tool_category="Disassemble"/>
 	<drop event="Destroy" name="mechanicalParts" count="1,3" tool_category="Disassemble"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted, forged steel repair -->
 <block id="1428" name="cntGunSafeInsecure">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="CustomIcon" value="cntGunSafe"/>
@@ -12793,17 +12899,17 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="42"/>
-	<property class="RepairItems"> <property name="forgedIron" value="15"/> </property>
-	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="forgedIron" count="1,4" prob="0.1"/>
-	<drop event="Harvest" name="forgedSteel" count="0,2" prob="0.05"/>
-	<drop event="Harvest" name="scrapIron" count="5,15"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="spring" count="1,5" tool_category="Disassemble"/>
-	<drop event="Destroy" name="mechanicalParts" count="1,5" tool_category="Disassemble"/>
+	<property class="RepairItems"> <property name="forgedSteel" value="20"/> </property>
+	<drop event="Harvest" name="forgedSteel" count="4,10" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="180,300" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="120,180" tool_category="Disassemble"/>
+	
+	
+  <drop event="Harvest" name="spring" count="2,4" tool_category="Disassemble"/>
+  <drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest/upgrade/repair adjusted -->
 <block id="1429" name="garageDoorMetal_v1">
 	<property name="Class" value="DoorSecure"/>
 	<property name="Material" value="metal"/>
@@ -12823,26 +12929,26 @@ kind of free
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="OpenSound" value="open_garage_door"/>
 	<property name="CloseSound" value="close_garage_door"/>
-	<property class="RepairItems"> <property name="scrapIron" value="240"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="600"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="garageDoorMetal_v2"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="240"/>
+		<property name="ItemCount" value="600"/>
 		<property name="UpgradeHitCount" value="5"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="" count="0" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="90"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Destroy" name="spring" count="1,2" prob="1" tool_category="Disassemble"/>
-	<drop event="Destroy" name="mechanicalParts" count="2,7" prob="1" tool_category="Disassemble"/>
+
+	<drop event="Destroy" name="scrapIron" count="300,600"/>
+
+	<drop event="Harvest" name="spring" count="2,4" prob="1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="2,4" prob="1" tool_category="Disassemble"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="garageDoorMetalGroupDesc"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="PlaceEverywhere" value="true"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted, upgrade forged iron 60>20 -->
 <block id="1430" name="garageDoorMetal_v2">
 	<property name="Extends" value="garageDoorMetal_v1" param1="Harvest,Destroy"/>
 	<property name="Model" value="Entities/Doors/garage_metal_v2Prefab"/><property name="ModelOffset" value="0,0,0"/>
@@ -12850,14 +12956,16 @@ kind of free
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="garageDoorMetal_v3"/>
 		<property name="Item" value="forgedIron"/>
-		<property name="ItemCount" value="60"/>
+		<property name="ItemCount" value="20"/>
 		<property name="UpgradeHitCount" value="6"/>
 	</property>
 	<property name="DowngradeBlock" value="garageDoorMetal_v1"/>
-	<drop event="Harvest" name="scrapIron" count="20,90"/>
+  <drop event="Destroy" name="scrapIron" count="180,300"/>
+  <drop event="Harvest" name="spring" count="0" prob="1" tool_category="Disassemble"/>
+  <drop event="Harvest" name="mechanicalParts" count="0" prob="1" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 100,240>250,400 -->
 <block id="1431" name="garageDoorMetal_v3">
 	<property name="Class" value="DoorSecure"/>
 	<property name="Material" value="Mmetal_hard"/>
@@ -12881,41 +12989,43 @@ kind of free
 	<property name="OnlySimpleRotations" value="true"/>
 	<property class="RepairItems"> <property name="forgedIron" value="60"/> </property>
 	<property name="DowngradeBlock" value="garageDoorMetal_v2"/>
-	<drop event="Harvest" name="scrapIron" count="100,240"/>
-	<drop event="Destroy" count="0"/>
+  <drop event="Destroy" name="scrapIron" count="180,300" tool_category="harvestingTools"/>
+  <drop event="Destroy" name="scrapIron" count="90,150" tool_category="Disassemble"/>
+  <drop event="Harvest" name="forgedIron" count="5,10" prob="1" tool_category="Disassemble"/>
+
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 	<property name="DescriptionKey" value="garageDoorMetalGroupDesc"/>
 	<property name="IndexName" value="TraderOnOff"/>  <!-- flag this block to change to locked/unlocked if in a trader station -->
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 15>40,75, damage done 6>9, damage received 9>5, upgrade/repair adjusted -->-->
 <block id="1432" name="scrapIronLogSpike4"> <!-- log spike 4 scrap -->
 	<property name="Extends" value="rWoodLogSpike2" param1="DowngradeBlock,RepairItems"/>
-	<property name="Damage" value="6"/>
-	<property name="Damage_received" value="9"/>
+	<property name="Damage" value="9"/>
+	<property name="Damage_received" value="5"/>
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="Texture" value="307"/>
 	<property name="ImposterExchange" value="imposterPyramid" param1="87"/>
-	<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="100"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rScrapIronLogSpike5"/>
-		<property name="ItemCount" value="40"/>
+		<property name="ItemCount" value="100"/>
 	</property>
 	<drop event="Destroy" name="wood" count="0"/>
-	<drop event="Destroy" name="scrapIron" count="15"/>
+	<drop event="Destroy" name="scrapIron" count="40,75"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
 <block id="1433" name="rScrapIronLogSpike5"> <!-- log spike 5 rScrap -->
 	<property name="Extends" value="scrapIronLogSpike4"/>
-	<property name="Damage" value="7"/>
+	<property name="Damage" value="11"/>
 	<property name="Damage_received" value="10"/>
 	<property name="Texture" value="352"/>
 	<property name="ImposterExchange" value="imposterPyramid" param1="110"/>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="steelLogSpike6"/>
 		<property name="Item" value="forgedSteel"/>
-		<property name="ItemCount" value="10"/>
+		<property name="ItemCount" value="5"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="DowngradeBlock" value="scrapIronLogSpike4"/>
@@ -12958,8 +13068,8 @@ kind of free
 
 <block id="1441" name="steelLogSpike6"> <!-- log spike 6 Steel -->
 	<property name="Class" value="TrunkTip"/>
-	<property name="Damage" value="7"/>
-	<property name="Damage_received" value="40"/>
+	<property name="Damage" value="15"/>
+	<property name="Damage_received" value="25"/>
 	<property name="Material" value="Msteel"/>
 	<property name="MaxDamage" value="10000"/>
 	<property name="Shape" value="New"/>
@@ -12974,14 +13084,14 @@ kind of free
 	<property class="RepairItems"> <property name="forgedSteel" value="10"/> </property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
 	<property name="DowngradeBlock" value="rScrapIronLogSpike5"/>
-	<drop event="Destroy" name="scrapIron" count="10,20" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="60,100" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="160"/>
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
 </block>
 	<!-- x Free -->
-
+  <!-- Craftworx - QoLaFIM - scrapIron 24/20>50,120/40,100, harvest>destroy -->
 <block id="1448" name="spotlightNailedDownPOI">
 	<property name="Class" value="Light"/>
 	<property name="CreativeMode" value="Dev"/>
@@ -12996,15 +13106,15 @@ kind of free
 		<property name="electricParts" value="6"/>
 		<property name="scrapIron" value="40"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="24" tool_category="harvestingTools"/>
-	<drop event="Harvest" name="scrapIron" count="20" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="50,120" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="40,100" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="3" tool_category="Disassemble"/>
-	<drop event="Destroy" count="0"/>
+
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="-1"/>
 	<property name="Group" value="Science"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="1449" name="vaultDoor01">
 	<property name="Class" value="DoorSecure"/>
 	<property name="Material" value="Msteel"/>
@@ -13032,8 +13142,12 @@ kind of free
 		<property name="UpgradeHitCount" value="6"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="scrapIron" count="96" prob="1"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="forgedSteel" count="3,6" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="180,300" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="120,180" tool_category="Disassemble"/>
+	<drop event="Harvest" name="spring" count="1,2" tool_category="Disassemble"/>
+
+
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 	<property name="EconomicValue" value="432"/>
@@ -13045,8 +13159,9 @@ kind of free
 	<property name="Model" value="Entities/Doors/steel_door_2_v2Prefab"/><property name="ModelOffset" value="0,0,0"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="vaultDoor03"/> </property>
 	<property name="DowngradeBlock" value="vaultDoor01"/>
+	<drop event="Harvest" name="spring" count="0" tool_category="Disassemble"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="1451" name="vaultDoor03">
 	<property name="DescriptionKey" value="doorGroupDesc"/>
 	<property name="Class" value="DoorSecure"/>
@@ -13069,8 +13184,12 @@ kind of free
 	<property name="CloseSound" value="close_door_vault"/>
 	<property class="RepairItems"> <property name="forgedSteel" value="12"/> </property>
 	<property name="DowngradeBlock" value="vaultDoor02"/>
-	<drop event="Harvest" name="scrapIron" count="96" prob="1"/>
-	<drop event="Destroy" count="0"/>
+  <drop event="Harvest" name="forgedSteel" count="3,6" tool_category="Disassemble"/>
+  <drop event="Destroy" name="scrapIron" count="180,300" tool_category="harvestingTools"/>
+  <drop event="Destroy" name="scrapIron" count="120,180" tool_category="Disassemble"/>
+  <drop event="Harvest" name="spring" count="0" tool_category="Disassemble"/>
+
+
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 </block>
@@ -13078,6 +13197,7 @@ kind of free
 <block id="1452" name="randomCarsHelper">
 	<property name="CustomIcon" value="cntCar03SedanDamage0"/>
 	<property name="Material" value="metal"/>
+	<property name="MaxDamage" value="1000"/>
 	<property name="Class" value="Loot"/>
 	<property name="LootList" value="16"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -13093,8 +13213,10 @@ kind of free
 	<property name="ActivationDistance" value="8"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - harvest redone for all car instances, maxdamage raised 300>1000 (cars are treasure troves now) -->
 <block id="1453" name="cntCar03SedanDamage0">
 	<property name="Material" value="metal"/>
+	<property name="MaxDamage" value="1000"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="LootList" value="19"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -13105,13 +13227,17 @@ kind of free
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="leather" count="2,7" prob="0.5"/>
-	<drop event="Harvest" name="scrapIron" count="10,20"/>
-	<drop event="Harvest" name="headlight" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Harvest" name="leather" count="2,8"/>
+	<drop event="Harvest" name="scrapPlastics" count="8,18"/>
+	<drop event="Harvest" name="scrapIron" count="80,120"/>
+	<drop event="Harvest" name="brokenGlass" count="22,40"/>
+	<drop event="Harvest" name="headlight" count="1,2" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="1,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electronicParts" count="0,1" tool_category="Disassemble"/>
 	<!-- <drop event="Fall" name="cntCar03SedanDamage1" count="1" prob="1.0" stick_chance="1"/> -->
 	<property name="DowngradeBlock" value="cntCar03SedanDamage1"/>
 	<property name="BigDecorationRadius" value="5"/>
@@ -13152,6 +13278,7 @@ kind of free
 
 <block id="1454" name="cntCar03SedanDamage1">
 	<property name="Material" value="metal"/>
+	<property name="MaxDamage" value="1000"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="LootList" value="19"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -13163,20 +13290,23 @@ kind of free
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
 	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble"/>
-	<drop event="Harvest" name="carBattery" count="1" prob="0.2" tool_category="Disassemble"/>
+	<drop event="Harvest" name="carBattery" count="1" prob="0.4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="minibikeWheels" count="1" prob="0.5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="oil" count="1,3" prob="0.5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="cloth" count="3,7"/>
+	<drop event="Harvest" name="headlight" count="1,2" tool_category="Disassemble"/>
+	<drop event="Harvest" name="oil" count="3,5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="cloth" count="22,40"/>
+	<drop event="Harvest" name="scrapPlastics" count="8,18"/>
 	<drop event="Harvest" name="spring" count="4,8" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="10,35" tool_category="Disassemble"/>
-	<drop event="Harvest" name="gasCan" count="20,120"/>
-	<drop event="Harvest" name="gasCan" count="20,130" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="12"/>
+	<drop event="Harvest" name="scrapIron" count="160,240"/>
+	<drop event="Harvest" name="gasCan" count="50,250"/>
+	<drop event="Harvest" name="shortMetalPipe" count="2,5" tool_category="Disassemble"/>
+
 	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="mechanicalParts" count="2,4" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electronicParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="4,8" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="2,5" tool_category="Disassemble"/>
+
+
+	<drop event="Harvest" name="electronicParts" count="1,2" tool_category="Disassemble"/>
 	<!-- <drop event="Fall" name="cntCar03SedanDamage2" count="1" prob="1.0" stick_chance="1"/> -->
 	<property name="DowngradeBlock" value="cntCar03SedanDamage2"/>
 	<property name="BigDecorationRadius" value="5"/>
@@ -13209,6 +13339,7 @@ kind of free
 <block id="1455" name="cntCar03SedanDamage2"> <!-- car wreck, no color -->
 	<property name="Class" value="CarExplode"/>
 	<property name="Material" value="metal"/>
+	<property name="MaxDamage" value="1000"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -13216,15 +13347,15 @@ kind of free
 	<property name="Model" value="Entities/Vehicles/car03_dmg2_Prefab"/>
 	<property name="MultiBlockDim" value="2,2,6"/>
 	<property name="ShowModelOnFall" value="false"/>
-	<drop event="Harvest" name="shortMetalPipe" count="5" prob="0.5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="gasCan" count="50,150" prob="0.5"/>
-	<drop event="Harvest" name="gasCan" count="50,150" prob="0.5" tool_category="Disassemble"/> <!-- together 100 avg -->
-	<drop event="Harvest" name="headlight" count="1" prob="0.45" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="20" tool_category="Disassemble"/>
+	<drop event="Harvest" name="shortMetalPipe" count="4,8" tool_category="Disassemble"/>
+	<drop event="Harvest" name="gasCan" count="40,120"/>
+	<drop event="Harvest" name="scrapIron" count="360,640"/>
+	<drop event="Harvest" name="minibikeWheels" count="1" prob="0.3" tool_category="Disassemble"/>
+
 	<drop event="Destroy" count="0"/>
-	<drop event="Harvest" name="mechanicalParts" count="1,5" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electricParts" count="0,2" prob="0.1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="12"/>
+	<drop event="Harvest" name="mechanicalParts" count="1,3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="0,2" prob="0.2" tool_category="Disassemble"/>
+
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1" stick_chance="1"/>
 	<property name="BigDecorationRadius" value="5"/>
 	<property name="CanDecorateOnSlopes" value="false"/>
@@ -13250,7 +13381,7 @@ kind of free
 	<property name="ActivationDistance" value="6"/>
 </block>
 	<!-- n Free -->
-
+  <!-- Craftworx - QoLaFIM - harvest/upgrade/repair adjusted -->
 <block id="1463" name="scrapHatch_v1">
 	<property name="Class" value="DoorSecure"/>
 	<property name="Material" value="Mmetal_medium"/>
@@ -13271,16 +13402,16 @@ kind of free
 	<property name="Mesh-Damage-5" value="Door/Hatch_DMG4"/>
 	<property name="OpenSound" value="open_hatch_scrap"/>
 	<property name="CloseSound" value="close_hatch_scrap"/>
-	<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="200"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="scrapHatch_v2"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="40"/>
+		<property name="ItemCount" value="200"/>
 		<property name="UpgradeHitCount" value="5"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Harvest" name="scrapIron" count="16" prob="1"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="25,80" prob="1"/>
+
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
 	<property name="EconomicValue" value="20"/>
@@ -13310,7 +13441,7 @@ kind of free
 	<property name="DowngradeBlock" value="scrapHatch_v2"/>
 </block>
 	<!-- 1 Free -->
-
+  <!-- Craftworx - QoLaFIM - harvest/repair adjusted -->
 <block id="1467" name="bed02">
 	<property name="DescriptionKey" value="bedGroupDesc"/>
 	<property name="Class" value="SleepingBag"/>
@@ -13332,10 +13463,10 @@ kind of free
 		<property name="shortMetalPipe" value="10"/>
 	</property>
 	<drop event="Harvest" name="cloth" count="16"/>
-	<drop event="Harvest" name="cottonPlant" count="16" tool_category="Disassemble"/>
-	<drop event="Harvest" name="spring" count="6" tool_category="Disassemble"/>
-	<drop event="Harvest" name="wood" count="8"/>
-	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="cottonPlant" count="20" tool_category="Disassemble"/>
+	<drop event="Harvest" name="spring" count="6,10" tool_category="Disassemble"/>
+	<drop event="Destroy" name="wood" count="8,15"/>
+	<drop event="Harvest" name="shortMetalPipe" count="1,3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="10" tool_category="Disassemble"/>
 	<drop event="Destroy" name="scrapIron" count="10"/>
 	<property name="Group" value="Building,Decor/Miscellaneous"/>
@@ -13443,10 +13574,11 @@ kind of free
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted, added maxdamage 600 -->
 <block id="1481" name="cntDumpster">
 	<property name="Class" value="Loot"/>
 	<property name="Material" value="metal"/>
+	<property name="MaxDamage" value="600"/>
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="LootContainers/dumpster" param1="main_mesh"/>
@@ -13456,7 +13588,7 @@ kind of free
 	<drop event="Harvest" name="spring" count="1,2" prob="0.5" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapIron" count="3,9" tool_category="Disassemble"/>
 	<drop event="Harvest" name="forgedIron" count="1,2" prob="0.25" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="20" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="240,500" prob="1"/>
 </block>
 
 <block id="1482" name="garbage_decor1">
@@ -13516,7 +13648,7 @@ kind of free
 	<property name="DowngradeBlock" value="rConcreteCNRInside"/>
 </block>
 	<!-- 3 Free -->
-
+  <!-- QoLaFIM A16.2 - scrapIron 20>50,100 -->
 <block id="1509" name="controlPanelBase01">
 	<property name="Material" value="metal"/>
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
@@ -13528,8 +13660,8 @@ kind of free
 	<drop event="Harvest" name="spring" count="1" prob="0.1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="1,5" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="1,5" prob="0.4" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="20"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="50,100"/>
+
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 </block>
 
@@ -13597,14 +13729,14 @@ kind of free
 	<property name="Extends" value="controlPanelBase01"/>
 	<property name="Model" value="Industrial/control_panel_corner" param1="main_mesh"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5>15,30 -->
 <block id="1523" name="ductSoft">
 	<property name="Material" value="Mmetal_thin"/>
 	<property name="Shape" value="New"/>
 	<property name="LightOpacity" value="0"/>
 	<property name="Model" value="pipe_thin"/>
 	<property name="Texture" value="519"/>
-	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="15,30" prob="1"/>
 	<property name="ImposterExclude" value="true"/>
 </block>
 
@@ -13622,7 +13754,7 @@ kind of free
 	<property name="Extends" value="controlPanelBase01"/>
 	<property name="Model" value="Industrial/control_panel_base_08" param1="main_mesh"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5>20,40 -->
 <block id="1527" name="ductControlPanel">
 	<property name="Material" value="metal"/>
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
@@ -13630,7 +13762,7 @@ kind of free
 	<property name="LightOpacity" value="0"/>
 	<property name="Model" value="Industrial/control_panel_duct" param1="main_mesh"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
-	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="20,40" prob="1"/>
 </block>
 
 <block id="1528" name="ductControlPanelCorner">
@@ -13642,23 +13774,23 @@ kind of free
 	<property name="Extends" value="ductSoft"/>
 	<property name="Model" value="pipe_thin_corner_down"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest/upgrade/repair adjusted -->
 <block id="1530" name="scrapIronWindowPlug05CTRPlate"> <!-- redundant? -->
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="Shape" value="New"/>
 	<property name="Model" value="plate_centered"/> <property name="Place" value="TowardsPlacerInverted"/>
 	<property name="Texture" value="307"/>
-	<property class="RepairItems"> <property name="scrapIron" value="40"/> </property>
+	<property class="RepairItems"> <property name="scrapIron" value="200"/> </property>
 	<property class="UpgradeBlock">
 		<property name="ToBlock" value="rScrapIronWindowPlug06CTRPlate"/>
 		<property name="Item" value="scrapIron"/>
-		<property name="ItemCount" value="40"/>
+		<property name="ItemCount" value="200"/>
 		<property name="UpgradeHitCount" value="4"/>
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_metal"/>
-	<drop event="Destroy" count="0"/>
+  <drop event="Destroy" name="scrapIron" count="40,75"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="1531" name="rScrapIronWindowPlug06CTRPlate"> <!-- redundant? -->
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="Shape" value="New"/>
@@ -13673,7 +13805,7 @@ kind of free
 	</property>
 	<property name="CustomUpgradeSound" value="place_block_concrete"/>
 	<property name="DowngradeBlock" value="scrapIronWindowPlug05CTRPlate"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Destroy" name="scrapIron" count="40,75"/>
 </block>
 
 <block id="1532" name="rConcreteCTRPlate">
@@ -13715,7 +13847,7 @@ kind of free
 	<property class="UpgradeBlock"> <property name="ToBlock" value="scrapIronPole"/> </property>
 	<property name="DowngradeBlock" value="rWoodPole"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,15>40,75 -->
 <block id="1539" name="scrapIronPole">
 	<property name="Extends" value="scrapIronMaster"/>
 	<property name="Shape" value="New"/>
@@ -13724,7 +13856,7 @@ kind of free
 	<property name="ImposterExclude" value="true"/>
 	<property name="UseGlobalUV" value="Local"/>
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rScrapIronPole"/> </property>
-	<drop event="Destroy" name="scrapIron" count="1,15"/>
+	<drop event="Destroy" name="scrapIron" count="40,75"/>
 </block>
 
 <block id="1540" name="rScrapIronPole">
@@ -13761,14 +13893,15 @@ kind of free
 	<property name="DowngradeBlock" value="rConcretePole"/>
 </block>
 	<!-- n Free -->
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="1545" name="fusebox">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
 	<property name="Shape" value="Ext3dModel"/>	<property name="Texture" value="293"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Industrial/fusebox" param1="main_mesh"/> <property name="HandleFace" value="South"/>
 	<property name="LightOpacity" value="0"/>
-	<drop event="Harvest" name="electricParts" count="2,6" tool_category="Disassemble"/>
+	<drop event="Harvest" name="electricParts" count="2,4" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="25,40"/>
 	<property name="EconomicValue" value="150"/> <!-- disassemble value -->
 </block>
 
@@ -13824,7 +13957,7 @@ kind of free
 	<property name="ImposterExclude" value="true"/>
 	<property name="EconomicValue" value="30"/> <!-- disassemble value -->
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5>15,25 -->
 <block id="1551" name="industrialLight01">
 	<property name="Class" value="Light"/>
 	<property name="CreativeMode" value="Dev"/>
@@ -13845,7 +13978,7 @@ kind of free
 	<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble"/> <!-- HV: mounted fluorescent lamp -->
 	<drop event="Harvest" name="electronicParts" count="1,2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="15,25" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="-1"/>
 	<property name="EconomicValue" value="175"/>
@@ -13899,9 +14032,10 @@ kind of free
 	<property name="Texture" value="528"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - removed maxdamage 40 (now has standard furniture hp) -->
 <block id="1559" name="leatherCouchSofa">
 	<property name="Extends" value="sectionalLeatherCouchSofaArm" param1="CustomIcon"/>
-	<property name="MaxDamage" value="40"/>
+	
 	<property name="Model" value="Furniture/sofa02" param1="main_mesh"/>
 	<property name="MultiBlockDim" value="3,1,1"/>
 	<property name="ImposterExchange" value="imposterRamp" param1="43"/>
@@ -13913,6 +14047,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterRamp" param1="43"/>
 </block>
 
+      <!-- Craftworx - QoLaFIM - heatmap strength 0.5>0.1, lootable with a wrench -->
 <block id="1561" name="cementMixer">
 	<property name="Class" value="Workstation"/>
 	<property name="Material" value="Miron_scrap"/>
@@ -13925,7 +14060,7 @@ kind of free
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Stacknumber" value="1"/>
-	<property name="HeatMapStrength" value="0.5"/>
+	<property name="HeatMapStrength" value="0.1"/>
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="25"/>
 	<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
@@ -13937,7 +14072,7 @@ kind of free
 		<property name="spring" value="4"/>
 		<property name="mechanicalParts" value="10"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="300" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="scrapIron" count="240,400" tool_category="harvestingTools"/>
 	<!-- Craftworx -->
 	<!--
 	<drop event="Harvest" name="forgedIron" count="10" tool_category="Disassemble"/>
@@ -13983,6 +14118,7 @@ kind of free
 	<property name="EconomicBundleSize" value="10"/>
 </block>
 
+      <!-- Craftworx - QoLaFIM - heatmap removed, lootable with a wrench, scrap iron repair -->
 <block id="1563" name="workbench">
 	<property name="Class" value="Workstation"/>
 	<property name="Material" value="metal"/>
@@ -13995,9 +14131,11 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
+  <!--
 	<property name="HeatMapStrength" value="0.5"/>
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="25"/>
+  -->
 	<!--<property name="RecipeList" value="backpack, workbench"/>-->
 	<!--<property name="CraftTimeMultiplier" value="0.5,1"/>-->
 	<property name="Stacknumber" value="1"/>
@@ -14006,11 +14144,11 @@ kind of free
 		<property name="CraftingAreaRecipes" value="player,workbench"/>
 	</property>
 	<property class="RepairItems">
-		<property name="forgedIron" value="25"/>
-		<property name="mechanicalParts" value="20"/>
+		<property name="scrapIron" value="800"/>
+		<property name="mechanicalParts" value="5"/>
 		<property name="wood" value="50"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="scrapIron" count="240,400" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="wood" count="20" tool_category="harvestingTools"/>
 	<!-- CraftWorx -->
 	<!--
@@ -14041,7 +14179,8 @@ kind of free
 	<property name="MultiBlockDim" value="1,10,1"/>
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="PlantGrowing.Next" value="treePlantedWinterPine13m"/>
-	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="wood" count="40" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="20" tool_category="harvestingTools"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
 </block>
 	<!-- 1 Free -->
@@ -14055,8 +14194,11 @@ kind of free
 	<property name="MultiBlockDim" value="1,12,1"/>
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="PlantGrowing.Next" value="treePlantedWinterPine16m"/>
-	<drop event="Harvest" name="wood" count="70" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
+	<drop event="Harvest" name="wood" count="120" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="40" prob="1" />
+	<drop event="Destroy" name="feather" count="4,10" prob="0.4"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.15"/>
+	<drop event="Destroy" name="treePlantedWinterPine1m" count="1,2"/>
 </block>
 
 <block id="1568" name="treePlantedWinterPine16m">
@@ -14069,8 +14211,11 @@ kind of free
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="PlantGrowing.Next" value="treePlantedWinterPine19m"/>
 	<property name="PlantGrowing.FertileLevel" value="3"/>
-	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
+	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="60" prob="1" />
+	<drop event="Destroy" name="feather" count="4,10" prob="0.6"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.4"/>
+	<drop event="Destroy" name="treePlantedWinterPine1m" count="1,2"/>
 </block>
 
 <block id="1569" name="treePlantedWinterPine19m">
@@ -14085,8 +14230,11 @@ kind of free
 	<property name="PlantGrowing.Next" value="treePlantedWinterPine19mPlus"/>
 	<property name="PlantGrowing.GrowthRate" value="1"/>
 	<property name="PlantGrowing.FertileLevel" value="5"/>
-	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
+	<drop event="Harvest" name="wood" count="180" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="80" prob="1" />
+	<drop event="Destroy" name="feather" count="4,10" prob="0.6"/>
+	<drop event="Destroy" name="egg" count="1,3" prob="0.4"/>
+	<drop event="Destroy" name="treePlantedWinterPine1m" count="1,2"/>
 </block>
 	<!-- n Free -->
 
@@ -14341,8 +14489,11 @@ kind of free
 	<property name="CreativeMode" value="Dev"/>
 	<property name="CustomIcon" value="treeWinterPine03"/>
 	<property name="PlantGrowing.FertileLevel" value="15"/>
-	<drop event="Harvest" name="wood" count="160" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="treePlantedWinterPine1m" count="2"/>
+	<drop event="Harvest" name="wood" count="200" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="100" prob="1" />
+	<drop event="Destroy" name="feather" count="10,20" prob="0.9"/>
+	<drop event="Destroy" name="egg" count="2,5" prob="0.7"/>
+	<drop event="Destroy" name="treePlantedWinterPine1m" count="1,2"/>
 </block>
 
 <!-- <block id="1653" name="metalSheetNewRandom">
@@ -14527,7 +14678,7 @@ kind of free
 	<property name="WakeUpSound" value="turret_windup"/>
 	<property name="FireSound" value="Pistol_Fire"/>
 	<property name="RequiredPower" value="15"/>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 10,40>50,200 -->
 	<property class="RepairItems">
 		<property name="forgedIron" value="12"/>
 		<property name="mechanicalParts" value="2"/>
@@ -14535,7 +14686,7 @@ kind of free
 	</property>
 	<drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="1,4" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="10,40" prob="1"/>
+	<drop event="Harvest" name="scrapIron" count="50,200" prob="1"/>
 	<drop event="Destroy" count="0"/>
 
 	<property name="Stacknumber" value="10"/>
@@ -14573,6 +14724,7 @@ kind of free
 </block>
 <!-- 94 Free -->
 
+      <!-- Craftworx - QoLaFIM - heatmapstrength 4.05>2 -->
 <block id="1774" name="burningBarrelPlayer">
 	<property name="Extends" value="corrugatedMetalNoUpgradeMaster"/>
 	<property name="CreativeMode" value="Player"/>
@@ -14582,7 +14734,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Stacknumber" value="50"/>
 	<property name="Class" value="TorchHeatMap"/>
-	<property name="HeatMapStrength" value="4.05"/>
+	<property name="HeatMapStrength" value="2"/>
 	<property name="HeatMapTime" value="1200"/>
 	<property name="HeatMapFrequency" value="15"/>
 	<property name="Group" value="Building"/>
@@ -14618,7 +14770,7 @@ kind of free
 	<property name="DowngradeBlock" value="rConcreteCNRRound"/>
 </block>
 	<!-- 21 Free -->
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,12>15,40 -->
 <block id="1800" name="metalSignLetter_a">
 	<property name="Group" value="Decor/Miscellaneous"/>
 	<property name="DescriptionKey" value="alphabetLetterSignGroupDesc"/>
@@ -14631,7 +14783,7 @@ kind of free
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Place" value="TowardsPlacerInverted"/>
 	<property class="RepairItems"> <property name="scrapIron" value="15"/> </property>
-	<drop event="Destroy" name="scrapIron" count="1,12"/>
+	<drop event="Destroy" name="scrapIron" count="15,40"/>
 	<property name="EconomicValue" value="15"/>
 	<property name="EconomicBundleSize" value="2"/>
 </block>
@@ -14965,7 +15117,7 @@ kind of free
 	<property name="Model" value="Entities/LootContainers/vending_machine_traderPrefab"/>
 	<property name="TraderID" value="5"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,5>10,25 -->
 <block id="1927" name="signShopOpen">
 	<property name="Class" value="Light"/>
 	<property name="DescriptionKey" value="lightPOIGroupDesc"/>
@@ -14980,7 +15132,7 @@ kind of free
 	<property name="OnlySimpleRotations" value="true"/>
 	<drop event="Harvest" name="electricParts" count="2" prob="0.7" tool_category="Disassemble"/>
 	<drop event="Harvest" name="scrapPlastics" count="2" prob="0.8" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,5" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="10,25" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="-1"/>
 	<property name="Group" value="Science,Decor/Miscellaneous"/>
@@ -15016,6 +15168,7 @@ kind of free
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="EconomicValue" value="60"/> <!-- disassemble value -->
 	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
+	<drop event="Harvest" name="leather" count="1,2" tool_category="Disassemble"/>
 </block>
 	<!-- n Free -->
 
@@ -15334,6 +15487,7 @@ kind of free
 	<property name="CanPickup" value="true"/>
 </block>
 -->
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="1999" name="cntCollapsedBatterybank">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
@@ -15355,7 +15509,7 @@ kind of free
 		<property name="electronicParts" value="2"/>
 		<property name="scrapPlastics" value="4"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="120" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="75,120"/>
 	<drop event="Harvest" name="forgedIron" count="3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="2,3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="1,2" prob="0.6" tool_category="Disassemble"/>
@@ -15366,7 +15520,7 @@ kind of free
 	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
 	<property name="SellableToTrader" value="false"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="2000" name="cntCollapsedGeneratorbank">
 	<property name="CreativeMode" value="Dev"/>
 	<property name="Class" value="Loot"/>
@@ -15388,7 +15542,7 @@ kind of free
 		<property name="electricParts" value="8"/>
 		<property name="electronicParts" value="3"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="192" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="120,200" />
 	<drop event="Harvest" name="forgedIron" count="3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="3" tool_category="Disassemble"/>
@@ -15399,11 +15553,12 @@ kind of free
 	<property name="DescriptionKey" value="decorationBlockGroupDesc"/>
 	<property name="SellableToTrader" value="false"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="2001" name="generatorbank">
 	<property name="Class" value="Generator"/>
 	<property name="Material" value="Mmetal_medium"/>
 	<property name="StabilitySupport" value="false"/>
+	
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Entities/Electrical/generatorPrefab"/> <property name="HandleFace" value="Bottom"/>
@@ -15421,7 +15576,7 @@ kind of free
 		<property name="electricParts" value="8"/>
 		<property name="electronicParts" value="3"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="192" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="120,200"/>
 	<drop event="Harvest" name="forgedIron" count="3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="3" tool_category="Disassemble"/>
@@ -15432,7 +15587,7 @@ kind of free
 	<property name="TakeDelay" value="15"/>
 	<property name="EconomicValue" value="500"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 5>20 -->
 <block id="2002" name="switch">
 	<property name="Class" value="Switch"/>
 	<property name="Material" value="Mmetal_weak"/>
@@ -15445,7 +15600,7 @@ kind of free
 	<property name="TriggerType" value="Switch"/>
 	<property name="Group" value="Science"/>
 	<property class="RepairItems"> <property name="forgedIron" value="2"/> </property>
-	<drop event="Destroy" name="scrapIron" count="5" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="20" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="50"/>
@@ -15483,7 +15638,7 @@ kind of free
 	<property name="TakeDelay" value="15"/>
 	<property name="EconomicValue" value="2000"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="2005" name="batterybank">
 	<property name="Class" value="BatteryBank"/>
 	<property name="Material" value="Mmetal_weak"/>
@@ -15506,7 +15661,7 @@ kind of free
 		<property name="electronicParts" value="2"/>
 		<property name="scrapPlastics" value="4"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="120" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="75,120"/>
 	<drop event="Harvest" name="forgedIron" count="3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="2,3" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="1,2" prob="0.6" tool_category="Disassemble"/>
@@ -15517,7 +15672,7 @@ kind of free
 	<property name="TakeDelay" value="15"/>
 	<property name="EconomicValue" value="400"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - scrapIron 1,5>5,25 -->
 <block id="2006" name="electricwirerelay">
 	<property name="Class" value="Powered"/>
 	<property name="Material" value="Mmetal_weak"/>
@@ -15531,12 +15686,12 @@ kind of free
 	<property name="Group" value="Science"/>
 	<property class="RepairItems"> <property name="forgedIron" value="1"/></property>
 	<drop event="Harvest" name="electricParts" count="1" prob="0.2" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="1,5" prob="1"/>
+	<drop event="Destroy" name="scrapIron" count="5,25" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="28"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="2007" name="pressureplate">
 	<property name="Class" value="PressurePlate"/>
 	<property name="Material" value="Mmetal_medium"/>
@@ -15556,13 +15711,14 @@ kind of free
 	</property>
 	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
-	<drop event="Destroy" name="scrapIron" count="5,20" prob="1"/>
+	<drop event="Harvest" name="forgedIron" count="0,1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="40,75" prob="1"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="124"/>
 	<property name="PickupJournalEntry" value="triggerDelayDurationTip,passthroughTriggeringTip"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="2008" name="speaker">
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Speaker"/>
@@ -15579,13 +15735,13 @@ kind of free
 		<property name="electricParts" value="2"/>
 	</property>
 	<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="5,10"/>
+	<drop event="Destroy" name="scrapIron" count="20,50"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="72"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="2009" name="electrictimerrelay">
 	<property name="Class" value="TimerRelay"/>
 	<property name="Material" value="Mmetal_weak"/>
@@ -15605,18 +15761,18 @@ kind of free
 	</property>
 	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electronicParts" count="0,2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="5,10"/>
+	<drop event="Destroy" name="scrapIron" count="20,50"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="119"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted, damage received 4>2, damage done 20>30, maxdamage 2000>2500 -->
 <block id="2010" name="bladeTrap">
 	<property name="Class" value="BladeTrap"/>
 	<property name="Material" value="Mmetal_hard"/>
-	<property name="Damage" value="20"/>
-	<property name="DamageReceived" value="4"/>
+	<property name="Damage" value="30"/>
+	<property name="DamageReceived" value="2"/>
 	<property name="BreakingPercentage" value="0.5"/>
 	<property name="BrokenPercentage" value="0.25"/>
 	<property name="ImpactSound" value="bladetrap_impact"/>
@@ -15625,10 +15781,10 @@ kind of free
 	<property name="RunningSound" value="bladetrap_fire_lp"/>
 	<property name="RunningSoundBreaking" value="bladetrap_dm1_lp"/>
 	<property name="RunningSoundBroken" value="bladetrap_dm2_lp"/>
-	<property name="MaxDamage" value="2000"/>
+	<property name="MaxDamage" value="2500"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Shape" value="ModelEntity"/>
-	<property class="RepairItems"> <property name="electronicParts" value="1"/> <property name="scrapIron" value="1"/> </property>
+	<property class="RepairItems"> <property name="electronicParts" value="1"/> <property name="scrapIron" value="5"/> </property>
 	<property name="Model" value="Entities/Electrical/trap_spinning_bladePrefab"/> <property name="HandleFace" value="Bottom"/>
 	<property name="MultiBlockDim" value="3,1,3"/>
 	<property name="ImposterExchange" value="imposterPlate" param1="111"/>
@@ -15644,7 +15800,9 @@ kind of free
 	</property>
 	<drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="1,3" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="20,100"/>
+	<drop event="Harvest" name="forgedIron" count="2,5" tool_category="Disassemble"/>
+	<drop event="Harvest" name="forgedSteel" count="2,5" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="180,300" tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="10"/>
@@ -15652,6 +15810,7 @@ kind of free
 	<property name="EconomicValue" value="444"/>
 </block>
 
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="2011" name="dartTrap">
 	<property name="Class" value="Launcher"/>
 	<property name="Material" value="Mmetal_hard"/>
@@ -15668,13 +15827,14 @@ kind of free
 	<property name="RequiredPower" value="10"/>
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property class="RepairItems">
-		<property name="forgedSteel" value="16"/>
+		<property name="forgedIron" value="16"/>
 		<property name="mechanicalParts" value="3"/>
 		<property name="electricParts" value="2"/>
 	</property>
-	<drop event="Harvest" name="mechanicalParts" count="1,3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="1,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="forgedIron" count="4,10" tool_category="Disassemble"/>
 	<drop event="Harvest" name="electricParts" count="1,2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="20,100"/>
+	<drop event="Destroy" name="scrapIron" count="180,300" tool_category="harvestingTools"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Stacknumber" value="10"/>
@@ -15719,7 +15879,7 @@ kind of free
 	<property name="MultiBlockDim" value="4,6,4"/>
 	<drop event="Destroy" count="0"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="2017" name="pressureplateLong">
 	<property name="Class" value="PressurePlate"/>
 	<property name="Material" value="Mmetal_hard"/>
@@ -15738,9 +15898,10 @@ kind of free
 		<property name="mechanicalParts" value="6"/>
 		<property name="electricParts" value="4"/>
 	</property>
-	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="mechanicalParts" count="0,1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="20,100"/>
+	<drop event="Harvest" name="electricParts" count="0,2" tool_category="Disassemble"/>
+	<drop event="Harvest" name="mechanicalParts" count="0,3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="forgedIron" count="2,5" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="180,300"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
@@ -15749,7 +15910,7 @@ kind of free
 	<property name="PickupJournalEntry" value="triggerDelayDurationTip,passthroughTriggeringTip"/>
 </block>
 	<!-- 2 Free -->
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="2020" name="spotlightPlayer">
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="spotlightNailedDownPOI"/>
@@ -15766,10 +15927,10 @@ kind of free
 		<property name="electricParts" value="6"/>
 		<property name="scrapIron" value="40"/>
 	</property>
-	<drop event="Harvest" name="scrapIron" count="24" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="scrapIron" count="40,75"/>
 	<drop event="Harvest" name="scrapIron" count="20" tool_category="Disassemble"/>
-	<drop event="Harvest" name="electricParts" count="3" tool_category="Disassemble"/>
-	<drop event="Destroy" count="0"/>
+	<drop event="Harvest" name="electricParts" count="2,4" tool_category="Disassemble"/>
+	<drop event="Harvest" name="headlight" count="1" prob=".35" tool_category="Disassemble"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
@@ -15876,7 +16037,7 @@ kind of free
 	<property name="EconomicValue" value="16"/>
 	<property name="PickupJournalEntry" value="triggerDelayDurationTip,passthroughTriggeringTip"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="2029" name="electricfencepost">
 	<property name="Class" value="ElectricWire"/>
 	<property name="Material" value="Mmetal_weak"/>
@@ -15899,12 +16060,12 @@ kind of free
 		<property name="electricParts" value="1"/>
 	</property>
 	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="5,40"/>
+	<drop event="Destroy" name="scrapIron" count="40,75"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="62"/>
 </block>
-
+  <!-- Craftworx - QoLaFIM - harvest adjusted -->
 <block id="2030" name="motionsensor">
 	<property name="Class" value="MotionSensor"/>
 	<property name="Material" value="Mmetal_weak"/>
@@ -15924,7 +16085,7 @@ kind of free
 		<property name="electronicParts" value="1"/>
 	</property>
 	<drop event="Harvest" name="electronicParts" count="0,2" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="5,10"/>
+	<drop event="Destroy" name="scrapIron" count="25,50"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="135"/>

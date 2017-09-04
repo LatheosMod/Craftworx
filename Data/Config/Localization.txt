@@ -4985,12 +4985,16 @@ partsflamethrower_Barrel,items,Part,KgNone,Flamethrower Barrel,,
 partsflamethrower_Fueltank,items,Part,KgNone,Flamethrower Fuel Tank,,
 partsflamethrower_Hose,items,Part,KgNone,Flamethrower Hose,,
 partsflamethrower_Parts,items,Part,KgNone,Flamethrower Parts,,
+chainsawPartsRecipe,items,Item,KeyTrunk FrNone GrNone KgNone SpNone,Chainsaw Parts,,,,
+chainsawPartsRecpDesc,items,Item,KeyTrunk FrNone GrNone KgNone SpNone,Unlocks the recipes for the chainsaw parts and chainsaw blade. Craftable at a workbench.,,,,
+augerPartsRecipe,items,Item,KeyTrunk FrNone GrNone KgNone SpNone,Auger Parts,,,,
+augerPartsRecpDesc,items,Item,KeyTrunk FrNone GrNone KgNone SpNone,Unlocks the recipes for the auger parts and auger blade. Craftable at a workbench.,,,,
 
-poopBolt,items,Item,KgNone,Poop Bolt,,
+poopBolt,items,Item,KgNone,Poop Bolt (Ammo),,
 poopBoltDesc,items,Item,KgNone,A flimsy crossbow bolt covered in poop.,,
-fertilizerRound,items,Ammo,KgNone,Fertilizer Round,,
+fertilizerRound,items,Ammo,KgNone,Fertilizer Round (Ammo),,
 fertilizerRoundDesc,items,Ammo,KgNone,"An explosive bundle of human feces, just the thing for shooting at fans. Fired from the Poop Cannon.",,
-flamingBolt,items,Ammo,KgNone,Flaming Crossbow Bolt,,
+flamingBolt,items,Ammo,KgNone,Flaming Crossbow Bolt (Ammo),,
 flamingBoltDesc,items,Ammo,KgNone,A flaming crossbow bolt does the most damage by setting its victims on fire. Hold reload to use alternate ammo.,,
 
 repeatingCrossbowSchematic,items,Book,KgNone,Repeating Crossbow Schematic,,
@@ -5076,7 +5080,6 @@ craftSkillFletching,progression,Skill,KgNone,Fletching,,
 craftSkillFletchingDesc,progression,Skill,KgNone,"Craft bows, crossbows, arrows and bolts. Reduce weapon and ammunition crafting time. Gain skill by crafting and repairing items from this group.",,
 craftSkillTailoring,progression,Skill,KgNone,Tailoring,Confection,Schneiderei,,Sastrería
 craftSkillTailoringDesc,progression,Skill,KgNone,Craft plant fiber or cloth clothing faster and at better quality. Decrease repair penalties and get more from repair kits. ,Fabriquez des vêtements en fibres végétales ou en tissu plus rapidement et de meilleure qualité. Diminuez les pénalités de réparation et obtenez davantage de kits de réparation.,"Fertige Pflanzenfaser- oder Stoffkleidung schneller und von besserer Qualität. Senke die Reparaturabzüge und hole mehr aus deinen Reparaturkits heraus.",,Fabrica fibra vegetal o tejidos para ropa más rápido y con mejor calidad. Disminuye los castigos de reparación y otorga más kits de reparación. 
-
 
 magazineMuscles,items,Book,KgNone,Muscle & Fitness Magazine,,
 magazineMusclesDesc,items,Book,KgNone,Improve your Athletics skill by reading about these ripped bodybuilders. This issue has a centerfold of Mad Mole.,,

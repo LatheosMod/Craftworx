@@ -1,0 +1,327 @@
+<!-- Craftworx & modified Quality of Life and Firearms Improvement - Complete List of Changes -->
+
+Blocks.xml:
+- harvest for blocks with changed recipes adjusted accordingly
+- chance to harvest lead, coal, potassium, and rare ores from stone [from Better Balance, but adjusted]
+- harvest more coal/lead/potassium from respective blocks
+- wood debris drops more wood
+- concrete upgrade and repair costs for all blocks (except rebar) lowered
+- all metal blocks drop a lot more scrap metal, and almost all do so on destruction
+- scrap metal repair/upgrade values have also been adjusted
+- chance to harvest steel from steel/stainless steel blocks
+- disassemble havest of most blocks have been adjusted (Ovens, fridges, etc.)
+- most metal furniture and other blocks like fences are repaired with scrap iron
+- raised upgrade cost for wooden frames
+- heatmap values of most blocks lowered, workbench does not create heat anymore
+- cardboard has less HP
+- the wooden chest has another loot list entry (was empty most of the time)
+- suitcases drop plastic and scrap iron
+- trash piles drop paper and plastic when destroyed
+- gas pumps drop scrap iron
+- street lights drop glass
+- all safes are repaired with forged steel
+- safes can be disassembled for some forged steel
+- wall safe and desk safe have 1500 HP (instead of 2500)
+- ladders take less to upgrade
+- desks have their loot list entry changed (to file cabinet, was drawer)
+- jail door can be disassembled for forged steel
+- all trees drop more wood and bigger trees have a chance to drop feathers and eggs [from Better Balance, but adjusted]
+- cooler economic value lowered
+- steel spikes need less to upgrade
+- mortician drawer, furnace drawer, and green drawer can be disassembled for forged iron
+- chance to get minibike wheels from tires slightly lowered
+- house doors drop doorknobs on destruction
+- iron doors can be disassembled for forged iron
+- vault doors can be disassembled for forged steel
+- shopping baskets have less HP and drop scrap plastic
+- v3 garage doors can be disassembled for forged iron
+- cars are treasure troves, but have 1000 HP for each instance. Disassemble harvest has been thoroughly overhauled!
+- dumpster HP doubled to 600
+- old leather couch has standard furniture HP (100)
+- blade traps do more damage, take less damage, and have a bit more HP
+
+Buffs.xml:
+- being drunk and sickdrunk makes you thirsty over time
+- coffee, mega crush, yucca juice, and red tea buffs have longer durations
+- stun is shorter (3 compared to 4)
+
+Entityclasses.xml:
+- normal Zombie Marlene has standard zombie loot
+- zombie dog daytime speed and HP lowered
+
+Entitygroups.xml:
+- friendly animal spawn chance in all biomes raised [idea from Better Balance, adjusted]
+- chickens added in forest
+- more bears and less vultures in snow biomes
+- rabbits added in burnt forest and plains
+
+Gamestages.xml:
+- redone zombie counts in scout hordes, starting with only 4, with a smooth upward curve
+
+Items.xml:
+- firearms damage raised by about 50%
+- damage, economical value and stamina use of melee weapons adjusted
+- sledgehammer is slightly faster and has more range
+- flashlight value lowered
+- hunting knife is slightly faster
+- machete has slightly more range
+- all guns have a higher headshot bonus
+- sniper rifle has a bigger magazine (7 instead of 5)
+- zombie range and damage increased
+- lower stun chance for zombies
+- zombie dog damage, range, and attack speed lowered
+- vulture damage and infection chance lowered
+- forge weight of some metal items raised
+- block and entity damage, stamina usage, damage bonuses, speed, economical value, and range for all tools adjusted!
+- chainsaw and auger head damage bonus raised
+- crossbow value raised
+- stack sizes for a whole lot of items raised
+- rocket block damage greatly increased
+- iron/steel arrow value lowered
+- iron/steel crossbow bolt value lowered
+- all gun parts economical value lowered by about 25%
+- except for formerly cheap sniper rifle, that one was raised
+- sniper rifle damage raised a bit more to be slightly above hunting rifle
+- handlebar value lowered
+- auger/chainsaw parts economical value lowered
+- auger/chainsaw parts use science skill for crafting
+- compound bow parts economical value lowered
+- leather armor economical value adjusted (higher in most cases)
+- iron armor economical value adjusted (higher in most cases)
+- most clothing value lowered (sometimes drastically)
+- mining helmet value lowered
+- all glasses use glue for repair (glue is now a repair item)
+- animal hide poncho value lowered
+- first aid bandage and first aid kit value raised
+- first aid kit cures stage 1 infections
+- blood draw kit value lowered (800 to 50!), less hp damage, makes a bit thirsty, one use item
+- blood bag value lowered, made sellable
+- painkiller thirst lowered
+- antibiotics value raised
+- food, water, and wellness values of all food and drink items adjusted
+- economical value of food rebalanced
+- grain alcohol value raised
+- altered auger/chainsaw schematics
+- fuel value of wood lowered
+- fuel value of coal raised
+- iron fragment forge weight and melt time adjusted, sellable
+- scrap iron crafting ingredient time and melt time lowered
+- forged iron/steel economical value and repair amount raised
+- scrap plastic value adjusted
+- leather value lowered
+- old cash value lowered
+- machete blade value lowered
+- repair kit value lowered
+- oil value lowered
+- steel polish value raised
+- added crafting ingredient values for doorknob
+- fishing weight value reduced
+- candle value raised
+- headlight value lowered
+- glue value lowered, added repair value/time
+- duct tape value lowered
+- beaker value drastically lowered
+- bellows value lowered
+- iron unit crafting ingredient time lowered
+- jars can be filled with water at any sink [from Better Balance]
+
+Loot.xml:
+- probability and counts for ammo adjusted
+- more military fiber in hazmat gear loot
+- less rotting flesh in rotten foods
+- more ammo found with weapons (one bullet to two full clips, usually)
+- even chance for normal and sawed off shotgun
+- greatly improved chance to find whole weapons instead of just parts
+- higher chance to find the minibike books over other rare books
+- added shotgun slug to treasure ammo
+- added solar cells to some loot lists and higher chance for tool and die set [from Better Balance]
+- lower chance to find honey and ration cans in canned foods
+- less rotting flesh and more meat in cold foods
+- better chance for corn and potatoes in farm crops
+- more paint and better chance for canned foods in cupboards
+- adjusted junk loot to feel more natural for stuff you would find in junk
+- added scrap plastic to automotive loot
+- more fiber in military armor loot
+- probabilities of tool loot adjusted, more forged iron/steel if found
+- probability and count for working stiff loot
+- probability for rare medicine
+- removed jar from medicine, better chance for painkillers
+- lowered chance for jars in beverages, higher chance for mega crush
+- lowered chance for guns and parts in backpacks, added chance for ammo
+- higher chance for beaker in lab equipment
+- new custom lootgroup added to be used in treasure chest
+- raised maxcount for cardboard boxes and raised chance for paint
+- raised maxcount for junk, cupboard, frozen and spoiled food
+- probabilities adjusted for stove loot
+- raised maxcount for frozen food, less empty cans/jars
+- raised maxcount for drawers, lower chance for guns, higher chance for ammo
+- raised mincount for medicine cabinets
+- probabilities for kitchen sinks adjusted, added scrap plastics and the bucket
+- raised mincount for backpacks
+- lower chance for weapons in wall/desk safes, more cash, rare ores, and ammo
+- raised maxcount for generic zombie loot, less junk, greater chance for piercings
+- raised maxcount for garbage can
+- raised mincount for zombie cop, lowered chance for shotgun
+- raised count for cars, slightly better chance for mining helmet
+- added chance for rare medicine in nurse loot
+- higher chance for paint and electrical devices in garage stuff loot
+- supply airdrop crate has greater chance for weapons
+- airdrop crate is not destroyed on close [from Better Balance]
+- probability and count for tree stump loot adjusted, removed scrap plastic, lowered chance for guns
+- mincount for suitcases raised, added armor and books to the list
+- count for fat zombie raised, less chance for guns and ammo
+- probabilities for shotgun messiah crates adjusted, added ammo
+- raised maxcount for military ammo boxes, more ammo, open time lowered
+- count adjusted for gun safes, added military guns and ammo
+- probability and counts for lockers adjusted, removed gunpowder
+- raised mincount for file cabinets, more paper, removed padlock
+- raised mincount for purse, high chance for money, removed food and gun chance
+- more paper in bookcase, better chance for the painting magazine
+- count adjusted for shotgun messiah box, added chance for ammo
+- raised mincount for pop n pills box
+- raised chance for beer in beer cooler (hence the name)
+- raised mincount for working stiffs crate
+- more plastic in shopping carts
+- cash registers have more cash/coins and a bit more paper
+- the artifact chance has a greater chance to contain taza's stone axe
+- mincount raised for shamway crate, removed scrap plastics, added moldy bread, lower chance for sandwich
+- raised mincount for bookstore bookcases
+- added military fiber to hazmat zombie loot
+- raised chance for lumberjack specific loot in lumberjack loot list
+- dumpster count greatly raised for more junk
+- treasure chest loot overhauled, added chances for rare tools/books/medicine, chance for a .44 magnum
+- treasure chest does not destroy itself on close [from Better Balance]
+- raised mincount for zombie soldier loot, added good chance for military fiber
+- rasied mincount for construction worker loot
+- raised mincount for football zombie loot
+- less chance for clothes, higher chance for junk for cheerleader zombie loot
+- added chance for piercings to zombie skateboarder loot, less chance for clothes or mechanical parts
+- mincount for cowboy zombie raised, less junk, added chance for magnum bullets, other probs adjusted
+- mincount for biker zombies raised, probabilities adjusted, added minibike book to loot list
+- raised mincount for zombie strippers, removed plastic and blood draw kit, less junk, more coins, added chance for piercings
+- raised mincount for farmer zombie, more crops/seeds, added chance for shotgun
+- more paper and no plastic in bookstore shipping crates
+- count raised for car part crates, probability and count adjusted, minibike book added to list
+- count raised for construction supply crates, probability and count adjusted, removed paper
+- less jubk and money for business zombie loot, more paper
+- count for collapsed forge raised, counts adjusted
+- count for collapsed workbench raised, probabilities and counts adjusted, added gunpowder
+- count for collapsed cement mixer raised, added fertilizer
+- count for collapsed chemistry station raised, removed plants, more paint
+
+
+Materials.xml:
+- wooden spikes movement factor lowered
+- swim speed raised
+
+Progression.xml:
+- exp to level roughly 30% higher, experience multiplier raised slightly
+- skill points raised to 9, added skill point multiplier to gain more SP on higher levels
+- adjusted all player level reuirements to comply with slower leveling
+- adjusted skill level reuirements (lowerd, mostly)
+- all breath hold durations raised by 20
+- Health Nut skill point cost and multiplier lowered, raised min wellness on lower levels
+- Sexual Tyranosaurus (sic!) skill point cost and multiplier lowered, stamina gain raised slightly
+- Fast Eddie skill point cost and multiplier lowered
+- Quality Joe multiplier lowered, added 4th level (+200 quality)
+- Treasure Hunter skill point cost lowered to 1, no multiplier and smaller radius
+- Pummel Pete skill point cost and multiplier lowered
+- Breaking and Entering multiplier lowered and block damage bonus raised
+- Knife Guy skill point cost and multiplier lowered, harvest count improved
+- The Decapitator multiplier lowered and dismemberment chance raised
+- Miner 69er skill pooint cost and multiplier lowered, stamina degradation and harvest count adjusted
+- Construction Tools levels faster
+- Concrete Mixing perk skill point cost lowered and requirements adjusted
+- Steel Smithing perk skill point cost lowered and requirements adjusted
+- Bad Mechanic skill point cost and multiplier lowered, harvest count and stamina degradation adjusted
+- all firearm skill level faster
+- firearm assembly schematics unlock at certain levels of the respective skill
+- The Outlaw/Boomstick/Better Lead than Dead multiplier lowered, greater damage bonus, new 6th level
+- Dead Shot/Splatter Gun skill pont cost raised, multiplier lowered, dismemberment chance raised
+- crafting quality for all skills reworked to allow 600 max quality at highest level
+- auger/chainsaw assembly schematics unlock at level 10/8 of science
+- added new perks to unlock crafting for auger/chainsaw parts
+- Do It Yourself perk adjusted [from Better Balance]
+- Miscellaneous Crafting skill point cost raised, multiplier lowered, added new level
+- The Fixer multiplier lowered, added new level
+- Barter levels a lot (!) slower
+- Secret Stash multiplier lowered
+- various changes to electric and trap perks [from Better Balance]
+
+
+Quests.xml
+- minimum treasure chest generation distance for treasure maps lowered to 250
+
+
+Recipes.xml
+- all recipes requiring iron units or scrap iron have been adjusted to the new iron economy
+- poncho takes hlf as much leather to craft
+- auger/chainsaw blade recipe changed
+- auger/chainsaw parts recipe added
+- less pipes needed to craft a small bed
+- no pipes for king sized beds
+- less leather for bellows
+- less forged iron for the blunderbuss
+- less forged iron for bucket
+- all tool recipes have been adjusted with mostly lowered forged iron/steel requirements
+- barbed club requires scrap iron and nails instead of forged iron
+- less wood for iron club
+- less forged iron for spiked club
+- nails needed to craft cabinet
+- more wood and added nails to craft wooden desk
+- less forged iron for metal desk, replaced springs with emchanical parts
+- all safes are crafted with forged steel instead of forged iron
+- less wood and nails to craft nightstand
+- corn on the cob needs cooking grill and no water (is grilled corn now!)
+- crossbow need less forged iron and more wood
+- all fertilizer recipes have a drastically lowered crafting time
+- fertilizer recipes for cement mixer needs less rotting flesh
+- new recipe to craft blood draw kits at the chemistry station
+- first aid kits need more bandages
+- flaming arrows need gas instead of gunpowder
+- forged iron/steel requirements adjusted for new iron economy
+- added steel polish recipe [from Better Balance]
+- less mechanical parts for garage doors
+- more oil shales to make gas
+- toned down requirements for all bulletproof glass recipes
+- reduced craft time for gravel in cement mixer
+- grilled meat needs only one raw meat
+- hunting knife needs less forged iron
+- iron/steel arrows and bolts can be "crafted" into their respective arrowheads
+- forged iron requirement for all iron armor parts adjusted
+- steel ladder needs less forged steel
+- all leather armor recipes adjusted, adjusted leather count and all need glue to craft now
+- reworked meat stew recipe
+- molotov cocktail needs less gas
+- less sandwiches needed to craft moldy bread
+- added new recipe to craft shopping basket at the workbench
+- much less oil shale required to craft oil
+- less nails to craft old chairs
+- repair kits need scrap iron instead of forged iron, and more cloth
+- springs need less forged steel to craft
+- scrap armor recipes rebalanced
+- added alternate recipe for the mining helmet that doesn't require a football helmet
+- torch recipes changed [from Better Balance]
+- wooden spikes need more wood
+- vegetable stew recipe reworked
+- all wooden frames need more wood
+- wooden table needs less nails
+- workbench recipe redone, need a lot of scrap iron instead of forged iron, and less mechanical parts
+- mechanical parts need less forged steel and oil instead of duct tape
+- wall light recipe adjusted
+- spotlight need forged iron instead of scrap iron
+- pressure plates need less forged iron
+- crucible recipe rebalanced
+- new furniture recipes for: granite sink, bookcase, pill case, wall oven, oven, coffin, cardboard box, file cabinet, trash bin, trash can, all faucets (forge), pew segments, washing mashine, bar stool, curtain parts, miniblind parts, all commercial doors, and house front doors
+
+
+Sounds.xml:
+- heatmap strenght lowered for auger/chainsaw
+- heatmap strength lowered for all firearms
+- added heatmap strength for mp5 (it's not really silent)
+- heatmap strenght lowered for jumping
+- heatmap strenght of most containers rebalanced to make looting always generate small amounts of heat, more concistently
+- autoturret heatmap strength lowered
+
+Traders.xml:
+- lowered trader reset interval to 1 (restocks ever day)

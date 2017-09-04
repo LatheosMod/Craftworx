@@ -63,4 +63,5 @@ New Quest
     A Shifty Way to Die - kill five zombies with the poop launcher
 	
 Includes
-	Sirillion's SMX UI
+	Modified Sirillion's SMX UI
+	Modified LavenderJosh's Quality of Life and Firearms Improvement Mod
