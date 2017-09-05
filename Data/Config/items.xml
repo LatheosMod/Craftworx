@@ -10238,7 +10238,7 @@ Mesh files no longer used:
 <item id="2035" name="partsflamethrower_Fueltank">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Stock" />
-	<property name="CustomIcon" value="backpack03" />
+	<property name="CustomIcon" value="partsflamethrower_Fueltank" />
     <property name="CustomIconTint" value="F54500" />		
     <property name="Weight" value="36" />
     <property class="Attributes">
@@ -10254,7 +10254,7 @@ Mesh files no longer used:
 <item id="2036" name="partsflamethrower_Hose">
 	<property name="Extends" value="partsMaster" />
     <property name="PartType" value="Receiver" />
-	<property name="CustomIcon" value="scrapCable" />
+	<property name="CustomIcon" value="partsflamethrower_Hose" />
 	<property name="CustomIconTint" value="F54500" />
     <property name="Weight" value="36" />
     <property class="Attributes">
