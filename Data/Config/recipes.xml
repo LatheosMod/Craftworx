@@ -3088,6 +3088,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="footballHelmet" count="1" />
 </recipe>
 
+<recipe name="footballHelmetZULight" count="1" scrapable="False" >
+    <ingredient name="ductTape" count="1" />
+	<ingredient name="flashlight02" count="1" />
+    <ingredient name="footballHelmetZU" count="1" />
+</recipe>
+
 <recipe name="ironHelmetLight" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />

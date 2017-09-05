@@ -405,6 +405,7 @@
 		<recipe name="forge" unlock_level="1"/>
 	</perk>
 	<!-- End CraftWorx -->
+	
 	<perk name="Concrete Mixing" icon="resource" description_key="concreteMixingDesc" title_key="concreteMixing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="8" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="10"/>
 		<requirement skill_level="1" required_skill_name="Mining Tools" required_skill_level="20"/>
@@ -653,7 +654,7 @@
 	</player_skill>
 
 	<!-- Crafting Skills -->
-	<perk name="craftSkillWeapons" max_level="10" skill_point_cost_multiplier="1.13" skill_point_cost_per_level="3" exp_to_level="5000000"
+	<perk name="craftSkillWeapons" max_level="10" skill_point_cost_multiplier="1.2" skill_point_cost_per_level="3" exp_to_level="5000000"
 	icon="weapon_smithing" description_key="craftSkillWeaponsDesc" title_key="craftSkillWeapons" group="weapons" exp_gain_multiplier="0">
 		<requirement perk_level="2" required_player_level="1"/>
 		<requirement perk_level="3" required_player_level="5"/>
@@ -719,7 +720,7 @@
 	</perk>
 	
 	<!--CraftWorx -->
-	<perk name="craftSkillFletching" max_level="10" skill_point_cost_multiplier="1.13" skill_point_cost_per_level="3" exp_gain_multiplier="0" exp_to_level="5000000" icon="archery" description_key="craftSkillFletchingDesc" title_key="craftSkillFletching" group="weapons">
+	<perk name="craftSkillFletching" max_level="10" skill_point_cost_multiplier="1.2" skill_point_cost_per_level="3" exp_gain_multiplier="0" exp_to_level="5000000" icon="archery" description_key="craftSkillFletchingDesc" title_key="craftSkillFletching" group="weapons">
 		<requirement perk_level="2" required_player_level="1"/>
 		<requirement perk_level="3" required_player_level="5"/>
 		<requirement perk_level="4" required_player_level="10"/>
@@ -798,7 +799,7 @@
 	</perk>
 	<!-- End CraftWorx -->
 
-	<perk name="craftSkillTools" max_level="10" skill_point_cost_multiplier="1.13" skill_point_cost_per_level="3" exp_to_level="5000000"
+	<perk name="craftSkillTools" max_level="10" skill_point_cost_multiplier="1.2" skill_point_cost_per_level="3" exp_to_level="5000000"
 	icon="tool_smithing" description_key="craftSkillToolsDesc" title_key="craftSkillTools" group="tools" exp_gain_multiplier="0">
 		<requirement perk_level="2" required_player_level="1"/>
 		<requirement perk_level="3" required_player_level="5"/>
@@ -863,7 +864,7 @@
 		</effect>
 	</perk>
 	
-	<perk name="craftSkillGuns" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000"
+	<perk name="craftSkillGuns" max_level="10" skill_point_cost_multiplier="1.2" skill_point_cost_per_level="3" exp_to_level="5000000"
 	icon="gunsmithing" description_key="craftSkillGunsDesc" title_key="craftSkillGuns" group="firearms" exp_gain_multiplier="0">
 		<requirement perk_level="2" required_player_level="1"/>
 		<requirement perk_level="3" required_player_level="5"/>
@@ -956,7 +957,7 @@
 	</perk>
 
 	<!-- Craftworx -->
-	<perk name="Silent But Deadly" icon="gunsmithing" description_key="silentButDeadlyDesc" title_key="Silent But Deadly" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="crafting">
+	<perk name="Silent But Deadly" icon="gunsmithing" description_key="silentButDeadlyDesc" title_key="Silent But Deadly" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="firearms">
 		<requirement skill_level="1" required_skill_name="craftSkillGuns" required_skill_level="1"/>
 		<recipe name="partsSuppressor" unlock_level="1"/>
 		<recipe name="partssuppressedpistol_barrel" unlock_level="1"/>
@@ -982,7 +983,7 @@
 	</perk>
 	<!-- End CraftWorx -->
 	
-	<perk name="craftSkillScience" max_level="10" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="3" exp_to_level="5000000"
+	<perk name="craftSkillScience" max_level="10" skill_point_cost_multiplier="1.2" skill_point_cost_per_level="3" exp_to_level="5000000"
 	icon="science" description_key="craftSkillScienceDesc" title_key="craftSkillScience" group="science" exp_gain_multiplier="0">
 		<requirement perk_level="2" required_player_level="1"/>
 		<requirement perk_level="3" required_player_level="5"/>

@@ -10481,7 +10481,19 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="footballHelmetLightDesc"/>
 </item>
 
-<item id="2050" name="ironHelmetLight">
+<item id="2050" name="footballHelmetZULight">
+	<property name="Extends" value="footballHelmet" />
+	<property name="CustomIcon" value="footballHelmetLight"/>
+	<property name="CustomIconTint" value="107,12,12"/>
+    <property name="Class" value="ItemClassToggle" />
+    <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+    <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+	<property name="EconomicValue" value="600" />
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="DescriptionKey" value="footballHelmetZULightDesc"/>
+</item>
+
+<item id="2051" name="ironHelmetLight">
 	<property name="Extends" value="ironHelmet" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -10491,7 +10503,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="ironHelmetLightDesc"/>
 </item>
 
-<item id="2051" name="militaryHelmetLight">
+<item id="2052" name="militaryHelmetLight">
 	<property name="Extends" value="militaryHelmet" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -10501,7 +10513,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="militaryHelmetLightDesc"/>
 </item>
 
-<item id="2052" name="leatherHoodLight">
+<item id="2053" name="leatherHoodLight">
 	<property name="Extends" value="leatherHood" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -10511,7 +10523,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="leatherHoodLightDesc"/>
 </item>
 
-<item id="2053" name="scrapHelmetLight">
+<item id="2054" name="scrapHelmetLight">
 	<property name="Extends" value="scrapHelmet" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -10521,7 +10533,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="scrapHelmetLightDesc"/>
 </item>
 
-<item id="2054" name="swatHelmetLight">
+<item id="2055" name="swatHelmetLight">
 	<property name="Extends" value="swatHelmet" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -10531,7 +10543,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="swatHelmetLightDesc"/>
 </item>
 
-<item id="2055" name="plantFiberHatLight">
+<item id="2056" name="plantFiberHatLight">
 	<property name="Extends" value="plantFiberHat" />
     <property name="CustomIcon" value="cowboyHatLight" />
 	<property name="CustomIconTint" value="227,206,164" />
@@ -10542,7 +10554,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="plantFiberHatLightDesc"/>
 </item>
 
-<item id="2056" name="heavyBanditGasmaskLight"> <!-- banditArmor -->
+<item id="2057" name="heavyBanditGasmaskLight"> <!-- banditArmor -->
 	<property name="Extends" value="heavyBanditGasmask" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -10552,7 +10564,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="heavyBanditGasmaskLightDesc"/>
 </item>
 
-<item id="2057" name="hazmatMaskLight"> <!-- hazMatArmor -->
+<item id="2058" name="hazmatMaskLight"> <!-- hazMatArmor -->
 	<property name="Extends" value="hazmatMask" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -10562,7 +10574,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="hazmatMaskLightDesc"/>
 </item>
 
-<item id="2058" name="animalHideHoodLight"> <!-- hideArmor -->
+<item id="2059" name="animalHideHoodLight"> <!-- hideArmor -->
 	<property name="Extends" value="animalHideHood" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -10574,7 +10586,7 @@ Mesh files no longer used:
 <!-- End Lighted Helmets -->
 
 <!-- Quests -->
-<item id="2059" name="qc_shittywaytodie">
+<item id="2060" name="qc_shittywaytodie">
 	<property name="Extends" value="challengeQuestMaster" />
 	<property class="Action1">
 		<property name="QuestGiven" value="challenge_shittywaytodie" />
@@ -10583,7 +10595,7 @@ Mesh files no longer used:
 <!-- End Quests -->
 
 <!-- Food -->
-<item id="2060" name="baggedMeat">
+<item id="2061" name="baggedMeat">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
     <property name="Material" value="organic" />
     <property name="HoldType" value="7" />
@@ -10609,7 +10621,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 	
-<item id="2061" name="saltedMeat">
+<item id="2062" name="saltedMeat">
 	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="31" />
@@ -10631,7 +10643,7 @@ Mesh files no longer used:
 <!-- End Food -->
 
 <!-- Miscellaneous Items -->
-<item id="2062" name="Sandpaper">  
+<item id="2063" name="Sandpaper">  
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
     <property name="Material" value="cloth" />
@@ -10645,7 +10657,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftingSkilllScience"/>
 </item>           
 
-<item id="2063" name="zippedBag">
+<item id="2064" name="zippedBag">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="CustomIcon" value="zippedBag" />
     <property name="Material" value="Mplastics" />
@@ -10660,7 +10672,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftingSkilllScience"/>
 </item>
 
-<item id="2064" name="carbonSteel">
+<item id="2065" name="carbonSteel">
 	<property name="Meshfile" value="Items/Crafting/ingotIron" />
 	<property name="CustomIconTint" value="006699" />
 	<property name="Material" value="metal" />
@@ -10676,7 +10688,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftingSkilllScience"/>
 </item>
 
-<item id="2065" name="refinedCoal">
+<item id="2066" name="refinedCoal">
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="coal" />
@@ -10690,7 +10702,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftingSkilllScience"/>
 </item>
 
-<item id="2066" name="springCable">
+<item id="2067" name="springCable">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="Material" value="Msteel"/>
@@ -10705,7 +10717,7 @@ Mesh files no longer used:
 <!-- End Miscellaneous Items -->
 
 <!-- Scrap tools -->
-<item id="2067" name="scrapAxe">
+<item id="2068" name="scrapAxe">
 	<property name="Extends" value="fireaxeIron" />
 	<property name="CustomIcon" value="fireaxeIron" />
 	<property name="CustomIconTint" value="E66920" />
@@ -10722,7 +10734,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="scrapAxeDesc"/>
 </item>
 
-<item id="2068" name="scrapPickaxe">
+<item id="2069" name="scrapPickaxe">
 	<property name="Extends" value="pickaxeIron" />
 	<property name="CustomIcon" value="pickaxeIron" />
 	<property name="CustomIconTint" value="E66920" />
@@ -10738,7 +10750,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="scrapPickaxeDesc"/>
 </item>
 
-<item id="2069" name="scrapShovel">
+<item id="2070" name="scrapShovel">
 	<property name="Extends" value="stoneShovel" />
 	<property name="CustomIcon" value="stoneShovel" />
 	<property name="CustomIconTint" value="E66920" />
@@ -10757,7 +10769,7 @@ Mesh files no longer used:
 <!-- End Scrap Tools -->
 
 <!-- Magazines -->
-<item id="2070" name="magazineMuscles">
+<item id="2071" name="magazineMuscles">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10766,7 +10778,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineMusclesDesc"/>
 </item>
 
-<item id="2071" name="magazineRifleman">
+<item id="2072" name="magazineRifleman">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10775,7 +10787,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineRiflemanDesc"/>
 </item>
 
-<item id="2072" name="magazineGunsNAmmo">
+<item id="2073" name="magazineGunsNAmmo">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10784,7 +10796,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineGunsNAmmoDesc"/>
 </item>
 
-<item id="2073" name="magazineScavengers">
+<item id="2074" name="magazineScavengers">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10793,7 +10805,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineScavengersDesc"/>
 </item>
 
-<item id="2074" name="magazineBaseballDig">
+<item id="2075" name="magazineBaseballDig">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10802,7 +10814,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineBaseballDigDesc"/>
 </item>
 
-<item id="2075" name="magazineBlades">
+<item id="2076" name="magazineBlades">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10811,7 +10823,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineBladesDesc"/>
 </item>
 
-<item id="2076" name="magazineMining">
+<item id="2077" name="magazineMining">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10820,7 +10832,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineMiningDesc"/>
 </item>
 
-<item id="2077" name="magazineWood">
+<item id="2078" name="magazineWood">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10829,7 +10841,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineWoodDesc"/>
 </item>
 
-<item id="2078" name="magazineHandyman">
+<item id="2079" name="magazineHandyman">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10838,7 +10850,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineHandymanDesc"/>
 </item>
 
-<item id="2079" name="magazineAmHandgun">
+<item id="2080" name="magazineAmHandgun">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10847,7 +10859,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineAmHandgunDesc"/>
 </item>
 
-<item id="2080" name="magazineShotSport">
+<item id="2081" name="magazineShotSport">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10856,7 +10868,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineShotSportsDesc"/>
 </item>
 
-<item id="2081" name="magazineSpecWeapons">
+<item id="2082" name="magazineSpecWeapons">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10865,7 +10877,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineSpecWeaponsDesc"/>
 </item>
 
-<item id="2082" name="magazineArchery">
+<item id="2083" name="magazineArchery">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10874,7 +10886,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineArcheryDesc"/>
 </item>
 
-<item id="2083" name="magazineMenHealth">
+<item id="2084" name="magazineMenHealth">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10883,7 +10895,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineMenHealthDesc"/>
 </item>
 
-<item id="2084" name="magazineWomenHealth">
+<item id="2085" name="magazineWomenHealth">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10892,7 +10904,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineWomenHealthDesc"/>
 </item>
 
-<item id="2085" name="magazineHuntWorld">
+<item id="2086" name="magazineHuntWorld">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10901,7 +10913,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineHuntWorldDesc"/>
 </item>
 
-<item id="2086" name="magazinePrimArch">
+<item id="2087" name="magazinePrimArch">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10910,7 +10922,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazinePrimArchDesc"/>
 </item>
 
-<item id="2087" name="magazinePopMech">
+<item id="2088" name="magazinePopMech">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10919,7 +10931,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazinePopMechesc"/>
 </item>
 
-<item id="2088" name="magazineSciAm">
+<item id="2089" name="magazineSciAm">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10928,7 +10940,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineSciAmDesc"/>
 </item>
 
-<item id="2089" name="magazinePopSci">
+<item id="2090" name="magazinePopSci">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10937,7 +10949,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazinePopSciDesc"/>
 </item>
 
-<item id="2090" name="magazineSewing">
+<item id="2091" name="magazineSewing">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10946,7 +10958,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineSewingDesc"/>
 </item>
 
-<item id="2091" name="magazineArmor">
+<item id="2092" name="magazineArmor">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10955,7 +10967,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineArmorDesc"/>
 </item>
 
-<item id="2092" name="magazineLHJ">
+<item id="2093" name="magazineLHJ">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10964,7 +10976,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineLHJDesc"/>
 </item>
 
-<item id="2093" name="magazineMoney">
+<item id="2094" name="magazineMoney">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10973,7 +10985,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineMoneyDesc"/>
 </item>
 
-<item id="2094" name="magazineBodyArmor">
+<item id="2095" name="magazineBodyArmor">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
@@ -10984,7 +10996,7 @@ Mesh files no longer used:
 <!-- End Magazines -->
 
 <!-- Bagged Food -->
-<item id="2095" name="baggedcharredMeat">
+<item id="2096" name="baggedcharredMeat">
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -11008,7 +11020,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 
-<item id="2096" name="baggedgrilledMeat">
+<item id="2097" name="baggedgrilledMeat">
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -11032,7 +11044,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 
-<item id="2097" name="baggedboiledMeat">
+<item id="2098" name="baggedboiledMeat">
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
@@ -11056,7 +11068,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 
-<item id="2098" name="baggedmeatStew">
+<item id="2099" name="baggedmeatStew">
 	<property name="Meshfile" value="Items/Food/venison_stewPrefab"/>
 	<property name="Material" value="organic"/>
 	<property name="HoldType" value="23"/>
@@ -11079,7 +11091,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 
-<item id="2099" name="baggedbaconAndEggs">
+<item id="2100" name="baggedbaconAndEggs">
 	<property name="Meshfile" value="Items/Misc/parcelPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="31"/>
