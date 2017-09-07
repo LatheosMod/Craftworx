@@ -79,3 +79,12 @@ Craftworx 2.51
 Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod
 Added ZU football helmet with light
 Adjusted all craft skills skill point multiplier to 1.2
+Added custom icons for partsflamethrower_Hose, partsflamethrower_Fueltank, blackCowboyHatLight
+
+<----- 6 Sep 2017 ----->
+Craftworx 2.52
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod
+Adjusted harvest percentage bonus for Paul Bunyan to match that of Miner 69er
+Adjusted skill point multiplier for Paul Bunyan, Miner 69er to 1.26
+Fixed typo in magazinePopMech (thanks to Ghoulscoutcookie in the 7DtD forums)
+

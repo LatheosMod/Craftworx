@@ -10461,7 +10461,7 @@ Mesh files no longer used:
 </item>
 
 <item id="2048" name="blackCowboyHatLight">
-	<property name="Extends" value="blackCowboyHat" />
+	<property name="Extends" value="cowboyHat" />
 	<property name="HoldType" value="7" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -10928,7 +10928,7 @@ Mesh files no longer used:
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillTools" />
     </property>
-	<property name="DescriptionKey" value="magazinePopMechesc"/>
+	<property name="DescriptionKey" value="magazinePopMechDesc"/>
 </item>
 
 <item id="2089" name="magazineSciAm">
