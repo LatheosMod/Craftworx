@@ -272,7 +272,8 @@
 		
 		<window_group name="ingameMenu">
 <!--		<window name="ingameMenu" /> -->
-			<window name="SMXingameMenu" />
+<!--		<window name="SMXingameMenu" /> -->
+			<window name="CRAFTWORXingameMenu" />
 <!--		<window name="VALMODingameMenu" /> -->
 		</window_group>
 		

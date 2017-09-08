@@ -4257,7 +4257,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="shortMetalPipe" count="4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="wood" count="15" tool_category="Disassemble"/>
 	-->
-	<drop event="Harvest" name="chemistryStation" count="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="chemistryStation" count="1" tool_category="Disassemble"/>
 	<!-- End Craftworx -->
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -5444,7 +5444,7 @@ kind of free
 	<drop event="Harvest" name="clayLump" count="20" tool_category="Disassemble"/>
 	<drop event="Harvest" name="leather" count="5" tool_category="Disassemble"/>
 	-->
-	<drop event="Harvest" name="forge" count="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="forge" count="1" tool_category="Disassemble"/>
 	<!-- End Craftworx -->
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
@@ -14079,7 +14079,7 @@ kind of free
 	<drop event="Harvest" name="spring" count="2" tool_category="Disassemble"/>
 	<drop event="Harvest" name="mechanicalParts" count="4" tool_category="Disassemble"/>
 	-->
-	<drop event="Harvest" name="cementMixer" count="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="cementMixer" count="1" tool_category="Disassemble"/>
 	<!-- End Craftworx -->
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
@@ -14156,7 +14156,7 @@ kind of free
 	<drop event="Harvest" name="mechanicalParts" count="8" tool_category="Disassemble"/>
 	<drop event="Harvest" name="wood" count="20" tool_category="Disassemble"/>
 	-->
-	<drop event="Harvest" name="workbench" count="1" tool_category="Disassemble"/>
+	<drop event="Destroy" name="workbench" count="1" tool_category="Disassemble" />
 	<!-- End Craftworx -->
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
