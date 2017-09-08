@@ -88,3 +88,8 @@ Adjusted harvest percentage bonus for Paul Bunyan to match that of Miner 69er
 Adjusted skill point multiplier for Paul Bunyan, Miner 69er to 1.26
 Fixed typo in magazinePopMech (thanks to Ghoulscoutcookie in the 7DtD forums)
 
+<----- 6 Sep 2017 ----->
+Craftworx 2.53
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod
+Fixed improperly coded harvesting of workbench, cement mixer, forge, chemistry station
+Added new ingame menu graphic with version number, new ingame HUD menu
