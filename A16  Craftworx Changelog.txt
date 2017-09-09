@@ -93,3 +93,4 @@ Craftworx 2.53
 Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod
 Fixed improperly coded harvesting of workbench, cement mixer, forge, chemistry station
 Added new ingame menu graphic with version number, new ingame HUD menu
+Added Valmod-style zombie kill counter to the HUD

@@ -128,7 +128,7 @@
 <!--		<window name="SMXUnitFrame2VALMOD" anchor="LeftBottom" /> -->	<!-- VALMOD UI -->				<!-- Disable this if you want to use the SIRMOD, SMX or SMX2 designs -->
 <!--		<window name="SMXUnitFrame3SIRMOD" anchor="LeftBottom" /> -->	<!-- SIRMOD UI -->				<!-- Disable this if you want to use the VALMOD, SMX or SMX2 designs -->
 <!--		<window name="SMXUnitFrame4SMX2" anchor="LeftBottom" /> -->		<!-- SMX2 UI -->				<!-- Disable this if you want to use the VALMOD, SIRMOD or SMX designs -->
-<!--		<window name="ZombieKillTrackerVALMOD" /> -->					<!-- VALMOD UI -->				<!-- Disable this if you want to use the SIRMOD design -->
+			<window name="ZombieKillTrackerVALMOD" /> 						<!-- VALMOD UI -->				<!-- Disable this if you want to use the SIRMOD design -->
 <!--		<window name="ZombieKillTrackerSIRMOD" /> -->					<!-- SIRMOD UI -->				<!-- Disable this if you want to use the VALMOD design -->
 <!--		<window name="SMXBuffFrame1" anchor="LeftBottom" /> -->			<!-- SMX UI -->					<!-- Standard Buff Frames - BIG - Disable this is you want to use any other design -->
 <!-- 		<window name="SMXBuffFrame2" anchor="LeftBottom" />	-->			<!-- SMX UI -->					<!-- Standard Buff Frames - SMALL - Disable this is you want to use any other design -->
