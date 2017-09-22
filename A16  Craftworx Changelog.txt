@@ -94,3 +94,9 @@ Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life an
 Fixed improperly coded harvesting of workbench, cement mixer, forge, chemistry station
 Added new ingame menu graphic with version number, new ingame HUD menu
 Added Valmod-style zombie kill counter to the HUD
+
+<----- 22 Sep 2017 ----->
+Craftworx 2.54
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod
+*Really* fixed harvesting workstations. Hopefully for the last time...
+Updated Craftworx logo for better visibility
