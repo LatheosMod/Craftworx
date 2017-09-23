@@ -100,3 +100,8 @@ Craftworx 2.54
 Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod
 *Really* fixed harvesting workstations. Hopefully for the last time...
 Updated Craftworx logo for better visibility
+
+<----- 22 Sep 2017 ----->
+Craftworx 2.55
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod
+Third time's the charm? Fixed harvesting on workbench, cement mixer, forge, chemistry station

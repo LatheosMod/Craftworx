@@ -4248,9 +4248,10 @@ group desc for stuff like metal siding
 		<property name="shortMetalPipe" value="10"/>
 		<property name="wood" value="40"/>
 	</property>
-  <drop event="Destroy" name="wood" count="5,15" prob="1" tool_category="harvestingTools"/>
-  <drop event="Destroy" name="scrapIron" count="30,75" prob="1" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="chemistryStation" count="1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+	<!-- <drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/> -->
+	<drop event="Harvest" name="chemistryStation" count="1" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="Group" value="Food/Cooking,Building,Science"/>
@@ -5428,7 +5429,10 @@ kind of free
 		<property name="clayLump" value="50"/>
 		<property name="leather" value="20"/>
 	</property>
-	<drop event="Destroy" name="forge" count="1" tool_category="harvestingTools"/>
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+	<!-- <drop event="Harvest" name="clayLump" count="200" tool_category="harvestingTools"/> -->
+	<drop event="Harvest" name="forge" count="1" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0" />
 	<drop event="Fall" name="destroyedStone" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="Group" value="Basics,Building"/>
@@ -14055,8 +14059,10 @@ kind of free
 		<property name="spring" value="4"/>
 		<property name="mechanicalParts" value="10"/>
 	</property>
-  <drop event="Destroy" name="scrapIron" count="240,400" tool_category="harvestingTools"/>
-  <drop event="Destroy" name="cementMixer" count="1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+	<!-- <drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/> -->
+	<drop event="Harvest" name="cementMixer" count="1" tool_category="Disassemble"/>
+	<drop event="Destroy" count="0" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="DescriptionKey" value="cementMixerDesc"/>
@@ -14123,9 +14129,10 @@ kind of free
 		<property name="mechanicalParts" value="5"/>
 		<property name="wood" value="50"/>
 	</property>
-  <drop event="Destroy" name="wood" count="20" prob="1" tool_category="harvestingTools"/>
-  <drop event="Destroy" name="scrapIron" count="240,400" prob="1" tool_category="harvestingTools"/>
-  <drop event="Destroy" name="workbench" count="1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="" count="0" tool_category="Disassemble" />
+	<drop event="Harvest" name="workbench" count="1" tool_category="Disassemble"/>
+	<!-- <drop event="Harvest" name="scrapIron" count="200" tool_category="harvestingTools"/> -->
+	<drop event="Destroy" count="0" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="DescriptionKey" value="workbenchDesc"/>
