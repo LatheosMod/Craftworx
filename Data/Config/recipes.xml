@@ -86,31 +86,31 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- * * * * * * * * * * * * main recipes * * * * * * * * * * * * -->
 
-<recipe name="44MagBullet" count="1" craft_area="workbench">
+<recipe name="44MagBullet" count="1" craft_area="workbench" craft_tool="calipers">
 	<ingredient name="bulletTip" count="1"/>
 	<ingredient name="gunPowder" count="3"/>
 	<ingredient name="bulletCasing" count="1"/>
 </recipe>
 
-<recipe name="762mmBullet" count="1" craft_area="workbench">
+<recipe name="762mmBullet" count="1" craft_area="workbench" craft_tool="calipers">
 	<ingredient name="bulletTip" count="1"/>
 	<ingredient name="gunPowder" count="3"/>
 	<ingredient name="bulletCasing" count="1"/>
 </recipe>
 
-<recipe name="9mmBullet" count="1" craft_area="workbench">
+<recipe name="9mmBullet" count="1" craft_area="workbench" craft_tool="calipers">
 	<ingredient name="bulletTip" count="1"/>
 	<ingredient name="gunPowder" count="1"/>
 	<ingredient name="bulletCasing" count="1"/>
 </recipe>
 
-<recipe name="shotgunShell" count="1" craft_area="workbench">
+<recipe name="shotgunShell" count="1" craft_area="workbench" craft_tool="calipers">
 	<ingredient name="buckshot" count="1"/>
 	<ingredient name="gunPowder" count="2"/>
 	<ingredient name="paper" count="1"/>
 </recipe>
 
-<recipe name="shotgunSlug" count="1" craft_area="workbench">
+<recipe name="shotgunSlug" count="1" craft_area="workbench" craft_tool="calipers">
 	<ingredient name="bulletTip" count="5"/>
 	<ingredient name="gunPowder" count="4"/>
 	<ingredient name="bulletCasing" count="3"/>
@@ -494,6 +494,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="partsChainsaw_parts" count="1"/>
 	<ingredient name="partsChainsaw_blade" count="1"/>
 </recipe>
+
   <!-- Craftworx - QoLaFIM A16.2 - changed recipe -->
 <recipe name="partsChainsaw_blade" count="1" craft_area="workbench">
   <ingredient name="forgedSteel" count="4"/>
@@ -976,7 +977,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="scrapPlastics" count="4"/>
 </recipe>
 
-<recipe name="explodingCrossbowBolt" count="1" craft_area="workbench">
+<recipe name="explodingCrossbowBolt" count="1" craft_area="workbench" craft_tool="fletchingJig">
 	<ingredient name="steelArrowHead" count="1"/>
 	<ingredient name="gunPowder" count="8"/>
 	<ingredient name="ductTape" count="1"/>
@@ -1020,10 +1021,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
   <!-- QoLaFIM A16.2 - new recipe added! -->
-  <recipe name="bloodDrawKit" count="1" craft_area="chemistryStation">
+<recipe name="bloodDrawKit" count="1" craft_area="chemistryStation">
     <ingredient name="scrapPlastics" count="4"/>
     <ingredient name="scrapIron" count="2"/>
-  </recipe>
+</recipe>
+  
 <recipe name="firstAidKit" count="1" craft_area="chemistryStation">
 	<ingredient name="bloodBag" count="1"/>
 	<ingredient name="grainAlcohol" count="1"/>
@@ -1031,7 +1033,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="ductTape" count="1"/>
 </recipe>
 
-<recipe name="flamingArrow" count="1" craft_area="workbench">
+<recipe name="flamingArrow" count="1" craft_area="workbench" craft_tool="fletchingJig">
 	<ingredient name="steelArrow" count="1"/>
 	<ingredient name="gasCan" count="5"/>
 	<ingredient name="cloth" count="1"/>
@@ -1069,6 +1071,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="forgedSteel" count="5"/>
 	<ingredient name="glue" count="1"/>
 	</recipe>
+	
 <recipe name="garageDoorMetal_v1" count="1" craft_area="workbench">
 	<ingredient name="scrapIron" count="600"/>
 	<ingredient name="spring" count="6"/>
@@ -1161,6 +1164,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_iron" count="50"/>
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
+
 <recipe name="glassBulletproofPlate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
 	<ingredient name="unit_glass" count="80"/>
 	<ingredient name="unit_stone" count="10"/>
@@ -1168,6 +1172,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_iron" count="50"/>
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
+
 <recipe name="glassBulletproofCTRPlate" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
 	<ingredient name="unit_glass" count="80"/>
 	<ingredient name="unit_stone" count="10"/>
@@ -1175,6 +1180,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_iron" count="50"/>
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
+
 <recipe name="glassBulletproofPlateCurved" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
 	<ingredient name="unit_glass" count="80"/>
 	<ingredient name="unit_stone" count="10"/>
@@ -1182,6 +1188,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_iron" count="50"/>
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
+
 <recipe name="glassBulletproofRamp" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
 	<ingredient name="unit_glass" count="80"/>
 	<ingredient name="unit_stone" count="10"/>
@@ -1386,27 +1393,27 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="20"/>
 </recipe>
 
-<recipe name="ironBoots" count="1" craft_area="workbench">
+<recipe name="ironBoots" count="1" craft_area="workbench" craft_tool="drillPress">
 	<ingredient name="forgedIron" count="10"/>
 	<ingredient name="leather" count="3"/>
 </recipe>
 
-<recipe name="ironChestArmor" count="1" craft_area="workbench">
+<recipe name="ironChestArmor" count="1" craft_area="workbench" craft_tool="drillPress">
 	<ingredient name="forgedIron" count="25"/>
 	<ingredient name="leather" count="5"/>
 </recipe>
 
-<recipe name="ironGloves" count="1" craft_area="workbench">
+<recipe name="ironGloves" count="1" craft_area="workbench" craft_tool="drillPress">
 	<ingredient name="forgedIron" count="8"/>
 	<ingredient name="leather" count="3"/>
 </recipe>
 
-<recipe name="ironHelmet" count="1" craft_area="workbench">
+<recipe name="ironHelmet" count="1" craft_area="workbench" craft_tool="drillPress">
 	<ingredient name="forgedIron" count="12"/>
 	<ingredient name="leather" count="3"/>
 </recipe>
 
-<recipe name="ironLegArmor" count="1" craft_area="workbench">
+<recipe name="ironLegArmor" count="1" craft_area="workbench" craft_tool="drillPress">
 	<ingredient name="forgedIron" count="20"/>
 	<ingredient name="leather" count="5"/>
 </recipe>
@@ -1699,10 +1706,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
   <!-- QoLaFIM A16.2 - new recipe added! -->
-  <recipe name="shoppingBasketItem" count="1" craft_area="workbench">
+<recipe name="shoppingBasketItem" count="1" craft_area="workbench">
     <ingredient name="scrapPlastics" count="15"/>
     <ingredient name="forgedIron" count="2"/>
-  </recipe>
+</recipe>
+
 <recipe name="plantedMushroom1" count="2" craft_time="2">
 	<ingredient name="mushrooms" count="2"/>
 	<ingredient name="dirtFragment" count="1"/>
@@ -1722,7 +1730,6 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="oil" count="1" craft_area="chemistryStation">
 	<ingredient name="oilShale" count="4"/>
-
 </recipe>
 
 <recipe name="officeChair01" count="1">
@@ -1864,7 +1871,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="ductTape" count="1"/>
 </recipe>
 
-<recipe name="rocket" count="1" craft_area="workbench">
+<recipe name="rocket" count="1" craft_area="workbench" craft_tool="calipers">
 	<ingredient name="rocketTip" count="1"/>
 	<ingredient name="gunPowder" count="16"/>
 	<ingredient name="ductTape" count="3"/>
@@ -1899,19 +1906,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="coal" count="4"/>
 </recipe>
 
-<recipe name="scrapBoots" count="1">
+<recipe name="scrapBoots" count="1" craft_area="workbench" craft_tool="drillPress">
 	<ingredient name="scrapIron" count="250"/>
 	<ingredient name="leather" count="2"/>
 	<ingredient name="ductTape" count="1"/>
 </recipe>
 
-<recipe name="scrapChestArmor" count="1">
+<recipe name="scrapChestArmor" count="1" craft_area="workbench" craft_tool="drillPress">
 	<ingredient name="scrapIron" count="650"/>
 	<ingredient name="leather" count="5"/>
 	<ingredient name="ductTape" count="3"/>
 </recipe>
 
-<recipe name="scrapGloves" count="1">
+<recipe name="scrapGloves" count="1" craft_area="workbench" craft_tool="drillPress">
 	<ingredient name="scrapIron" count="150"/>
 	<ingredient name="leather" count="2"/>
 	<ingredient name="ductTape" count="1"/>
@@ -1925,7 +1932,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="scrapPlastics" count="4"/>
 </recipe>
 
-<recipe name="miningHelmet" count="1" craft_area="workbench">
+<recipe name="miningHelmet" count="1" craft_area="workbench" craft_tool="drillPress">
 	<ingredient name="footballHelmet" count="1"/>
 	<ingredient name="flashlight02" count="1"/>
 	<ingredient name="electricParts" count="8"/>
@@ -1934,20 +1941,21 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
   <!-- Craftworx - QoLaFIM A16.2 - alternate mining helmet recipe -->
-  <recipe name="miningHelmet" count="1" craft_area="workbench">
+  <recipe name="miningHelmet" count="1" craft_area="workbench" craft_tool="drillPress">
     <ingredient name="forgedIron" count="4"/>
     <ingredient name="flashlight02" count="1"/>
     <ingredient name="electricParts" count="8"/>
     <ingredient name="ductTape" count="5"/>
     <ingredient name="scrapPlastics" count="12"/>
   </recipe>
-<recipe name="scrapHelmet" count="1">
+  
+<recipe name="scrapHelmet" count="1" craft_area="workbench" craft_tool="drillPress">
 	<ingredient name="scrapIron" count="275"/>
 	<ingredient name="leather" count="2"/>
 	<ingredient name="ductTape" count="1"/>
 </recipe>
 
-<recipe name="scrapLegArmor" count="1">
+<recipe name="scrapLegArmor" count="1" craft_area="workbench" craft_tool="drillPress">
 	<ingredient name="scrapIron" count="400"/>
 	<ingredient name="leather" count="5"/>
 	<ingredient name="ductTape" count="3"/>
@@ -2091,10 +2099,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="ductTape" count="1"/>
 </recipe>
 
-<recipe name="steelArrow" count="1">
+<recipe name="steelArrow" count="1" craft_area="workbench" craft_tool="fletchingJig">
 	<ingredient name="steelArrowHead" count="1"/>
 	<ingredient name="wood" count="1"/>
-	<ingredient name="feather" count="1"/>
+	<ingredient name="glue" count="1"/>
+	<ingredient name="scrapPlastics" count="6"/>
 </recipe>
 
 <recipe name="steelArrowHead" count="1" craft_area="forge" craft_tool="forgeCrucible" material_based="true">
@@ -2102,10 +2111,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="1"/>
 </recipe>
 
-<recipe name="steelCrossbowBolt" count="1">
+<recipe name="steelCrossbowBolt" count="1" craft_area="workbench" craft_tool="fletchingJig">
 	<ingredient name="steelArrowHead" count="1"/>
 	<ingredient name="wood" count="1"/>
-	<ingredient name="feather" count="1"/>
+	<ingredient name="glue" count="1"/>
+	<ingredient name="scrapPlastics" count="6"/>
 </recipe>
 
 <recipe name="stone" count="1" craft_area="cementMixer">
@@ -2154,6 +2164,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="cloth" count="1"/>
 	<ingredient name="wood" count="1"/>
 </recipe>
+
 <recipe name="trapSpikesNew" count="1"> <!-- trap -->
 	<ingredient name="wood" count="20"/>
 </recipe>
@@ -2564,14 +2575,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="mechanicalParts" count="1"/>
 </recipe>
 
-
-
 <recipe name="generatorbank" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="10"/>
 	<ingredient name="mechanicalParts" count="10"/>
 	<ingredient name="electricParts" count="10"/>
 	<ingredient name="electronicParts" count="4"/>
 </recipe>
+
 <recipe name="batterybank" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="10"/>
 	<ingredient name="electricParts" count="8"/>
@@ -2588,30 +2598,36 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="4"/>
 </recipe>
+
 <recipe name="porchLight01_player" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="6"/>
 </recipe>
+
 <recipe name="wallLight01_player" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="6"/>
 </recipe>
+
 <recipe name="ceilingLight02_player" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="7"/>
 </recipe>
+
 <recipe name="industrialLight01_player" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="5"/>
 	<ingredient name="electronicParts" count="3"/>
 	<ingredient name="scrapPlastics" count="1"/>
 </recipe>
+
 <recipe name="ceilingLight07_player" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="5"/>
 	<ingredient name="electronicParts" count="3"/>
 	<ingredient name="scrapPlastics" count="3"/>
 </recipe>
+
 <recipe name="spotlightPlayer" count="1" craft_area="workbench">
 	<ingredient name="headlight" count="1"/>
 	<ingredient name="electricParts" count="8"/>
@@ -2623,51 +2639,61 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="forgedIron" count="4"/>
 	<ingredient name="electricParts" count="3"/>
 </recipe>
+
 <recipe name="switch" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="mechanicalParts" count="1"/>
 	<ingredient name="electricParts" count="1"/>
 </recipe>
+
 <recipe name="pressureplate" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="4"/>
 	<ingredient name="mechanicalParts" count="2"/>
 	<ingredient name="electricParts" count="2"/>
 </recipe>
+
 <recipe name="pressureplateLong" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="20"/>
 	<ingredient name="mechanicalParts" count="6"/>
 	<ingredient name="electricParts" count="4"/>
 </recipe>
+
 <recipe name="tripwirepost" count="1" craft_area="workbench">
 	<ingredient name="wood" count="5"/>
 	<ingredient name="electricParts" count="1"/>
 </recipe>
+
 <recipe name="electrictimerrelay" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="electricParts" count="2"/>
 	<ingredient name="electronicParts" count="3"/>
 </recipe>
+
 <recipe name="motionsensor" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="2"/>
 	<ingredient name="mechanicalParts" count="1"/>
 	<ingredient name="electricParts" count="2"/>
 	<ingredient name="electronicParts" count="3"/>
 </recipe>
+
 <recipe name="electricfencepost" count="1" craft_area="workbench">
 	<ingredient name="forgedIron" count="5"/>
 	<ingredient name="electricParts" count="2"/>
 </recipe>
+
 <recipe name="bladeTrap" count="1" craft_area="workbench"> <!-- trap -->
 	<ingredient name="forgedIron" count="10"/>
 	<ingredient name="forgedSteel" count="10"/>
 	<ingredient name="mechanicalParts" count="8"/>
 	<ingredient name="electricParts" count="6"/>
 </recipe>
+
 <recipe name="dartTrap" count="1" craft_area="workbench"> <!-- trap -->
 	<ingredient name="forgedIron" count="20"/>
 	<ingredient name="mechanicalParts" count="6"/>
 	<ingredient name="electricParts" count="4"/>
 </recipe>
+
 <recipe name="steelDart" count="1" craft_area="forge" craft_tool="anvil" material_based="true">
 	<ingredient name="unit_iron" count="15"/>
 	<ingredient name="unit_clay" count="1"/>
@@ -2680,6 +2706,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="partsPumpShotgun_parts" count="1"/>
 	<ingredient name="mechanicalParts" count="6"/>
 </recipe>
+
 <recipe name="autoTurret" count="1" craft_area="workbench"> <!-- trap -->
 	<ingredient name="motionsensor" count="1"/>
 	<ingredient name="partsMP5_barrel" count="1"/>
@@ -2740,8 +2767,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- Craftworx -->
 
 <!-- Weapons -->
-<recipe name="ironBow" count="1" scrapable="True" craft_area="workbench" >
-
+<recipe name="ironBow" count="1" scrapable="True" craft_area="workbench">
 	<ingredient name="forgedIron" count="12" />
 	<ingredient name="springCable" count="2" />
 	<ingredient name="leather" count="5" />
@@ -2760,7 +2786,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="yuccaFibers" count="4"/>
 </recipe>
 
-<recipe name="gunscopedHuntingRifle" count="1" scrapable="True" craft_area="assembly" >
+<recipe name="gunscopedHuntingRifle" count="1" scrapable="True" craft_area="assembly">
 	<ingredient name="flashlight02" count="0" />
 	<ingredient name="partsHuntingRifle_barrel" count="1" />
 	<ingredient name="partsHuntingRifle_stock" count="1" />
@@ -2768,7 +2794,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="partsscopedHuntingRifle_parts" count="1" />
 </recipe>
 
-<recipe name="gunsuppressedHuntingRifle" count="1" scrapable="True" craft_area="assembly" >
+<recipe name="gunsuppressedHuntingRifle" count="1" scrapable="True" craft_area="assembly">
     <ingredient name="flashlight02" count="0" />
     <ingredient name="partssuppressedhuntingRifle_barrel" count="1" />
     <ingredient name="partsHuntingRifle_stock" count="1" />
@@ -2776,7 +2802,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="partsHuntingRifle_parts" count="1" />
 </recipe>
 
-<recipe name="gunQscopedHuntingRifle" count="1" scrapable="True" craft_area="assembly" >
+<recipe name="gunQscopedHuntingRifle" count="1" scrapable="True" craft_area="assembly">
     <ingredient name="flashlight02" count="0" />
     <ingredient name="partssuppressedhuntingRifle_barrel" count="1" />
     <ingredient name="partsHuntingRifle_stock" count="1" />
@@ -2784,7 +2810,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="partsscopedHuntingRifle_parts" count="1" />
 </recipe>
 
-<recipe name="gunsuppressedSniperRifle" count="1" scrapable="True" craft_area="assembly" >
+<recipe name="gunsuppressedSniperRifle" count="1" scrapable="True" craft_area="assembly">
     <ingredient name="flashlight02" count="0" />
     <ingredient name="partsSniperRifle_stock" count="1" />
     <ingredient name="partsSniperRifle_receiver" count="1" />
@@ -2792,7 +2818,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="partsSniperRifle_parts" count="1" />
 </recipe> 
 	
-<recipe name="gunsuppressedPistol" count="1" scrapable="True" craft_area="assembly" >
+<recipe name="gunsuppressedPistol" count="1" scrapable="True" craft_area="assembly">
     <ingredient name="flashlight02" count="0" />
     <ingredient name="partsPistol_parts" count="1" />
     <ingredient name="partssuppressedpistol_barrel" count="1" />
@@ -2800,7 +2826,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="partsPistol_grip" count="1" />
 </recipe>
 
-<recipe name="gunsuppressedMP5" count="1" scrapable="True" craft_area="assembly" >
+<recipe name="gunsuppressedMP5" count="1" scrapable="True" craft_area="assembly">
 	<ingredient name="flashlight02" count="0" />
 	<ingredient name="partsMP5_stock" count="1" />
 	<ingredient name="partsMP5_receiver" count="1" />
@@ -2832,7 +2858,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="partsscopedAK47_parts" count="1"/>
 </recipe>
 
-<recipe name="kukri" count="1" scrapable="true">
+<recipe name="kukri" count="1" scrapable="true" craft_area="workbench">
 	<ingredient name="carbonSteel" count="8" />
 	<ingredient name="wood" count="5" />
 </recipe>
@@ -2851,7 +2877,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="tallow" count="5"/>
 </recipe>
 
-<recipe name="gunflamethrower" count="1" scrapable="True" craft_time="5" craft_area="assembly" >
+<recipe name="gunflamethrower" count="1" scrapable="True" craft_time="5" craft_area="assembly">
     <ingredient name="partsflamethrower_Fueltank" count="1"/>
     <ingredient name="partsflamethrower_Hose" count="1"/>
     <ingredient name="partsflamethrower_Barrel" count="1"/>
@@ -2877,10 +2903,29 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="yuccaFibers" count="5"/>
 	<ingredient name="wood" count="3"/>
 </recipe>
+
+<recipe name="calipers" count="1" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
+	<ingredient name="unit_iron" count="10"/>
+	<ingredient name="unit_lead" count="2"/>
+	<ingredient name="unit_brass" count="5"/>
+</recipe>
+
+<recipe name="fletchingJig" count="1" scrapable="false" craft_area="workbench">
+	<ingredient name="forgedIron" count="10" />
+	<ingredient name="scrapPlastics" count="20"/>
+	<ingredient name="mechanicalParts" count="5"/>
+</recipe>
+
+<recipe name="drillPress" count="1" scrapable="true" craft_area="workbench">
+	<ingredient name="forgedIron" count="25" />
+	<ingredient name="mechanicalParts" count="10"/>
+    <ingredient name="electronicParts" count="10"/>
+    <ingredient name="electricParts" count="10"/>
+</recipe>
 <!-- End Tools -->
 
 <!-- Miscellaneous Items -->
-<recipe name="beaker" count="1" scrapable="False" craft_area="forge" material_based="true" >
+<recipe name="beaker" count="1" scrapable="False" craft_area="forge" material_based="true">
 	<ingredient name="unit_glass" count="30" />
     <ingredient name="unit_clay" count="10" />
 	<ingredient name="unit_lead" count="10"/>
@@ -2890,7 +2935,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="spring" count="5" />
 </recipe> 
 
-<recipe name="refinedCoal" count="1" scrapable="False" craft_area="chemistryStation" >
+<recipe name="refinedCoal" count="1" scrapable="False" craft_area="chemistryStation">
     <ingredient name="coal" count="25" />
 </recipe>
 
@@ -2912,14 +2957,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- End Miscellaneous Items -->
 
 <!-- Parts -->
-<recipe name="partscrossbowStock" count="1" scrapable="False" craft_area="workbench" >
+<recipe name="partscrossbowStock" count="1" scrapable="False" craft_area="workbench">
 	<ingredient name="wood" count="15"/>
 	<ingredient name="Sandpaper" count="3"/>
 	<ingredient name="glue" count="5"/>
 	<ingredient name="spring" count="2"/>
 </recipe>
 	
-<recipe name="partscrossbowLimb" count="1" scrapable="False" craft_area="workbench" >
+<recipe name="partscrossbowLimb" count="1" scrapable="False" craft_area="workbench">
 	<ingredient name="forgedIron" count="20"/>
 	<ingredient name="mechanicalParts" count="10"/>
 	<ingredient name="springCable" count="2"/>
@@ -2937,18 +2982,18 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_glass" count="40"/>
 </recipe>
 
-<recipe name="partsscopedHuntingRifle_parts" count="1" scrapable="True" >
+<recipe name="partsscopedHuntingRifle_parts" count="1" scrapable="True">
 	<ingredient name="partsrifleScope" count="1" />
 	<ingredient name="partsHuntingRifle_parts" count="1" />
 </recipe>
 
-<recipe name="partsrifleScope" count="1" scrapable="True" craft_area="forge" material_based="true" >
+<recipe name="partsrifleScope" count="1" scrapable="True" craft_area="forge" material_based="true">
 	<ingredient name="unit_brass" count="50"/>
 	<ingredient name="unit_clay" count="15"/>
 	<ingredient name="unit_glass" count="40"/>
 </recipe>	
 
-<recipe name="partsSuppressor" count="1" scrapable="True" >
+<recipe name="partsSuppressor" count="1" scrapable="True">
     <ingredient name="shortMetalPipe" count="2" />
     <ingredient name="cloth" count="10" />
     <ingredient name="electronicParts" count="10" />
@@ -2979,28 +3024,28 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="partsSuppressor" count="1" />
 </recipe>
 
-<recipe name="partsscopedAK47_parts" count="1" scrapable="True" >
+<recipe name="partsscopedAK47_parts" count="1" scrapable="True">
 	<ingredient name="partsrifleScope" count="1" />
 	<ingredient name="partsAK47_parts" count="1" />
 </recipe>
 
-<recipe name="partsPoopCannonBarrel" count="1" scrapable="False" >
+<recipe name="partsPoopCannonBarrel" count="1" scrapable="False">
     <ingredient name="forgedIron" count="2"/>
 	<ingredient name="shortMetalPipe" count="8"/>
 </recipe>
 	
-<recipe name="partsPoopCannonReceiver" count="1" scrapable="False" >
+<recipe name="partsPoopCannonReceiver" count="1" scrapable="False">
     <ingredient name="spring" count="1"/>
     <ingredient name="forgedIron" count="4"/>
 </recipe>
 	
-<recipe name="partsPoopCannonParts" count="1" scrapable="False" >
+<recipe name="partsPoopCannonParts" count="1" scrapable="False">
     <ingredient name="wood" count="10"/>
     <ingredient name="forgedIron" count="4"/>
     <ingredient name="spring" count="2"/>
 </recipe>
 	
-<recipe name="partsPoopCannonStock" count="1" scrapable="False" >
+<recipe name="partsPoopCannonStock" count="1" scrapable="False">
     <ingredient name="wood" count="10"/>
 	<ingredient name="scrapIron" count="10"/>
 	<ingredient name="Sandpaper" count="3"/>
@@ -3014,49 +3059,49 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="ironCrossbowBolt" count="1"/>
 </recipe>
 
-<recipe name="fertilizerRound" count="1" scrapable="False">
+<recipe name="fertilizerRound" count="1" scrapable="False" craft_area="workbench" craft_tool="calipers">
 	<ingredient name="turd" count="1"/>
 	<ingredient name="clayLump" count="1"/> 
 	<ingredient name="steelCrossbowBolt" count="1"/>
 	<ingredient name="gunPowder" count="15"/>
 </recipe>
 	
-<recipe name="ironArrow" count="1" scrapable="False" craft_area="workbench" >
+<recipe name="ironArrow" count="1" scrapable="False" craft_area="workbench">
     <ingredient name="arrow" count="1" />
     <ingredient name="ironArrowHead" count="1" />
 </recipe>
 
-<recipe name="steelArrow" count="1" scrapable="False" craft_area="workbench" >
+<recipe name="steelArrow" count="1" scrapable="False" craft_area="workbench" craft_tool="fletchingJig">
     <ingredient name="arrow" count="1" />
     <ingredient name="steelArrowHead" count="1" />
 </recipe>
 
-<recipe name="steelArrow" count="1" scrapable="False" craft_area="workbench" >
+<recipe name="steelArrow" count="1" scrapable="False" craft_area="workbench" craft_tool="fletchingJig">
     <ingredient name="ironArrow" count="1" />
     <ingredient name="steelArrowHead" count="1" />
 </recipe>
 
-<recipe name="steelCrossbowBolt" count="1" scrapable="False" craft_area="workbench" >
+<recipe name="steelCrossbowBolt" count="1" scrapable="False" craft_area="workbench" craft_tool="fletchingJig">
     <ingredient name="ironCrossbowBolt" count="1" />
     <ingredient name="steelArrowHead" count="1" />
 </recipe>
 
-<recipe name="ironArrowHead" count="1" scrapable="True" craft_area="workbench" >
+<recipe name="ironArrowHead" count="1" scrapable="True" craft_area="workbench">
     <ingredient name="ironArrow" count="1" />
 </recipe>
 
-<recipe name="steelArrowHead" count="1" scrapable="True" craft_area="workbench" >
+<recipe name="steelArrowHead" count="1" scrapable="True" craft_area="workbench">
     <ingredient name="steelArrow" count="1" />
 </recipe>
 
-<recipe name="flamingBolt" count="1" craft_area="workbench">
+<recipe name="flamingBolt" count="1" craft_area="workbench" craft_tool="fletchingJig">
 	<ingredient name="steelCrossbowBolt" count="1"/>
 	<ingredient name="oil" count="2"/>
 	<ingredient name="cloth" count="1"/>
 	<ingredient name="tallow" count="1"/>
 </recipe>
 
-<recipe name="napalm" count="1" scrapable="False" craft_area="chemistryStation" craft_time="150" learn_exp_gain="80" craft_exp_gain="200" >
+<recipe name="napalm" count="1" scrapable="False" craft_area="chemistryStation" craft_time="150">
     <ingredient name="oil" count="1"/>
     <ingredient name="gasCan" count="1"/>
 	<ingredient name="glue" count="1"/>
@@ -3064,85 +3109,85 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- End Ammunition -->
 
 <!-- Lighted Helmets -->
-<recipe name="clothHatLight" count="1" scrapable="False" >
+<recipe name="clothHatLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="clothHat" count="1" />
 </recipe>
 
-<recipe name="cowboyHatLight" count="1" scrapable="False" >
+<recipe name="cowboyHatLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="cowboyHat" count="1" />
 </recipe>
 
-<recipe name="blackCowboyHatLight" count="1" scrapable="False" >
+<recipe name="blackCowboyHatLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="blackCowboyHat" count="1" />
 </recipe>
 	
-<recipe name="footballHelmetLight" count="1" scrapable="False" >
+<recipe name="footballHelmetLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="footballHelmet" count="1" />
 </recipe>
 
-<recipe name="footballHelmetZULight" count="1" scrapable="False" >
+<recipe name="footballHelmetZULight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="footballHelmetZU" count="1" />
 </recipe>
 
-<recipe name="ironHelmetLight" count="1" scrapable="False" >
+<recipe name="ironHelmetLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="ironHelmet" count="1" />
 </recipe>
 	
-<recipe name="militaryHelmetLight" count="1" scrapable="False" >
+<recipe name="militaryHelmetLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="militaryHelmet" count="1" />
 </recipe>
 	
-<recipe name="leatherHoodLight" count="1" scrapable="False" >
+<recipe name="leatherHoodLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="leatherHood" count="1" />
 </recipe>
 	
-<recipe name="scrapHelmetLight" count="1" scrapable="False" >
+<recipe name="scrapHelmetLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="scrapHelmet" count="1" />
 </recipe>
 			
-<recipe name="swatHelmetLight" count="1" scrapable="False" >
+<recipe name="swatHelmetLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="swatHelmet" count="1" />
 </recipe>
 
-<recipe name="plantFiberHatLight" count="1" scrapable="False" >
+<recipe name="plantFiberHatLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="plantFiberHat" count="1" />
 </recipe>
 
-<recipe name="heavyBanditGasmaskLight" count="1" scrapable="False" >
+<recipe name="heavyBanditGasmaskLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="heavyBanditGasmask" count="1" />
 </recipe>
 
-<recipe name="hazmatMaskLight" count="1" scrapable="False" >
+<recipe name="hazmatMaskLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="hazmatMask" count="1" />
 </recipe>
 
-<recipe name="animalHideHoodLight" count="1" scrapable="False" >
+<recipe name="animalHideHoodLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="animalHideHood" count="1" />
@@ -3225,151 +3270,142 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- End Tinker Tailor -->
 
 <!-- New furniture and container recipes courtesy of QoLaFIM -->
-<recipe name="cntGraniteSink" count="1" craft_area="workbench">
-  <ingredient name="cntCabinet" count="1"/>
-  <ingredient name="forgedIron" count="3"/>
-  <ingredient name="shortMetalPipe" count="4"/>
-  <ingredient name="mechanicalParts" count="1"/>
+<recipe name="workingCabinetSink" count="1" scrapable="False" >
+	<ingredient name="wood" count="15" />
+	<ingredient name="forgedIron" count="10"/>
+	<ingredient name="shortMetalPipe" count="5"/>
 </recipe>
 
-  <recipe name="cntBookcase" count="1" craft_area="workbench">
-    <ingredient name="wood" count="10"/>
-    <ingredient name="paper" count="100"/>
-  </recipe>
+<recipe name="electricOven" count="1" scrapable="False" >
+	<ingredient name="forgedIron" count="20" />
+	<ingredient name="cookingGrill" count="2" />
+	<ingredient name="electricParts" count="10"/>
+</recipe>
 
-  <recipe name="cntPillCase" count="1" craft_area="workbench">
+<recipe name="cntBookcase" count="1" craft_area="workbench">
+	<ingredient name="wood" count="10"/>
+    <ingredient name="paper" count="100"/>
+</recipe>
+
+<recipe name="cntPillCase" count="1" craft_area="workbench">
     <ingredient name="wood" count="10"/>
     <ingredient name="scrapPlastics" count="6"/>
-  </recipe>
+</recipe>
 
-  <recipe name="cntWallOven" count="1" craft_area="workbench">
-    <ingredient name="glassBusinessSheet" count="1"/>
-    <ingredient name="forgedIron" count="8"/>
-    <ingredient name="electricParts" count="4"/>
-    <ingredient name="mechanicalParts" count="2"/>
-  </recipe>
-
-  <recipe name="cntOven" count="1" craft_area="workbench">
-    <ingredient name="glassBusinessSheet" count="1"/>
-    <ingredient name="forgedIron" count="8"/>
-    <ingredient name="electricParts" count="4"/>
-    <ingredient name="mechanicalParts" count="2"/>
-  </recipe>
-
-  <recipe name="cntCoffin" count="1" craft_area="workbench">
+<recipe name="cntCoffin" count="1" craft_area="workbench">
     <ingredient name="wood" count="20"/>
     <ingredient name="nail" count="16"/>
-  </recipe>
+</recipe>
 
-  <recipe name="cntCardboardBox" count="1" craft_area="workbench">
+<recipe name="cntCardboardBox" count="1" craft_area="workbench">
     <ingredient name="paper" count="50"/>
     <ingredient name="ductTape" count="1"/>
-  </recipe>
+</recipe>
 
-  <recipe name="cntFileCabinet" count="1" craft_area="workbench">
+<recipe name="cntFileCabinet" count="1" craft_area="workbench">
     <ingredient name="forgedIron" count="5"/>
     <ingredient name="mechanicalParts" count="4"/>
-  </recipe>
+</recipe>
 
-  <recipe name="cntBin" count="1" craft_area="workbench">
+<recipe name="cntBin" count="1" craft_area="workbench">
     <ingredient name="forgedIron" count="2"/>
-  </recipe>
+</recipe>
 
-  <recipe name="cntTrash_can01" count="1" craft_area="workbench">
+<recipe name="cntTrash_can01" count="1" craft_area="workbench">
     <ingredient name="forgedIron" count="4"/>
-  </recipe>
+</recipe>
 
-  <recipe name="faucet02" count="1" craft_area="forge" material_based="true">
+<recipe name="faucet02" count="1" craft_area="forge" material_based="true">
     <ingredient name="unit_iron" count="120"/>
     <ingredient name="unit_clay" count="4"/>
-  </recipe>
+</recipe>
 
-  <recipe name="faucet04" count="1" craft_area="forge" material_based="true">
+<recipe name="faucet04" count="1" craft_area="forge" material_based="true">
     <ingredient name="unit_iron" count="80"/>
     <ingredient name="unit_clay" count="4"/>
-  </recipe>
+</recipe>
 
-  <recipe name="faucetBrass02" count="1" craft_area="forge" material_based="true">
+<recipe name="faucetBrass02" count="1" craft_area="forge" material_based="true">
     <ingredient name="unit_brass" count="25"/>
     <ingredient name="unit_clay" count="4"/>
-  </recipe>
+</recipe>
 
-  <recipe name="faucetBrass04" count="1" craft_area="forge" material_based="true">
+<recipe name="faucetBrass04" count="1" craft_area="forge" material_based="true">
     <ingredient name="unit_brass" count="16"/>
     <ingredient name="unit_clay" count="4"/>
-  </recipe>
+</recipe>
 
-  <recipe name="pew_segment01" count="1" craft_area="workbench">
+<recipe name="pew_segment01" count="1" craft_area="workbench">
     <ingredient name="wood" count="25"/>
     <ingredient name="nail" count="8"/>
-  </recipe>
+</recipe>
 
-  <recipe name="pew_segment02" count="1" craft_area="workbench">
+<recipe name="pew_segment02" count="1" craft_area="workbench">
     <ingredient name="wood" count="25"/>
     <ingredient name="nail" count="8"/>
-  </recipe>
+</recipe>
 
-  <recipe name="pew_segment03" count="1" craft_area="workbench">
+<recipe name="pew_segment03" count="1" craft_area="workbench">
     <ingredient name="wood" count="25"/>
     <ingredient name="nail" count="8"/>
-  </recipe>
+</recipe>
 
-  <recipe name="cntWashingMachine" count="1" craft_area="workbench">
+<recipe name="cntWashingMachine" count="1" craft_area="workbench">
     <ingredient name="electricParts" count="3"/>
     <ingredient name="forgedIron" count="6"/>
     <ingredient name="shortMetalPipe" count="6"/>
     <ingredient name="mechanicalParts" count="2"/>
-  </recipe>
+</recipe>
 
-  <recipe name="barStool" count="1" craft_area="workbench">
+<recipe name="barStool" count="1" craft_area="workbench">
     <ingredient name="forgedIron" count="3"/>
     <ingredient name="leather" count="4"/>
     <ingredient name="cottonPlant" count="6"/>
     <ingredient name="chrysanthemumPlant" count="1"/>
-  </recipe>
+</recipe>
 
-  <recipe name="curtain_top1Sheet3" count="1">
+<recipe name="curtain_top1Sheet3" count="1">
     <ingredient name="cloth" count="5"/>
     <ingredient name="scrapIron" count="20"/>
-  </recipe>
+</recipe>
 
-  <recipe name="curtain_bottom1Sheet3" count="1">
+<recipe name="curtain_bottom1Sheet3" count="1">
     <ingredient name="cloth" count="5"/>
-  </recipe>
+</recipe>
 
-  <recipe name="miniblindTopSheet" count="1">
+<recipe name="miniblindTopSheet" count="1">
     <ingredient name="scrapPlastics" count="5"/>
     <ingredient name="scrapIron" count="20"/>
-  </recipe>
+</recipe>
 
-  <recipe name="miniblindBottomSheet" count="1">
+<recipe name="miniblindBottomSheet" count="1">
     <ingredient name="scrapPlastics" count="5"/>
-  </recipe>
+</recipe>
 
-  <recipe name="commercialDoor1_v1" count="1" craft_area="workbench">
+<recipe name="commercialDoor1_v1" count="1" craft_area="workbench">
     <ingredient name="forgedIron" count="6"/>
     <ingredient name="mechanicalParts" count="2"/>
-  </recipe>
+</recipe>
 
-  <recipe name="commercialDoor2_v1" count="1" craft_area="workbench">
+<recipe name="commercialDoor2_v1" count="1" craft_area="workbench">
     <ingredient name="forgedIron" count="6"/>
     <ingredient name="mechanicalParts" count="2"/>
-  </recipe>
+</recipe>
 
-  <recipe name="commercialDoor4_v1" count="1" craft_area="workbench">
+<recipe name="commercialDoor4_v1" count="1" craft_area="workbench">
     <ingredient name="forgedIron" count="6"/>
     <ingredient name="mechanicalParts" count="2"/>
-  </recipe>
+</recipe>
 
-  <recipe name="houseFrontDoor1_v1" count="1">
+<recipe name="houseFrontDoor1_v1" count="1">
     <ingredient name="wood" count="10"/>
     <ingredient name="doorKnob" count="1"/>
-  </recipe>
+</recipe>
 
-  <recipe name="houseFrontDoor2_v1" count="1">
+<recipe name="houseFrontDoor2_v1" count="1">
     <ingredient name="wood" count="10"/>
     <ingredient name="doorKnob" count="1"/>
-  </recipe>
+</recipe>
 <!-- End New furniture and containers -->
 <!-- End Craftworx -->
 

@@ -2365,6 +2365,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="19"/>
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - stack size 250>500 -->
 <item id="156" name="shotgunShell">
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
@@ -2382,6 +2383,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 	<property name="Group" value="Ammo/Weapons"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - stack size 128>500 -->
 <item id="157" name="shotgunSlug">
 	<property name="Meshfile" value="Items/Weapons/Ranged/SawedOffPumpShotgun/shotgunShellPrefab"/>
@@ -4071,6 +4073,7 @@ Mesh files no longer used:
 		<property name="UISlot" value="ChestArmor"/>
 	</property>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - value raised to 540 -->
 <item id="386" name="ironHelmet"> <!-- ironArmor -->
 	<property name="Extends" value="ironBoots"/>
@@ -4094,6 +4097,7 @@ Mesh files no longer used:
 		<property name="Mask9" value="Eyes" param1="outer"/>
 	</property>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - value lowered to 330 -->
 <item id="387" name="ironGloves"> <!-- ironArmor -->
 	<property name="Extends" value="ironBoots"/>
@@ -7550,7 +7554,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="21"/>
 	<property name="Weight" value="5"/>
 	<property name="FuelValue" value="5"/>
-	<property name="Stacknumber" value="1"/> <!-- STK book -->
+	<property name="Stacknumber" value="10"/> <!-- STK book -->
 	<property name="EconomicValue" value="250"/>
 	<property class="Action1"> <!-- UseAction -->
 		<property name="Class" value="LearnRecipe"/>
@@ -9097,7 +9101,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 </item>
 
-<!-- Craftworx - A16 Better Balance Mod - Allow jars to be refilled with sink water -->
+<!-- Craftworx - A16 Working Ovens & Sinks - Fills from crafted working sink -->
 <item id="1368" name="emptyJar">
 	<property name="Meshfile" value="Items/Food/emptyJarPrefab"/>
 	<property name="Material" value="glass"/>
@@ -9116,9 +9120,8 @@ Mesh files no longer used:
 		<property name="Focused_blockname_3" value="waterStaticBucket"/>
 		<property name="Focused_blockname_4" value="waterMovingBucket"/>
 		<property name="Focused_blockname_5" value="waterSource8"/>
-		<!-- A16 Better Balance Mod -->
-		<property name="Focused_blockname_6" value="cntCabinetOldSink" />
-		<property name="Focused_blockname_7" value="cntGraniteSink" />
+		<!-- A16 Working Ovens and Sinks -->
+		<property name="Focused_blockname_6" value="workingCabinetSink" />
 		<property name="Sound_start" value="bucketfill_water"/>
 	</property>
 	<property name="Group" value="Resources"/>
@@ -9495,7 +9498,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
 
-<!--<item id="1446" name="calipers">
+<item id="1446" name="calipers">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 	<property name="HoldType" value="45"/>
@@ -9505,7 +9508,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="EconomicValue" value="2000"/>
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
-</item>-->
+</item>
 
 <item id="1447" name="toolAndDieSet">
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
@@ -10769,112 +10772,112 @@ Mesh files no longer used:
 <!-- End Scrap Tools -->
 
 <!-- Magazines -->
-<item id="2071" name="magazineMuscles">
+<item id="2071" name="magazineAthletics">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Athletics" />
     </property>
-	<property name="DescriptionKey" value="magazineMusclesDesc"/>
+	<property name="DescriptionKey" value="magazineAthleticsDesc"/>
 </item>
 
-<item id="2072" name="magazineRifleman">
+<item id="2072" name="magazineRiflery">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Rifles" />
     </property>
-	<property name="DescriptionKey" value="magazineRiflemanDesc"/>
+	<property name="DescriptionKey" value="magazineRifleryDesc"/>
 </item>
 
-<item id="2073" name="magazineGunsNAmmo">
+<item id="2073" name="magazineGunsmith">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftingSkillGuns" />
     </property>
-	<property name="DescriptionKey" value="magazineGunsNAmmoDesc"/>
+	<property name="DescriptionKey" value="magazineGunsmithDesc"/>
 </item>
 
-<item id="2074" name="magazineScavengers">
+<item id="2074" name="magazineScavenge">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Scavenging" />
     </property>
-	<property name="DescriptionKey" value="magazineScavengersDesc"/>
+	<property name="DescriptionKey" value="magazineScavengeDesc"/>
 </item>
 
-<item id="2075" name="magazineBaseballDig">
+<item id="2075" name="magazineBasher">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Blunt Weapons" />
     </property>
-	<property name="DescriptionKey" value="magazineBaseballDigDesc"/>
+	<property name="DescriptionKey" value="magazineBasherDesc"/>
 </item>
 
-<item id="2076" name="magazineBlades">
+<item id="2076" name="magazineSlasher">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Blade Weapons" />
     </property>
-	<property name="DescriptionKey" value="magazineBladesDesc"/>
+	<property name="DescriptionKey" value="magazineSlasherDesc"/>
 </item>
 
-<item id="2077" name="magazineMining">
+<item id="2077" name="magazineDigging">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Mining Tools" />
     </property>
-	<property name="DescriptionKey" value="magazineMiningDesc"/>
+	<property name="DescriptionKey" value="magazineDiggingDesc"/>
 </item>
 
-<item id="2078" name="magazineWood">
+<item id="2078" name="magazineCarpentry">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Carpentry" />
     </property>
-	<property name="DescriptionKey" value="magazineWoodDesc"/>
+	<property name="DescriptionKey" value="magazineCarpentryDesc"/>
 </item>
 
-<item id="2079" name="magazineHandyman">
+<item id="2079" name="magazineContractor">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Construction Tools" />
     </property>
-	<property name="DescriptionKey" value="magazineHandymanDesc"/>
+	<property name="DescriptionKey" value="magazineContractorDesc"/>
 </item>
 
-<item id="2080" name="magazineAmHandgun">
+<item id="2080" name="magazinePistol">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Pistols" />
     </property>
-	<property name="DescriptionKey" value="magazineAmHandgunDesc"/>
+	<property name="DescriptionKey" value="magazinePistolDesc"/>
 </item>
 
-<item id="2081" name="magazineShotSport">
+<item id="2081" name="magazineBoomstick">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Shotguns" />
     </property>
-	<property name="DescriptionKey" value="magazineShotSportsDesc"/>
+	<property name="DescriptionKey" value="magazineBoomstickDesc"/>
 </item>
 
-<item id="2082" name="magazineSpecWeapons">
+<item id="2082" name="magazineLauncher">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Heavy Weapons" />
     </property>
-	<property name="DescriptionKey" value="magazineSpecWeaponsDesc"/>
+	<property name="DescriptionKey" value="magazineLauncherDesc"/>
 </item>
 
 <item id="2083" name="magazineArchery">
@@ -10886,112 +10889,94 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineArcheryDesc"/>
 </item>
 
-<item id="2084" name="magazineMenHealth">
+<item id="2084" name="magazineDoctor">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Medicine" />
     </property>
-	<property name="DescriptionKey" value="magazineMenHealthDesc"/>
+	<property name="DescriptionKey" value="magazineDoctorDesc"/>
 </item>
 
-<item id="2085" name="magazineWomenHealth">
-	<property name="Extends" value="schematicMaster" />
-	<property class="Action1">
-		<!-- UseAction -->
-		<property name="Skills_to_gain" value="Medicine" />
-    </property>
-	<property name="DescriptionKey" value="magazineWomenHealthDesc"/>
-</item>
-
-<item id="2086" name="magazineHuntWorld">
+<item id="2086" name="magazineWeaponCraft">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillWeapons" />
     </property>
-	<property name="DescriptionKey" value="magazineHuntWorldDesc"/>
+	<property name="DescriptionKey" value="magazineWeaponCraftDesc"/>
 </item>
 
-<item id="2087" name="magazinePrimArch">
+<item id="2087" name="magazineFletching">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillFletching" />
     </property>
-	<property name="DescriptionKey" value="magazinePrimArchDesc"/>
+	<property name="DescriptionKey" value="magazineFletchingDesc"/>
 </item>
 
-<item id="2088" name="magazinePopMech">
+<item id="2088" name="magazineToolsmith">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillTools" />
     </property>
-	<property name="DescriptionKey" value="magazinePopMechDesc"/>
+	<property name="DescriptionKey" value="magazineToolsmithDesc"/>
 </item>
 
-<item id="2089" name="magazineSciAm">
+<item id="2090" name="magazineScience">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillScience" />
     </property>
-	<property name="DescriptionKey" value="magazineSciAmDesc"/>
+	<property name="DescriptionKey" value="magazineScienceDesc"/>
 </item>
 
-<item id="2090" name="magazinePopSci">
-	<property name="Extends" value="schematicMaster" />
-	<property class="Action1">
-		<!-- UseAction -->
-		<property name="Skills_to_gain" value="craftSkillScience" />
-    </property>
-	<property name="DescriptionKey" value="magazinePopSciDesc"/>
-</item>
-
-<item id="2091" name="magazineSewing">
+<item id="2091" name="magazineTailor">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillTailoring" />
     </property>
-	<property name="DescriptionKey" value="magazineSewingDesc"/>
+	<property name="DescriptionKey" value="magazineTailorDesc"/>
 </item>
 
-<item id="2092" name="magazineArmor">
+<item id="2092" name="magazineArmorsmith">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillArmor" />
     </property>
-	<property name="DescriptionKey" value="magazineArmorDesc"/>
+	<property name="DescriptionKey" value="magazineArmorsmithDesc"/>
 </item>
 
-<item id="2093" name="magazineLHJ">
+<item id="2093" name="MagazineMisc">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillMiscellaneous" />
     </property>
-	<property name="DescriptionKey" value="magazineLHJDesc"/>
+	<property name="DescriptionKey" value="MagazineMiscDesc"/>
 </item>
 
-<item id="2094" name="magazineMoney">
+<item id="2094" name="magazineBarter">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Barter" />
     </property>
-	<property name="DescriptionKey" value="magazineMoneyDesc"/>
+	<property name="DescriptionKey" value="magazineBarterDesc"/>
 </item>
 
-<item id="2095" name="magazineBodyArmor">
+<item id="2095" name="magazineDefense">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="Clothing/Armor" />
     </property>
-	<property name="DescriptionKey" value="magazineBodyArmorDesc"/>
+	<property name="DescriptionKey" value="magazineDefenseDesc"/>
 </item>
 <!-- End Magazines -->
 
@@ -11114,6 +11099,34 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
 </item>
 <!-- End Bagged Food -->
+
+<!-- Workbench Tools -->
+<item id="2101" name="fletchingJig">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Msteel"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="DescriptionKey" value="fletchingJigDesc" />
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
+
+<item id="2102" name="drillPress">
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property name="HoldType" value="45"/>
+	<property name="Material" value="Msteel"/>
+	<property name="Weight" value="5"/>
+	<property name="Stacknumber" value="1"/>
+	<property name="Group" value="Resources"/>
+	<property name="EconomicValue" value="2000"/>
+	<property name="DescriptionKey" value="drillPressDesc" />
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
+<!-- End Workbench Tools -->
 
 <!-- End Craftworx -->
 

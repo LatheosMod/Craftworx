@@ -894,33 +894,31 @@
 </lootgroup>
 
 <lootgroup name="magazines" count="1">
-	<item name="magazineMuscles"/>
-	<item name="magazineRifleman"/>
-	<item name="magazineGunsNAmmo"/>
-	<item name="magazineScavengers"/>
-	<item name="magazineBaseballDig"/>
-	<item name="magazineBlades"/>
-	<item name="magazineMining"/>
-	<item name="magazineWood"/>
-	<item name="magazineHandyman"/>
-	<item name="magazineAmHandgun"/>
-	<item name="magazineShotSport"/>
-	<item name="magazineSpecWeapons"/>
+	<item name="magazineAthletics"/>
+	<item name="magazineRiflery"/>
+	<item name="magazineGunsmith"/>
+	<item name="magazineScavenge"/>
+	<item name="magazineBasher"/>
+	<item name="magazineSlasher"/>
+	<item name="magazineDigging"/>
+	<item name="magazineCarpentry"/>
+	<item name="magazineContractor"/>
+	<item name="magazinePistol"/>
+	<item name="magazineBoomstick"/>
+	<item name="magazineLauncher"/>
 	<item name="magazineArchery"/>
-	<item name="magazineMenHealth"/>
-	<item name="magazineWomenHealth"/>
-	<item name="magazineHuntWorld"/>
-	<item name="magazinePrimArch"/>
-	<item name="magazinePopMech"/>
-	<item name="magazineSciAm"/>
-	<item name="magazinePopSci"/>
-	<item name="magazineSewing"/>
-	<!-- <item name="leatherJourn"/> -->
-	<item name="magazineBodyArmor"/>
-	<item name="magazineLHJ"/>
-	<item name="magazineMoney"/>
-	<item name="magazineArmor"/>
+	<item name="magazineDoctor"/>
+	<item name="magazineWeaponCraft"/>
+	<item name="magazineFletching"/>
+	<item name="magazineToolsmith"/>
+	<item name="magazineScience"/>
+	<item name="magazineTailor"/>
+	<item name="magazineArmorsmith"/>
+	<item name="MagazineMisc"/>
+	<item name="magazineBarter"/>
+	<item name="magazineDefense"/>
 </lootgroup>
+
 <lootgroup name="paintMagazines" count="1">
 	<item name="paintMagazineDecorations"/> <!-- traders -->
 	<item name="paintMagazineFaux"/> <!-- cntBookcase -->
@@ -1247,7 +1245,9 @@
 	<item name="pickaxeSteel"/>
 	<item name="fireaxeSteel"/>
 	<item name="shovelSteel"/>
-	<!-- <item name="calipers" prob="0.09"/> -->
+	<item name="calipers" prob="0.09"/>
+	<item name="fletchingJig" prob="0.55"/>
+	<item name="drillPress" prob="0.55"/>
 	<item name="toolAndDieSet" prob="0.12"/>
 	<item group="nailgun+parts"/>
 </lootgroup>
@@ -2348,6 +2348,10 @@
 
 <!-- "bag" container that gets dropped when a zombie gore block is destroyed but still contained loot -->
 <lootcontainer id="99" count="0" size="5,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="baseTemplate">
+</lootcontainer>
+
+<!--Working Oven and Sink -->
+<lootcontainer id="130" size="10,9" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" >
 </lootcontainer>
 
 </lootcontainers>

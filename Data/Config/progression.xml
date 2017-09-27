@@ -398,11 +398,19 @@
 		<recipe name="workbench" unlock_level="1"/>
 	</perk> -->
 	
-	<perk name="Advanced Tooling" icon="resource" description_key="AdvancedToolingSkillDesc" title_key="AdvancedTooling" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+	<perk name="Advanced Tooling" icon="resource" description_key="AdvancedToolingSkillDesc" title_key="AdvancedTooling" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="15"/>
 		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="2"/>
 		<recipe name="workbench" unlock_level="1"/>
 		<recipe name="forge" unlock_level="1"/>
+		<requirement skill_level="2" required_skill_name="Construction Tools" required_skill_level="30"/>
+		<requirement skill_level="2" required_skill_name="craftSkillTools" required_skill_level="4"/>
+		<recipe name="fletchingJig" unlock_level="2"/>
+		<recipe name="drillPress" unlock_level="2"/>
+		<requirement skill_level="3" required_skill_name="Construction Tools" required_skill_level="50"/>
+		<requirement skill_level="3" required_skill_name="craftSkillScience" required_skill_level="4"/>
+		<recipe name="electricOven" unlock_level="3"/>
+		<recipe name="workingCabinetSink" unlock_level="3"/>
 	</perk>
 	<!-- End CraftWorx -->
 	
@@ -1395,6 +1403,23 @@ skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="science">
 			<multiply perk_level="5" value="0.5"/>
 		</effect>
 	</perk>
+	
+	<perk name="Deep Diving" icon="ui_game_symbol_oxygen" description_key="deepDivingDesc" title_key="deep Diving" max_level="5" skill_point_cost_multiplier="1.4" passive_effect="true" skill_point_cost_per_level="3" always_fire="true" group="health">
+		<requirement perk_level="1" required_player_level="1"/>
+		<requirement perk_level="2" required_player_level="5"/>
+		<requirement perk_level="3" required_player_level="10"/>
+		<requirement perk_level="4" required_player_level="20"/>
+		<requirement perk_level="5" required_player_level="30"/>
+		<effect name="BreathHoldDuration">
+			<multiply perk_level="0" value="1"/>
+			<multiply skill_level="1" value="1.8"/>
+			<multiply skill_level="2" value="2.6"/>
+			<multiply skill_level="3" value="3.4"/>
+			<multiply skill_level="4" value="4.2"/>
+			<multiply skill_level="5" value="5"/>
+		</effect>
+	</perk>	
+	
 	<!-- Removed because it was a ^3 effect. Athletics x Forest Run x Weapon Perk = as low as 16.5% stamina use
 	<perk name="Run Forest Run" icon="run" description_key="runForestRunDesc" title_key="runForestRun" max_level="5" skill_point_cost_multiplier="1.43" skill_point_cost_per_level="5" passive_effect="true" group="health">
 		<requirement perk_level="1" required_player_level="1"/>

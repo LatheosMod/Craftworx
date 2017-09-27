@@ -47,6 +47,7 @@
 			<window name="windowCraftingList"/>
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
+			<window name="windowToolsWorkbench" />
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 			<window name="windowCombine" />
@@ -57,6 +58,16 @@
 			<window name="craftingInfoPanel"/>
 			<window name="windowCraftingQueue"/>
 			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
+		
+		<!-- Craftworx -->
+		<window_group name="workstation_electricOven" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowToolsCampfire" />
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
@@ -246,7 +257,6 @@
 			<window name="windowPowerTrapSlots" />
 			<window name="windowPowerCameraControlPreview" />
 			<window name="windowNonPagingHeader" />
-			
 		</window_group>
 		
 		<window_group name="powercamera" controller="XUiC_PowerCameraWindowGroup" actionSet="controller">

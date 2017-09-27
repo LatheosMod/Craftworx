@@ -101,7 +101,24 @@ Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life an
 *Really* fixed harvesting workstations. Hopefully for the last time...
 Updated Craftworx logo for better visibility
 
-<----- 22 Sep 2017 ----->
+<----- 23 Sep 2017 ----->
 Craftworx 2.55
 Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod
 Third time's the charm? Fixed harvesting on workbench, cement mixer, forge, chemistry station
+
+<----- 27 Sep 2017 ----->
+Craftworx 2.6
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks
+Fixed harvesting workstations to remove duplication issue. This time I mean it!
+Added skullpoker's deep diving perk
+Added craftable electric oven and cabinet sink - electric oven doesn't currently require power because the game doesn't yet support it
+Added tools to the workbench for crafting ammo, fletching advanced arros/bolts, crafting armor
+Changed metal and advanced armors to require workbench and drill press
+Changed steel and advanced arrows/bolts to use workbench, fletching jig, and scrap plastic instead of feathers
+Changed ammunition recipes to use calipers at the workbench
+Changed kukri recipe to require workbench
+Replaced all magazine icons with new images based on game assets
+Changed the stack number on shematicMaster from 1 to 10
+Added <property name="CraftingSkillGroup" value="Carpentry"/> to all wood-crafted blocks
+
+
