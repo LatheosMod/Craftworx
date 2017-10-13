@@ -5113,6 +5113,7 @@ Mesh files no longer used:
 		<property name="Overlay1Tint" value="98,130,163"/>
 	</property>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - weight 1>5 -->
 <item id="503" name="facialPiercings">
 	<property name="Insulation" value="0"/>
@@ -5166,6 +5167,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTailoring"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - value lowered to 80 -->
 <item id="508" name="runningShoes">
 	<property name="Extends" value="leatherBoots"/>
@@ -8646,7 +8648,7 @@ Mesh files no longer used:
 	<property name="Weight" value="5"/>
 	<property name="EconomicValue" value="5"/>
 	<property name="Group" value="Resources,Clothing"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillTailoring"/>
 </item>
 
 <item id="1328" name="paper"> <!-- scrap material -->

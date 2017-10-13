@@ -121,4 +121,12 @@ Replaced all magazine icons with new images based on game assets
 Changed the stack number on shematicMaster from 1 to 10
 Added <property name="CraftingSkillGroup" value="Carpentry"/> to all wood-crafted blocks
 
-
+<----- 13 Oct 2017 ----->
+Craftworx 2.61
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks
+Fixed broken localization entry for salted meat
+Rebalanced progression point levels to make it more challenging over the long run
+Aded 5th level of Tinker Tailor etc, allowing crafting of gothic pants and boots
+Fixed incorrect harvesting of sinks
+Changed cloth to use craftSkillTailoring instead of craftSkillMiscellaneous
+Updated Craftworx logo in menu and hud

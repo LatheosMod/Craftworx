@@ -5050,7 +5050,8 @@ baggedgrilledMeatDesc,items,Food,EnChanged,"Meat! Meat on fire! Good! Nutritious
 baggedmeatStew,items,Food,KgNone,Bagged Meat Stew,,
 baggedmeatStewDesc,items,Food,KgNone,"A survivor isn't worth his salt if he can't make a meat stew. Raises wellness, too! Sealed in a zipped plastic bag.",,
 baggedbaconAndEggs,items,Food,KgNone,Bagged Bacon and Eggs,,
-baggedbaconAndEggsDesc,items,Food,GrChanged,Bacon and eggs will really fill you up and boost your wellness. Cholesterol is the least of your worries now. Sealed in a zipped plastic bag.,,saltedMeat,items,Item,KgNone,Salted Meat,,
+baggedbaconAndEggsDesc,items,Food,GrChanged,Bacon and eggs will really fill you up and boost your wellness. Cholesterol is the least of your worries now. Sealed in a zipped plastic bag.,,
+saltedMeat,items,Item,KgNone,Salted Meat,,
 saltedMeatDesc,items,Item,KgNone,"Salted Long Pork, the other white meat! Better than eating broken glass.",,
 
 Sandpaper,items,Item,KgNone,Sandpaper,,

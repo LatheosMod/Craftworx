@@ -6275,11 +6275,10 @@ kind of free
 	<property name="IsDecoration" value="true"/>
 	<property name="Texture" value="373,261,262,345,345,345"/> <!-- 373/374=sink, 82=cabinetWood -->
 	<property name="LootList" value="8"/>
-	
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<drop event="Harvest" name="shortMetalPipe" count="1,3"/>
-	<drop event="Destroy" name="scrapIron" count="40,75"/>
-	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Harvest" name="shortMetalPipe" count="1,3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="30,50" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="5"/>
 	<property name="EconomicValue" value="80"/> <!-- disassemble value -->
 	<property name="ImposterExchange" value="imposterBlock" param1="116"/>
 </block>
@@ -16243,11 +16242,10 @@ kind of free
 	<property name="CustomIcon" value="cntCabinetOldSink" />
 	<property name="Class" value="SecureLoot" />
 	<property name="LootList" value="130" />
-	<drop event="Destroy" name="wood" count="20" prob="1" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="scrapIron" count="130,250" prob="1" tool_category="harvestingTools"/>
-	<drop event="Destroy" name="workingCabinetSink" count="1" tool_category="Disassemble"/>
-	<drop event="Destroy" count="0" />
-	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<drop event="Harvest" name="shortMetalPipe" count="1,3" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="30,50" tool_category="Disassemble"/>
+	<drop event="Destroy" name="scrapIron" count="5"/>
 	<property name="Group" value="Building"/>
 	<property name="CraftingSkillGroup" value="Carpentry"/>
 </block>
