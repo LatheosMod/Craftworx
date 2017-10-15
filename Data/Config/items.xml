@@ -9727,6 +9727,7 @@ Mesh files no longer used:
 		<property name="Pump" value="partsscopedHuntingRifle_parts" />
 	</property>
     <property class="Action0">
+		<property name="Magazine_size" value="3"/>
 		<property name="Sound_start" value="suppressed_Fire" />
     </property>
 	<property name="DescriptionKey" value="gunQscopedHuntingRifleDesc" />
@@ -10796,7 +10797,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
-		<property name="Skills_to_gain" value="craftingSkillGuns" />
+		<property name="Skills_to_gain" value="craftSkillGuns" />
     </property>
 	<property name="DescriptionKey" value="magazineGunsmithDesc"/>
 </item>
@@ -10954,13 +10955,13 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="magazineArmorsmithDesc"/>
 </item>
 
-<item id="2093" name="MagazineMisc">
+<item id="2093" name="magazineMisc">
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillMiscellaneous" />
     </property>
-	<property name="DescriptionKey" value="MagazineMiscDesc"/>
+	<property name="DescriptionKey" value="magazineMiscDesc"/>
 </item>
 
 <item id="2094" name="magazineBarter">

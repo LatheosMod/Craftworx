@@ -16216,7 +16216,7 @@ kind of free
 <block id="2045" name="electricOven">
 	<property name="DescriptionKey" value="electricOvenDesc"/>
 	<property name="Class" value="Campfire" />
-	<property name="CustomIcon" value="cntWallOven" />
+	<property name="CustomIcon" value="cntOven" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="Stacknumber" value="1" />
 	<property name="Material" value="metal" />

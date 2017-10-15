@@ -417,7 +417,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="magazineScience"/>
 			<item name="magazineTailor"/>
 			<item name="magazineArmorsmith"/>
-			<item name="MagazineMisc"/>
+			<item name="magazineMisc"/>
 			<item name="magazineBarter"/>
 			<item name="magazineDefense"/>
 		</trader_item_group>	

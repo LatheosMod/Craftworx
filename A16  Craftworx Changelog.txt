@@ -126,7 +126,16 @@ Craftworx 2.61
 Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks
 Fixed broken localization entry for salted meat
 Rebalanced progression point levels to make it more challenging over the long run
-Aded 5th level of Tinker Tailor etc, allowing crafting of gothic pants and boots
+Added 5th level of Tinker Tailor etc, allowing crafting of gothic pants and boots
 Fixed incorrect harvesting of sinks
 Changed cloth to use craftSkillTailoring instead of craftSkillMiscellaneous
 Updated Craftworx logo in menu and hud
+
+<----- 15 Oct 2017 -----?
+Craftworx 2.62
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage
+Increased magazine size on suppressed scoped hunting rifle from 1 to 3
+Added numberz's expanded minibike storage mod, increasing the minibike basket to 32 slots
+Changed icon for electric oven from red wall oven to white range oven
+Fixed error in magazineGunsmith preventing use of skill gain
+Fixed spelling error in magazineMisc
