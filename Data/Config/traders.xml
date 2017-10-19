@@ -396,7 +396,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="scrapGlovesSchematic" prob="0.7"/>
 		</trader_item_group>
 
-		<trader_item_group name="magazines" count="1">
+		<trader_item_group name="commonMagazines" count="1">
 			<item name="magazineAthletics"/>
 			<item name="magazineRiflery"/>
 			<item name="magazineGunsmith"/>
@@ -420,7 +420,17 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="magazineMisc"/>
 			<item name="magazineBarter"/>
 			<item name="magazineDefense"/>
-		</trader_item_group>	
+		</trader_item_group>
+
+		<trader_item_group name="rareMagazines" count="1">
+			<item name="magazineGunsmith"/>
+			<item name="magazineWeaponCraft"/>
+			<item name="magazineFletching"/>
+			<item name="magazineToolsmith"/>
+			<item name="magazineScience"/>
+			<item name="magazineTailor"/>
+			<item name="magazineArmorsmith"/>
+		</trader_item_group>
 		
 		<trader_item_group name="rareBooks" count="1">
 			<item name="ak47Schematic"/>
@@ -464,6 +474,8 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item group="questChallenge" prob="0.2"/>
 			<item group="rareBooks" prob="0.3"/>
 			<item group="commonBooks"/>
+			<item group="rareMagazines" prob="0.3"/>
+			<item group="commonMagazines"/>
 			<item group="paintMagazines" prob="0.09"/>
 			<item name="paintMagazineDecorations" prob="0.09"/>
 		</trader_item_group>
@@ -897,6 +909,8 @@ workstations
 			<item group="lightArmor" count="1,2"/>
 			<item group="heavyArmor" count="1"/>
 			<item group="paintMagazines" count="1"/>
+			<item group="commonMagazines" count="1,2"/>
+			<item group="rareMagazines" count="1"/>
 			<item group="commonBooks" count="1,2"/>
 			<item group="rareBooks" count="1"/>
 		</tier_items>
@@ -913,6 +927,8 @@ workstations
 			<item group="heavyArmor" count="1,3"/>
 			<item group="banditArmor" count="1,2"/>
 			<item group="paintMagazines" count="1,2"/>
+			<item group="commonMagazines" count="2,3"/>
+			<item group="rareMagazines" count="1,2"/>
 			<item group="commonBooks" count="2,3"/>
 			<item group="rareBooks" count="1,2"/>
 			<item group="stashOnlyItemsLow" count="1,2"/>
@@ -930,6 +946,8 @@ workstations
 			<item group="militaryArmor" count="1,2"/>
 			<item group="banditArmor" count="2,3"/>
 			<item group="paintMagazines" count="1,2"/>
+			<item group="commonMagazines" count="3,4"/>
+			<item group="rareMagazines" count="2"/>
 			<item group="commonBooks" count="3,4"/>
 			<item group="rareBooks" count="2"/>
 			<item name="miningHelmet"/>
@@ -951,6 +969,8 @@ workstations
 			<item group="militaryArmor" count="2,3"/>
 			<item group="banditArmor" count="3,4"/>
 			<item group="paintMagazines" count="1,2"/>
+			<item group="commonMagazines" count="4,5"/>
+			<item group="rareMagazines" count="2,3"/>
 			<item group="commonBooks" count="4,5"/>
 			<item group="rareBooks" count="2,3"/>
 			<item name="miningHelmet"/>

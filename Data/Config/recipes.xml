@@ -3407,6 +3407,64 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="doorKnob" count="1"/>
 </recipe>
 <!-- End New furniture and containers -->
+
+<!-- Katt's New Foods -->
+<recipe name="grilledMushrooms" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="mushrooms" count="5"/>
+</recipe>
+
+<recipe name="grilledVegetables" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="potato" count="5"/>
+	<ingredient name="corn" count="5"/>
+	<ingredient name="mushrooms" count="5"/>
+</recipe>
+
+<recipe name="grilledCorn" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="corn" count="1"/>
+</recipe>
+
+<recipe name="bread" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="potatoFlour" count="1"/>
+	<ingredient name="bottledWater" count="1"/>
+</recipe>
+
+<recipe name="potatoFlour" count="1">
+	<ingredient name="bakedPotato" count="1"/>
+</recipe>
+
+<recipe name="steakSandwich" count="1">
+	<ingredient name="grilledMeat" count="1"/>
+	<ingredient name="bread" count="2"/>
+</recipe>
+
+<recipe name="eggAndBaconBiscuit" count="1">
+	<ingredient name="baconAndEggs" count="1"/>
+	<ingredient name="bread" count ="2"/>
+</recipe>
+
+<recipe name="biscuitsAndGravy" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="potatoFlour" count="5"/>
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="coffee" count="1"/>
+</recipe>
+
+<recipe name="stripSteakAndMushrooms" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="mushrooms" count="5"/>
+</recipe>
+
+<recipe name="shepardsPie" count="1" craft_area="campfire" craft_tool="cookingPot">
+	<ingredient name="rawMeat" count="5"/>
+	<ingredient name="potato" count="5"/>
+	<ingredient name="corn" count="5"/>
+	<ingredient name="potatoFlour" count="5"/>
+</recipe>
+
+<recipe name ="meatAndPotatoes" count="1" craft_area="campfire" craft_tool="cookingGrill">
+	<ingredient name="rawMeat" count="1"/>
+	<ingredient name="potato" count="3"/>
+</recipe>
+<!-- End Katt's New Foods -->
 <!-- End Craftworx -->
 
 

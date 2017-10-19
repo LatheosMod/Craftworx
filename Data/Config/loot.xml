@@ -893,7 +893,7 @@
 	-->
 </lootgroup>
 
-<lootgroup name="magazines" count="1">
+<lootgroup name="commonMagazines" count="1">
 	<item name="magazineAthletics"/>
 	<item name="magazineRiflery"/>
 	<item name="magazineGunsmith"/>
@@ -919,6 +919,17 @@
 	<item name="magazineDefense"/>
 </lootgroup>
 
+
+<lootgroup name="rareMagazines" count="1">
+	<item name="magazineGunsmith"/>
+	<item name="magazineWeaponCraft"/>
+	<item name="magazineFletching"/>
+	<item name="magazineToolsmith"/>
+	<item name="magazineScience"/>
+	<item name="magazineTailor"/>
+	<item name="magazineArmorsmith"/>
+</lootgroup>
+
 <lootgroup name="paintMagazines" count="1">
 	<item name="paintMagazineDecorations"/> <!-- traders -->
 	<item name="paintMagazineFaux"/> <!-- cntBookcase -->
@@ -929,10 +940,11 @@
 </lootgroup>
 
 <lootgroup name="books" count="1">
-	<item group="magazines"/>
+	<item group="commonMagazines"/>
 	<item name="paper" count="10,25" prob="0.66"/>
 	<item group="commonBooks" prob="0.33"/>
 	<item group="paintMagazines" prob="0.03"/>
+	<item group="rareMagazines" loot_prob_template="rareBookTemplate"/> <!-- .2 => 1.0 -->
 	<item group="rareBooks" loot_prob_template="rareBookTemplate"/> <!-- .2 => 1.0 -->
 </lootgroup>
 
@@ -1465,6 +1477,7 @@
 <lootgroup name="labEquipment">
 	<item group="books" count="1"/>
 	<item group="rareBooks" count="1" prob="0.5"/>
+	<item group="rareMagazines" count="1" prob="0.5"/>
 	<item name="scrapPlastics" count="1,7"/>
 	<item name="emptyJar" count="1,20" prob="2"/>
 	<item name="grainAlcohol" count="5,10"/>
@@ -1491,6 +1504,7 @@
     <item name="tshirtBlack"/>
     <item name="machete"/>
   </lootgroup>
+  
 <!-- misc storage, cardboard boxes-->
 <lootcontainer id="1" count="0,2" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="baseTemplate">
 	<item group="junk"/>
@@ -1672,6 +1686,7 @@
 <lootcontainer id="34" count="4" size="8,4" destroy_on_close="false" sound_open="SupplyDrops/open_supply_crate" sound_close="SupplyDrops/close_supply_crate" loot_quality_template="baseTemplate">
 	<item group="weaponsMilitaryGuns+ammo" prob="1.5"/>
 	<item group="rareBooks"/>
+	<item group="rareMagazines"/>
 	<item group="airdropMedicine" count="1,4"/>
 	<item name="flashlight02" prob="0.2"/>
 </lootcontainer>
@@ -1974,6 +1989,7 @@
 <lootcontainer id="69" count="2,5" size="8,9" sound_open="UseActions/open_chest" sound_close="UseActions/close_chest" loot_quality_template="baseTemplate">
 	<item group="weaponsMilitaryGuns+ammo"/>
 	<item group="rareBooks"/>
+	<item group="rareMagazines"/>
 	<item group="airdropMedicine"/>
 	<item group="herbalRecipes"/>
 	<item group="questChallenge"/>
@@ -1987,6 +2003,7 @@
 	<item group="rareOres" count="3,7"/>
 	<item group="rareTools" prob="0.5"/>
 	<item group="rareBooks" prob="0.5"/>
+	<item group="rareMagazines" prob="0.5"/>
 	<item group="rareMedicine" prob="0.5"/>
 	<item name="oldCash" count="500,3000"/>
 	<item name="gun44Magnum" prob="0.05"/>
@@ -2323,6 +2340,7 @@
 	<item name="compoundBow" prob="0.3"/>
 	<item group="rareOres" count="2,5"/>
 	<item group="rareBooks" count="1,2" prob="0.5"/>
+	<item group="rareMagazines" count="1,2" prob="0.5"/>
 	<item group="banditArmor" count="1,2" prob="0.5"/>
 	<item group="heavyArmor" count="1,2" prob="0.5"/>
 	<item group="militaryArmor" count="1,2" prob="0.5"/>

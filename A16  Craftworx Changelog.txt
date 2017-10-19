@@ -139,3 +139,21 @@ Added numberz's expanded minibike storage mod, increasing the minibike basket to
 Changed icon for electric oven from red wall oven to white range oven
 Fixed error in magazineGunsmith preventing use of skill gain
 Fixed spelling error in magazineMisc
+
+<----- 16 Oct 2017 ----->
+Craftworx 2.63
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage
+Fixed icon image for magazineMisc
+
+<----- 19 Oct 2017 ----->
+Craftworx 2.7
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods
+Increased skill requirement for Masamune, Jr from craftwkillweapons 6 to 8, as it is stronger than the machete
+Decreased skill point gain from 9 to 8
+Split magazines into commonMagazines (for general 1-100 skills) and rareMagazines (for crafting skills 1-10)
+Added rareMagazines to loot lists that also contain rareBooks
+Added rareMagazines, commonMagazines to trader lists
+Increased stack sizes on beaker, honey, all beverages
+Added Katt's new foods
+Added missing description for poop cannon schematic to localization.txt
+Fixed typo in Scavenging magazine

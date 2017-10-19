@@ -587,7 +587,7 @@
 	
 	<window name="CRAFTWORXingameMenu" anchor="CenterCenter" pos="-125,200" width="250" height="200" controller="InGameMenuWindow" cursor_area="true">
 		<texture name="CRAFTWORX" depth="0" size="788,788" texture="@file:Mods\Craftworx\Textures\Misc\cwmenulogo.png" material="Materials/Transparent Colored" pos="-268,290" />
-		<label name="CRAFTWORXVersion" pos="190, -5" depth="0" size="250,33" text="V2.62" font_size="32" effect="outline" color="[white]" justify="center" /> <!-- SIRILLION: Craftworx, change version here! -->
+		<label name="CRAFTWORXVersion" pos="190, -5" depth="0" size="250,33" text="V2.7" font_size="32" effect="outline" color="[white]" justify="center" /> <!-- SIRILLION: Craftworx, change version here! -->
 		<grid name="buttons" pos="0, -100" cols="1" width="250" cell_width="250" cell_height="56" arrangement="vertical" repeat_content="false" >
 			<simplebutton name="btnOptions" depth="3" width="250" height="46" caption_key="xuiMenuOptions" font_size="40" />
 			<simplebutton name="btnSave" depth="3" width="250" height="46" caption_key="xuiMenuSave" font_size="40" />
