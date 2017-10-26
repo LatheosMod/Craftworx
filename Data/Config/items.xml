@@ -10603,6 +10603,7 @@ Mesh files no longer used:
 <!-- Food -->
 <item id="2061" name="baggedMeat">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="CustomIcon" value="baggedMeat" />
     <property name="Material" value="organic" />
     <property name="HoldType" value="7" />
 	<property name="Stacknumber" value="100" /> <!-- STK resource -->
@@ -10957,6 +10958,7 @@ Mesh files no longer used:
 
 <item id="2093" name="magazineMisc">
 	<property name="Extends" value="schematicMaster" />
+	<property name="CustomIcon" value="magazineMisc" />
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillMiscellaneous" />

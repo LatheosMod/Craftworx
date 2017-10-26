@@ -5095,7 +5095,7 @@ deepDivingDesc,progression,Skill,EnChanged,Increase your ability to hold your br
 electricOven,blocks,Block Building,,Working Electric Oven,,
 electricOvenDesc,blocks,Block Building,,"This working oven can be used to cook many different recipes, but doesn't require fuel to operate.",,
 workingCabinetSink,blocks,Block Building,,Cabinet Sink,,
-workingCabinetSinkDesc,blocks,Block Building,,"This working sink can be used as a source of water, but it'll need to be boiled before drinking or cooking.",,
+workingCabinetSinkDesc,blocks,Block Building,,"This working sink can be used as a source of water, but it'll need to be boiled before drinking or cooking. Right-click while holding empty jars to fill them.",,
 
 magazineAthletics,items,Book,KgNone,The Essential Athelete,,
 magazineAthleticsDesc,items,Book,KgNone,Improve your Athletics skill by reading this magazine. This issue has a centerfold of Mad Mole.,,
