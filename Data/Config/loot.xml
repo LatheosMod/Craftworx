@@ -644,7 +644,7 @@
 </lootgroup>
 
 <lootgroup name="toiletLoot" count="1,2">
-	<item group="weaponsPistol+ammo" count="1" prob="0.05"/>
+	<!-- <item group="weaponsPistol+ammo" count="1" prob="0.05"/> -->
 	<item name="bottledRiverWater" count="1,2" prob="0.55"/>
 	<item name="turd" count="1,2" prob="0.3"/>
 </lootgroup>
@@ -940,11 +940,11 @@
 </lootgroup>
 
 <lootgroup name="books" count="1">
-	<item group="commonMagazines"/>
+	<item group="commonMagazines" prob="0.3"/>
 	<item name="paper" count="10,25" prob="0.66"/>
-	<item group="commonBooks" prob="0.33"/>
+	<item group="commonBooks" prob="0.38"/>
 	<item group="paintMagazines" prob="0.03"/>
-	<item group="rareMagazines" loot_prob_template="rareBookTemplate"/> <!-- .2 => 1.0 -->
+	<item group="rareMagazines" prob="0.17" /> <!-- .2 => 1.0 -->
 	<item group="rareBooks" loot_prob_template="rareBookTemplate"/> <!-- .2 => 1.0 -->
 </lootgroup>
 
@@ -1477,7 +1477,7 @@
 <lootgroup name="labEquipment">
 	<item group="books" count="1"/>
 	<item group="rareBooks" count="1" prob="0.5"/>
-	<item group="rareMagazines" count="1" prob="0.5"/>
+	<item group="rareMagazines" count="1" prob="0.35"/>
 	<item name="scrapPlastics" count="1,7"/>
 	<item name="emptyJar" count="1,20" prob="2"/>
 	<item name="grainAlcohol" count="5,10"/>
@@ -1796,6 +1796,7 @@
 	<item group="trophyGroup"/>
 	<item name="gunPowder" count="1,5"/>
 	<item name="padlock" prob="0.8"/>
+	<item group="commonMagazines" count="1,2" prob=".4"/>
 </lootcontainer>
 
 <!-- file cabinet -->
@@ -2003,7 +2004,7 @@
 	<item group="rareOres" count="3,7"/>
 	<item group="rareTools" prob="0.5"/>
 	<item group="rareBooks" prob="0.5"/>
-	<item group="rareMagazines" prob="0.5"/>
+	<item group="rareMagazines" prob="0.35"/>
 	<item group="rareMedicine" prob="0.5"/>
 	<item name="oldCash" count="500,3000"/>
 	<item name="gun44Magnum" prob="0.05"/>
@@ -2340,7 +2341,7 @@
 	<item name="compoundBow" prob="0.3"/>
 	<item group="rareOres" count="2,5"/>
 	<item group="rareBooks" count="1,2" prob="0.5"/>
-	<item group="rareMagazines" count="1,2" prob="0.5"/>
+	<item group="rareMagazines" count="1,2" prob="0.35"/>
 	<item group="banditArmor" count="1,2" prob="0.5"/>
 	<item group="heavyArmor" count="1,2" prob="0.5"/>
 	<item group="militaryArmor" count="1,2" prob="0.5"/>

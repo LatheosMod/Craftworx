@@ -1277,14 +1277,16 @@ skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="science">
 	
 	<perk name="Tinker, Tailor, etc." icon="tailoring" description_key="tinkertailorDesc" title_key="tinkertailor" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="4" group="clothing">
 		<requirement skill_level="1" required_skill_name="craftSkillTailoring" required_skill_level="1"/>
-		<recipe name="tshirtWhite" unlock_level="1"/>
-		<recipe name="shirt" unlock_level="1"/>
+		<recipe name="tshirtBrown" unlock_level="1"/>
+		<recipe name="shirtBrown" unlock_level="1"/>
 		<requirement skill_level="2" required_skill_name="craftSkillTailoring" required_skill_level="2"/>
-		<recipe name="denimShortsPants" unlock_level="2"/>
-		<recipe name="denimPants" unlock_level="2"/>
+		<recipe name="denimShortsPantsBrown" unlock_level="2"/>
+		<recipe name="brownDenimPants" unlock_level="2"/>
+		<recipe name="overalls" unlock_level="2"/>
 		<requirement skill_level="3" required_skill_name="craftSkillTailoring" required_skill_level="3"/>
-		<recipe name="sweatshirt" unlock_level="3"/>
-		<recipe name="hoodedSweatshirtWhite" unlock_level="3"/>
+		<recipe name="sweatshirtBrown" unlock_level="3"/>
+		<recipe name="hoodedSweatshirtBrown" unlock_level="3"/>
+		<recipe name="flannelShirtBrown" unlock_level="3"/>
 		<requirement skill_level="4" required_skill_name="craftSkillTailoring" required_skill_level="4"/>
 		<requirement skill_level="4" required_skill_name="craftSkillArmor" required_skill_level="4"/>
 		<recipe name="leatherDusterBlack" unlock_level="4"/>

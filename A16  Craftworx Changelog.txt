@@ -157,3 +157,14 @@ Increased stack sizes on beaker, honey, all beverages
 Added Katt's new foods
 Added missing description for poop cannon schematic to localization.txt
 Fixed typo in Scavenging magazine
+
+<----- 26 Oct 2017 ----->
+Craftworx 2.71
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods
+Adjusted magazine and book drop frequencies in loot.xml
+Removed pistols from toilets - too many pistols were showing up
+Changed the recipes tied to Tinker, Tailor, Etc. from the white master items to brown variants to keep from locking recipes based off the clothing master items
+Added brown flannel shirt to level 3 of Tinker, Tailor, Etc.
+Added overalls to level 2 of Tinker, Tailor, Etc.
+Added missing recipes for clothing items in Tinker Tailor perk
+Updated readme.md on Github with graphics and more information on changes from the vanilla game

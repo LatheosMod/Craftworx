@@ -3236,28 +3236,36 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- End Food -->
 
 <!-- Tinker Tailor -->
-<recipe name="tshirtWhite" count="1">
+<recipe name="tshirtBrown" count="1">
 	<ingredient name="cloth" count="12"/>
 </recipe>
 
-<recipe name="shirt" count="1">
+<recipe name="shirtBrown" count="1">
 	<ingredient name="cloth" count="16"/>
 </recipe>
 
-<recipe name="denimShortsPants" count="1">
+<recipe name="denimShortsPantsBrown" count="1">
 	<ingredient name="cloth" count="18"/>
 </recipe>
 
-<recipe name="denimPants" count="1">
+<recipe name="brownDenimPants" count="1">
 	<ingredient name="cloth" count="26"/>
 </recipe>
 
-<recipe name="sweatshirt" count="1">
+<recipe name="overalls" count="1">
+	<ingredient name="cloth" count="30"/>
+</recipe>
+
+<recipe name="sweatshirtBrown" count="1">
 	<ingredient name="cloth" count="24"/>
 </recipe>
 
-<recipe name="hoodedSweatshirtWhite" count="1">
+<recipe name="hoodedSweatshirtBrown" count="1">
 	<ingredient name="cloth" count="30"/>
+</recipe>
+
+<recipe name="flannelShirtBrown" count="1">
+	<ingredient name="cloth" count="20"/>
 </recipe>
 
 <recipe name="leatherDusterBlack" count="1">
@@ -3266,6 +3274,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="blackCowboyHat" count="1">
 	<ingredient name="leather" count="8"/>
+</recipe>
+
+<recipe name="gothicPants" count="1">
+	<ingredient name="leather" count="10"/>
+	<ingredient name="glue" count="2"/>
+</recipe>
+
+<recipe name="gothBootsBlack" count="1">
+	<ingredient name="leather" count="5"/>
+	<ingredient name="glue" count="2"/>
 </recipe>
 <!-- End Tinker Tailor -->
 
