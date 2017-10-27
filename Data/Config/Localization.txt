@@ -5096,6 +5096,9 @@ electricOven,blocks,Block Building,,Working Electric Oven,,
 electricOvenDesc,blocks,Block Building,,"This working oven can be used to cook many different recipes, but doesn't require fuel to operate.",,
 workingCabinetSink,blocks,Block Building,,Cabinet Sink,,
 workingCabinetSinkDesc,blocks,Block Building,,"This working sink can be used as a source of water, but it'll need to be boiled before drinking or cooking. Right-click while holding empty jars to fill them.",,
+elevatorTest,blocks,Block,KgNone,Elevator,,
+elevatorTestDesc,blocks,Block,KgNone,"An elevator that traverses eight blocks up and down, and is capable of lifting the minibike.",,
+
 
 magazineAthletics,items,Book,KgNone,The Essential Athelete,,
 magazineAthleticsDesc,items,Book,KgNone,Improve your Athletics skill by reading this magazine. This issue has a centerfold of Mad Mole.,,

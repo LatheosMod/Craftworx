@@ -411,6 +411,7 @@
 		<requirement skill_level="3" required_skill_name="craftSkillScience" required_skill_level="6"/>
 		<recipe name="electricOven" unlock_level="3"/>
 		<recipe name="workingCabinetSink" unlock_level="3"/>
+		<recipe name="elevatorTest" unlock_level="3"/>
 	</perk>
 	<!-- End CraftWorx -->
 	

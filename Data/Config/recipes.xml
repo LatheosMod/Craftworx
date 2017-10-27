@@ -3483,6 +3483,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="potato" count="3"/>
 </recipe>
 <!-- End Katt's New Foods -->
+
+<!-- Elevator -->
+<recipe name="elevatorTest" count="1" scrapable="False" craft_area="workbench" >
+	<ingredient name="forgedSteel" count="50"/>
+	<ingredient name="smallEngine" count="2"/>
+	<ingredient name="springCable" count="25"/>
+	<ingredient name="mechanicalParts" count="25"/>
+	<ingredient name="carBattery" count="4"/>
+</recipe>
+<!-- End Elevator -->
 <!-- End Craftworx -->
 
 

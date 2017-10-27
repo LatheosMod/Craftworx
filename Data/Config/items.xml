@@ -11280,9 +11280,9 @@ Mesh files no longer used:
 		<property name="Delay" value="2.1"/>
 		<property name="Use_time" value="..."/>
 		<property name="Gain_health" value="0"/>
-		<property name="Gain_food" value="16"/>
+		<property name="Gain_food" value="20"/>
 		<property name="Buff" value="eatFood_15_Trigger"/>
-		<property name="Gain_wellness" value="1.35"/>
+		<property name="Gain_wellness" value="1.75"/>
 		<property name="Sound_start" value="player_eating"/>
 	</property>
 	<property name="Smell" value="largeSmell"/>

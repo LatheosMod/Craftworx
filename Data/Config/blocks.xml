@@ -14445,7 +14445,7 @@ kind of free
 </block>
 
 <block id="1587" name="elevatorTest">
-	<property name="CreativeMode" value="Dev"/>
+	<!-- <property name="CreativeMode" value="Dev"/> -->
 	<property name="Class" value="DoorSecure"/>
 	<property name="Material" value="wood_regular"/>
 	<property name="LightOpacity" value="1"/>
@@ -14460,6 +14460,7 @@ kind of free
 	<property name="CloseSound" value="close_door_wood"/>
 	<drop event="Destroy" count="0"/>
 	<property name="Group" value="Building,Science"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 	<!-- n Free -->
 
