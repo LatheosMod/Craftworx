@@ -2,11 +2,10 @@ Craftworx is compatible with Alpha 16.4b8
 
 Current version: Craftworx 2.74
 
-The README.md in the Cratworx github page now features a list of changes between this mod and the vanilla, which should help in figuring out how to get the best use out of this mod. You can find it here:
+There is now a wiki for Craftworx, located within the Github repository. It should help with understanding the differences between this mod and the vanilla game. You can access it directly by following this link:
+https://github.com/LatheosMod/Craftworx/wiki
 
-https://github.com/LatheosMod/Craftworx/blob/master/README.md
-
-Craftworx features a custom HUD created by adapting Sirillion's SMX UI, LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods and a flamethrower from Andy of Andy's Mods (originally for A12 but updated to A16). Credit for those parts of this mod goes to them. Additionally, Valmar, Sirillion and StompyNZ were extremely helpful in getting parts of this mod working properly. Thanks, guys!
+Craftworx features a custom HUD created by adapting Sirillion's SMX UI, LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third Forge Input and a flamethrower from Andy of Andy's Mods (originally for A12 but updated to A16). Credit for those parts of this mod goes to them. Additionally, Valmar, Sirillion and StompyNZ were extremely helpful in getting parts of this mod working properly, and Sphereii has been extremely helpful in getting Craftworx looking fantastic in the 7D2D Mod Launcher. Thanks, guys!
 
 Links:
 
