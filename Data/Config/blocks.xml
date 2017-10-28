@@ -16214,7 +16214,7 @@ kind of free
 
 <!-- Craftworx -->
 	<!-- Working Oven and Sink Mod -->
-<block id="2045" name="electricOven">
+<block id="2044" name="electricOven">
 	<property name="DescriptionKey" value="electricOvenDesc"/>
 	<property name="Class" value="Campfire" />
 	<property name="CustomIcon" value="cntOven" />
@@ -16237,7 +16237,7 @@ kind of free
 	<property name="EconomicValue" value="360"/> 
 </block>
 	
-<block id="2046" name="workingCabinetSink">
+<block id="2045" name="workingCabinetSink">
 	<property name="DescriptionKey" value="WorkingSinkDesc"/>
 	<property name="Extends" value="cntCabinetOldSink" />
 	<property name="CustomIcon" value="cntCabinetOldSink" />
@@ -16250,6 +16250,7 @@ kind of free
 	<property name="Group" value="Building"/>
 	<property name="CraftingSkillGroup" value="Carpentry"/>
 </block>
+	<!-- End Working Oven and Sink Mod -->
 <!-- End Cratworx -->	
 
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->

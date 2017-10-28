@@ -1,14 +1,12 @@
---- EAC MUST be disabled for this mod to run. ---
+Craftworx is compatible with Alpha 16.4b8
 
---- About This Mod ---
+Current version: Craftworx 2.74
 
-Craftworx is compatible with Alpha 16.3b12
+The README.md in the Cratworx github page now features a list of changes between this mod and the vanilla, which should help in figuring out how to get the best use out of this mod. You can find it here:
 
-Current version: Craftworx 2.5
+https://github.com/LatheosMod/Craftworx/blob/master/README.md
 
-I made a number of changes to CraftWorx in A16, removing a number of parts that are no longer necessary in the current build. I've removed all modified blocks (inclusding Valmar's traps), as I don't see them as necessary. I may later revisit the Fuel Log, depending on how whether it seems left out after playing the new version. Carpentry is back, but currently not attached to crafted wood block types, which may change later. Tailoring is also back, and set up in line with the other crafting skills using purchased point levels. Clothier has been renamed Tinker, Tailor, etc., and may later incorporate crafting leather clothing (it currently only covers the same cotton clothes as in A15).
-
-Craftworx features a custom HUD created by adapting Sirillion's SMX UI, LavenderJosh's Quality of Life and Firearms Improvement Mod, and a flamethrower from Andy of Andy's Mods (originally for A12 but updated to A16). Credit for those parts of this mod goes to them. Additionally, Valmar, Sirillion and StompyNZ were extremely helpful in getting parts of this mod working properly. Thanks, guys!
+Craftworx features a custom HUD created by adapting Sirillion's SMX UI, LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods and a flamethrower from Andy of Andy's Mods (originally for A12 but updated to A16). Credit for those parts of this mod goes to them. Additionally, Valmar, Sirillion and StompyNZ were extremely helpful in getting parts of this mod working properly. Thanks, guys!
 
 Links:
 
@@ -34,6 +32,8 @@ https://7daystodie.com/forums/showthread.php?48537-The-7D2D-Mod-Launcher-A-Mod-L
 -----Installation-----
 
 --- BACK UP YOUR CONFIG FILES BEFORE YOU MAKE ANY CHANGES WITH THIS MOD ---
+
+--- EAC MUST be disabled to play this mod ---
 
 In order to play nicely with the 7D2D Mod Launcher, the mod is set up with the correct folder structure to put files where the need to be to run the game properly. Installing this mod is a great deal easier as a result. Simply unpack the archive and copy the contents of Craftworx-master into your \Steam\SteamApps\common\7 Days To Die\, and the files will go where they need to go.
 

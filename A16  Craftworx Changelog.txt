@@ -172,8 +172,8 @@ Updated readme.md on Github with graphics and more information on changes from t
 <----- 26 Oct 2017 ----->
 Craftworx 2.72
 Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods
-Updated the localiation text for the working sink to make it easier to understand how to use it
-Fixed missing icon for Handcrating magazine, bagged meat
+Updated the localization text for the working sink to make it easier to understand how to use it
+Fixed missing icon for Handcrafting magazine, bagged meat
 
 <----- 27 Oct 2017 ----->
 Craftworx 2.73
@@ -182,5 +182,8 @@ Updated to A16.4(b8)
 Added elevator to blocks, recipes, and level 3 of advanced tooling
 Increased health and wellness gain on egg and bacon biscuit to be better than bacon and eggs
 
-
-
+<----- 27 Oct 2017 ----->
+Craftworx 2.74
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot
+Increased forge input slots from 2 to 3 (adjusting the spacing was a real bear - I hate working with the interface elements)
+Reduced the engine number in the elevator recipe from 2 to 1
