@@ -31,7 +31,7 @@
 			<window name="windowToolsForge" />
 			<window name="windowFuel" />
 			<window name="windowForgeInput" />
-			<window name="windowOutput" />
+			<window name="windowForgeOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
 		
@@ -71,6 +71,14 @@
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 		</window_group>
+		
+		<window_group name="workstation_portableCombiner" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowNonPagingHeader" />
+			<window name="windowCombine" />
+		</window_group>				
+		<!-- End Craftworx -->
 		
 		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup">
 			<window name="windowLooting"/>

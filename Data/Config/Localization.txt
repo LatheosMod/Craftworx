@@ -1420,7 +1420,7 @@ boiledMeatDesc,items,Food,EnChanged,"While not as yummy as grilled meat, boiling
 bottledRiverWater,items,Food,KgNone,Bottled Murky Water,Eau trouble en bouteille,Flasche trübes Wasser,,Agua turbia embotellada
 bottledRiverWaterDesc,items,Food,KgNone,Disgusting murky water but it's the apocalypse. You can't be picky. Boil at a campfire to purify it.,"De l'eau trouble dégoutante. Mais bon, c'est l'apocalypse. Ne faites pas la fine bouche. Faites-la bouillir sur un feu de camp pour la purifier.","Ekliges trübes Wasser, aber es ist die Apokalypse. Da darf man nicht wählerisch sein. Koch das Wasser am Lagerfeuer, damit es trinkbar wird.",,"Asquerosa agua turbia, pero estamos en el apocalipsis. ¡No puedes ponerte quisquilloso! Hiérvela en una fogata para purificarla."
 bottledWater,items,Food,KgNone,Bottled Water,Eau en bouteille,Flasche Wasser,,Agua embotellada
-bottledWaterDesc,items,Food,KgNone,Fresh bottled water. Well as fresh as you can get in the apocalypse.,"De l'eau fraîche en bouteille. Enfin, aussi fraîche qu'elle puisse l'être en période d'apocalypse.","Eine Flasche mit frischem Wasser. Na ja, so frisch, wie es während der Apokalypse geht.",,"Agua fresca embotellada. Bueno, tan fresca como puede ser en el apocalipsis."
+bottledWaterDesc,items,Food,KgNone,"Fresh bottled water. Well, as fresh as you can get in the apocalypse.","De l'eau fraîche en bouteille. Enfin, aussi fraîche qu'elle puisse l'être en période d'apocalypse.","Eine Flasche mit frischem Wasser. Na ja, so frisch, wie es während der Apokalypse geht.",,"Agua fresca embotellada. Bueno, tan fresca como puede ser en el apocalipsis."
 canBeef,items,Food,KgNone,Large Beef Ration,Grande ration de bœuf,Große Rindfleisch-Ration,,Gran porción de ternera
 canBeefDesc,items,Food,KgNone,It's not from your favorite steakhouse but this can of beef will fill you up. Bon appetit!,"Ça ne provient pas de votre restaurant à viandes préféré, mais ça vous remplira l'estomac. Bon appétit !","Dein Lieblings-Steakhouse ist es nicht, aber diese Dose Rindfleisch wird deinen Bauch füllen. Guten Appetit!",,"No es de tu asador favorito, pero te saciará. ¡Buen provecho!"
 canBoiledWater,items,Food,KgNone,Boiled Water,Eau bouillie,Konserve mit Wasser,,Agua hervida
@@ -4950,6 +4950,8 @@ scrapPickaxe,items,Tool,KgNone,Scrap Iron Pickaxe,,
 scrapPickaxeDesc,items,Tool,KgNone,"The scrap iron pickaxe is a better choice for mining than the stone axe, but isn't as good as the forged iron pickaxe.",,
 scrapShovel,items,Tool,KgNone,Scrap Iron Shovel,,
 scrapShovelDesc,items,Tool,KgNone,"The scrap iron shovel is better than the stone shovel, but isn't as good as forged iron.",,
+scrapArrow,items,Ammo,KgNone,Scrap Arrow (Ammo),,
+scrapArrowDesc,items,Ammo,KgNone,"Ammunition for a bow. Slightly better than a stone-tipped arrow, not as good as iron. Hold reload to use alternate ammo.",,
 fletchingJig,items,Tool,KgNone,Fletching Jig,,
 fletchingJigDesc,items,Tool,KgNone,"Crafted in the workbench, the Fletching Jig enables crafting of advanced arrows and bolts.",,
 drillPress,items,Tool,KgNone,Drill Press,,
@@ -5098,7 +5100,8 @@ workingCabinetSink,blocks,Block Building,,Cabinet Sink,,
 workingCabinetSinkDesc,blocks,Block Building,,"This working sink can be used as a source of water, but it'll need to be boiled before drinking or cooking. Right-click while holding empty jars to fill them.",,
 elevatorTest,blocks,Block,KgNone,Elevator,,
 elevatorTestDesc,blocks,Block,KgNone,"An elevator that traverses eight blocks up and down, and is capable of lifting the minibike.",,
-
+portableCombiner,blocks,Block,KgNone,Portable Combining Station,,
+portableCombinerDesc,blocks,Block,KgNone,"A quickly crafted portable combining station, just like the one in the workstation.",,
 
 magazineAthletics,items,Book,KgNone,The Essential Athelete,,
 magazineAthleticsDesc,items,Book,KgNone,Improve your Athletics skill by reading this magazine. This issue has a centerfold of Mad Mole.,,
@@ -5148,24 +5151,24 @@ magazineDefense,items,Book,KgNone,Taking The Hits,,
 magazineDefenseDesc,items,Book,KgNone,Learn how to better utilize armor by reading this book.,,
 
 grilledCorn,items,Food,KgNone,Grilled Corn,,
-grilledCornDesc,items,Food,KgNone,Grilled Corn is good for a quick bite of food with a small wellness boost.,,
+grilledCornDesc,items,Food,KgNone,Grilled Corn is good for a quick bite of food without leaving you filled up.,,
 grilledVegetables,items,Food,KgNone,Grilled Vegetables,,
-grilledVegetablesDesc,items,Food,KgNone,Eating your vegetables is good for you! Gain a moderate amount of food with a wellness boost.,,
+grilledVegetablesDesc,items,Food,KgNone,Eating your vegetables is good for you!,,
 potatoFlour,items,Food,KgNone,Potato Flour,,
 potatoFlourDesc,items,Food,KgNone,"Potato flour is used to make bread, biscuits, and other foods at the campfire.",,
 shepardsPie,items,Food,KgNone,Shepard's Pie,,
-shepardsPieDesc,items,Food,KgNone,"Healthy and quite filling, the Shepard's Pie gives a sizeable boost to food and wellness.",,
+shepardsPieDesc,items,Food,KgNone,"Healthy and quite filling, the Shepard's Pie will barely leave room for dessert.",,
 grilledMushrooms,items,Food,KgNone,Grilled Mushrooms,,
-grilledMushroomsDesc,items,Food,KgNone,"Just the thing for you cave-dwellers, grilled mushrooms give a tiny amount of food with an equally small wellness boost.",,
+grilledMushroomsDesc,items,Food,KgNone,"Just the thing for you cave-dwellers, grilled mushrooms are like popcorn made of fungus!",,
 bread,items,Food,KgNone,Bread,,
 breadDesc,items,Food,KgNone,"Wholesome potato bread is good enough for a snack on its own, and can be used to make other meals at the campfire.",,
 eggAndBaconBiscuit,items,Food,KgNone,Egg and Bacon Biscuit,,
-eggAndBaconBiscuitDesc,items,Food,KgNone,"Just like you used to get at McDougal's! A filling and hearty hand-sized meal with a sizeable wellnes boost.",,
+eggAndBaconBiscuitDesc,items,Food,KgNone,"Just like you used to get at McDougal's! A filling and hearty hand-sized meal.",,
 steakSandwich,items,Food,KgNone,Steak Sandwich,,
-steakSandwichDesc,items,Food,KgNone,The basic meat and bread combo. Hearty with a good wellness boost.,,
+steakSandwichDesc,items,Food,KgNone,The basic meat and bread combo. Hearty and filling.,,
 stripSteakAndMushrooms,items,Food,KgNone,Strip Steak and Mushrooms,,
-stripSteakAndMushroomsDesc,items,Food,KgNone,Red meat and fungus is the order of the day! Eat this filling meal with a strong side of wellness.,,
+stripSteakAndMushroomsDesc,items,Food,KgNone,Red meat and fungus is the order of the day!,,
 biscuitsAndGravy,items,Food,KgNone,Biscuits and Gravy,,
 biscuitsAndGravyDesc,items,Food,KgNone,"Staple food of the American South, Biscuits and Gravy are good for a quick pick-me-up.",,
 meatAndPotatoes,items,Food,KgNone,Meat and Potatoes,,
-meatAndPotatoesDesc,items,Food,KgNone,Captain Caveman-Approved! A very filling meal with a healthy wellness boost.,,
+meatAndPotatoesDesc,items,Food,KgNone,Captain Caveman-Approved! A very filling meal with just enough room for pie.,,

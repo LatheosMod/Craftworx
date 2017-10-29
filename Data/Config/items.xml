@@ -2177,7 +2177,7 @@ Mesh files no longer used:
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
-	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
 	<property name="CrosshairUpAfterShot" value="false"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Catapult"/>
@@ -2187,7 +2187,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="arrow,ironArrow,steelArrow"/>
+		<property name="Magazine_items" value="arrow,scrapArrow,ironArrow,steelArrow"/>
 		<property name="Rays_spread" value="0.017"/>
 		<property name="Reload_time" value="0.9"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -11382,6 +11382,27 @@ Mesh files no longer used:
 </item>
 <!-- End Katt's New Foods --> 
 
+<!-- Scrap Arrows -->
+<item id="2114" name="scrapArrow">
+	<property name="Extends" value="arrow"/>
+	<property name="CustomIcon" value="arrow" />
+	<property name="CustomIconTint" value="E66920" />
+	<property name="Material" value="metal"/>
+	<property name="EconomicValue" value="18"/>
+	<property name="EconomicBundleSize" value="5"/>
+	<property class="Action1">
+		<property name="Velocity" value="55"/>
+		<property name="Gravity" value="-4"/>
+		<property name="LifeTime" value="12"/>
+	</property>
+	<property name="Group" value="Basics,Ammo/Weapons"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="19,31"/>
+		<property name="BlockDamage" value="2,4"/>
+		<property name="ApplyBuff" value="0.35,0.35" param1="arrowCriticalBleedout"/>
+	</property>
+</item>
+<!-- End Scrap Arrows -->
 <!-- End Craftworx -->
 
 

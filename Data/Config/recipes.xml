@@ -3106,6 +3106,12 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="gasCan" count="1"/>
 	<ingredient name="glue" count="1"/>
 </recipe>
+
+<recipe name="scrapArrow" count="1">
+	<ingredient name="scrapIron" count="3"/>
+	<ingredient name="wood" count="1"/>
+	<ingredient name="feather" count="1"/>
+</recipe>
 <!-- End Ammunition -->
 
 <!-- Lighted Helmets -->
@@ -3494,6 +3500,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 <!-- End Elevator -->
 
+<!-- Portable Combining Station -->		
+<recipe name="portableCombiner" count="1">
+	<ingredient name="scrapIron" count="75"/>
+	<ingredient name="mechanicalParts" count="3"/>
+	<ingredient name="wood" count="75"/>
+</recipe>
+<!-- End Portable Combining Station -->		
 <!-- End Craftworx -->
 
 

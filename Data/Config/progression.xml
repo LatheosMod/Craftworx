@@ -1494,7 +1494,7 @@ skill_point_cost_multiplier="0" skill_point_cost_per_level="25" group="science">
 	</perk>
 
   <!-- Craftworx - QoLaFIM A16.2 - raised exp to level 26>60, xp multiplier raised 1.0606>1.1, exp gain multiplier 0.5>0.2 - I hope that finally fixes bartering! >:[ -->
-	<player_skill name="Barter" exp_to_level="60" experience_multiplier="1.1" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.1">
+	<player_skill name="Barter" exp_to_level="60" experience_multiplier="1.1" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging" exp_gain_multiplier="0.2">
 		<effect name="Bartering">
 			<add skill_level="1,10" value="0.00,0.15"/>
 			<add skill_level="10,20" value="0.15,0.23"/>

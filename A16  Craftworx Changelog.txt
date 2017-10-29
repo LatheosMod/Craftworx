@@ -24,7 +24,7 @@ Added item springCable, cable constructed from straightened springs at the workb
 Removed craftable calipers as they are no longer used by the game
 Fixed perk spelling error - it's "Tyrannosaurus", with two 'n's
 Removed calipers from advanced tooling perk
-Changed Gun Bunny to only add flamethrower recipe at level 1 (other recipes back as found scematics)
+Changed Gun Bunny to only add flamethrower recipe at level 1 (other recipes back as found schematics)
 Changed dismemberment values on William Tell perk to mirror those of the decapitator blade perk
 Reduced requirements for Masamune, Jr perk, as science skill is now rolled into the steel perk
 Changed Silent But Deadly perk to a single item with five levels, as was originally intended but not possible in A15
@@ -36,7 +36,7 @@ Fixed missing icons
 Fixed runaway skill points by adding exp_gain_multiplier="0" to new perks updated to new skill point purchasing system
 Added flamingBolt to usable ammunition types for crossbow
 Added recipe for blackCowboyHat
-Added 4th level to Tinker Tailor perk, requires level 4 craftskillArmor & craftskillTailoring, adding recipes for blackCowboyHat and leatherDusterBlack
+Added 4th level to Tinker Tailor perk, requires level 4 craftskillArmor & craftSkillTailoring, adding recipes for blackCowboyHat and leatherDusterBlack
 Fixed typo in springCable description
 Added harvesting springs to fridges, ovens, and added disassemble option to dumpsters
 
@@ -112,13 +112,13 @@ Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life an
 Fixed harvesting workstations to remove duplication issue. This time I mean it!
 Added skullpoker's deep diving perk
 Added craftable electric oven and cabinet sink - electric oven doesn't currently require power because the game doesn't yet support it
-Added tools to the workbench for crafting ammo, fletching advanced arros/bolts, crafting armor
+Added tools to the workbench for crafting ammo, fletching advanced arrows/bolts, crafting armor
 Changed metal and advanced armors to require workbench and drill press
 Changed steel and advanced arrows/bolts to use workbench, fletching jig, and scrap plastic instead of feathers
 Changed ammunition recipes to use calipers at the workbench
 Changed kukri recipe to require workbench
 Replaced all magazine icons with new images based on game assets
-Changed the stack number on shematicMaster from 1 to 10
+Changed the stack number on schematicMaster from 1 to 10
 Added <property name="CraftingSkillGroup" value="Carpentry"/> to all wood-crafted blocks
 
 <----- 13 Oct 2017 ----->
@@ -129,7 +129,7 @@ Rebalanced progression point levels to make it more challenging over the long ru
 Added 5th level of Tinker Tailor etc, allowing crafting of gothic pants and boots
 Fixed incorrect harvesting of sinks
 Changed cloth to use craftSkillTailoring instead of craftSkillMiscellaneous
-Updated Craftworx logo in menu and hud
+Updated Craftworx logo in menu and HUD
 
 <----- 15 Oct 2017 -----?
 Craftworx 2.62
@@ -148,7 +148,7 @@ Fixed icon image for magazineMisc
 <----- 19 Oct 2017 ----->
 Craftworx 2.7
 Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods
-Increased skill requirement for Masamune, Jr from craftwkillweapons 6 to 8, as it is stronger than the machete
+Increased skill requirement for Masamune, Jr from craftSkillWeapons 6 to 8, as it is stronger than the machete
 Decreased skill point gain from 9 to 8
 Split magazines into commonMagazines (for general 1-100 skills) and rareMagazines (for crafting skills 1-10)
 Added rareMagazines to loot lists that also contain rareBooks
@@ -187,3 +187,12 @@ Craftworx 2.74
 Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot
 Increased forge input slots from 2 to 3 (adjusting the spacing was a real bear - I hate working with the interface elements)
 Reduced the engine number in the elevator recipe from 2 to 1
+
+<----- 28 Oct 2017 ----->
+Craftworx 2.75
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot
+Added scrap arrows, slightly better than stone, not as good as iron
+Adjusted barter experience gain upward slightly
+Enabled crosshair on aim when using bows
+Reworded the descriptions for Katt's New Foods, removing references to wellness and food gain
+Added portable combining station
