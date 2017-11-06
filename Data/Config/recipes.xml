@@ -3071,6 +3071,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="ironArrowHead" count="1" />
 </recipe>
 
+<recipe name="ironArrow" count="1" scrapable="False" craft_area="workbench">
+    <ingredient name="scrapArrow" count="1" />
+    <ingredient name="ironArrowHead" count="1" />
+</recipe>
+
 <recipe name="steelArrow" count="1" scrapable="False" craft_area="workbench" craft_tool="fletchingJig">
     <ingredient name="arrow" count="1" />
     <ingredient name="steelArrowHead" count="1" />
@@ -3181,11 +3186,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="plantFiberHat" count="1" />
 </recipe>
 
-<recipe name="heavyBanditGasmaskLight" count="1" scrapable="False">
+<!-- <recipe name="heavyBanditGasmaskLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
     <ingredient name="heavyBanditGasmask" count="1" />
-</recipe>
+</recipe> -->
 
 <recipe name="hazmatMaskLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />

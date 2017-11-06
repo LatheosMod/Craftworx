@@ -1,6 +1,6 @@
 Craftworx is compatible with Alpha 16.4b8
 
-Current version: Craftworx 2.75
+Current version: Craftworx 2.76
 
 There is now a wiki for Craftworx, located within the Github repository. It should help with understanding the differences between this mod and the vanilla game. You can access it directly by following this link:
 https://github.com/LatheosMod/Craftworx/wiki
@@ -20,6 +20,9 @@ https://7daystodie.com/forums/showthread.php?71340-Quality-of-Life-and-Firearms-
 
 Magoli's CompoPack (Prefabs)
 https://7daystodie.com/forums/showthread.php?28057-Compo-Pack-for-Random-Gen
+
+stallionsden's Expanded Backpack
+https://7daystodie.com/forums/showthread.php?72974-Backpack-expansion-a16-onwards
 
 Andy's Mods
 https://www.youtube.com/channel/UCzWKM0Bt-LnX9ZLTe5FWPFg/featured
@@ -42,7 +45,10 @@ Please be aware that if the game updates, that will overwrite this mod, and you 
 
 --- Servers ---
 
-Craftworx was designed for use in single-player games, so running this mod on a server may present some difficulties I haven't foreseen. If your players are missing the icons from this mod, have them download the icon pack; extract the archive and copy the \Mods folder to their 7 Days to Die folder. In the case of the expanded backpack, please visit the Backpack Expansion  thread to download the 75-slot backpack dedicated DLL file. Of course, you can avoid some of these problems by using the 7D2D Mod Launcher...
+Craftworx was designed for use in single-player games, so running this mod on a server may present some difficulties I haven't foreseen. If your players are missing the icons from this mod, have them download the icon pack; extract the archive and copy the \Mods folder to their 7 Days to Die folder. In the case of the expanded backpack, the server admin needs to download the appropriate version of the 72-slot backpack, which can be found here:
+https://7daystodie.com/forums/showthread.php?72974-Backpack-expansion-a16-onwards
+
+There are more directions on setting up a dedicated server in that post.
 
 Craftworx Icon Pack
 https://github.com/LatheosMod/CraftworxIcons/archive/master.zip

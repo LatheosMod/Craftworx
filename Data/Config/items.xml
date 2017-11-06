@@ -7684,7 +7684,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunAK47"/>
+		<property name="Recipes_to_learn" value="gunAK47,gunscopedAK47,partsscopedAK47_parts"/>
 		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
@@ -7693,7 +7693,7 @@ Mesh files no longer used:
 <item id="931" name="huntingRifleSchematic">
 	<property name="Extends" value="schematicMaster"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="gunHuntingRifle,partsscopedHuntingRifle_parts"/>
+		<property name="Recipes_to_learn" value="gunHuntingRifle,partsscopedHuntingRifle_parts,gunscopedHuntingRifle"/>
 		<!-- <property name="Skills_to_gain" value="craftSkillGuns"/> -->
 	</property>
 	<property name="PickupJournalEntry" value="gunAssemblyTip"/>
@@ -10560,7 +10560,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="plantFiberHatLightDesc"/>
 </item>
 
-<item id="2057" name="heavyBanditGasmaskLight"> <!-- banditArmor -->
+<!-- <item id="2057" name="heavyBanditGasmaskLight"> 
 	<property name="Extends" value="heavyBanditGasmask" />
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -10568,7 +10568,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="660" />
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="DescriptionKey" value="heavyBanditGasmaskLightDesc"/>
-</item>
+</item> -->
 
 <item id="2058" name="hazmatMaskLight"> <!-- hazMatArmor -->
 	<property name="Extends" value="hazmatMask" />

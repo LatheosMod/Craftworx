@@ -196,3 +196,17 @@ Adjusted barter experience gain upward slightly
 Enabled crosshair on aim when using bows
 Reworded the descriptions for Katt's New Foods, removing references to wellness and food gain
 Added portable combining station
+
+<----- 6 Nov 2017 ----->
+Craftworx 2.76
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot
+Fixed scoped hunting rifle, scoped hunting rifle parts to now require learning the hunting rifle schematic - can no longer make the scoped hunting rifle without learning the recipe
+Fixed scoped AK-47, scoped AK-47 parts to now require learning the Ak-47 schematic - can no longer make the scoped AK-47 without learning the recipe
+Disabled heavyBanditGasmaskLight, as it's not properly a helmet, and tends to conflict with other lighted headgear's ability to activate the light
+Added chance to harvest car batteries from undamaged cars
+Increased chance and amount of harvesting mechanical parts from cars
+Added chance of common magazines appearing in mailbox loot
+Reverted munitions boxes to drop iron and steel when harvesting with axe/pickaxe, changed from harvesting with disassembly
+Changed disassembly code for all workstations to make them more consistent
+Changed chemistry station to list under science instead of tools in progresion.xml
+Added upgrade for scrap arrows to ironat the workbench

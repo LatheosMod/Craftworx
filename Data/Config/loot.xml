@@ -1594,9 +1594,10 @@
 </lootcontainer>
 
 <!-- misc metal container mailbox-->
-<lootcontainer id="14" count="0,2" size="4,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="baseTemplate">
+<lootcontainer id="14" count="0,3" size="4,2" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="baseTemplate">
 	<item group="books" prob="0.1"/>
 	<item name="paper" count="1,10"/>
+	<item group="commonMagazines" count="1,2" prob=".4"/>
 </lootcontainer>
 
 <!-- generic zombie loot-->

@@ -432,9 +432,9 @@
 		<recipe name="spring" unlock_level="1"/>
 	</perk>
 	
-	<perk name="ChemStationPerk" icon="resource" description_key="chemStationPerkDesc" title_key="chemistryStation" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
-		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="7"/>
-		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="3"/>
+	<perk name="ChemStationPerk" icon="resource" description_key="chemStationPerkDesc" title_key="chemistryStation" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="science">
+		<requirement skill_level="1" required_skill_name="craftSkillTools" required_skill_level="7"/>
+		<requirement skill_level="1" required_skill_name="craftSkillScience" required_skill_level="3"/>
 		<recipe name="chemistryStation" unlock_level="1"/>
 	</perk>
 
