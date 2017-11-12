@@ -163,7 +163,6 @@ quality_mod: adjusts the price range of all items with a quality level.
 		<trader_item_group name="banditArmor">
 			<item name="heavyBanditGloves"/>
 			<item name="heavyBanditGasmask"/>
-			<item name="heavyBanditGasmaskLight"/>
 			<item name="heavyBanditBoots"/>
 			<item name="heavyBanditLegArmor"/>
 			<item name="heavyBanditChestArmor"/>
