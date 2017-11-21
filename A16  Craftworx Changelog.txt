@@ -216,3 +216,4 @@ Changed supply crate (lootcontainer 34) to destroy on close
 Craftworx 2.77
 Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot
 Added crosshairs showing after shot on wooden bow and nailgun (for Lumun)
+Changed car max damage from 1000 to 750 to make it less of a slog to wrench

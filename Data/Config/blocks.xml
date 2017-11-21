@@ -13329,7 +13329,7 @@ kind of free
   <!-- Craftworx - QoLaFIM - harvest redone for all car instances, maxdamage raised 300>1000 (cars are treasure troves now) -->
 <block id="1453" name="cntCar03SedanDamage0">
 	<property name="Material" value="metal"/>
-	<property name="MaxDamage" value="1000"/>
+	<property name="MaxDamage" value="750"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="LootList" value="19"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -13392,7 +13392,7 @@ kind of free
 
 <block id="1454" name="cntCar03SedanDamage1">
 	<property name="Material" value="metal"/>
-	<property name="MaxDamage" value="1000"/>
+	<property name="MaxDamage" value="750"/>
 	<property name="Class" value="CarExplodeLoot"/>
 	<property name="LootList" value="19"/>
 	<property name="Shape" value="ModelEntity"/>
@@ -13450,7 +13450,7 @@ kind of free
 <block id="1455" name="cntCar03SedanDamage2"> <!-- car wreck, no color -->
 	<property name="Class" value="CarExplode"/>
 	<property name="Material" value="metal"/>
-	<property name="MaxDamage" value="1000"/>
+	<property name="MaxDamage" value="750"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
