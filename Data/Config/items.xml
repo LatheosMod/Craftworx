@@ -1945,7 +1945,7 @@ Mesh files no longer used:
 	<property name="HoldType" value="37"/>
 	<property name="DegradationBreaksAfter" value="false"/>
 	<property name="SoundJammed" value="weapon_jam"/>
-	<property name="CrosshairUpAfterShot" value="false"/>
+	<property name="CrosshairUpAfterShot" value="true"/>
 	<property class="Parts">
 		<property name="Stock" value="partsNailgun_frame"/>
 		<property name="Receiver" value="partsNailgun_receiver"/>
@@ -2178,7 +2178,7 @@ Mesh files no longer used:
 	<property name="SoundJammed" value="ItemNeedsRepair"/>
 	<property name="SoundDestroy" value="wooddestroy1"/>
 	<property name="CrosshairOnAim" value="true"/> <!-- aimTest -->
-	<property name="CrosshairUpAfterShot" value="false"/>
+	<property name="CrosshairUpAfterShot" value="true"/>
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Catapult"/>
 		<!-- Catapult might not be the best name for it but it can also be used for a slingshot -->

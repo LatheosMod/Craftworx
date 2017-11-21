@@ -208,5 +208,11 @@ Increased chance and amount of harvesting mechanical parts from cars
 Added chance of common magazines appearing in mailbox loot
 Reverted munitions boxes to drop iron and steel when harvesting with axe/pickaxe, changed from harvesting with disassembly
 Changed disassembly code for all workstations to make them more consistent
-Changed chemistry station to list under science instead of tools in progresion.xml
-Added upgrade for scrap arrows to ironat the workbench
+Changed chemistry station to list under science instead of tools in progression.xml
+Added upgrade for scrap arrows to iron at the workbench
+Changed supply crate (lootcontainer 34) to destroy on close
+
+<----- 21 Nov 2017 ----->
+Craftworx 2.77
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot
+Added crosshairs showing after shot on wooden bow and nailgun (for Lumun)
