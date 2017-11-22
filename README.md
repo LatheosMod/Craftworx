@@ -7,6 +7,9 @@ https://github.com/LatheosMod/Craftworx/wiki
 
 Craftworx features a custom HUD created by adapting Sirillion's SMX UI, LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third Forge Input and a flamethrower from Andy of Andy's Mods (originally for A12 but updated to A16). Credit for those parts of this mod goes to them. Additionally, Valmar, Sirillion and StompyNZ were extremely helpful in getting parts of this mod working properly, and Sphereii has been dedicated in getting Craftworx to look fantastic in the 7D2D Mod Launcher. Thanks, guys!
 
+There is now a Discord channel for this mod. It's a work in progress, so expect constant changes (and, likely, mistakes). It can be found here:
+https://discord.gg/23hS3V7
+
 Links:
 
 7 Days to Die Modding Forums
