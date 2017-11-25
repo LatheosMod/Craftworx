@@ -78,6 +78,7 @@ Mesh files no longer used:
 	<property name="CritChance" value="0.10"/>
 	<property name="Group" value="Ammo/Weapons,Basics"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, value 100>120, sellable -->
 <item id="7" name="clubIron">
 	<property name="Extends" value="clubMaster"/>
@@ -103,6 +104,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="DescriptionKey" value="clubIronDesc"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, value 192>220, sellable -->
 <item id="8" name="clubBarbed">
 	<property name="Extends" value="clubIron"/>
@@ -127,6 +129,7 @@ Mesh files no longer used:
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="DescriptionKey" value="clubBarbedDesc"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, value 300>340, sellable -->
 <item id="9" name="clubSpiked">
 	<property name="Extends" value="clubIron"/>
@@ -149,6 +152,7 @@ Mesh files no longer used:
 	<property name="CritChance" value="0.4"/>
 	<property name="DescriptionKey" value="clubSpikedDesc"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, damage boni adjusted, delay slighly reduced, range improved, value 500>900 -->
 <item id="12" name="sledgehammer">
 	<property name="Meshfile" value="Items/Tools/sledgehammer_steelPrefab"/>
@@ -261,6 +265,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="300,6000"/>
 	</property>
 	<property name="PickupJournalEntry" value="augmentGunsTip"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
 
 <item id="18" name="femur">
@@ -318,6 +323,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Blade Weapons"/>
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, delay reduced, value 120>240 -->
 <item id="21" name="huntingKnife">
 	<property name="Meshfile" value="Items/Weapons/Melee/Knives/hunting_knifePrefab"/>
@@ -355,6 +361,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillWeapons"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, range adjusted -->
 <item id="22" name="machete">
 	<property name="Meshfile" value="Items/Weapons/Melee/Knives/machetePrefab"/>
@@ -1433,6 +1440,7 @@ Mesh files no longer used:
 		<property name="Block_range" value="5"/>
 	</property>
 </item>
+
   <!-- QoLaFIM A16.2 - lowered infection chance 0.4>0.25, damage 10>8 -->
 <item id="103" name="handAnimalZombieVulture">
 	<property name="Extends" value="handMaster"/>
@@ -1535,6 +1543,7 @@ Mesh files no longer used:
 		<property name="DegradationRate" value="1,1"/>
 	</property>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, damage boni adjusted, delay raised, range improved, value 240>430 -->
 <item id="107" name="fireaxeIron">
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab"/>
@@ -1578,6 +1587,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, delay raised, value 912>1440 -->
 <item id="108" name="fireaxeSteel">
 	<property name="Extends" value="fireaxeIron"/>
@@ -1599,6 +1609,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="500,1400"/>
 	</property>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, damage boni adjusted, delay raised, range improved, value 240>540 -->
 <item id="113" name="pickaxeIron">
 	<property name="Meshfile" value="Items/Tools/pickaxe_ironPrefab"/>
@@ -1641,6 +1652,7 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="miningTip"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, delay lowered, value 912>1800 -->
 <item id="114" name="pickaxeSteel">
 	<property name="Extends" value="pickaxeIron"/>
@@ -1751,6 +1763,7 @@ Mesh files no longer used:
 	<property name="PickupJournalEntry" value="miningTip"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, value 912>1200 -->
 <item id="119" name="shovelSteel">
 	<property name="Extends" value="shovelIron"/>
@@ -1773,6 +1786,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="500,1400"/>
 	</property>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, damage boni adjusted, range improved, value 200>288 -->
 <item id="122" name="hoeIron">
 	<property name="Meshfile" value="Items/Tools/hoe_ironPrefab"/>
@@ -1837,6 +1851,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, damage boni adjusted, value 288>874 -->
 <item id="126" name="wrench">
 	<property name="Meshfile" value="Items/Tools/wrenchPrefab"/>
@@ -1888,6 +1903,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - damage adjusted, stamina usage adjusted, range reduced, value 200>140 -->
 <item id="127" name="clawHammer">
 	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
@@ -2092,6 +2108,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - value 216>418 -->
 <item id="133" name="wireTool">
 	<property name="Meshfile" value="Items/Tools/wire_strippersPrefab"/>
@@ -2220,6 +2237,7 @@ Mesh files no longer used:
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - value raised 220>800, it was dirt cheap considering its effectiveness! -->
 <item id="146" name="crossbow">
 	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab"/>
@@ -2909,6 +2927,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="328"/>
 </item>
+
 <item id="211" name="partsPistol_receiver">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsPistolGroupDesc"/>
@@ -2920,6 +2939,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="328"/>
 </item>
+
 <item id="212" name="partsPistol_parts">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsPistolGroupDesc"/>
@@ -2931,6 +2951,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="328"/>
 </item>
+
 <item id="213" name="partsPistol_barrel">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsPistolGroupDesc"/>
@@ -2957,6 +2978,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="844"/>
 </item>
+
 <item id="217" name="parts44Magnum_cylinder">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="parts44MagnumGroupDesc"/>
@@ -2968,6 +2990,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="844"/>
 </item>
+
 <item id="218" name="parts44Magnum_parts">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="parts44MagnumGroupDesc"/>
@@ -2979,6 +3002,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="844"/>
 </item>
+
 <item id="219" name="parts44Magnum_frame">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="parts44MagnumGroupDesc"/>
@@ -3007,6 +3031,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="394"/>
 </item>
+
 <item id="223" name="partsPumpShotgun_receiver">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="commonShotgunPartsGroupDesc"/>
@@ -3018,6 +3043,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="394"/>
 </item>
+
 <item id="224" name="partsPumpShotgun_parts">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="commonShotgunPartsGroupDesc"/>
@@ -3029,6 +3055,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="394"/>
 </item>
+
 <item id="225" name="partsPumpShotgun_barrelShort">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsPumpShotgunShortGroupDesc"/>
@@ -3039,6 +3066,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="394"/>
 </item>
+
 <item id="226" name="partsPumpShotgun_stock">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsPumpShotgunGroupDesc"/>
@@ -3052,6 +3080,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="394"/>
 </item>
+
 <item id="227" name="partsPumpShotgun_barrel">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsPumpShotgunGroupDesc"/>
@@ -3075,6 +3104,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="900"/>
 </item>
+
 <item id="231" name="partsMP5_receiver">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsMP5GroupDesc"/>
@@ -3086,6 +3116,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="900"/>
 </item>
+
 <item id="232" name="partsMP5_parts">
 	<property name="Extends" value="partsMaster"/>
 	<property name="CustomIcon" value="parts44Magnum_parts"/> <!-- xxx -->
@@ -3098,6 +3129,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="900"/>
 </item>
+
 <item id="233" name="partsMP5_barrel">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsMP5GroupDesc"/>
@@ -3125,6 +3157,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="1200"/>
 </item>
+
 <item id="237" name="partsAK47_receiver">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsAK47GroupDesc"/>
@@ -3136,6 +3169,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="1200"/>
 </item>
+
 <item id="238" name="partsAK47_parts">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsAK47GroupDesc"/>
@@ -3147,6 +3181,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="1200"/>
 </item>
+
 <item id="239" name="partsAK47_barrel">
 	<property name="Extends" value="partsMaster"/>
 	<property name="CustomIcon" value="partsPistol_barrel"/> <!-- xxx -->
@@ -3177,6 +3212,7 @@ Mesh files no longer used:
 	</property>
   <property name="EconomicValue" value="562"/>
 </item>
+
 <item id="243" name="partsHuntingRifle_receiver">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsHuntingRifleGroupDesc"/>
@@ -3188,6 +3224,7 @@ Mesh files no longer used:
 	</property>
   <property name="EconomicValue" value="562"/>
 </item>
+
 <item id="244" name="partsHuntingRifle_parts">
 	<property name="Extends" value="partsMaster"/>
 	<property name="CustomIcon" value="partsPistol_parts"/> <!-- xxx -->
@@ -3200,6 +3237,7 @@ Mesh files no longer used:
 	</property>
   <property name="EconomicValue" value="562"/>
 </item>
+
 <item id="245" name="partsHuntingRifle_barrel">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsHuntingRifleGroupDesc"/>
@@ -3228,6 +3266,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="1312"/>
 </item>
+
 <item id="249" name="partsSniperRifle_receiver">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsSniperRifleGroupDesc"/>
@@ -3239,6 +3278,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="1312"/>
 </item>
+
 <item id="250" name="partsSniperRifle_parts">
 	<property name="Extends" value="partsMaster"/>
 	<property name="CustomIcon" value="partsPistol_parts"/> <!-- xxx -->
@@ -3251,6 +3291,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="1312"/>
 </item>
+
 <item id="251" name="partsSniperRifle_barrel">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsSniperRifleGroupDesc"/>
@@ -3276,6 +3317,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="1500"/>
 </item>
+
 <item id="255" name="partsRocketLauncher_receiver">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsRocketLauncherGroupDesc"/>
@@ -3287,6 +3329,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="1500"/>
 </item>
+
 <item id="256" name="partsRocketLauncher_parts">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsRocketLauncherGroupDesc"/>
@@ -3298,6 +3341,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="1500"/>
 </item>
+
 <item id="257" name="partsRocketLauncher_barrel">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsRocketLauncherGroupDesc"/>
@@ -3352,6 +3396,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="Group" value="Resources,Tools/Traps"/>
 </item>
+
 <item id="265" name="partsAuger_parts">
 	<property name="Extends" value="partsMaster"/>
 	<property name="PartType" value="Stock"/>
@@ -3363,6 +3408,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - craft skill weapons>science -->
 <item id="266" name="partsAuger_blade">
 	<property name="Extends" value="partsMaster"/>
@@ -3397,6 +3443,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+
 <item id="270" name="minibikeSeat">
 	<property name="DescriptionKey" value="minibikePartsGroupDesc"/>
 	<property name="VehicleSlotType" value="seat"/>
@@ -3413,6 +3460,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+
 <item id="271" name="minibikeWheels">
 	<property name="DescriptionKey" value="minibikePartsGroupDesc"/>
 	<property name="VehicleSlotType" value="wheel"/>
@@ -3431,6 +3479,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+
 <item id="272" name="padlock">
 	<property name="VehicleSlotType" value="lock"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
@@ -3446,6 +3495,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+
 <item id="273" name="minibikeHandlebars">
 	<property name="DescriptionKey" value="minibikePartsGroupDesc"/>
 	<property name="VehicleSlotType" value="handlebars"/>
@@ -3464,6 +3514,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+
 <item id="274" name="shoppingBasketItem">
 	<property name="VehicleSlotType" value="basket"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
@@ -3480,6 +3531,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="1200,6000"/>
 	</property>
 	<property name="Group" value="Decor/Miscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
 
 <item id="276" name="partsNailgun_frame">
@@ -3495,6 +3547,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="300"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+
 <item id="277" name="partsNailgun_receiver">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsNailgunGroupDesc"/>
@@ -3507,6 +3560,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="300"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+
 <item id="278" name="partsNailgun_parts">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsNailgunGroupDesc"/>
@@ -3520,6 +3574,7 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="300"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
+
 <item id="279" name="partsNailgun_battery">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsNailgunGroupDesc"/>
@@ -3545,6 +3600,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillFletching"/>
 </item>
+
 <item id="281" name="partsCompoundBow_grip">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsCompoundBowGroupDesc"/>
@@ -3557,6 +3613,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillFletching"/>
 </item>
+
 <item id="282" name="partsCompoundBow_parts">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsCompoundBowGroupDesc"/>
@@ -3570,6 +3627,7 @@ Mesh files no longer used:
 	</property>
 	<property name="CraftingSkillGroup" value="craftSkillFletching"/>
 </item>
+
 <item id="283" name="partsCompoundBow_string">
 	<property name="Extends" value="partsMaster"/>
 	<property name="DescriptionKey" value="partsCompoundBowGroupDesc"/>
@@ -3699,7 +3757,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="clothClothesGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="CraftingSkillGroup" value="craftSkillTailoring"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
 
@@ -3874,6 +3932,7 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
 	<property name="RepairExpMultiplier" value="10.8"/>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - value 140  -->
 <item id="371" name="leatherGloves"> <!-- leatherArmor -->
 	<property name="Extends" value="leatherBoots"/>
@@ -3913,6 +3972,7 @@ Mesh files no longer used:
 		<property name="UISlot" value="ChestArmor"/>
 	</property>
 </item>
+
   <!-- Craftworx - QoLaFIM A16.2 - value 170  -->
 <item id="374" name="leatherHood"> <!-- leatherArmor -->
 	<property name="Extends" value="leatherBoots"/>
@@ -4742,6 +4802,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+	<property name="CraftingSkillGroup" value="craftSkillTailoring"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -5354,7 +5415,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="pufferCoatGroupDesc"/>
 	<property name="Group" value="Clothing"/>
 	<property name="ActionSkillGroup" value="Clothing/Armor"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillTailoring"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
 </item>
 
@@ -6184,7 +6245,7 @@ Mesh files no longer used:
 	</property>
 	<property name="Group" value="Science"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="ActionExp" value="10"/>
 </item>
 
@@ -6250,7 +6311,7 @@ Mesh files no longer used:
 	<property name="Group" value="Science,Basics"/>
 	<property name="DescriptionKey" value="bandageDesc"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<property name="ActionExp" value="10"/>
 	<property name="PickupJournalEntry" value="firstAidTip"/>
 </item>
@@ -7792,6 +7853,7 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="paintMagazineGroupDesc"/>
 	<property name="PickupJournalEntry" value="paintingTip"/>
 </item>
+
 <item id="952" name="paintMagazineFaux">
 	<property name="Extends" value="paintMagazineDecorations"/>
 	<property class="Action1">
@@ -7799,6 +7861,7 @@ Mesh files no longer used:
 	</property>
 	<property name="PickupJournalEntry" value="paintingTip"/>
 </item>
+
 <item id="953" name="paintMagazineMasonry">
 	<property name="Extends" value="paintMagazineDecorations"/>
 	<property name="EconomicValue" value="200"/>
@@ -7807,6 +7870,7 @@ Mesh files no longer used:
 	</property>
 	<property name="PickupJournalEntry" value="paintingTip"/>
 </item>
+
 <item id="954" name="paintMagazineMetal">
 	<property name="Extends" value="paintMagazineDecorations"/>
 	<property name="EconomicValue" value="200"/>
@@ -7815,6 +7879,7 @@ Mesh files no longer used:
 	</property>
 	<property name="PickupJournalEntry" value="paintingTip"/>
 </item>
+
 <item id="955" name="paintMagazineWallCoverings">
 	<property name="Extends" value="paintMagazineDecorations"/>
 	<property name="EconomicValue" value="200"/>
@@ -7823,6 +7888,7 @@ Mesh files no longer used:
 	</property>
 	<property name="PickupJournalEntry" value="paintingTip"/>
 </item>
+
 <item id="956" name="paintMagazineWoodAndRoofing">
 	<property name="Extends" value="paintMagazineDecorations"/>
 	<property name="EconomicValue" value="200"/>
@@ -7849,6 +7915,7 @@ Mesh files no longer used:
 		<!-- <property name="Skills_to_gain" value="craftSkillTools"/> -->
 	</property>
 </item>
+
 <item id="971" name="clawHammerSchematic"> <!-- NO LONGER USED -->
 	<property name="Extends" value="schematicMaster"/>
 	<property name="CustomIcon" value="schematicMaster"/>
@@ -8700,6 +8767,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
 	<property name="CraftingIngredientTime" value="2"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<!-- <property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="400"/> -->
 </item>
@@ -8715,6 +8783,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
 	<property name="CraftingIngredientTime" value="2"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<!-- <property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="400"/> -->
 </item>
@@ -8730,6 +8799,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
 	<property name="CraftingIngredientTime" value="2"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<!-- <property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="400"/> -->
 </item>
@@ -8811,6 +8881,7 @@ Mesh files no longer used:
 	<property name="Group" value="Resources"/>
 	<property name="CraftingIngredientExp" value="15"/>
 	<property name="CraftingIngredientTime" value="2"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 	<!-- <property name="RepairTime" value="2"/>
 	<property name="RepairAmount" value="400"/> -->
 </item>
@@ -9475,6 +9546,7 @@ Mesh files no longer used:
 	<property name="Weight" value="15"/>
 	<property name="EconomicValue" value="125"/>
 	<property name="Group" value="Chemicals"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </item>
 
 <item id="1444" name="bellows">
@@ -9988,6 +10060,7 @@ Mesh files no longer used:
     </property>
 	<property name="EconomicValue" value="625" />
 	<property name="DescriptionKey" value="rptcrossbowPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillFletching"/>
 </item>
 	
@@ -10002,6 +10075,7 @@ Mesh files no longer used:
     </property>
 	<property name="EconomicValue" value="625" />
 	<property name="DescriptionKey" value="rptcrossbowPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillFletching"/>
 </item>
 	
@@ -10017,6 +10091,7 @@ Mesh files no longer used:
     </property>
 	<property name="EconomicValue" value="625" />
 	<property name="DescriptionKey" value="rptcrossbowPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillFletching"/>
 </item>
 	
@@ -10031,6 +10106,7 @@ Mesh files no longer used:
     </property>
 	<property name="EconomicValue" value="625" />
 	<property name="DescriptionKey" value="rptcrossbowPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillFletching"/>
 </item>
 
@@ -10044,6 +10120,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="225" />
 	<property name="DescriptionKey" value="partsscopedHuntingRifle_partsDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
  
@@ -10094,6 +10171,7 @@ Mesh files no longer used:
 		<property name="DegradationMax" value="1500,5000" />
     </property>
 	<property name="EconomicValue" value="525" />
+	<property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="partssuppressedhuntingRifle_barrelDesc"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
@@ -10110,6 +10188,7 @@ Mesh files no longer used:
     </property>
 	<property name="EconomicValue" value="975" />
 	<property name="DescriptionKey" value="partssuppressedsniper_barrelDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
 	
@@ -10125,6 +10204,7 @@ Mesh files no longer used:
     </property>
 	<property name="EconomicValue" value="462" />
 	<property name="DescriptionKey" value="partssuppressedpistol_barrelDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
 	
@@ -10140,6 +10220,7 @@ Mesh files no longer used:
     </property>
 	<property name="EconomicValue" value="1225" />
 	<property name="DescriptionKey" value="partssuppressedmp5_barrelDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
 	
@@ -10155,6 +10236,7 @@ Mesh files no longer used:
     </property>
 	<property name="EconomicValue" value="1600" />
 	<property name="DescriptionKey" value="partssuppressedAK47_barrelDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
 
@@ -10168,6 +10250,7 @@ Mesh files no longer used:
 	</property>
 	<property name="EconomicValue" value="225" />
 	<property name="DescriptionKey" value="partsscopedAK47_partsDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
 
@@ -10183,6 +10266,7 @@ Mesh files no longer used:
     </property>
 	<property name="EconomicValue" value="1500" />
 	<property name="DescriptionKey" value="PoopCannonPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
 	
@@ -10196,6 +10280,7 @@ Mesh files no longer used:
     </property>
 	<property name="EconomicValue" value="1500" />
 	<property name="DescriptionKey" value="PoopCannonPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
 	
@@ -10210,6 +10295,7 @@ Mesh files no longer used:
     </property>
 	<property name="EconomicValue" value="1500" />
 	<property name="DescriptionKey" value="PoopCannonPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>	
 	
@@ -10220,6 +10306,7 @@ Mesh files no longer used:
     <property name="Weight" value="10" />
 	<property name="EconomicValue" value="1500" />
 	<property name="DescriptionKey" value="PoopCannonPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>		
 

@@ -3511,7 +3511,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="mechanicalParts" count="3"/>
 	<ingredient name="wood" count="75"/>
 </recipe>
-<!-- End Portable Combining Station -->		
+<!-- End Portable Combining Station -->	
+
+<!-- Junction Box -->
+<recipe name="JunctionBox" count="1" craft_area="workbench">
+	<ingredient name="electronicParts" count="3"/>
+	<ingredient name="forgedSteel" count="1"/>
+</recipe>
+<!-- End Junction Box -->	
 <!-- End Craftworx -->
 
 
