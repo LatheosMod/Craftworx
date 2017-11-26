@@ -3519,6 +3519,22 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="forgedSteel" count="1"/>
 </recipe>
 <!-- End Junction Box -->	
+
+<!-- Potato Gun -->
+<recipe name="gunPotato" count="1">
+	<ingredient name="forgedIron" count="8"/>
+	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="glue" count="1"/>
+	<ingredient name="ductTape" count="1"/>
+	<ingredient name="wood" count="4"/>
+</recipe>
+
+<recipe name="potatoAmmo" count="1">
+	<ingredient name="potato" count="1"/>
+	<ingredient name="gunPowder" count="1"/>
+	<ingredient name="paper" count="1"/>
+</recipe>
+<!-- End Potato Gun -->
 <!-- End Craftworx -->
 
 

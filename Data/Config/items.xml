@@ -11490,6 +11490,86 @@ Mesh files no longer used:
 	</property>
 </item>
 <!-- End Scrap Arrows -->
+
+<!-- Potato Gun -->
+<item id="2115" name="gunPotato">
+	<property name="Meshfile" value="Items/Weapons/Ranged/blunderbuss/blunderbussPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="repairKit"/>
+	<property name="EconomicValue" value="360"/>
+	<property name="HoldType" value="39"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="weapon_jam"/>
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property name="Sound_Sight_In" value="rifle_sight_in"/>
+	<property name="Sound_Sight_Out" value="rifle_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Ranged"/>
+		<property name="Delay" value="0.8"/>
+		<!-- <property name="Range" value="40"/> -->
+		<property name="Crosshair_min_distance" value="41"/> <!-- 41 -->
+		<property name="Crosshair_max_distance" value="49"/> <!-- 49 -->
+		<property name="Magazine_size" value="1"/>
+		<property name="Magazine_items" value="potatoAmmo"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0.0"/> <!-- .74 -->
+		<property name="Reload_time" value="2.1"/>
+		<property name="Bullet_icon" value="uzi"/>
+		<property name="Sound_start" value="organichitorganic"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="blunderbuss_reload"/>
+		<!-- <property name="Particles_muzzle_fire" value="nozzleflash_shotgun"/>
+		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/> -->
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.wood" value="2.5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.earth" value="0.2"/>
+		<property name="Buff" value="stunned" />
+		<property name="Buff_chance" value="1.0"/>
+	</property>
+	<property class="Action1"> <!-- AttackAction Melee -->
+		<property name="Class" value="Melee" />
+		<property name="Delay" value="1.33" />
+		<property name="Range" value="2.2" />
+		<property name="Sphere" value="0.2" />
+		<property name="Sound_start" value="swoosh" />
+		<property name="Stamina_usage" value="6" />
+		<property name="Buff" value="stunned" />
+		<property name="Buff_chance" value=".8" />
+		<property name="DamageBonus.head" value="4" />
+		<property name="DamageBonus.glass" value="25" /> 
+		<property name="ActionExp" value="2" />
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property class="Attributes">
+		<property name="EntityDamage" value="3,6.4"/>
+		<property name="BlockDamage" value="1.6,5"/>
+		<!-- <property name="Accuracy" value="1,0.1"/> -->
+		<property name="FalloffRange" value="15,25"/>
+		<property name="DegradationMax" value="800,3200"/>
+		<property name="DegradationRate" value="10,10"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+</item>
+
+<item id="2116" name="potatoAmmo">
+	<property name="Meshfile" value="Items/Food/vegetable_potatoPrefab"/>
+	<property name="Material" value="plants"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="128"/> <!-- STK ammo -->
+	<property name="DropScale" value="4"/>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="EconomicValue" value="2"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+</item>
+<!-- End Potato Gun -->
+
 <!-- End Craftworx -->
 
 
