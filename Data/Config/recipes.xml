@@ -3522,10 +3522,9 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- Potato Gun -->
 <recipe name="gunPotato" count="1">
-	<ingredient name="forgedIron" count="8"/>
-	<ingredient name="shortMetalPipe" count="2"/>
+	<ingredient name="shortMetalPipe" count="4"/>
 	<ingredient name="glue" count="1"/>
-	<ingredient name="ductTape" count="1"/>
+	<ingredient name="ductTape" count="2"/>
 	<ingredient name="wood" count="4"/>
 </recipe>
 

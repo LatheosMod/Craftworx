@@ -235,4 +235,11 @@ Added junction box to level 1 of the gas generator perk
 <----- 25 Nov 2017 ----->
 Craftworx 2.81
 Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot,dretch's Junction Box
-Added potato gun, which uses potato ammo, crafted with 1 each potato, gunpowder, paper, based on the blunderbus model
+Added potato gun, based on the blunderbuss model. No aim function - the right mouseclick is a stunning melee attack like on the sawed-off shotgun
+Added weaponized potatoes for the potato gun
+
+<----- 25 Nov 2017 ----->
+Craftworx 2.812
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot,dretch's Junction Box
+Fixed block error with renumbering block IDs
+Changed recipe for the potato gun to make it available earlier in the game

@@ -16229,8 +16229,39 @@ kind of free
 </block>
 
 <!-- Craftworx -->
+<!-- Junction Box -->
+<block id="2043" name="JunctionBox">
+	<property name="Class" value="ElectricWire"/>
+	<property name="Material" value="metal"/>
+	<property name="Texture" value="8"/>	
+	<property name="StabilitySupport" value="false"/>
+	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="MaxDamage" value="1000"/>
+	<property name="DamageReceived" value="0.5"/>
+	<property name="Model" value="Industrial/fusebox" param1="main_mesh"/> <property name="HandleFace" value="South"/>
+	<property name="ModelOffset" value="0,0.5,0"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="Place" value="TowardsPlacerInverted"/>
+	<property name="RequiredPower" value="5"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="4"/>
+		<property name="electricParts" value="1"/>
+	</property>
+	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
+	<drop event="Harvest" name="scrapIron" count="5,40"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="DescriptionKey" value="JunctionBoxDesc"/>
+	<property name="EconomicValue" value="62"/>
+	<property name="Group" value="Science"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+</block>
+<!-- End Junction Box -->
+
 <!-- Working Oven and Sink Mod -->
-<block id="2043" name="electricOven">
+<block id="2044" name="electricOven">
 	<property name="DescriptionKey" value="electricOvenDesc"/>
 	<property name="Class" value="Campfire" />
 	<property name="CustomIcon" value="cntOven" />
@@ -16257,7 +16288,7 @@ kind of free
 	<property name="EconomicValue" value="360"/> 
 </block>
 	
-<block id="2044" name="workingCabinetSink">
+<block id="2045" name="workingCabinetSink">
 	<property name="DescriptionKey" value="WorkingSinkDesc"/>
 	<property name="Extends" value="cntCabinetOldSink" />
 	<property name="CustomIcon" value="cntCabinetOldSink" />
@@ -16277,7 +16308,7 @@ kind of free
 <!-- End Working Oven and Sink Mod -->
 
 <!-- Portable Combining Station -->		
-<block id="2045" name="portableCombiner">
+<block id="2046" name="portableCombiner">
 	<property name="Class" value="Workstation"/>
 	<property name="Material" value="wood"/>
 	<property name="MaxDamage" value="200"/>
@@ -16309,36 +16340,6 @@ kind of free
 </block>
 <!-- End Portable Combining Station -->	
 
-<!-- Junction Box -->
-<block id="2046" name="JunctionBox">
-	<property name="Class" value="ElectricWire"/>
-	<property name="Material" value="metal"/>
-	<property name="Texture" value="8"/>	
-	<property name="StabilitySupport" value="false"/>
-	<property name="Shape" value="Ext3dModel"/> <property name="Texture" value="293"/>
-	<property name="Mesh" value="models"/>
-	<property name="MaxDamage" value="1000"/>
-	<property name="DamageReceived" value="0.5"/>
-	<property name="Model" value="Industrial/fusebox" param1="main_mesh"/> <property name="HandleFace" value="South"/>
-	<property name="ModelOffset" value="0,0.5,0"/>
-	<property name="ImposterDontBlock" value="true"/>
-	<property name="Place" value="TowardsPlacerInverted"/>
-	<property name="RequiredPower" value="5"/>
-	<property class="RepairItems">
-		<property name="forgedIron" value="4"/>
-		<property name="electricParts" value="1"/>
-	</property>
-	<drop event="Harvest" name="electricParts" count="0,1" tool_category="Disassemble"/>
-	<drop event="Harvest" name="scrapIron" count="5,40"/>
-	<drop event="Destroy" count="0"/>
-	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
-	<property name="TakeDelay" value="5"/>
-	<property name="DescriptionKey" value="JunctionBoxDesc"/>
-	<property name="EconomicValue" value="62"/>
-	<property name="Group" value="Science"/>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
-</block>
-<!-- End Junction Box -->
 	
 <!-- End Cratworx -->	
 
