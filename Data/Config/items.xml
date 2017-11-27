@@ -10304,6 +10304,9 @@ Mesh files no longer used:
     <property name="PartType" value="Pump" />
     <property name="HoldType" value="45" />
     <property name="Weight" value="10" />
+	<property class="Attributes">
+		<property name="DegradationMax" value="500,2000"/>
+	</property>	
 	<property name="EconomicValue" value="1500" />
 	<property name="DescriptionKey" value="PoopCannonPartsGroupDesc"/>
 	<property name="Group" value="Resources" />
