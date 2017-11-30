@@ -883,6 +883,7 @@
 	<item name="compoundBowSchematic"/>
 	<item group="questChallenge" count="1"/>
 	<item name="poopCannonSchematic"/>
+	<item name="carbonSteelArmorSchematic"/>
 	<!--
 	<item name="handleBarsSchematic"/>
 	<item name="macDyverBook" prob="1.5"/>
@@ -940,12 +941,12 @@
 </lootgroup>
 
 <lootgroup name="books" count="1">
-	<item group="commonMagazines" prob="0.3"/>
+	<item group="commonMagazines" count="1,2" prob="0.3"/>
 	<item name="paper" count="10,25" prob="0.66"/>
-	<item group="commonBooks" prob="0.38"/>
+	<item group="commonBooks" count="1" prob="0.38"/>
 	<item group="paintMagazines" prob="0.03"/>
-	<item group="rareMagazines" prob="0.17" /> <!-- .2 => 1.0 -->
-	<item group="rareBooks" loot_prob_template="rareBookTemplate"/> <!-- .2 => 1.0 -->
+	<item group="rareMagazines" count="1" prob="0.17" /> <!-- .2 => 1.0 -->
+	<item group="rareBooks" count="1" loot_prob_template="rareBookTemplate"/> <!-- .2 => 1.0 -->
 </lootgroup>
 
 <lootgroup name="weaponsMilitaryGuns+ammo">
@@ -1548,7 +1549,7 @@
 	<item group="clothes" prob="40"/>
 	<item group="trophyGroup"/>
 	<item group="ammo"/>
-	<item group="books" count="1"/>
+	<item group="books"/>
 	<item name="paintMagazineWallCoverings"/>
 	<item group="medicine"/>
 	<item group="weaponsPistol+ammo" prob="1.5"/>

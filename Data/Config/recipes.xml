@@ -3186,11 +3186,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="plantFiberHat" count="1" />
 </recipe>
 
-<!-- <recipe name="heavyBanditGasmaskLight" count="1" scrapable="False">
+<recipe name="carbonSteelHelmetLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
 	<ingredient name="flashlight02" count="1" />
-    <ingredient name="heavyBanditGasmask" count="1" />
-</recipe> -->
+    <ingredient name="carbonSteelHelmet" count="1" />
+</recipe>
 
 <recipe name="hazmatMaskLight" count="1" scrapable="False">
     <ingredient name="ductTape" count="1" />
@@ -3533,7 +3533,41 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="gunPowder" count="1"/>
 	<ingredient name="paper" count="1"/>
 </recipe>
+
+<recipe name="gunPotatoPlus" count="1" craft_area="workbench">
+	<ingredient name="forgedSteel" count="4"/>
+	<ingredient name="partsPumpShotgun_barrelShort" count="1"/>
+	<ingredient name="glue" count="4"/>
+	<ingredient name="wood" count="4"/>
+</recipe>
 <!-- End Potato Gun -->
+
+<!-- Carbon Steel Armor -->
+<recipe name="carbonSteelBoots" count="1" craft_area="workbench" craft_tool="drillPress">
+	<ingredient name="carbonSteel" count="10"/>
+	<ingredient name="leather" count="3"/>
+</recipe>
+
+<recipe name="carbonSteelChestArmor" count="1" craft_area="workbench" craft_tool="drillPress">
+	<ingredient name="carbonSteel" count="25"/>
+	<ingredient name="leather" count="5"/>
+</recipe>
+
+<recipe name="carbonSteelGloves" count="1" craft_area="workbench" craft_tool="drillPress">
+	<ingredient name="carbonSteel" count="8"/>
+	<ingredient name="leather" count="3"/>
+</recipe>
+
+<recipe name="carbonSteelHelmet" count="1" craft_area="workbench" craft_tool="drillPress">
+	<ingredient name="carbonSteel" count="12"/>
+	<ingredient name="leather" count="3"/>
+</recipe>
+
+<recipe name="carbonSteelLegArmor" count="1" craft_area="workbench" craft_tool="drillPress">
+	<ingredient name="carbonSteel" count="20"/>
+	<ingredient name="leather" count="5"/>
+</recipe>
+<!-- End Carbon Steel Armor -->
 <!-- End Craftworx -->
 
 

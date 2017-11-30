@@ -11498,7 +11498,7 @@ Mesh files no longer used:
 <item id="2115" name="gunPotato">
 	<property name="Meshfile" value="Items/Weapons/Ranged/blunderbuss/blunderbussPrefab"/>
 	<property name="Material" value="metal"/>
-	<property name="RepairTools" value="repairKit"/>
+	<property name="RepairTools" value="forgedIron"/>
 	<property name="EconomicValue" value="360"/>
 	<property name="HoldType" value="39"/>
 	<property name="DegradationBreaksAfter" value="false"/>
@@ -11571,138 +11571,146 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="2"/>
 	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
 </item>
+
+<item id="2117" name="gunPotatoPlus">
+	<property name="Extends" value="blunderbuss"/>
+	<property name="EconomicValue" value="525"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Magazine_items" value="potatoAmmo"/>
+		<property name="Magazine_item_ray_counts" value="1"/>
+		<property name="Magazine_item_ray_spreads" value="0.0"/> <!-- .74 -->
+		<property name="Reload_time" value="1.5"/>
+	</property>
+	<property class="Attributes">
+		<property name="EntityDamage" value="12,19"/>
+		<property name="BlockDamage" value="3.5,8"/>
+		<property name="FalloffRange" value="15,25"/>
+		<property name="DegradationMax" value="800,3200"/>
+		<property name="DegradationRate" value="10,10"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Rifles"/>
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+</item>
 <!-- End Potato Gun -->
+
+<!-- Carbon Steel Armor -->
+<item id="2118" name="carbonSteelBoots"> <!-- carbonSteelArmor -->
+	<property name="Insulation" value="0"/>
+	<property name="Encumbrance" value="0.1"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="carbonSteel"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="EquipSlot" value="Feet"/>
+	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="600"/>
+	<property name="HoldType" value="45"/>
+	<property name="Meshfile" value="Items/Misc/sackPrefab"/>
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
+	<property class="Attributes">
+		<property name="ConcussiveProtection" value="0.45,0.9"/>
+		<property name="PunctureProtection" value="0.45,0.9"/>
+		<property name="FireProtection" value="0.25,0.63"/>
+		<property name="RadiationProtection" value="0.22,0.48"/>
+		<property name="ElectricalProtection" value="0.06,0.1"/>
+		<property name="DegradationMax" value="420,900"/>
+	</property>
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_boots"/>
+		<property name="Overlay0" value="armor_iron_boots"/>
+		<property name="Layer" value="3"/>
+		<property name="UISlot" value="Footwear"/>
+	</property>
+	<property name="DescriptionKey" value="carbonSteelClothesGroupDesc"/>
+	<property name="Group" value="Clothing"/>
+	<property name="ActionSkillGroup" value="Clothing/Armor"/>
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="RepairExpMultiplier" value="10.8"/>
+</item>
+
+<item id="2119" name="carbonSteelLegArmor"> <!-- carbonSteelArmor -->
+	<property name="Extends" value="carbonSteelBoots"/>
+	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="625"/>
+	<property name="EquipSlot" value="Legs"/>
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_pants"/>
+		<property name="Overlay0" value="armor_iron_pants"/>
+		<property name="Layer" value="3"/>
+		<property name="UISlot" value="LegArmor"/>
+	</property>
+</item>
+
+<item id="2120" name="carbonSteelChestArmor"> <!-- carbonSteelArmor -->
+	<property name="Extends" value="carbonSteelBoots"/>
+	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="725"/>
+	<property name="EquipSlot" value="Chest"/>
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_chest"/>
+		<property name="Overlay0" value="armor_iron_chest"/>
+		<property name="Layer" value="2"/>
+		<property name="UISlot" value="ChestArmor"/>
+	</property>
+</item>
+
+<item id="2121" name="carbonSteelHelmet"> <!-- carbonSteelArmor -->
+	<property name="Extends" value="carbonSteelBoots"/>
+	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="600"/>
+	<property name="EquipSlot" value="Head"/>
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_helmet"/>
+		<property name="Overlay0" value="armor_iron_helmet"/>
+		<property name="Layer" value="middle"/>
+		<property name="UISlot" value="Headgear"/>
+		<property name="Mask0" value="Head" param1="base"/>
+		<property name="Mask1" value="Head" param1="inner"/>
+		<property name="Mask2" value="Face" param1="base"/>
+		<property name="Mask3" value="Face" param1="inner"/>
+		<property name="Mask4" value="Face" param1="middle"/>
+		<property name="Mask5" value="Face" param1="outer"/>
+		<property name="Mask6" value="Head" param1="base"/>
+		<property name="Mask7" value="Eyes" param1="inner"/>
+		<property name="Mask8" value="Eyes" param1="middle"/>
+		<property name="Mask9" value="Eyes" param1="outer"/>
+	</property>
+</item>
+
+<item id="2122" name="carbonSteelGloves"> <!-- carbonSteelArmor -->
+	<property name="Extends" value="carbonSteelBoots"/>
+	<property name="FuelValue" value="12"/>
+	<property name="EconomicValue" value="600"/>
+	<property name="EquipSlot" value="Hands"/>
+	<property class="UMA">
+		<property name="Mesh" value="armor_iron_gloves"/>
+		<property name="Overlay0" value="armor_iron_gloves"/>
+		<property name="Layer" value="0"/>
+		<property name="UISlot" value="Gloves"/>
+	</property>
+</item>
+
+<item id="2123" name="carbonSteelHelmetLight">
+	<property name="Extends" value="carbonSteelHelmet" />
+    <property name="Class" value="ItemClassToggle" />
+    <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
+    <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
+	<property name="EconomicValue" value="725" />
+	<property name="CraftingSkillGroup" value="craftSkillArmor"/>
+	<property name="DescriptionKey" value="carbonSteelHelmetLightDesc"/>
+</item>
+
+<item id="2124" name="carbonSteelArmorSchematic">
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="carbonSteelBoots,carbonSteelChestArmor,carbonSteelGloves,carbonSteelHelmet,carbonSteelLegArmor,carbonSteelHelmetLight" />
+	</property>
+	<property name="DescriptionKey" value="carbonSteelArmorSchematicDesc"/>
+</item>  
+<!-- End Carbon Steel Armor -->
+
 
 <!-- End Craftworx -->
 
-
-<!--
-<item id="1501" name="superWrench">
-	<property name="Extends" value="wrench"/>
-	<property name="CustomIcon" value="wrench"/>
-	<property name="CustomIconTint" value="ffa0a0"/>
-	<Property name="TintColor" value="255,160,160"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property class="Attributes">
-		<property name="EntityDamage" value="5000,10000"/>
-		<property name="BlockDamage" value="5000,10000"/>
-	</property>
-</item>
-
-
-<item id="1502" name="gunSuperDigger">
-	<property name="CustomIcon" value="gunMP5"/>
-	<property name="CustomIconTint" value="ffa0a0"/>
-	<Property name="TintColor" value="255,160,160"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property name="Meshfile" value="Items/Weapons/Ranged/MP5/MP5Prefab"/>
-	<property name="Material" value="organic"/>
-	<property name="HoldType" value="6"/>
-	<property name="Stacknumber" value="1"/>
-	<property name="DegradationBreaksAfter" value="true"/>
-	<property name="Degradation" value="99999" param1="true"/>
-	<property name="SoundJammed" value="weapon_jam"/>
-	<property name="CrosshairUpAfterShot" value="false"/>
-	<property name="CrosshairOnAim" value="true"/>
-	<property class="Action0">
-		<property name="Class" value="Ranged"/>
-		<property name="Hitmask_override" value="Melee"/>
-		<property name="Delay" value="0.150"/>
-		<property name="Range" value="300"/>
-		<property name="Auto_fire" value="true"/>
-		<property name="Rays_per_shot" value="1"/>
-		<property name="Rays_spread" value="0"/>
-		<property name="Crosshair_min_distance" value="5"/>
-		<property name="Crosshair_max_distance" value="8"/>
-		<property name="DamageBlock" value="3000"/>
-		<property name="DamageEntity" value="0.1"/>
-		<property name="Single_magazine_usage" value="true"/>
-		<property name="Infinite_ammo" value="true"/>
-		<property name="Magazine_items" value="9mmBullet"/>
-		<property name="Reload_time" value="4.1"/>
-		<property name="Bullet_icon" value="uzi"/>
-		<property name="Sound_start" value=""/>
-		<property name="Sound_repeat" value=""/>
-		<property name="Sound_end" value=""/>
-		<property name="Sound_empty" value="weapon_empty"/>
-		<property name="Sound_reload" value="mp5_reload"/>
-		<property name="Particles_muzzle_fire" value="nozzleflashuzi"/>
-		<property name="Particles_muzzle_smoke" value="nozzlesmokeuzi"/>
-	</property>
-	<property class="Action1">
-		<property name="Class" value="Zoom"/>
-		<property name="Zoom_max_out" value="38"/>
-		<property name="Zoom_max_in" value="10"/>
-	</property>
-	</item>
-
-<item id="1503" name="gunJustDie">
-	<property name="CustomIcon" value="gunPistol"/>
-	<property name="CustomIconTint" value="ffa0a0"/>
-	<Property name="TintColor" value="255,160,160"/>
-	<property name="CreativeMode" value="Dev"/>
-	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/PistolPrefab"/>
-	<property name="Material" value="organic"/>
-	<property name="HoldType" value="1"/>
-	<property name="Stacknumber" value="1"/>
-	<property name="DegradationBreaksAfter" value="true"/>
-	<property name="Degradation" value="99999" param1="true"/>
-	<property name="SoundJammed" value="weapon_jam"/>
-	<property name="CrosshairUpAfterShot" value="false"/>
-	<property name="CrosshairOnAim" value="true"/>
-	<property class="Action0">
-		<property name="Class" value="Ranged"/>
-		<property name="Delay" value="0.15"/>
-		<property name="Range" value="300"/>
-		<property name="Auto_fire" value="true"/>
-		<property name="Rays_per_shot" value="5"/>
-		<property name="Rays_spread" value="0.85"/>
-		<property name="DamageEntity" value="1000"/>
-		<property name="DamageBlock" value="0"/>
-		<property name="Single_magazine_usage" value="true"/>
-		<property name="Infinite_ammo" value="true"/>
-		<property name="Magazine_items" value="9mmBullet"/>
-		<property name="Reload_time" value="2"/>
-		<property name="Bullet_icon" value="pistol"/>
-		<property name="Sound_start" value="Pistol_Fire"/>
-		<property name="Sound_start" value=""/>
-		<property name="Sound_repeat" value=""/>
-		<property name="Sound_end" value=""/>
-		<property name="Sound_empty" value="weapon_empty"/>
-		<property name="Sound_reload" value="pistol_reload"/>
-		<property name="Particles_muzzle_fire" value="nozzleflash"/>
-		<property name="Particles_muzzle_smoke" value="nozzlesmoke"/>
-	</property>
-	<property class="Action1">
-		<property name="Class" value="Zoom"/>
-		<property name="Zoom_max_out" value="45"/>
-		<property name="Zoom_max_in" value="10"/>
-	</property>
-	</item>
-
-<item id="1504" name="hammerOfGod">
-	<property name="CreativeMode" value="Dev"/>
-	<property name="CustomIcon" value="clawHammer"/> <property name="CustomIconTint" value="ffa0a0"/>
-	<property name="Meshfile" value="Items/Tools/hammerPrefab"/>
-	<property name="Material" value="metal"/>
-	<property name="HoldType" value="32"/>
-	<property name="DegradationBreaksAfter" value="true"/>
-	<property name="SoundJammed" value="ItemNeedsRepair"/>
-	<property name="SoundDestroy" value="wooddestroy1"/>
-	<property class="Action0">
-		<property name="Class" value="Melee"/>
-		<property name="Delay" value="0.7"/>
-		<property name="Range" value="40"/>
-		<property name="Block_range" value="40"/>
-		<property name="Sphere" value="0.4"/>
-		<property name="Sound_start" value="swoosh"/>
-		<property name="Stamina_usage" value="0"/>
-	</property>
-	<property class="Attributes">
-		<property name="EntityDamage" value="500,5000"/>
-		<property name="BlockDamage" value="500,20000"/>
-		<property name="DismembermentBaseChance" value="1"/>
-	</property>
-</item>
--->
 </items>

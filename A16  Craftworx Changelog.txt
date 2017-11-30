@@ -244,3 +244,11 @@ Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life an
 Fixed block error with renumbering block IDs
 Changed recipe for the potato gun to make it available earlier in the game
 Fixed missing property in partsPoopCannonParts
+
+<----- 29 Nov 2017 ----->
+Craftworx 2.83
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot,dretch's Junction Box
+Changed repair item for the potato gun from repair kit to forged iron
+Added enhanced potato gun, which does more damage, but requires steel to craft
+Added carbon steel armor, an improvement over iron armor
+Fixed (hopefully) problem with multiple copies of schematics appearing in loot containers
