@@ -5055,8 +5055,8 @@ hazmatMaskLight,items,Clothes,KgNone,Hazmat Mask with Light,,
 hazmatMaskLightDesc,items,Clothes,KgNone,A Hazmat Mask with a flashlight attached to it with duct tape.,,
 animalHideHoodLight,items,Clothes,KgNone,Animal Hide Hood with Light,,
 animalHideHoodLightDesc,items,Clothes,KgNone,An Animal Hide Hood with a flashlight attached to it with duct tape.,,
-carbonSteelHelmetLight,items,Clothes,KgNone,Iron Helmet with Light,,
-carbonSteelHelmetLightDesc,items,Clothes,KgNone,An Iron Helmet with a flashlight attached to it with duct tape.,,
+carbonSteelHelmetLight,items,Clothes,KgNone,Carbon Steel Helmet with Light,,
+carbonSteelHelmetLightDesc,items,Clothes,KgNone,A Carbon Steel Helmet with a flashlight attached to it with duct tape.,,
 
 qc_shittywaytodie,items,Zombie Challenge Note,KgNone,Shitty Way to Die Challenge,,
 

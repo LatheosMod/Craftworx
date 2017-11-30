@@ -252,3 +252,4 @@ Changed repair item for the potato gun from repair kit to forged iron
 Added enhanced potato gun, which does more damage, but requires steel to craft
 Added carbon steel armor, an improvement over iron armor
 Fixed (hopefully) problem with multiple copies of schematics appearing in loot containers
+Fixed incorrect localization text for carbon steel helmet (teach me not to watch twitch streams while coding!)

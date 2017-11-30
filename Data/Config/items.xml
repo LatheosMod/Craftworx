@@ -8119,7 +8119,7 @@ Mesh files no longer used:
 	<property name="Extends" value="schematicMaster"/>
 	<property name="EconomicValue" value="500"/>
 	<property class="Action1">
-		<property name="Recipes_to_learn" value="ironHelmet"/>
+		<property name="Recipes_to_learn" value="ironHelmet,ironHelmetLight"/>
 		<!-- <property name="Skills_to_gain" value="craftSkillArmor"/> -->
 	</property>
 </item>
@@ -11546,7 +11546,6 @@ Mesh files no longer used:
 		<property name="DamageBonus.glass" value="25" /> 
 		<property name="ActionExp" value="2" />
 	</property>
-	<property name="Group" value="Ammo/Weapons"/>
 	<property class="Attributes">
 		<property name="EntityDamage" value="3,6.4"/>
 		<property name="BlockDamage" value="1.6,5"/>
@@ -11573,20 +11572,15 @@ Mesh files no longer used:
 </item>
 
 <item id="2117" name="gunPotatoPlus">
-	<property name="Extends" value="blunderbuss"/>
+	<property name="Extends" value="gunPotato"/>
 	<property name="EconomicValue" value="525"/>
+	<property name="RepairTools" value="repairKit"/>
 	<property class="Action0"> <!-- AttackAction -->
-		<property name="Magazine_items" value="potatoAmmo"/>
-		<property name="Magazine_item_ray_counts" value="1"/>
-		<property name="Magazine_item_ray_spreads" value="0.0"/> <!-- .74 -->
 		<property name="Reload_time" value="1.5"/>
 	</property>
 	<property class="Attributes">
 		<property name="EntityDamage" value="12,19"/>
 		<property name="BlockDamage" value="3.5,8"/>
-		<property name="FalloffRange" value="15,25"/>
-		<property name="DegradationMax" value="800,3200"/>
-		<property name="DegradationRate" value="10,10"/>
 	</property>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="ActionSkillGroup" value="Rifles"/>
