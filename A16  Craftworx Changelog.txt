@@ -253,3 +253,25 @@ Added enhanced potato gun, which does more damage, but requires steel to craft
 Added carbon steel armor, an improvement over iron armor
 Fixed (hopefully) problem with multiple copies of schematics appearing in loot containers
 Fixed incorrect localization text for carbon steel helmet (teach me not to watch twitch streams while coding!)
+Cleaned up code for enhanced potato gun
+
+<----- 23 Dec 2017 ----->
+Craftworx 2.9
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot, dretch's Junction Box, JaxTeller718's Junk Items - Golden Egg - Scrap Iron Shiv - Electrified Spiked Club
+Increased craft time on fertilizer from 10 to 25
+Reduced craft time on fertilizer rounds to 25
+Added junk items, courtesy of JaxTeller718's Ravenhearst mod
+Added golden egg, courtesy of JaxTeller718's Ravenhearst mod
+Added scrap iron shiv, courtesy of JaxTeller718's Ravenhearst mod
+Added Electrified Spiked Club, courtesy of JaxTeller718's Ravenhearst mod
+Changed appearance of the working oven to match the standard oven
+Removed duplicate magazines from common magazine loot list
+Added advanced flamethrower (aka Lumun's Little Friend)
+Changed sounds for flamethrower
+Reduced magazine size for basic flamethrower to 50 from 100
+Rebalanced flamethrower parts to be more in line with firearms
+Changed basic flamethrower from auto fire to manual; now only the advanced flamethrower can be fired automatically
+Added entry for napalm in localization.txt
+Flamethrower and advanced flamethrower no longer reliably fire through iron bars
+Added recipes for advanced flamethrower, advanced flamethrower barrel to level 4 of Gun Bunny perk
+Added advanced flamethrower to traders

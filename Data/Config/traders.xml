@@ -455,6 +455,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="repeatingCrossbowSchematic"/>
 			<item name="flamethrowerSchematic"/>
 			<item name="carbonSteelArmorSchematic"/>
+			<item name="advancedflamethrowerSchematic"/>
 			<item name="theEnforcerMagazine"/>
 			<item name="compoundBowSchematic"/>
 			<item name="herbalAntibioticsRecipe" prob="0.5"/>
@@ -496,6 +497,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="gunscopedAK47" prob="0.6"/>
 			<item name="gunRocketLauncher" prob="0.4"/>
 			<item name="gunflamethrower" prob="0.4"/>
+			<item name="gunflamethrowerAdvanced" prob="0.25"/>
 			<item name="nightvisionGoggles" prob="0.6"/>
 		</trader_item_group>
 
@@ -522,6 +524,7 @@ quality_mod: adjusts the price range of all items with a quality level.
 			<item name="steelArrow" count="20,60"/>
 			<item name="ironCrossbowBolt" count="20,60"/>
 			<item name="steelCrossbowBolt" count="20,60"/>
+			<item name="napalm" count="15,50"/>
 		</trader_item_group>
 
 		<trader_item_group name="ammoSupplies">

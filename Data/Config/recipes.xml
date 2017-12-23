@@ -986,19 +986,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <!-- Craftworx - decreased fertilizer craft time -->
-<recipe name="fertilizer" count="1" craft_time="10" craft_area="chemistryStation">
+<recipe name="fertilizer" count="1" craft_time="25" craft_area="chemistryStation">
 	<ingredient name="turd" count="1"/>
 	<ingredient name="potassiumNitratePowder" count="10"/>
 	<ingredient name="dirtFragment" count="3"/>
 </recipe>
 
-<recipe name="fertilizer" count="1" craft_time="10" craft_area="campfire" craft_tool="beaker">
+<recipe name="fertilizer" count="1" craft_time="25" craft_area="campfire" craft_tool="beaker">
 	<ingredient name="turd" count="2"/>
 	<ingredient name="potassiumNitratePowder" count="15"/>
 	<ingredient name="dirtFragment" count="3"/>
 </recipe>
 
-<recipe name="fertilizer" count="1" craft_time="10" craft_area="cementMixer">
+<recipe name="fertilizer" count="1" craft_time="25" craft_area="cementMixer">
 	<ingredient name="rottingFlesh" count="5"/>
 	<ingredient name="potassiumNitratePowder" count="15"/>
 	<ingredient name="dirtFragment" count="3"/>
@@ -2883,6 +2883,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="partsflamethrower_Barrel" count="1"/>
     <ingredient name="partsflamethrower_Parts" count="1"/>
 </recipe>
+
+<recipe name="gunflamethrowerAdvanced" count="1" scrapable="True" craft_time="5" craft_area="assembly">
+    <ingredient name="partsflamethrower_Fueltank" count="1"/>
+    <ingredient name="partsflamethrower_Hose" count="1"/>
+    <ingredient name="partsflamethrower_advBarrel" count="1"/>
+    <ingredient name="partsflamethrower_Parts" count="1"/>
+</recipe>
 <!-- End Weapons -->
 
 <!-- Tools -->
@@ -2902,6 +2909,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="scrapIron" count="65"/>
 	<ingredient name="yuccaFibers" count="5"/>
 	<ingredient name="wood" count="3"/>
+</recipe>
+
+<recipe name="scrapIronShiv" count="1">
+	<ingredient name="scrapIron" count="8"/>
+	<ingredient name="yuccaFibers" count="5"/>
 </recipe>
 
 <recipe name="calipers" count="1" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
@@ -3050,6 +3062,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="scrapIron" count="10"/>
 	<ingredient name="Sandpaper" count="3"/>
 </recipe>
+
+<recipe name="partsflamethrower_advBarrel" count="1" scrapable="True" craft_area="workbench">
+	<ingredient name="partsMP5_receiver" count="1"/>
+	<ingredient name="partsMP5_barrel" count="1"/>
+	<ingredient name="mechanicalParts" count="10"/>
+	<ingredient name="ductTape" count="3"/>
+</recipe>
 <!-- End Parts -->
 
 <!-- Ammunition -->
@@ -3059,7 +3078,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="ironCrossbowBolt" count="1"/>
 </recipe>
 
-<recipe name="fertilizerRound" count="1" scrapable="False" craft_area="workbench" craft_tool="calipers">
+<recipe name="fertilizerRound" count="1" scrapable="False" craft_area="workbench" craft_time="25" craft_tool="calipers">
 	<ingredient name="turd" count="1"/>
 	<ingredient name="clayLump" count="1"/> 
 	<ingredient name="steelCrossbowBolt" count="1"/>
@@ -3568,6 +3587,19 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="leather" count="5"/>
 </recipe>
 <!-- End Carbon Steel Armor -->
+
+<!-- Electrified Spiked Club -->
+<recipe name="electricCharge" count="15" craft_area="chemistryStation">
+	<ingredient name="carBattery" count="1"/>
+	<ingredient name="electronicParts" count="3"/>
+	<ingredient name="scrapPlastics" count="3"/>
+</recipe>
+
+<recipe name="shockclubSpiked" count="1" craft_area="workbench">
+	<ingredient name="electricCharge" count="5"/>
+	<ingredient name="clubSpiked" count="1"/>
+</recipe>
+<!-- End Electrified Spiked Club -->
 <!-- End Craftworx -->
 
 

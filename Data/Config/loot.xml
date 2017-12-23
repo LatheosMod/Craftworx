@@ -465,6 +465,109 @@
 	<item name="qt_raphael" count="1"/>
 </lootgroup>
 
+<!-- Craftworx Junk Items -->
+<lootgroup name="brassJunk">
+	<item name="junk_brassHinge"/>
+	<item name="junk_brassMonkey"/>
+	<item name="junk_brassCowBell"/>
+	<item name="junk_brassKnuckles"/>
+</lootgroup>
+
+<lootgroup name="clothJunk">
+	<item name="junk_clothRags" count="1,3"/>
+	<item name="junk_clothOldBlanket"/>
+	<item name="junk_clothTeddyBear"/>
+	<item name="junk_clothRug"/>
+</lootgroup>
+	
+<lootgroup name="glassJunk">
+	<item name="junk_glassPerfume"/>
+	<item name="junk_glassCompact"/>
+	<item name="junk_glassFrame"/>
+	<item name="junk_glassEye"/>
+</lootgroup>
+	
+<lootgroup name="ironJunk">
+	<item name="junk_ironSoldier"/>
+	<item name="junk_ironPaperClips" count="1,6"/>
+	<item name="junk_ironWeight"/>
+	<item name="junk_ironHinge"/>
+	<item name="junk_ironScissors"/>
+</lootgroup>
+	
+<lootgroup name="leadJunk">
+	<item name="junk_leadSoldier"/>
+	<item name="junk_leadSolder"/>
+	<item name="fishingWeight"/>
+</lootgroup>
+	
+<lootgroup name="mechanicalJunk">
+	<item name="junk_mechanicalKeyPad"/>
+	<item name="junk_mechanicalOldWatch"/>
+	<item name="junk_mechanicalTypeWriter"/>
+</lootgroup>
+	
+<lootgroup name="paperJunk">
+	<item name="junk_paperNews"/>
+	<item name="junk_paperToilet"/>
+	<item name="junk_paperMatches"/>
+	<item name="junk_paperPlayingCards"/>
+</lootgroup>
+
+<lootgroup name="plasticJunk">
+	<item name="junk_plasticCds"/>
+	<item name="junk_plasticSoldier"/>
+	<item name="junk_plasticBricks"/>
+	<item name="junk_plasticKite"/>
+	<item name="junk_plasticFrisbee"/>
+	<item name="junk_plasticHairBrush"/>
+	<item name="junk_plasticToothBrush"/>
+	<item name="junk_plasticShoppingBag"/>
+</lootgroup>
+
+<lootgroup name="woodJunk">
+	<item name="junk_woodSoldier"/>
+	<item name="junk_woodWhistle"/>
+	<item name="junk_woodSpoon"/>
+	<item name="junk_woodYoyo"/>
+</lootgroup>
+
+<lootgroup name="itemJunk">
+	<item group="brassJunk"/>
+	<item group="clothJunk"/>
+	<item group="glassJunk"/>
+	<item group="ironJunk"/>
+	<item group="leadJunk"/>
+	<item group="mechanicalJunk"/>
+	<item group="paperJunk"/>
+	<item group="plasticJunk"/>
+	<item group="woodJunk"/>
+</lootgroup>
+
+<lootgroup name="junkPersonal">
+	<!-- This is good for zombie loot groups to limit items to those that reasonably might be carried.   -->
+	<item group="paperJunk"/>
+	<item name="junk_glassPerfume"/>
+	<item name="junk_glassCompact"/>
+	<item name="junk_ironSoldier"/>
+	<item name="junk_ironPaperClips" count="1,6"/>
+	<item name="junk_ironScissors"/>
+	<item name="junk_woodSoldier"/>
+	<item name="junk_woodWhistle"/>
+	<item name="junk_woodYoyo"/>
+	<item name="junk_clothRags"/>
+	<item name="junk_plasticSoldier"/>
+	<item name="junk_plasticBricks"/>
+	<item name="junk_plasticHairBrush"/>
+	<item name="junk_plasticToothBrush"/>
+	<item name="junk_plasticShoppingBag"/>
+	<item name="junk_mechanicalOldWatch"/>
+	<item name="junk_brassHinge"/>
+	<item name="junk_brassMonkey"/>
+	<item name="junk_brassCowBell"/>
+	<item name="junk_leadSoldier"/>
+</lootgroup>
+
   <!-- Craftworx - QoLaFIM A16.2 - prob & count adjusted -->
 <lootgroup name="ammo" count="1,3">
 	<item name="shotgunShell" count="2,16" prob="2"/>
@@ -884,6 +987,7 @@
 	<item group="questChallenge" count="1"/>
 	<item name="poopCannonSchematic"/>
 	<item name="carbonSteelArmorSchematic"/>
+	<item name="advancedflamethrowerSchematic"/>
 	<!--
 	<item name="handleBarsSchematic"/>
 	<item name="macDyverBook" prob="1.5"/>
@@ -897,7 +1001,6 @@
 <lootgroup name="commonMagazines" count="1">
 	<item name="magazineAthletics"/>
 	<item name="magazineRiflery"/>
-	<item name="magazineGunsmith"/>
 	<item name="magazineScavenge"/>
 	<item name="magazineBasher"/>
 	<item name="magazineSlasher"/>
@@ -909,17 +1012,10 @@
 	<item name="magazineLauncher"/>
 	<item name="magazineArchery"/>
 	<item name="magazineDoctor"/>
-	<item name="magazineWeaponCraft"/>
-	<item name="magazineFletching"/>
-	<item name="magazineToolsmith"/>
-	<item name="magazineScience"/>
-	<item name="magazineTailor"/>
-	<item name="magazineArmorsmith"/>
 	<item name="magazineMisc"/>
 	<item name="magazineBarter"/>
 	<item name="magazineDefense"/>
 </lootgroup>
-
 
 <lootgroup name="rareMagazines" count="1">
 	<item name="magazineGunsmith"/>
@@ -1101,7 +1197,7 @@
 	<item name="bulletCasing" count="2,16"/>
 	<item name="feather" count="1,8"/>
 	<item name="ductTape" count="1,4"/>
-	
+	<item group="itemJunk"/>
 	<item group="books"/>
 	<item group="seeds" prob="0.3"/>
 	<item group="questChallenge" count="1" prob="0.11"/> 	<!-- 0.06 = .23 % -->
@@ -1525,13 +1621,14 @@
 	<item group="cupboard"/>
 </lootcontainer>
 
-<!-- frozen or refridgerated food, spoiled food -->
+<!-- frozen or refrigerated food, spoiled food -->
   <!-- QoLaFIM A16.2 - count 1>2, less can s& jars -->
 <lootcontainer id="4" count="0,2" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="baseTemplate">
 	<item group="coldfood" prob="1"/>
 	<item name="bottledWater" count="1,2" prob="1"/>
 	<item name="emptyJar" count="1,2" prob="0.6"/>
 	<item name="canEmpty" count="1,2" prob="0.4"/>
+	<item name="goldenegg" count="1" prob="0.001"/>
 </lootcontainer>
 
 <!-- stove, cooking pots and pans rotten food -->
@@ -1542,6 +1639,7 @@
 	<item name="emptyJar" count="1,2"/>
 	<item name="canEmpty" count="1,2"/>
 	<item name="coal" count="4,12" prob="0.5"/>
+	<item name="charredMeat" count="1,2"/>
 </lootcontainer>
 
 <!-- night stands and dressers, pistol, ammo, magazines, books -->
@@ -1610,6 +1708,7 @@
 	<item group="questChallenge" count="1" prob="0.191"/>
 	<item group="treasureMaps" count="1" prob="0.161"/> <!-- total 2% for a quest thing -->
 	<item name="facialPiercings" prob="0.08"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- metal garbage can-->
@@ -1628,12 +1727,14 @@
 	<item name="flashlight02" prob="0.5"/>
 	<item name="militaryVest" prob="0.2"/>
 	<item name="militaryFiber" count="1,4" prob="0.04"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- washing machine, clothes in good condition -->
 <lootcontainer id="18" count="0,2" size="6,4" sound_open="UseActions/open_fridge" sound_close="UseActions/close_fridge" loot_quality_template="treasureTemplate">
 	<item group="clothes" prob="0.4"/>
 	<item name="cloth" count="1,5"/>
+	<item name="junk_clothRags" count="1,3"/>
 </lootcontainer>
 
 <!-- cars-->
@@ -1672,6 +1773,7 @@
 <lootcontainer id="25" count="1,3" size="4,3" sound_open="UseActions/open_garbage" sound_close="UseActions/close_garbage" loot_quality_template="baseTemplate">
 	<item name="egg" count="1" prob="0.25"/>
 	<item name="feather" count="4,12" prob="0.75"/>
+	<item name="goldenegg" count="1" prob="0.001"/>	
 </lootcontainer>
 
 <!-- lootcontainer 23 Supply Crate Melee weapons -->
@@ -1735,6 +1837,7 @@
 	<item name="painkillers" prob="1"/>
 	<item group="ammo" prob="0.75"/>
 	<item group="weaponsPistol+ammo" prob="0.1"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- shotgun messiah UNUSED -->
@@ -1936,6 +2039,7 @@
 	<item group="weaponsCommonParts" prob="0.2"/>
 	<item group="weaponsMilitaryParts" prob="0.2"/>
 	<item group="militaryArmor" prob="0.2"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- minibike storage -->
@@ -1969,6 +2073,7 @@
 	<item group="treasureMaps" count="1" prob="0.092"/>
 	<item group="weaponsPistol+ammo" prob="0.02"/>
 	<item name="militaryFiber" count="1,4" prob="0.5"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- snowzombie, lumberjack zombie loot-->
@@ -1978,9 +2083,10 @@
 	<item group="warmClothes" prob="1"/>
 	<item group="hazmatGear" count="1" prob="0.01"/>
 	<item group="rareOres" prob="0.02"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
-<lootcontainer id="67" count="0,2" size="5,3" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet" loot_quality_template="baseTemplate">
+<lootcontainer id="67" count="0,2" size="2,2" sound_open="UseActions/open_toilet" sound_close="UseActions/close_toilet" loot_quality_template="baseTemplate">
 	<item group="toiletLoot" count="1"/>
 </lootcontainer>
 
@@ -2035,12 +2141,14 @@
 	<item group="militaryArmor" prob="1"/>
 	<item name="nightvisionGoggles" prob="0.3"/>
 	<item name="militaryFiber" count="1,6" prob="1.5"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- zombie utility worker / construction worker loot -->
 <lootcontainer id="74" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item group="junk" prob="1.5"/>
 	<item group="ZombieUtilityWorker" />
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- cntMorticianDrawer -->
@@ -2068,6 +2176,7 @@
 <lootcontainer id="78" count="1,2" size="4,4" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" loot_quality_template="baseTemplate">
 	<item group="junk" prob="1.5"/>
 	<item group="ZombieFootballPlayer" />
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- ZombieCheerleader -->
@@ -2080,6 +2189,7 @@
 	<item name="runningShoes" prob="0.5"/>
 	<item group="questChallenge" count="1" prob="0.036"/>
 	<item group="treasureMaps" count="1" prob="0.031"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- ZombieSkateboarder -->
@@ -2092,6 +2202,7 @@
 	<item group="questChallenge" count="1" prob="0.036"/>
 	<item group="treasureMaps" count="1" prob="0.031"/>
 	<item name="facialPiercings" prob="0.15"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- zombieOldTimer / zombieCowboy -->
@@ -2115,6 +2226,7 @@
 	<item name="oldCash" count="2,15" prob="1"/>
 	<item group="treasureMaps" count="1" prob="1"/>
 	<item name="44MagBullet" count="1,6" prob="1"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- ZombieMiner
@@ -2159,7 +2271,7 @@
 	<item group="junk" prob="1"/>
 	<item name="oldCash" count="4,45" prob="2"/>
 	<item name="casinoCoin" count="10,40"/>
-	
+	<item group="junkPersonal"/>	
 	
 	<item name="painkillers"/>
 	<item name="vitamins"/>
@@ -2181,6 +2293,7 @@
 	<item group="weaponsCompoundBowParts" prob="0.02"/>
 	<item name="compoundBow" prob="0.04"/>
 	<item group="weaponsAnyShotguns+ammo" prob="0.05"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- bookstore shipping crate -->
@@ -2249,6 +2362,7 @@
 	<item name="paper" count="10,20" prob="2"/>
 	<item group="questChallenge" count="1" prob="0.036"/>
 	<item group="treasureMaps" count="1" prob="0.031"/>
+	<item group="junkPersonal"/>	
 </lootcontainer>
 
 <!-- cntGreenDrawerSecure, player crafted -->

@@ -598,6 +598,8 @@
 		<requirement perk_level="2" required_skill_name="Heavy Weapons" required_skill_level="15"/>
 		<requirement perk_level="3" required_skill_name="Heavy Weapons" required_skill_level="25"/>
 		<requirement perk_level="4" required_skill_name="Heavy Weapons" required_skill_level="45"/>
+		<recipe name="partsflamethrower_advBarrel" unlock_level="4"/>
+		<recipe name="gunflamethrowerAdvanced" unlock_level="4"/>
 		<requirement perk_level="5" required_skill_name="Heavy Weapons" required_skill_level="65"/>
 		<effect name="EntityDamage">
 			<multiply perk_level="0" value="1"/>
