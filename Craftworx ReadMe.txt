@@ -1,6 +1,6 @@
 Craftworx is compatible with Alpha 16.4b8
 
-Current version: Craftworx 2.9
+Current version: Craftworx 2.91
 
 There is now a wiki for Craftworx, located within the Github repository. It should help with understanding the differences between this mod and the vanilla game. You can access it directly by following this link:
 https://github.com/LatheosMod/Craftworx/wiki

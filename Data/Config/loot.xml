@@ -1061,6 +1061,7 @@
 	<item name="shotgunSlug" count="8,24"/>
 	<item name="rocket" count="1,4"/>
 	<item name="fertilizerRound" count="1,4"/> 
+	<item name="napalm" count="12,60"/>
 </lootgroup>
 
 <lootgroup name="treasureAmmo">
@@ -2487,6 +2488,18 @@
 
 <!--Working Oven and Sink -->
 <lootcontainer id="130" size="10,9" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" >
+</lootcontainer>
+
+<!-- cntStorageGenericInsecure, generic storage boxes like the old type crates -->
+<lootcontainer id="131" count="2,4" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="treasureTemplate">
+	<item group="weaponsCommonParts" prob="0.6"/>
+	<item group="weaponsBasicGuns+ammo"/>
+	<item group="commonBooks" count="1,2" prob="0.5"/>
+	<item group="rareBooks" prob="0.25"/>
+	<item group="commonMagazines" count="1,2" prob="0.5"/>
+	<item group="rareMagazines" prob="0.25"/>
+	<item group="clothes" count="1,2" prob="0.5"/>
+	<item group="lightArmor" count="1,2" prob="0.6"/>
 </lootcontainer>
 
 </lootcontainers>

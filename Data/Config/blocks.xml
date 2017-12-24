@@ -9998,6 +9998,7 @@ kind of free
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1"/>
 	<property name="CraftingSkillGroup" value="Carpentry"/>
 </block>
+
   <!-- Craftworx - QoLaFIM - scrapIron 5,10>120,200 -->
 <block id="1076" name="cntWallOven">
 	<property name="Class" value="Loot"/>
@@ -11457,7 +11458,7 @@ kind of free
 	<property name="Model" value="cube"/>
 	<property name="DescriptionKey" value="largeStorageGroupDesc"/>
 	<property name="Class" value="SecureLoot"/>
-	<property name="LootList" value="10"/>
+	<property name="LootList" value="131"/>
 	<property name="Material" value="wood+wood"/>
 	<property name="Texture" value="572"/>
 	<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
@@ -11473,7 +11474,7 @@ kind of free
 	<property name="CreativeMode" value="Player"/>
 	<property name="CustomIcon" value="cntStorageHealth"/>
 	<property name="Class" value="Loot"/>
-	<property name="LootList" value="10"/>
+	<property name="LootList" value="131"/>
 	<property name="Material" value="wood+wood"/>
 	<property name="Texture" value="572"/>
 	<property name="UseGlobalUV" value="L,L,G,G,G,G"/>
@@ -16268,7 +16269,10 @@ kind of free
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="Stacknumber" value="1" />
 	<property name="Material" value="metal" />
-	<property name="Texture" value="346,345,341,345,262,345" />
+	<property name="Shape" value="Ext3dModel"/>	
+	<property name="Texture" value="293"/>
+	<property name="Mesh" value="models"/>
+	<property name="Model" value="Appliances/oven" param1="main_mesh"/>
 	<!-- <property name="RequiredPower" value="10"/> -->
 	<property name="LootList" value="130" />
 	<!-- <drop event="Destroy" name="scrapIron" count="240,400" prob="1" tool_category="harvestingTools"/>
