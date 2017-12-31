@@ -275,3 +275,17 @@ Added entry for napalm in localization.txt
 Flamethrower and advanced flamethrower no longer reliably fire through iron bars
 Added recipes for advanced flamethrower, advanced flamethrower barrel to level 4 of Gun Bunny perk
 Added advanced flamethrower to traders
+
+<----- 23 Dec 2017 ----->
+Craftworx 2.91
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot, dretch's Junction Box, JaxTeller718's Junk Items - Golden Egg - Scrap Iron Shiv - Electrified Spiked Club
+Added new loot entry for generic crates with some decent low-level loot
+
+<----- 30 Dec 2017 ----->
+Craftworx 2.92
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot, dretch's Junction Box, JaxTeller718's Junk Items - Golden Egg - Scrap Iron Shiv - Electrified Spiked Club
+Changed loot list entry for working oven to enable a better sound file
+Changed behavior of the first aid kit to now remove bleeding effects, not just cure infection and provide first aid buff
+Changed behavior of the icon for Handcrafting magazine and bagged meat (that bloody escaping icon issue again)
+Added lockpick, lockpicking skill, and ability to pick locks on safes
+Fixed incorrect storage size on generic crates (Thanks, Tatoress!)

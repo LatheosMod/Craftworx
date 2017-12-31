@@ -3670,6 +3670,12 @@ group desc for stuff like metal siding
 	<property name="DescriptionKey" value="cntGunSafeDesc"/>
 	<property class="RepairItems"> <property name="forgedSteel" value="10"/> </property>
 	<property name="DowngradeBlock" value="cntDeskSafeInsecure"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntDeskSafeInsecure"/>
+		<property name="Item" value="Lockpick3"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="10"/>
+	</property>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="Group" value="Building"/>
@@ -3691,6 +3697,12 @@ group desc for stuff like metal siding
 	<property name="DowngradeBlock" value="cntWallSafeInsecure"/>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntWallSafeInsecure"/>
+		<property name="Item" value="Lockpick3"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="15"/>
+	</property>
 	<property name="Group" value="Building"/>
 	<property name="EconomicValue" value="300"/>
 </block>
@@ -6270,6 +6282,12 @@ kind of free
 	<property name="LootList" value="42"/>
 	<property name="DowngradeBlock" value="cntGunSafeInsecure"/>
 	<property class="RepairItems"> <property name="forgedSteel" value="20"/> </property>
+	<property class="UpgradeBlock">
+		<property name="ToBlock" value="cntGunSafeInsecure"/>
+		<property name="Item" value="Lockpick3"/>
+		<property name="ItemCount" value="1"/>
+		<property name="UpgradeHitCount" value="20"/>
+	</property>
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="690"/>
@@ -11458,7 +11476,7 @@ kind of free
 	<property name="Model" value="cube"/>
 	<property name="DescriptionKey" value="largeStorageGroupDesc"/>
 	<property name="Class" value="SecureLoot"/>
-	<property name="LootList" value="131"/>
+	<property name="LootList" value="10"/>
 	<property name="Material" value="wood+wood"/>
 	<property name="Texture" value="572"/>
 	<property name="UseGlobalUV" value="L,L,L,L,L,L"/>
@@ -16274,7 +16292,7 @@ kind of free
 	<property name="Mesh" value="models"/>
 	<property name="Model" value="Appliances/oven" param1="main_mesh"/>
 	<!-- <property name="RequiredPower" value="10"/> -->
-	<property name="LootList" value="130" />
+	<property name="LootList" value="132" />
 	<!-- <drop event="Destroy" name="scrapIron" count="240,400" prob="1" tool_category="harvestingTools"/>
 	<drop event="Destroy" name="electricOven" count="1" tool_category="Disassemble"/>
 	<drop event="Destroy" count="0" />

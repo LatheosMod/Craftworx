@@ -1037,7 +1037,7 @@
 </lootgroup>
 
 <lootgroup name="books" count="1">
-	<item group="commonMagazines" count="1,2" prob="0.3"/>
+	<item group="commonMagazines" count="1" prob="0.3"/>
 	<item name="paper" count="10,25" prob="0.66"/>
 	<item group="commonBooks" count="1" prob="0.38"/>
 	<item group="paintMagazines" prob="0.03"/>
@@ -1895,7 +1895,7 @@
 	<item group="hats" prob="10"/>
 	<item group="ammo" prob="0.05"/>
 	<item group="weaponsLongShotgun+ammo" prob="0.01"/>
-	<item group="books" count="1,2"/>
+	<item group="books" count="1"/>
 	<item name="paper" count="1,20" prob="0.7"/>
 	<item name="oldCash" count="1,12"/>
 	<item group="medicine" prob="0.15"/>
@@ -2486,20 +2486,24 @@
 <lootcontainer id="99" count="0" size="5,10" destroy_on_close="false" sound_open="UseActions/open_corpse" sound_close="UseActions/close_corpse" open_time="1" loot_quality_template="baseTemplate">
 </lootcontainer>
 
-<!--Working Oven and Sink -->
+<!--Working Sink -->
 <lootcontainer id="130" size="10,9" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" >
 </lootcontainer>
 
 <!-- cntStorageGenericInsecure, generic storage boxes like the old type crates -->
-<lootcontainer id="131" count="2,4" size="5,4" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="treasureTemplate">
+<lootcontainer id="131" count="2,4" size="8,9" sound_open="UseActions/open_cardboard" sound_close="UseActions/close_cardboard" loot_quality_template="treasureTemplate">
 	<item group="weaponsCommonParts" prob="0.6"/>
 	<item group="weaponsBasicGuns+ammo"/>
-	<item group="commonBooks" count="1,2" prob="0.5"/>
+	<item group="commonBooks" count="1" prob="0.5"/>
 	<item group="rareBooks" prob="0.25"/>
-	<item group="commonMagazines" count="1,2" prob="0.5"/>
+	<item group="commonMagazines" count="1" prob="0.5"/>
 	<item group="rareMagazines" prob="0.25"/>
 	<item group="clothes" count="1,2" prob="0.5"/>
 	<item group="lightArmor" count="1,2" prob="0.6"/>
+</lootcontainer>
+
+<!--Working Oven -->
+<lootcontainer id="132" size="10,9" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" >
 </lootcontainer>
 
 </lootcontainers>

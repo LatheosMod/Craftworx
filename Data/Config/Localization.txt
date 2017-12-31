@@ -5284,3 +5284,8 @@ junk_woodSpoon,items,Item,KgNone,Wooden Spoon,,
 junk_woodSpoonDesc,items,Item,KgNone,A wooden spoon. It might have been good for cooking if it weren't for the ominous bloodstain in the bowl.,,
 junk_woodYoyo,items,Item,KgNone,Wooden Yoyo,,
 junk_woodYoyoDesc,items,Item,KgNone,This yoyo is missing the string.,,
+
+Lockpicking,progression,Skill,KgNone,Lockpicking,,
+LockpickingDesc,progression,Skill,KgNone,"Learn to craft lock picks. Harder locks take longer to pick.",,
+Lockpick3,items,Item,KgNone,Lockpick,,
+Lockpick3Desc,items,Item,KgNone,"A strong lock pick. Single-use only.",,

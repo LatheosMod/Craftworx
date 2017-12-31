@@ -164,6 +164,7 @@
 			<add skill_level="70,100" value="0.16,0.2"/>
 		</effect>
 		</action_skill>
+		
 
 	<!-- Item Usage Skills -->
 	<action_skill name="Blunt Weapons" exp_to_level="150" icon="club" description_key="bluntWeaponsDesc" title_key="bluntWeapons" group="weapons">
@@ -460,6 +461,12 @@
 			<multiply perk_level="4" value="1.40"/>
 			<multiply perk_level="5" value="1.50"/>
 		</effect>
+	</perk>
+	
+	<!-- Craftworx -->	
+	<perk name="Lockpicking" icon="ui_game_symbol_lock" description_key="LockpickingDesc" title_key="Lockpick" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
+		<requirement skill_level="1" required_player_level="15"/>
+		<recipe name="Lockpick3" unlock_level="1"/>
 	</perk>
 
 	<action_skill name="Pistols" exp_to_level="150" icon="pistol" description_key="pistolsDesc" title_key="pistols" group="firearms">

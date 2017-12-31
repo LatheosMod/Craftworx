@@ -6344,7 +6344,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="50"/>
 		<property name="Sound_start" value="player_firstAidKit"/>
 		<property name="Buff" value="firstAidLarge"/>
-		<property name="Debuff" value="infection"/>
+		<property name="Debuff" value="infection,bleeding,arrowCriticalBleedout"/>
 	</property>
 	<property name="DescriptionKey" value="firstAidKitDesc"/>
 	<property name="CraftingSkillGroup" value="craftSkillScience"/>
@@ -10683,7 +10683,7 @@ Mesh files no longer used:
 <!-- Food -->
 <item id="2061" name="baggedMeat">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
-	<property name="CustomIcon" value="baggedMeat" />
+	<!-- <property name="CustomIcon" value="baggedMeat" /> -->
     <property name="Material" value="organic" />
     <property name="HoldType" value="7" />
 	<property name="Stacknumber" value="100" /> <!-- STK resource -->
@@ -11038,7 +11038,7 @@ Mesh files no longer used:
 
 <item id="2093" name="magazineMisc">
 	<property name="Extends" value="schematicMaster" />
-	<property name="CustomIcon" value="magazineMisc" />
+	<!-- <property name="CustomIcon" value="magazineMisc" /> -->
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillMiscellaneous" />
@@ -12180,6 +12180,30 @@ Mesh files no longer used:
 	</property>
 	<property name="DescriptionKey" value="advancedflamethrowerSchematicDesc" />
 </item>
+
+<!-- Lockpicking -->
+<item id="2172" name="Lockpick3">
+	<!-- <property name="Degradation" value="125" param1="true"/> -->
+	<property name="DescriptionKey" value="Lockpick3Desc"/>
+	<property name="Meshfile" value="Items/Weapons/Melee/Knives/boneShivPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="1"/>
+	<property name="Stacknumber" value="1"/>
+	<property class="Action1">
+		<property name="Class" value="Repair"/>
+		<property name="Delay" value="0.53"/>
+		<property name="Upgrade_hit_offset" value="-1"/>
+		<property name="Sound_start" value="unlocking"/>
+		<property name="Allowed_upgrade_items" value="Lockpick3"/>
+	</property>
+	<property class="Attributes">
+		<property name="DegradationMax" value="600,600"/>
+		<property name="DegradationRate" value="1,1"/>
+	</property>
+	<property name="Group" value="Tools/Traps"/>
+	<property name="CraftingSkillGroup" value="craftSkillTools"/>
+</item>
+<!-- End Lockpicking -->
 
 <!-- End Craftworx -->
 

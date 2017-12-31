@@ -3600,6 +3600,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="clubSpiked" count="1"/>
 </recipe>
 <!-- End Electrified Spiked Club -->
+
+<!-- Lockpicks -->
+<recipe name="Lockpick3" count="1" craft_time="10">
+	<ingredient name="scrapIron" count="5"/>
+	<ingredient name="scrapBrass" count="5"/>
+</recipe>
+<!-- End Lockpicks -->
 <!-- End Craftworx -->
 
 
