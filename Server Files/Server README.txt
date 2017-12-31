@@ -1,1 +1,0 @@
-Copy the 7DaysToDieServer_Data folder to the root install directory for the dedicated server. This will place the modified Assembly-CSharp.dll file where it needs to be. Players do *NOT* need this file to run the mod, so should ignore this folder. 
