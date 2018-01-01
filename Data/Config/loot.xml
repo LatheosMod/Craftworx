@@ -934,6 +934,7 @@
 
 <lootgroup name="commonBooks" count="1">
 	<item name="crossbowSchematic"/>
+	<item name="AviarysLawbreakerSchematic"/>
 	<item name="huntingKnifeBook"/>
 	<item name="huntingRifleSchematic"/>
 	<item name="leatherBootsSchematic"/>
@@ -1025,6 +1026,7 @@
 	<item name="magazineScience"/>
 	<item name="magazineTailor"/>
 	<item name="magazineArmorsmith"/>
+	<item name="magazineDoctor"/>
 </lootgroup>
 
 <lootgroup name="paintMagazines" count="1">

@@ -289,3 +289,9 @@ Changed behavior of the first aid kit to now remove bleeding effects, not just c
 Changed behavior of the icon for Handcrafting magazine and bagged meat (that bloody escaping icon issue again)
 Added lockpick, lockpicking skill, and ability to pick locks on safes
 Fixed incorrect storage size on generic crates (Thanks, Tatoress!)
+
+<----- 01 Jan 2018 ----->
+Craftworx 2.93
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot, dretch's Junction Box, JaxTeller718's Junk Items - Golden Egg - Scrap Iron Shiv - Electrified Spiked Club
+Added AviaryLaw signature weapon, Aviary's Lawbreaker
+Changed the text descriptions for crafting skill magazines to make their use clearer

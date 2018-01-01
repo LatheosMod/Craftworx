@@ -3607,6 +3607,22 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="scrapBrass" count="5"/>
 </recipe>
 <!-- End Lockpicks -->
+
+<!-- Aviary's Lawbreaker -->
+<recipe name="AviarysLawbreaker" count="1">
+	<ingredient name="forgedIron" count="8"/>
+	<ingredient name="leather" count="2"/>
+	<ingredient name="glue" count="2"/>
+	<ingredient name="ductTape" count="1"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+
+<recipe name="eggAmmo" count="1" scrapable="False">
+	<ingredient name="egg" count="1"/>
+	<ingredient name="glue" count="2"/>
+	<ingredient name="feather" count="3"/>
+</recipe>
+<!-- End Aviary's Lawbreaker -->
 <!-- End Craftworx -->
 
 

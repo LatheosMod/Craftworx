@@ -11508,7 +11508,7 @@ Mesh files no longer used:
 		<property name="Magazine_item_ray_counts" value="1"/>
 		<property name="Magazine_item_ray_spreads" value="0.0"/> <!-- .74 -->
 		<property name="Reload_time" value="2.1"/>
-		<property name="Bullet_icon" value="uzi"/>
+		<property name="Bullet_icon" value="Items/Food/vegetable_potatoPrefab"/>
 		<property name="Sound_start" value="organichitorganic"/>
 		<property name="Sound_repeat" value=""/>
 		<property name="Sound_end" value=""/>
@@ -12204,6 +12204,91 @@ Mesh files no longer used:
 	<property name="CraftingSkillGroup" value="craftSkillTools"/>
 </item>
 <!-- End Lockpicking -->
+
+<!-- AviaryLaw's Signature Weapon -->
+<item id="2173" name="AviarysLawbreaker">
+	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="RepairTools" value="forgedIron"/>
+	<property name="HoldType" value="26"/>
+	<property name="FuelValue" value="70"/>
+	<property name="EconomicValue" value="800"/>
+	<property name="DegradationBreaksAfter" value="false"/>
+	<property name="SoundJammed" value="ItemNeedsRepair"/>
+	<property name="SoundDestroy" value="wooddestroy1"/>
+	<property name="CrosshairOnAim" value="false"/> <!-- aimTest -->
+	<property name="CrosshairUpAfterShot" value="true"/> <!-- aimTest -->
+	<property name="Sound_Sight_In" value="crossbow_sight_in"/>
+	<property name="Sound_Sight_Out" value="crossbow_sight_out"/>
+	<property class="Action0"> <!-- AttackAction -->
+		<property name="Class" value="Launcher"/>
+		<!-- <property name="Hitmask_override" value="Arrow"/> -->
+		<property name="Delay" value="0.8"/>
+		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
+		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
+		<property name="Magazine_size" value="1"/>
+		<property name="Magazine_items" value="eggAmmo"/>
+		<property name="Rays_spread" value="0.012"/>
+		<property name="Reload_time" value="1"/>
+		<property name="Bullet_icon" value="Items/Food/eggPrefab"/>
+		<property name="Sound_start" value="Animals/Chicken/chickenpain"/>
+		<property name="Sound_repeat" value=""/>
+		<property name="Sound_end" value=""/>
+		<property name="Sound_empty" value="weapon_empty"/>
+		<property name="Sound_reload" value="crossbow_reload"/>
+	</property>
+	<property class="Action1"> <!-- UseAction -->
+		<property name="Class" value="Zoom"/>
+		<property name="Zoom_max_out" value="40"/>
+		<property name="Zoom_max_in" value="40"/>
+	</property>
+	<property class="Attributes">
+		<property name="DegradationRate" value="1,1"/>
+		<property name="DegradationMax" value="240,600"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+	<property name="ActionSkillGroup" value="Archery"/>
+	<property name="CraftingSkillGroup" value="craftSkillFletching"/>
+	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="PickupJournalEntry" value="alternateAmmoTip"/>
+</item>
+
+<item id="2174" name="eggAmmo">
+	<property name="Meshfile" value="Items/Food/eggPrefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="23" />
+    <property name="Stacknumber" value="250" />
+    <property class="Action1">
+        <!-- UseAction -->
+        <property name="Class" value="Projectile" />
+        <property name="Explosion.ParticleIndex" value="0" />
+        <!-- no expl. -->
+        <property name="Velocity" value="40" />
+        <property name="FlyTime" value=".5" />
+        <property name="LifeTime" value="17" />
+        <property name="DamageBonus.head" value="2" />
+        <property name="DamageBonus.glass" value="4" />
+    </property>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+        <property name="EntityDamage" value="18,42" />
+        <property name="BlockDamage" value="1,1" />
+		<property name="ApplyBuff" value="0.6,0.6" param1="stunned"/>
+    </property>
+	<property name="EconomicValue" value="2" />
+    <property name="Group" value="Ammo/Weapons" />
+	<property name="DescriptionKey" value="eggAmmoDesc" />
+	<property name="CraftingSkillGroup" value="craftSkillFletching"/>
+</item>
+
+<item id="2175" name="AviarysLawbreakerSchematic"> 
+	<property name="Extends" value="schematicMaster" />
+	<property class="Action1">
+		<property name="Recipes_to_learn" value="AviarysLawbreaker,eggAmmo" />
+	</property>
+	<property name="DescriptionKey" value="AviarysLawbreakerSchematicDesc" />
+</item>
+<!-- End AviaryLaw's Signature Weapon -->
 
 <!-- End Craftworx -->
 
