@@ -465,7 +465,8 @@
 	
 	<!-- Craftworx -->	
 	<perk name="Lockpicking" icon="ui_game_symbol_lock" description_key="LockpickingDesc" title_key="Lockpick" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
-		<requirement skill_level="1" required_player_level="15"/>
+		<requirement perk_level="1" required_skill_name="craftSkillTools" required_skill_level="1"/>
+		<requirement perk_level="1" required_player_level="15"/>
 		<recipe name="Lockpick3" unlock_level="1"/>
 	</perk>
 

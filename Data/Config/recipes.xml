@@ -84,6 +84,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<wildcard_forge_category />
 </recipe>
 
+<recipe name="mechanicalParts" count="1" tooltip="ttScrapMetalBrass">
+	<wildcard_forge_category />
+</recipe>
+
 <!-- * * * * * * * * * * * * main recipes * * * * * * * * * * * * -->
 
 <recipe name="44MagBullet" count="1" craft_area="workbench" craft_tool="calipers">
@@ -1679,7 +1683,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="moldyBread" count="1" craft_area="chemistryStation">
-	<ingredient name="shamSandwich" count="4"/>
+	<ingredient name="shamSandwich" count="2"/>
 	<ingredient name="bottledRiverWater" count="1"/>
 </recipe>
 
@@ -3072,7 +3076,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- End Parts -->
 
 <!-- Ammunition -->
-<recipe name="poopBolt" count="1" scrapable="False">
+<recipe name="poopBolt" count="1" scrapable="False" craft_time="2">
 	<ingredient name="turd" count="1"/>
 	<ingredient name="clayLump" count="1"/> <!-- to form turd around crossbow bolt -->
 	<ingredient name="ironCrossbowBolt" count="1"/>
@@ -3125,7 +3129,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="tallow" count="1"/>
 </recipe>
 
-<recipe name="napalm" count="1" scrapable="False" craft_area="chemistryStation" craft_time="150">
+<recipe name="napalm" count="1" scrapable="False" craft_area="chemistryStation" craft_time="50">
     <ingredient name="oil" count="1"/>
     <ingredient name="gasCan" count="1"/>
 	<ingredient name="glue" count="1"/>
@@ -3623,6 +3627,15 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="feather" count="3"/>
 </recipe>
 <!-- End Aviary's Lawbreaker -->
+
+<!-- Red Specs -->
+<recipe name="redSpecs" count="1" craft_area="workbench" craft_tool="drillPress">
+	<ingredient name="carbonSteel" count="2"/>
+	<ingredient name="glassBusinessSheet" count="2"/>
+	<ingredient name="ductTape" count="3"/>
+	<ingredient name="electronicParts" count="5"/>
+</recipe>
+<!-- End Red Specs -->
 <!-- End Craftworx -->
 
 

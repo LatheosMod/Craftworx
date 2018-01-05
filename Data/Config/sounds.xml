@@ -4768,13 +4768,27 @@
 	
   	<!-- Craftworx -->
 	<!-- Suppressed weapon fire -->
-	<SoundDataNode name="suppressed_Fire"> <AudioSource name="Sounds/AudioSource_Impact"/>
+<SoundDataNode name="suppressed_Fire"> <AudioSource name="Sounds/AudioSource_Impact"/>
 	<Noise ID="2" range="4" volume="7" time="4" muffled_when_crouched="0.5"/>
     <AudioClip ClipName="Sounds/ImpactSurface/bullethitsnow1"/>
     <AudioClip ClipName="Sounds/ImpactSurface/bullethitsnow2"/>
     <AudioClip ClipName="Sounds/ImpactSurface/bullethitsnow3"/>
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 	<!-- End Suppressed weapon fire -->
+	
+	<!-- Tuck's Tool -->
+<SoundDataNode name="tucksTool_Fire"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+    <AudioClip ClipName="Sounds/Enemies/Hornets/hornetflylp1"/>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="1" /> <MaxEntities name="10" /> <MaxRepeatRate name="0.5" /> </SoundDataNode>
+	<!-- End Tuck's Tool -->
+	
+	<!-- TexCubSF's Chairinator -->
+  <SoundDataNode name="chairinator_Fire"> <AudioSource name="Sounds/AudioSource_Creatures"/>
+    <AudioClip ClipName="Sounds/Animals/Bear/bear_footstep1"/>
+    <AudioClip ClipName="Sounds/Animals/Bear/bear_footstep2"/>
+    <LocalCrouchVolumeScale name="1.0" /> <CrouchNoiseScale name="0.5" /> <NoiseScale name="1" /> <MaxVoices name="2" /> <MaxEntities name="10" /> <MaxRepeatRate name="0.9" /> </SoundDataNode>
+	<!-- End TexCubSF's Chairinator -->
+	
 	<!-- End Craftworx -->
 	
 </Sounds>

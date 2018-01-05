@@ -293,5 +293,25 @@ Fixed incorrect storage size on generic crates (Thanks, Tatoress!)
 <----- 01 Jan 2018 ----->
 Craftworx 2.93
 Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot, dretch's Junction Box, JaxTeller718's Junk Items - Golden Egg - Scrap Iron Shiv - Electrified Spiked Club
-Added AviaryLaw signature weapon, Aviary's Lawbreaker
+Added AviaryLaw signature weapon, Aviary's Lawbreaker, utilizing weaponized eggs for ammo
 Changed the text descriptions for crafting skill magazines to make their use clearer
+Changed the projectile for the potato guns from uzi to potato
+Changed the name of the enhanced potato gun to The Tatoress Express
+Changed the name of the advanced flamethrower to Lumun's Little Friend
+
+<----- 05 Jan 2018 ----->
+Craftworx 2.94
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot, dretch's Junction Box, JaxTeller718's Junk Items - Golden Egg - Scrap Iron Shiv - Electrified Spiked Club
+Changed the craft time for poop bolts to 2
+Increased the drop percentage for smallEngine from .25 to .29
+Increased the default weight of junk items to 5
+Added redSpecs, a signature item for RedSpecsGaming - a pair of nerd glasses with night vision features
+Disabled mechanicalparts junk, as it's not working as planned
+Decreased stack size on golden eggs from 500 to 250
+Added required skill level 1 of tool smithing to lockpicking perk for better sorting
+Rewrote the descriptions of skill magazines to increase clarity
+Removed text in weapon smithing perk that refers to bows and crossbows
+Renamed Poop Cannon to Poop Mortar, with a better description of how it fires
+Changed loot list for coffins from 1 to 75, same as mortician's drawer
+Reduced crafting time on napalm from 150 to 50
+Reduced the sham sandwich amount for making moldy bread from 4 to 2

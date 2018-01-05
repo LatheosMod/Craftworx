@@ -17,7 +17,7 @@
       </Server>
 	   
 	    <Server Name="Craftworx CompoPack" Logo="">
-         <Description>Craftworx features many changes in gameplay from vanilla 7 Days to Die, which up until now haven’t been as obvious to the players as I’d thought when I started making it. There is now a wiki for Craftworx, located within the Github repository. It should help with understanding the differences between this mod and the vanilla game. You can access it directly by following this link:
+         <Description>This version of Craftworx is installed with the Compopack, which adds many new prefabs to the map. Craftworx features many changes in gameplay from vanilla 7 Days to Die, which up until now haven’t been as obvious to the players as I’d thought when I started making it. There is now a wiki for Craftworx, located within the Github repository. It should help with understanding the differences between this mod and the vanilla game. You can access it directly by following this link:
 		 
 		 https://github.com/LatheosMod/Craftworx/wiki	 
 		 </Description>
@@ -27,7 +27,7 @@
 		<RSS>https://github.com/LatheosMod/Craftworx/commits/master.atom</RSS>
          <Downloads>
             <Download>https://github.com/LatheosMod/Craftworx/archive/master.zip</Download>
-             <Download>https://www.dropbox.com/s/hlsy8zor7lxydo0/COMPOPACK_29%28for_alpha16.3%29.zip?dl=0</Download> 
+             <Download>https://dl.dropboxusercontent.com/s/mdbvecz5tdkptbq/COMPOPACK_25%28for_alpha16experimental%29.zip?dl=0</Download>
 
          </Downloads>
       </Server>

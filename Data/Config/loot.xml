@@ -501,11 +501,11 @@
 	<item name="fishingWeight"/>
 </lootgroup>
 	
-<lootgroup name="mechanicalJunk">
+<!-- <lootgroup name="mechanicalJunk">
 	<item name="junk_mechanicalKeyPad"/>
 	<item name="junk_mechanicalOldWatch"/>
 	<item name="junk_mechanicalTypeWriter"/>
-</lootgroup>
+</lootgroup> -->
 	
 <lootgroup name="paperJunk">
 	<item name="junk_paperNews"/>
@@ -538,7 +538,7 @@
 	<item group="glassJunk"/>
 	<item group="ironJunk"/>
 	<item group="leadJunk"/>
-	<item group="mechanicalJunk"/>
+	<!-- <item group="mechanicalJunk"/> -->
 	<item group="paperJunk"/>
 	<item group="plasticJunk"/>
 	<item group="woodJunk"/>
@@ -561,7 +561,7 @@
 	<item name="junk_plasticHairBrush"/>
 	<item name="junk_plasticToothBrush"/>
 	<item name="junk_plasticShoppingBag"/>
-	<item name="junk_mechanicalOldWatch"/>
+	<!-- <item name="junk_mechanicalOldWatch"/> -->
 	<item name="junk_brassHinge"/>
 	<item name="junk_brassMonkey"/>
 	<item name="junk_brassCowBell"/>
@@ -1499,6 +1499,7 @@
 	<item name="fireaxeIron" prob="2"/>
 	<item group="rareTools"/>
 	<item name="grainAlcohol"/>
+	<item name="redSpecs" prob="0.11"/>
 	<item name="forgedIron" count="1,4" prob="0.01272"/> <!-- together 0.5% -->
 	<item name="forgedSteel" count="1,4" prob="0.00848"/>
 	<item group="weaponsCompoundBowParts" prob="0.05"/>
@@ -1515,6 +1516,7 @@
 	<item group="rareOres" prob="0.1"/>
 	<item name="ironFragment" count="30,150" prob="0.2"/>
 	<item name="torch" prob="0.1"/>
+	<item name="redSpecs" prob="0.11"/>
 </lootgroup>
 
 <lootgroup name="banditsGeneral" count="1">
@@ -1693,6 +1695,7 @@
 	<item group="books"/>
 	<item name="oldCash" count="10,35" prob="0.1"/>
 	<item group="rareOres" prob="0.2"/>
+	<item name="redSpecs" prob="0.11"/>
 </lootcontainer>
 
 <!-- misc metal container mailbox-->
@@ -1730,7 +1733,8 @@
 	<item name="flashlight02" prob="0.5"/>
 	<item name="militaryVest" prob="0.2"/>
 	<item name="militaryFiber" count="1,4" prob="0.04"/>
-	<item group="junkPersonal"/>	
+	<item group="junkPersonal"/>
+	<item name="redSpecs" prob="0.11"/>
 </lootcontainer>
 
 <!-- washing machine, clothes in good condition -->
@@ -2042,7 +2046,8 @@
 	<item group="weaponsCommonParts" prob="0.2"/>
 	<item group="weaponsMilitaryParts" prob="0.2"/>
 	<item group="militaryArmor" prob="0.2"/>
-	<item group="junkPersonal"/>	
+	<item group="junkPersonal"/>
+	<item name="redSpecs" prob="0.11"/>
 </lootcontainer>
 
 <!-- minibike storage -->
@@ -2120,6 +2125,7 @@
 	<item name="oldCash" count="500,3000"/>
 	<item name="gun44Magnum" prob="0.05"/>
 	<item group="visigothSet" prob="0.1"/>
+	<item name="redSpecs" prob="0.11"/>
 </lootcontainer>
 
 <!-- bandit melee -->
@@ -2144,7 +2150,8 @@
 	<item group="militaryArmor" prob="1"/>
 	<item name="nightvisionGoggles" prob="0.3"/>
 	<item name="militaryFiber" count="1,6" prob="1.5"/>
-	<item group="junkPersonal"/>	
+	<item group="junkPersonal"/>
+	<item name="redSpecs" prob="0.11"/>
 </lootcontainer>
 
 <!-- zombie utility worker / construction worker loot -->
@@ -2162,6 +2169,7 @@
 	<item group="books" prob="0.1"/>
 	<item name="fertilizer" count="1,3" prob="0.05"/>
 	<item name="goldNugget" count="1" prob="0.05"/>
+	<item name="redSpecs" prob="0.11"/>
 </lootcontainer>
 
 <!-- cntFurnaceDrawer -->
@@ -2464,6 +2472,7 @@
 	<item group="banditArmor" count="1,2" prob="0.5"/>
 	<item group="heavyArmor" count="1,2" prob="0.5"/>
 	<item group="militaryArmor" count="1,2" prob="0.5"/>
+	<item name="redSpecs" prob="0.11"/>
 </lootcontainer>
 
 <!-- cntLootCrateLabEquipment Lab equipment and medical items -->

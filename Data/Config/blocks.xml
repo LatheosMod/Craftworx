@@ -13422,7 +13422,7 @@ kind of free
 	<property name="MultiBlockDim" value="2,2,6"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<property name="PassThroughDamage" value="true"/>
-	<drop event="Harvest" name="smallEngine" count="1" prob="0.25" tool_category="Disassemble"/>
+	<drop event="Harvest" name="smallEngine" count="1" prob="0.29" tool_category="Disassemble"/>
 	<drop event="Harvest" name="carBattery" count="1" prob="0.4" tool_category="Disassemble"/>
 	<drop event="Harvest" name="radiator" count="1" prob="0.5" tool_category="Disassemble"/>
 	<drop event="Harvest" name="headlight" count="1,2" tool_category="Disassemble"/>
@@ -13611,7 +13611,7 @@ kind of free
 	<property name="Model" value="Furniture/coffin" param1="main_mesh"/>
 	<property name="MultiBlockDim" value="1,1,2"/>
 	<property name="ImposterExchange" value="imposterPlate" param1="1"/>
-	<property name="LootList" value="1"/>
+	<property name="LootList" value="75"/>
 	<drop event="Destroy" name="wood" count="1,3"/>
 	<property name="CraftingSkillGroup" value="Carpentry"/>
 </block>
@@ -16363,6 +16363,6 @@ kind of free
 <!-- End Portable Combining Station -->	
 
 	
-<!-- End Cratworx -->	
+<!-- End Craftworx -->	
 
 </blocks><!-- Block limit: No block can have an ID greater 2047. -->

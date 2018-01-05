@@ -10415,9 +10415,9 @@ Mesh files no longer used:
         <property name="Class" value="Projectile" />
         <property name="Explosion.ParticleIndex" value="4" />
 		<property name="Explosion.RadiusBlocks" value="5" />
-		<property name="Explosion.BlockDamage" value="500" />
+		<property name="Explosion.BlockDamage" value="250" />
 		<property name="Explosion.RadiusEntities" value="5" />
-		<property name="Explosion.EntityDamage" value="150" />
+		<property name="Explosion.EntityDamage" value="350" />
         <property name="Velocity" value="12" />
         <property name="FlyTime" value=".25" />
         <property name="LifeTime" value="17" />
@@ -10425,7 +10425,7 @@ Mesh files no longer used:
 	<property class="Attributes">
 		<property name="GetQualityFromWeapon" value="true" />
 		<property name="EntityDamage" value="250,500" />
-		<property name="BlockDamage" value="50,200" />
+		<property name="BlockDamage" value="25,100" />
 	</property>	
 	<property name="EconomicValue" value="600" />
     <property name="Group" value="Ammo/Weapons" />
@@ -10683,7 +10683,7 @@ Mesh files no longer used:
 <!-- Food -->
 <item id="2061" name="baggedMeat">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
-	<!-- <property name="CustomIcon" value="baggedMeat" /> -->
+	<property name="CustomIcon" value="baggedMeat" />
     <property name="Material" value="organic" />
     <property name="HoldType" value="7" />
 	<property name="Stacknumber" value="100" /> <!-- STK resource -->
@@ -11038,7 +11038,7 @@ Mesh files no longer used:
 
 <item id="2093" name="magazineMisc">
 	<property name="Extends" value="schematicMaster" />
-	<!-- <property name="CustomIcon" value="magazineMisc" /> -->
+	<property name="CustomIcon" value="magazineMisc" /> 
 	<property class="Action1">
 		<!-- UseAction -->
 		<property name="Skills_to_gain" value="craftSkillMiscellaneous" />
@@ -11702,7 +11702,7 @@ Mesh files no longer used:
 		<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab"/>
 		<property name="Material" value="organic"/>
 		<property name="HoldType" value="45"/>
-		<property name="Stacknumber" value="500"/>
+		<property name="Stacknumber" value="250"/>
 		<property name="Weight" value="5"/>
 		<property name="Group" value="Resources"/>
 		<property name="SellableToTrader" value="false"/>
@@ -11714,7 +11714,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_brassHinge"/>
 		<property name="DescriptionKey" value="junk_brassHingeDesc"/>
 		<property name="Material" value="brass"/>
-		<property name="Weight" value="1"/>
+		<property name="Weight" value="5"/> 
 	</item>
 	
 	<item id="2127" name="junk_brassKnuckles">
@@ -11722,7 +11722,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_brassKnuckles"/>
 		<property name="DescriptionKey" value="junk_brassKnucklesDesc"/>
 		<property name="Material" value="brass"/>
-		<property name="Weight" value="2"/>
+		<property name="Weight" value="7"/> 
 	</item>
 	
 	<item id="2128" name="junk_brassMonkey">
@@ -11730,7 +11730,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_brassMonkey"/>
 		<property name="DescriptionKey" value="junk_brassMonkeyDesc"/>
 		<property name="Material" value="brass"/>
-		<property name="Weight" value="1"/>
+		<property name="Weight" value="3"/>
 	</item>
 	
 	<item id="2129" name="junk_brassCowBell">
@@ -11738,7 +11738,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_brassCowBell"/>
 		<property name="DescriptionKey" value="junk_brassCowBellDesc"/>
 		<property name="Material" value="brass"/>
-		<property name="Weight" value="2"/>
+		<property name="Weight" value="5"/>
 	</item>
 
 <!-- Junk Cloth -->
@@ -11747,7 +11747,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_clothTeddyBearJZ"/>
 		<property name="DescriptionKey" value="junk_clothTeddyBearDesc"/>
 		<property name="Material" value="cloth"/>
-		<property name="Weight" value="10"/>
+		<property name="Weight" value="5"/> 
 	</item>
 	
 	<item id="2131" name="junk_clothRags">
@@ -11755,7 +11755,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_clothRags"/>
 		<property name="DescriptionKey" value="junk_clothRagsDesc"/>
 		<property name="Material" value="cloth"/>
-		<property name="Weight" value="10"/>
+		<property name="Weight" value="5"/> 
 	</item>
 	
 	<item id="2132" name="junk_clothRug">
@@ -11795,7 +11795,6 @@ Mesh files no longer used:
 		<property name="Extends" value="itemMaster"/>
 		<property name="CustomIcon" value="junk_glassFrame"/>
 		<property name="DescriptionKey" value="junk_glassFrameDesc"/>
-		<property name="Stacknumber" value="1"/>
 		<property name="Material" value="glass"/>
 		<property name="Weight" value="10"/>
 	</item>
@@ -11805,7 +11804,7 @@ Mesh files no longer used:
 		<property name="Material" value="glass"/>
 		<property name="CustomIcon" value="junk_glassEye"/>
 		<property name="DescriptionKey" value="junk_glassEyeDesc"/>
-		<property name="Weight" value="5"/>
+		<property name="Weight" value="5"/> 
 	</item>
 	
 <!-- Junk Iron -->
@@ -11814,7 +11813,7 @@ Mesh files no longer used:
 		<property name="Material" value="metal"/>
 		<property name="CustomIcon" value="junk_ironScissors"/>
 		<property name="DescriptionKey" value="junk_ironScissorsDesc"/>
-		<property name="Weight" value="1"/>
+		<property name="Weight" value="5"/>
 	</item>
 	
 	<item id="2139" name="junk_ironSoldier">
@@ -11822,7 +11821,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_ironSoldier"/>
 		<property name="DescriptionKey" value="junk_ironSoldierDesc"/>
 		<property name="Material" value="metal"/>
-		<property name="Weight" value="1"/>
+		<property name="Weight" value="5"/> 
 	</item>
 	
 	<item id="2140" name="junk_ironPaperClips">
@@ -11830,7 +11829,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_ironPaperClips"/>
 		<property name="DescriptionKey" value="junk_ironPaperClipsDesc"/>
 		<property name="Material" value="metal"/>
-		<property name="Weight" value="1"/>
+		<property name="Weight" value="3"/>
 	</item>
 	
 	<item id="2141" name="junk_ironWeight">
@@ -11846,7 +11845,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_ironHinge"/>
 		<property name="DescriptionKey" value="junk_ironHingeDesc"/>
 		<property name="Material" value="metal"/>
-		<property name="Weight" value="1"/>
+		<property name="Weight" value="5"/> 
 	</item>
 	
 <!-- Junk Lead -->
@@ -11863,7 +11862,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_leadSolder"/>
 		<property name="DescriptionKey" value="junk_leadSolderDesc"/>
 		<property name="Material" value="lead"/>
-		<property name="Weight" value="1"/>
+		<property name="Weight" value="3"/> 
 	</item>
 	
 	<item id="2145" name="junk_leadSoldier">
@@ -11871,16 +11870,17 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_leadSoldier"/>
 		<property name="DescriptionKey" value="junk_leadSoldierDesc"/>
 		<property name="Material" value="lead"/>
-		<property name="Weight" value="1"/>
+		<property name="Weight" value="3"/> 
 	</item>
 	
 <!-- Junk Mechanical -->
+<!-- Disabled until fix is found to allow proper scrapping to mechanical parts
 	<item id="2146" name="junk_mechanicalKeyPad">
 		<property name="Extends" value="itemMaster"/>
 		<property name="CustomIcon" value="junk_mechanicalKeyPad"/>
 		<property name="DescriptionKey" value="junk_mechanicalKeyPadDesc"/>
 		<property name="Material" value="MmechanicalParts"/>
-		<property name="Weight" value="3"/>
+		<property name="Weight" value="1"/>
 	</item>
 	
 	<item id="2147" name="junk_mechanicalOldWatch">
@@ -11888,7 +11888,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_mechanicalOldWatch"/>
 		<property name="DescriptionKey" value="junk_mechanicalOldWatchDesc"/>
 		<property name="Material" value="MmechanicalParts"/>
-		<property name="Weight" value="3"/>
+		<property name="Weight" value="1"/>
 	</item>
 	
 	<item id="2148" name="junk_mechanicalTypeWriter">
@@ -11896,9 +11896,9 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_mechanicalTypeWriter"/>
 		<property name="DescriptionKey" value="junk_mechanicalTypeWriterDesc"/>
 		<property name="Material" value="MmechanicalParts"/>
-		<property name="Weight" value="5"/>
+		<property name="Weight" value="1"/>
 	</item>
-	
+	-->
 <!-- Junk Paper -->
 	<item id="2149" name="junk_paperPlayingCards">
 		<property name="Extends" value="itemMaster"/>
@@ -11913,7 +11913,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_paperNews"/>
 		<property name="DescriptionKey" value="junk_paperNewsDesc"/>
 		<property name="Material" value="paper"/>
-		<property name="Weight" value="5"/>
+		<property name="Weight" value="5"/> 
 	</item>
 	
 	<item id="2151" name="junk_paperToilet">
@@ -11921,7 +11921,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_paperToilet"/>
 		<property name="DescriptionKey" value="junk_paperToiletDesc"/>
 		<property name="Material" value="paper"/>
-		<property name="Weight" value="4"/>
+		<property name="Weight" value="3"/>
 	</item>
 	
 	<item id="2152" name="junk_paperMatches">
@@ -11929,7 +11929,7 @@ Mesh files no longer used:
 		<property name="Material" value="paper"/>
 		<property name="CustomIcon" value="junk_paperMatches"/>
 		<property name="DescriptionKey" value="junk_paperMatchesDesc"/>
-		<property name="Weight" value="3"/>
+		<property name="Weight" value="3"/> 
 	</item>
 	
 <!-- Junk Plastic -->
@@ -11938,7 +11938,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_plasticCds"/>
 		<property name="DescriptionKey" value="junk_plasticCdsDesc"/>
 		<property name="Material" value="Mplastics"/>
-		<property name="Weight" value="2"/>
+		<property name="Weight" value="3"/>
 	</item>
 	
 	<item id="2154" name="junk_plasticSoldier">
@@ -11946,7 +11946,7 @@ Mesh files no longer used:
 		<property name="CustomIcon" value="junk_plasticSoldier"/>
 		<property name="DescriptionKey" value="junk_plasticSoldierDesc"/>
 		<property name="Material" value="Mplastics"/>
-		<property name="Weight" value="2"/>
+		<property name="Weight" value="3"/>
 	</item>
 	
 	<item id="2155" name="junk_plasticBricks">
@@ -12039,7 +12039,7 @@ Mesh files no longer used:
 		<property name="Meshfile" value="Items/Food/eggPrefab"/>
 		<property name="Material" value="organic"/>
 		<property name="HoldType" value="23"/>
-		<property name="Stacknumber" value="500"/>
+		<property name="Stacknumber" value="250"/>
 		<property name="EconomicValue" value="3000"/>
 		<property name="Group" value="Special Items"/>
 	</item>
@@ -12289,6 +12289,144 @@ Mesh files no longer used:
 	<property name="DescriptionKey" value="AviarysLawbreakerSchematicDesc" />
 </item>
 <!-- End AviaryLaw's Signature Weapon -->
+
+<!-- TexCubSF Signature Weapon -->
+<!--
+<item id="2176" name="TexCubChairinator5000">
+	<property name="Extends" value="gunRocketLauncher"/>
+    <property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab" />
+	<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab"/>
+	<property name="DropMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab"/>	
+	<property class="Parts">
+        <property name="Stock" value="partsChairinatorStock" />
+        <property name="Receiver" value="partsChairinatorReceiver" />
+        <property name="Barrel" value="partsChairinatorBarrel" />
+        <property name="Pump" value="partsChairinatorParts" />
+    </property>	
+		<property class="Action0">
+			<property name="Class" value="Launcher" />
+			<property name="Magazine_size" value="2"/>
+			<property name="Magazine_items" value="chairAmmo" />
+			<property name="Sound_start" value="chairinator_Fire" />
+	</property>
+		<property class="Action1">
+			<property name="Zoom_max_out" value="35" />
+			<property name="Zoom_max_in" value="35" />
+	</property>
+	<property name="Group" value="Ammo/Weapons" />
+	<property name="DescriptionKey" value="TexCubChairinator5000Desc" />
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+	<property name="ActionSkillGroup" value="Heavy Weapons"/>
+</item>
+
+<item id="2177" name="chairAmmo">
+	<property name="Meshfile" value="Blocks/Furniture/chair03Prefab" />
+    <property name="Material" value="organic" />
+    <property name="HoldType" value="25" />
+    <property name="Stacknumber" value="100" />
+    <property class="Action1">
+        
+        <property name="Class" value="Projectile" />
+        <property name="Explosion.ParticleIndex" value="0" />
+        
+        <property name="Velocity" value="40" />
+        <property name="FlyTime" value=".5" />
+        <property name="LifeTime" value="17" />
+        <property name="DamageBonus.head" value="2" />
+        <property name="DamageBonus.glass" value="4" />
+    </property>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="EntityDamage" value="100,150"/>
+		<property name="BlockDamage" value="100,150"/>
+		<property name="ApplyBuff" value="0.75,0.75" param1="stunned"/>
+    </property>
+	<property name="EconomicValue" value="2" />
+    <property name="Group" value="Ammo/Weapons" />
+	<property name="DescriptionKey" value="chairAmmoDesc" />
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+</item>
+
+<item id="2178" name="partsChairinatorStock">
+	<property name="Extends" value="partsMaster" />
+    <property name="PartType" value="Stock" />
+    <property name="Weight" value="35" />
+    <property class="Attributes">
+        <property name="DegradationMax" value="3500,8000" />
+		<property name="DegradationRate" value="40,40" />
+    </property>
+	<property name="EconomicValue" value="1500" />
+	<property name="DescriptionKey" value="ChairinatorPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+</item>
+	
+<item id="2179" name="partsChairinatorReceiver">
+	<property name="Extends" value="partsMaster" />
+    <property name="PartType" value="Receiver" />
+    <property name="HoldType" value="45" />
+    <property name="Weight" value="35" />
+    <property class="Attributes">
+        <property name="DegradationMax" value="3500,8000" />	
+        <property name="FalloffRange" value="35,60" />
+    </property>
+	<property name="EconomicValue" value="1500" />
+	<property name="DescriptionKey" value="ChairinatorPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+</item>	
+
+<item id="2180" name="partsChairinatorBarrel">
+	<property name="Extends" value="partsMaster" />
+    <property name="PartType" value="Barrel" />
+    <property name="Weight" value="35" />
+    <property class="Attributes">	
+		<property name="DegradationMax" value="3500,8000" />
+        <property name="EntityDamage" value="6,42" />
+		<property name="EntityDamage" value="12,90" />
+    </property>
+	<property name="EconomicValue" value="1500" />
+	<property name="DescriptionKey" value="ChairinatorPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+</item>
+	
+<item id="2181" name="partsChairinatorParts">
+	<property name="Extends" value="partsMaster" />
+    <property name="PartType" value="Pump" />
+    <property name="HoldType" value="45" />
+    <property name="Weight" value="10" />
+	<property class="Attributes">
+		<property name="DegradationMax" value="3500,8000"/>
+        <property name="Accuracy" value="1,0.01" />
+	</property>	
+	<property name="EconomicValue" value="1500" />
+	<property name="DescriptionKey" value="ChairinatorPartsGroupDesc"/>
+	<property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="craftSkillGuns"/>
+</item>	
+-->	
+<!-- End TexCubSF Signature Weapon -->
+
+<!-- Red Specs -->
+<item id="2182" name="redSpecs">
+	<property name="Extends" value="shades"/>
+	<property name="Class" value="ItemClassToggle"/>
+	<property name="ActivateObject" value="NightVision"/>
+	<property name="ImageEffectOnActive" value="NightVision"/>
+	<property name="PlaySoundOnActive" value="nightvision_toggle"/>
+	<property name="Active" value="false"/>
+	<property class="UMA">
+		<property name="Mesh" value="specs"/>
+		<property name="Overlay0" value="specs"/>
+	</property>
+	<property name="EconomicValue" value="950" />
+	<property name="DescriptionKey" value="redSpecsDesc"/>
+	<property name="Group" value="Clothing" />
+	<property name="CraftingSkillGroup" value="craftSkillTailoring"/>
+</item>
+<!-- End Red Specs -->
+
 
 <!-- End Craftworx -->
 
