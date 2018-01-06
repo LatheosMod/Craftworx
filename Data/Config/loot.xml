@@ -501,11 +501,11 @@
 	<item name="fishingWeight"/>
 </lootgroup>
 	
-<!-- <lootgroup name="mechanicalJunk">
+<lootgroup name="mechanicalJunk">
 	<item name="junk_mechanicalKeyPad"/>
 	<item name="junk_mechanicalOldWatch"/>
 	<item name="junk_mechanicalTypeWriter"/>
-</lootgroup> -->
+</lootgroup> 
 	
 <lootgroup name="paperJunk">
 	<item name="junk_paperNews"/>
@@ -561,7 +561,7 @@
 	<item name="junk_plasticHairBrush"/>
 	<item name="junk_plasticToothBrush"/>
 	<item name="junk_plasticShoppingBag"/>
-	<!-- <item name="junk_mechanicalOldWatch"/> -->
+	<item name="junk_mechanicalOldWatch"/> 
 	<item name="junk_brassHinge"/>
 	<item name="junk_brassMonkey"/>
 	<item name="junk_brassCowBell"/>

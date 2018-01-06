@@ -315,3 +315,8 @@ Renamed Poop Cannon to Poop Mortar, with a better description of how it fires
 Changed loot list for coffins from 1 to 75, same as mortician's drawer
 Reduced crafting time on napalm from 150 to 50
 Reduced the sham sandwich amount for making moldy bread from 4 to 2
+
+<----- 06 Jan 2018 ----->
+Craftworx 2.95
+Includes modified Sirillion's SMX UI, modified LavenderJosh's Quality of Life and Firearms Improvement Mod, skullpoker's Deep Diving perk, Valmar's Working Ovens & Sinks, numberz's Expanded Minibike Storage, Katt's New Foods, three08's Third forge input slot, dretch's Junction Box, JaxTeller718's Junk Items - Golden Egg - Scrap Iron Shiv - Electrified Spiked Club
+Enabled mechanical parts again, making them scrap to scrap iron to fix any problems opening chests containing them that some players have encountered

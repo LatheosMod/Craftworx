@@ -11874,31 +11874,31 @@ Mesh files no longer used:
 	</item>
 	
 <!-- Junk Mechanical -->
-<!-- Disabled until fix is found to allow proper scrapping to mechanical parts
+<!-- Converted to scrapping to iron until I can fix scrapping to mechanical parts -->
 	<item id="2146" name="junk_mechanicalKeyPad">
 		<property name="Extends" value="itemMaster"/>
 		<property name="CustomIcon" value="junk_mechanicalKeyPad"/>
 		<property name="DescriptionKey" value="junk_mechanicalKeyPadDesc"/>
-		<property name="Material" value="MmechanicalParts"/>
-		<property name="Weight" value="1"/>
+		<property name="Material" value="metal"/>
+		<property name="Weight" value="10"/>
 	</item>
 	
 	<item id="2147" name="junk_mechanicalOldWatch">
 		<property name="Extends" value="itemMaster"/>
 		<property name="CustomIcon" value="junk_mechanicalOldWatch"/>
 		<property name="DescriptionKey" value="junk_mechanicalOldWatchDesc"/>
-		<property name="Material" value="MmechanicalParts"/>
-		<property name="Weight" value="1"/>
+		<property name="Material" value="metal"/>
+		<property name="Weight" value="5"/>
 	</item>
 	
 	<item id="2148" name="junk_mechanicalTypeWriter">
 		<property name="Extends" value="itemMaster"/>
 		<property name="CustomIcon" value="junk_mechanicalTypeWriter"/>
 		<property name="DescriptionKey" value="junk_mechanicalTypeWriterDesc"/>
-		<property name="Material" value="MmechanicalParts"/>
-		<property name="Weight" value="1"/>
+		<property name="Material" value="metal"/>
+		<property name="Weight" value="15"/>
 	</item>
-	-->
+	
 <!-- Junk Paper -->
 	<item id="2149" name="junk_paperPlayingCards">
 		<property name="Extends" value="itemMaster"/>
